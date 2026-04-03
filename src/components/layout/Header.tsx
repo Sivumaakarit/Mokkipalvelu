@@ -19,6 +19,17 @@ export function Header() {
     const pathname = usePathname();
 
     const toggleMenu = () => setIsOpen(!isOpen);
+    
+    const scrollToHinnasto = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        if (isMainPage) {
+            e.preventDefault();
+            const el = document.getElementById("hinnasto");
+            if (el) {
+                el.scrollIntoView({ behavior: "smooth" });
+                setIsOpen(false);
+            }
+        }
+    };
 
     const isDemoPage = pathname === "/mokkipalvelu";
     const isMainPage = pathname === "/tarjous" || pathname === "/";
@@ -137,7 +148,11 @@ export function Header() {
                     <div className={`text-lg md:text-2xl font-bold text-blue-900 ${playfair.className} tracking-tight leading-tight min-w-0 pr-2`}>
                         <span className="whitespace-nowrap">Sivumaakareiden</span> <span className="text-blue-600 block sm:inline whitespace-nowrap">Palvelusivut</span>
                     </div>
-                    <Link href="#hinnasto" className="flex-shrink-0 bg-blue-700 hover:bg-blue-800 text-white px-4 md:px-6 py-3 rounded-full font-bold transition text-sm md:text-base whitespace-nowrap shadow-md">
+                    <Link 
+                        href={isMainPage ? "#hinnasto" : "/tarjous#hinnasto"}
+                        onClick={scrollToHinnasto}
+                        className="flex-shrink-0 bg-blue-700 hover:bg-blue-800 text-white px-4 md:px-6 py-3 rounded-full font-bold transition text-sm md:text-base whitespace-nowrap shadow-md"
+                    >
                         Osta nyt 990 €
                     </Link>
                 </header>
@@ -169,7 +184,8 @@ export function Header() {
                             </svg>
 
                              <Link
-                                 href="/tarjous#hinnasto"
+                                 href={isMainPage ? "#hinnasto" : "/tarjous#hinnasto"}
+                                 onClick={scrollToHinnasto}
                                  className="bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white px-8 py-3.5 rounded-full font-bold transition-all shadow-lg hover:shadow-cyan-500/25 hover:scale-105 text-lg"
                              >
                                  Osta nyt 990 €
@@ -207,8 +223,8 @@ export function Header() {
                             </svg>
                         </div>
                         <Link
-                            href="#hinnasto"
-                            onClick={() => setIsOpen(false)}
+                            href={isMainPage ? "#hinnasto" : "/tarjous#hinnasto"}
+                            onClick={scrollToHinnasto}
                             className="w-full bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white py-4 rounded-xl font-bold text-center shadow-lg block text-xl"
                         >
                             Osta nyt 990 €

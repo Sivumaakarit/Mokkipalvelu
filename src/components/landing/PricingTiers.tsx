@@ -46,7 +46,7 @@ export function PricingTiers() {
                             </ul>
                         </div>
 
-                        <Link href="#tilaa" className="w-full block text-center py-4 rounded-xl border-2 border-slate-200 text-slate-700 font-bold hover:border-blue-900 hover:text-blue-900 transition-colors mt-auto">
+                        <Link href="/tilaa-pelkka-sivu" className="w-full block text-center py-4 rounded-xl border-2 border-slate-200 text-slate-700 font-bold hover:border-blue-900 hover:text-blue-900 transition-colors mt-auto">
                             Tilaa pelkkä sivu
                         </Link>
                     </div>
@@ -92,7 +92,7 @@ export function PricingTiers() {
                             </ul>
                         </div>
 
-                        <Link href="#tilaa" className="w-full block text-center bg-cyan-500 text-slate-900 font-bold py-4 rounded-xl hover:bg-cyan-400 hover:shadow-[0_0_15px_rgba(6,182,212,0.4)] transition-all mt-auto transform hover:-translate-y-0.5">
+                        <Link href="/tilaa-perus" className="w-full block text-center bg-cyan-500 text-slate-900 font-bold py-4 rounded-xl hover:bg-cyan-400 hover:shadow-[0_0_15px_rgba(6,182,212,0.4)] transition-all mt-auto transform hover:-translate-y-0.5">
                             Valitse Sivu + Perusturva
                         </Link>
                     </div>

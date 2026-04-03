@@ -39,6 +39,14 @@ export default function TarjousPage() {
         }
     };
 
+    const scrollToHinnasto = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
+        const el = document.getElementById("hinnasto");
+        if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <main className={`${inter.className} bg-slate-50 text-slate-900 leading-relaxed min-h-screen`}>
             {/* SEO Data: Last Updated for Freshness Signal */}
@@ -100,7 +108,11 @@ export default function TarjousPage() {
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
 
-                        <Link href="#hinnasto" className={`${playfair.className} bg-yellow-400 hover:bg-yellow-500 text-slate-950 px-10 py-5 rounded-2xl font-bold text-xl shadow-[0_20px_40px_rgba(234,179,8,0.3)] transition-all transform hover:-translate-y-1 active:scale-95 uppercase tracking-wide`}>
+                        <Link 
+                            href="#hinnasto" 
+                            onClick={scrollToHinnasto}
+                            className={`${playfair.className} bg-yellow-400 hover:bg-yellow-500 text-slate-950 px-10 py-5 rounded-2xl font-bold text-xl shadow-[0_20px_40px_rgba(234,179,8,0.3)] transition-all transform hover:-translate-y-1 active:scale-95 uppercase tracking-wide`}
+                        >
                             Tilaa vaivattomat palvelusivut
                         </Link>
                         <Link href="/mokkipalvelu" className="text-slate-300 hover:text-white font-medium text-base py-3 px-6 rounded-xl border border-white/20 hover:bg-white/10 transition-all flex items-center justify-center gap-2 backdrop-blur-sm sm:w-auto w-full max-w-[280px]">
@@ -159,7 +171,7 @@ export default function TarjousPage() {
             </section>
 
             {/* Price Section */}
-            <section id="hinnasto" className="scroll-mt-20">
+            <section id="pricing-section" className="scroll-mt-20">
                 <StandalonePricing />
                 <PricingTiers />
             </section>
@@ -196,7 +208,11 @@ export default function TarjousPage() {
                         <p className="text-slate-400 mb-8 max-w-2xl mx-auto text-sm md:text-base">
                             Ammattitaitosi ansaitsee arvoisensa näyteikkunan. Otetaan yhdessä askel kohti tuloksellisempaa arkea.
                         </p>
-                        <Link href="#hinnasto" className={`${playfair.className} inline-block bg-blue-600 hover:bg-blue-500 text-white font-bold py-5 px-10 rounded-xl transition-all shadow-lg text-lg ring-4 ring-slate-900/10`}>
+                        <Link 
+                            href="#hinnasto" 
+                            onClick={scrollToHinnasto}
+                            className={`${playfair.className} inline-block bg-blue-600 hover:bg-blue-500 text-white font-bold py-5 px-10 rounded-xl transition-all shadow-lg text-lg ring-4 ring-slate-900/10`}
+                        >
                             Tilaa omat sivut (990 €)
                         </Link>
                     </div>
