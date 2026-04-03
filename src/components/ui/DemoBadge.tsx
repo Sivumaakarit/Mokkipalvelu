@@ -29,7 +29,7 @@ export function DemoBadge() {
     }, []);
 
     // Show only on the mokkipalvelu demo page
-    if (pathname !== "/mokkipalvelu") return null;
+    if (!pathname?.startsWith("/mokkipalvelu")) return null;
 
     return (
         <>
