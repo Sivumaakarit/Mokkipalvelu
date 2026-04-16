@@ -347,9 +347,9 @@ export function SalesSection() {
                                             </Link>
                                             <Link
                                                 href="/tarjous#pelkka-sivu"
-                                                className="flex-1 py-5 bg-slate-800 border border-slate-700 text-slate-300 font-bold text-center rounded-2xl hover:bg-slate-700 transition-all flex items-center justify-center"
+                                                className="flex-1 py-5 bg-slate-800 border border-slate-700 text-slate-300 font-bold text-center rounded-2xl hover:bg-slate-700 transition-all flex items-center justify-center uppercase tracking-tighter text-lg italic"
                                             >
-                                                Mitä sillä saa?
+                                                MITÄ SILLÄ SAA?
                                             </Link>
                                         </div>
                                     </div>
@@ -361,15 +361,18 @@ export function SalesSection() {
                     <div className="max-w-xl mx-auto mt-24 border-t border-slate-800 pt-16">
                         {!formSubmitted ? (
                             <>
-                                <h3 className={`${playfair.className} text-2xl font-bold text-center mb-8 italic`}>Ota yhteyttä heti</h3>
+                                <div className="text-center mb-10">
+                                    <h3 className={`${playfair.className} text-3xl md:text-4xl font-bold text-white mb-4 italic`}>Kysy lisää tai pyydä <span className="text-cyan-400">ilmainen kartoitus</span></h3>
+                                    <p className={`${inter.className} text-slate-400 text-lg font-light italic`}>Yhteydenotto ei sido sinua mihinkään. Vastaamme pian – katsotaan yhdessä miten voimme auttaa yritystäsi löytymään paremmin.</p>
+                                </div>
                                 <form className="space-y-4" onSubmit={handleSubmit}>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                         <input aria-label="Nimi / Yritys" type="text" name="name" placeholder="Nimi / Yritys" required className="bg-slate-900/50 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-cyan-500 outline-none w-full min-w-0" />
                                         <input aria-label="Sähköposti" type="email" name="email" placeholder="Sähköposti" required className="bg-slate-900/50 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-cyan-500 outline-none w-full min-w-0" />
                                     </div>
-                                    <textarea aria-label="Viesti" name="message" rows={3} placeholder="Miten voin auttaa?" className="w-full min-w-0 bg-slate-900/50 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-cyan-500 outline-none"></textarea>
-                                    <button type="submit" className={`${inter.className} w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-lg transition-colors`}>
-                                        Lähetä tarjouspyyntö
+                                    <textarea aria-label="Viesti" name="message" rows={3} placeholder="Miten voin auttaa?" className="w-full min-w-0 bg-slate-900/50 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-cyan-500 outline-none" defaultValue="Olen kiinnostunut kuulemaan lisää. Tämä on alustava kysely eikä sido vielä mihinkään."></textarea>
+                                    <button type="submit" className={`${inter.className} w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-indigo-600/20 hover:shadow-none active:scale-[0.98]`}>
+                                        PYYDÄ LISÄTIETOJA TAI ARVIO
                                     </button>
                                 </form>
                             </>

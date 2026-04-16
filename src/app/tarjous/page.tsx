@@ -383,10 +383,10 @@ export default function TarjousPage() {
                         <div className="flex flex-col pt-2 pb-10">
                             <div className="text-center lg:text-left mb-10">
                                 <h2 className={`${playfair.className} text-4xl md:text-5xl font-bold mb-6 text-slate-900 leading-[1.1] tracking-tight`}>
-                                    Aloitetaan projekti <br />
-                                    <span className="text-blue-700">tänään</span>
+                                    Kysy lisää tai pyydä <br />
+                                    <span className="text-blue-700">maksuton arvio</span>
                                 </h2>
-                                <p className="text-slate-600 text-lg md:text-xl font-light">Jätä yhteydenottopyyntö, niin saat uudet sivusi viikossa.</p>
+                                <p className="text-slate-600 text-lg md:text-xl font-light italic">Yhteydenotto ei sido sinua mihinkään. Vastaamme pian – katsotaan yhdessä, miten voimme auttaa yritystäsi löytymään paremmin.</p>
                             </div>
 
                             {!formSubmitted ? (
@@ -406,10 +406,10 @@ export default function TarjousPage() {
                                             </div>
                                             <div className="space-y-2">
                                                 <label className="block text-sm font-bold text-slate-700 ml-1">Viesti / Yrityksesi ala</label>
-                                                <textarea name="message" className="w-full min-w-0 p-4 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-500 outline-none transition-all h-32 placeholder:text-slate-400" placeholder="Kerro lyhyesti mitä teet..."></textarea>
+                                                <textarea name="message" className="w-full min-w-0 p-4 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-500 outline-none transition-all h-32 placeholder:text-slate-400" placeholder="Kerro lyhyesti mitä teet..." defaultValue="Olen kiinnostunut kuulemaan lisää. Tämä on alustava kysely eikä sido vielä mihinkään."></textarea>
                                             </div>
                                             <button type="submit" className={`${playfair.className} w-full bg-blue-700 text-white font-bold py-5 rounded-2xl hover:bg-blue-800 transition-all shadow-[0_15px_30px_rgba(29,78,216,0.3)] hover:shadow-none hover:translate-y-0.5 transform active:scale-95 text-xl tracking-tight`}>
-                                                Lähetä tarjouspyyntö
+                                                Pyydä lisätietoja tai arvio
                                             </button>
                                         </form>
                                     </div>

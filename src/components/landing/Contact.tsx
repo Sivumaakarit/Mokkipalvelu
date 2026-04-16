@@ -170,8 +170,8 @@ export function Contact() {
                         </h3>
                         
                         <p className={`${inter.className} text-lg md:text-2xl text-slate-600 leading-relaxed font-light mb-12`}>
-                            Nettisivu ei ole menoerä. Se on paras työntekijäsi, joka ei nuku koskaan.
-                            Kertamaksulla <strong className="font-bold text-slate-900">990 €</strong> ilman piilokuluja.
+                            Nettisivu ei ole menoerä – se on paras työntekijäsi. <br className="hidden md:block" />
+                            <span className="text-blue-600 font-medium italic">Ensimmäinen askel ei sido sinua mihinkään.</span>
                         </p>
 
                         <div className="flex flex-col items-center gap-6">

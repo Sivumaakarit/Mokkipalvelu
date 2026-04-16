@@ -26,7 +26,7 @@ export function FAQ() {
                     <ul className="list-disc pl-5 space-y-2">
                         <li><strong>Verkkotunnuksen (domain) ja SSL-suojauksen.</strong></li>
                         <li><strong>Jatkuvan teknisen valvonnan:</strong> Käytämme automatiikkaa varmistaaksemme, että sivusi pysyy salamannopeana ja teknisessä 100/100-kunnossa 24/7.</li>
-                        <li><strong>Kuukausittaiset päivitykset:</strong> Esimerkiksi uuden tarjouskampanjan lisäys tai tekstin muutos. Laita vain viesti, me hoidamme teknisen säädön puolestasi.</li>
+                        <li><strong>Kuukausittaiset päivitykset:</strong> Esimerkiksi yhden uuden tarjouskampanjan lisäys tai tekstin muutos. Laita vain viesti, me hoidamme teknisen säädön puolestasi.</li>
                         <li><strong>Tekoäly-päivitykset:</strong> Pidämme huolen, että yrityksesi tiedot ovat tekoälyhakujen (kuten ChatGPT) löydettävissä myös tekniikan kehittyessä.</li>
                     </ul>
                 </div>

@@ -35,16 +35,16 @@ export default function MokkipalveluPage() {
         <div className="absolute inset-0 bg-blue-500/10 transform skew-y-3 origin-top-right scale-110 pointer-events-none"></div>
         <div className="container mx-auto px-4 relative z-10">
           <h2 className={`${playfair.className} text-3xl md:text-5xl font-black mb-8 tracking-tight italic`}>
-            Valmis aloittamaan kasvun?
+            Haluatko kuulla lisää?
           </h2>
           <p className={`${inter.className} text-xl md:text-2xl mb-12 text-slate-400 max-w-2xl mx-auto font-light leading-relaxed`}>
             Älä jätä kauppoja kilpailijoillesi. Ota ensimmäinen askel kohti <span className="text-white font-bold">100/100 suorituskykyä</span> jo tänään.
           </p>
           <Link
             href="/tarjous"
-            className={`${inter.className} inline-block bg-white text-slate-950 font-black text-xl md:text-2xl uppercase tracking-tighter py-6 px-12 rounded-2xl hover:bg-slate-100 transition-all shadow-[0_20px_50px_rgba(0,0,0,0.5)] hover:shadow-none hover:translate-y-1 transform active:scale-95`}
+            className={`${inter.className} inline-block bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-xl md:text-2xl uppercase tracking-tighter py-6 px-12 rounded-2xl hover:brightness-110 transition-all shadow-[0_20px_50px_rgba(6,182,212,0.3)] hover:shadow-none hover:translate-y-1 transform active:scale-95 italic`}
           >
-            PYYDÄ TARJOUS – ALOITA TÄSTÄ
+            KYSY LISÄÄ TAI PYYDÄ ARVIO
           </Link>
         </div>
       </section>

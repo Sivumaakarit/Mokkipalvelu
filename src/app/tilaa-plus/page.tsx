@@ -89,7 +89,7 @@ export default function TilaaPlus() {
                             <div>
                                 {!formSubmitted ? (
                                     <>
-                                        <h2 className={`${playfair.className} text-2xl font-bold mb-6 text-slate-900`}>Tilaa Sivu + Plus-paketti</h2>
+                                        <h2 className={`${playfair.className} text-2xl font-bold mb-6 text-slate-900`}>Kysy lisää Plus-paketista</h2>
                                         <form className="space-y-4" onSubmit={handleSubmit}>
                                             <div>
                                                 <label className="block text-sm font-semibold mb-1 text-slate-700">Nimi</label>
@@ -108,7 +108,7 @@ export default function TilaaPlus() {
                                                 ></textarea>
                                             </div>
                                             <button type="submit" className="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition shadow-lg shadow-blue-600/30">
-                                                Laita tarjouspyyntö vetämään
+                                                Pyydä lisätietoja tai arvio
                                             </button>
                                             <p className="text-center text-xs text-slate-500 mt-4">
                                                 Ei sitoutumispakkoa. Otamme yhteyttä puhelimitse yksityiskohtien vahvistamiseksi. <br />
