@@ -101,9 +101,9 @@ export default function TilaaPlus() {
                                             </div>
                                             <div>
                                                 <label className="block text-sm font-semibold mb-1 text-slate-700">Viesti</label>
-                                                <textarea 
+                                                <textarea
                                                     name="message"
-                                                    className="w-full min-w-0 p-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 outline-none h-32" 
+                                                    className="w-full min-w-0 p-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 outline-none h-32"
                                                     defaultValue="Olen kiinnostunut Sivu + Plus-paketista (150 €/kk). Tämä on alustava tarjouspyyntö eikä se sido vielä mihinkään. Kerrothan lisää SEO-valvonnasta."
                                                 ></textarea>
                                             </div>
@@ -122,7 +122,7 @@ export default function TilaaPlus() {
                                             <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
                                         </div>
                                         <h3 className="text-3xl font-black text-emerald-900 mb-4 tracking-tight">Kiitos viestistäsi!</h3>
-                                        <p className="text-emerald-700 text-lg font-medium">Olemme sinuun yhteydessä pian aloituskokousta varten.</p>
+                                        <p className="text-emerald-700 text-lg font-medium">Olemme sinuun yhteydessä pian.</p>
                                     </div>
                                 )}
                             </div>

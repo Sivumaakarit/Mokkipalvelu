@@ -101,12 +101,12 @@ export function Contact() {
                                         <div className="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></div>
                                     </div>
                                     <div className="flex-1 bg-white h-6 rounded-full flex items-center px-3 shadow-sm border border-slate-200 max-w-md hidden sm:flex">
-                                        <span className="text-[10px] text-slate-400 truncate font-sans">pagespeed.web.dev/report/sivumaakarit-tehorunko</span>
+                                        <span className={`${inter.className} text-[10px] text-slate-400 truncate`}>pagespeed.web.dev/report/sivumaakarit-tehorunko</span>
                                     </div>
                                 </div>
                                 
                                 {/* PageSpeed Content Area */}
-                                <div className="p-6 md:p-12 bg-white font-sans text-left">
+                                <div className={`p-6 md:p-12 bg-white ${inter.className} text-left`}>
                                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
                                         <div className="flex items-center gap-4">
                                             <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center border border-blue-100 shadow-sm">
@@ -141,7 +141,7 @@ export function Contact() {
                                                         {m.score}
                                                     </span>
                                                 </div>
-                                                <h4 className="text-[9px] md:text-[10px] font-black text-slate-400 uppercase tracking-widest text-center h-8 leading-tight">
+                                                <h4 className={`${inter.className} text-[9px] md:text-[10px] font-black text-slate-400 uppercase tracking-widest text-center h-8 leading-tight`}>
                                                     {m.label}
                                                 </h4>
                                             </div>
@@ -185,7 +185,7 @@ export function Contact() {
                                 </svg>
                             </a>
                             
-                            <button onClick={() => document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' })} className="text-slate-500 hover:text-slate-700 font-bold uppercase tracking-widest text-sm transition-colors flex items-center gap-2">
+                            <button onClick={() => document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' })} className={`${inter.className} text-slate-500 hover:text-slate-700 font-bold uppercase tracking-widest text-sm transition-colors flex items-center gap-2`}>
                                 <span className="w-8 h-px bg-slate-300"></span>
                                 Tai lue UKK alhaalta
                                 <span className="w-8 h-px bg-slate-300"></span>

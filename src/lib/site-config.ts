@@ -23,10 +23,10 @@ export const siteConfig = {
         { label: "Ota yhteyttä", href: "#contact" },
     ],
     sivumaakaritNav: [
-        { label: "Kotisivut", href: "#websites" },
-        { label: "Verkkokaupat", href: "#ecommerce" },
-        { label: "Referenssit", href: "#references" },
-        { label: "Ota yhteyttä", href: "#contact" },
+        { label: "Kotisivut", href: "/" },
+        { label: "Referenssit", href: "/referenssit" },
+        { label: "Metodi", href: "/metodi" },
+        { label: "Ota yhteyttä", href: "/#contact" },
     ],
 
     // SEO & AIO

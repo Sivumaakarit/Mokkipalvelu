@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
@@ -7,6 +10,33 @@ const playfair = Playfair_Display({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
 
 export function SalesSection() {
+    const [formSubmitted, setFormSubmitted] = useState(false);
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        const form = e.currentTarget;
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch(`https://formspree.io/f/${siteConfig.formspreeKey}`, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                setFormSubmitted(true);
+                form.reset();
+            } else {
+                alert("Hups! Jotain meni pieleen. Yritä uudelleen myöhemmin.");
+            }
+        } catch (error) {
+            alert("Hups! Jotain meni pieleen. Yritä uudelleen myöhemmin.");
+        }
+    };
+
     return (
         <div className="relative" id="sales-section">
             {/* Visual Divider - Restored & Steeper */}
@@ -82,8 +112,8 @@ export function SalesSection() {
                                 <div className="p-3 bg-green-500/20 rounded-xl w-fit mb-4 text-green-400 backdrop-blur-md border border-blue-500/20">
                                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" /></svg>
                                 </div>
-                                <h3 className="text-2xl font-black text-white mb-3 tracking-tight">Google Maps</h3>
-                                <p className="text-slate-200 text-lg leading-snug font-medium">Ole paikallinen ykkönen. Me varmistamme, että reitti perille on selkeä ja kartalla.</p>
+                                <h3 className={`${playfair.className} text-2xl font-bold text-white mb-3 tracking-tight italic`}>Google Maps</h3>
+                                <p className={`${inter.className} text-slate-200 text-lg leading-snug font-medium`}>Ole paikallinen ykkönen. Me varmistamme, että reitti perille on selkeä ja kartalla.</p>
                             </div>
                         </div>
 
@@ -150,8 +180,8 @@ export function SalesSection() {
                                      <span className="text-[10px] uppercase tracking-tighter opacity-70">Eliitti</span>
                                      <span className="text-xl leading-none">85-100</span>
                                  </div>
-                                 <h3 className="text-xl font-bold text-white mb-4 text-center">Esteettömyys</h3>
-                                 <p className="text-slate-300 text-sm md:text-base text-center leading-relaxed font-light">
+                                 <h3 className={`${playfair.className} text-xl font-bold text-white mb-4 text-center italic`}>Esteettömyys</h3>
+                                 <p className={`${inter.className} text-slate-300 text-sm md:text-base text-center leading-relaxed font-light`}>
                                      Lupaamme vähintään 85+ tason. Sivusi noudattaa Googlen käytettävyysstandardeja, jotta kaikki asiakkaat pääsevät perille ilman esteitä.
                                  </p>
                             </div>
@@ -165,8 +195,8 @@ export function SalesSection() {
                                      <span className="text-[10px] uppercase tracking-tighter opacity-70">Eliitti</span>
                                      <span className="text-xl leading-none">95-100</span>
                                  </div>
-                                 <h3 className="text-xl font-bold text-white mb-4 text-center">Parhaat käytännöt</h3>
-                                 <p className="text-slate-300 text-sm md:text-base text-center leading-relaxed font-light">
+                                 <h3 className={`${playfair.className} text-xl font-bold text-white mb-4 text-center italic`}>Parhaat käytännöt</h3>
+                                 <p className={`${inter.className} text-slate-300 text-sm md:text-base text-center leading-relaxed font-light`}>
                                      Teollisuuden kärkeä. Käytämme vain moderneinta ja turvallisinta tekniikkaa. Sivusi on aina teknisesti aikaansa edellä.
                                  </p>
                             </div>
@@ -233,9 +263,9 @@ export function SalesSection() {
                                             height={100}
                                             className="h-16 md:h-20 w-auto object-contain flex-shrink-0"
                                         />
-                                        <h3 className="text-2xl md:text-3xl font-bold text-white break-words min-w-0">Sivumaakarit 2026</h3>
+                                        <h3 className={`${playfair.className} text-2xl md:text-3xl font-bold text-white break-words min-w-0 italic`}>Sivumaakarit 2026</h3>
                                     </div>
-                                    <span className="px-4 py-1 rounded-full bg-cyan-900/30 border border-cyan-800 text-cyan-400 text-sm font-semibold whitespace-nowrap">
+                                    <span className={`${inter.className} px-4 py-1 rounded-full bg-cyan-900/30 border border-cyan-800 text-cyan-400 text-sm font-semibold whitespace-nowrap`}>
                                         Moderni teknologia
                                     </span>
                                 </div>
@@ -246,19 +276,19 @@ export function SalesSection() {
                                             <h4 className={`${playfair.className} text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight italic`}>Mitä saat tällä hinnalla?</h4>
                                             <div className="w-16 h-1 bg-cyan-500 mb-6 hidden md:block"></div>
                                         </div>
-                                        <p className="text-slate-300 mb-8 text-lg leading-relaxed">
+                                        <p className={`${inter.className} text-slate-300 mb-8 text-lg leading-relaxed`}>
                                             Meiltä et saa pelkkää &quot;tonttia&quot; netistä, vaan kovan luokan myyntimoottorin.
                                         </p>
                                         <ul className="space-y-6">
-                                            <li className="flex items-start text-slate-300">
+                                            <li className={`${inter.className} flex items-start text-slate-300`}>
                                                 <svg className="w-5 h-5 text-green-400 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
                                                 <span><strong className="text-white">Toteutus (990 € tai 0 € pilottiasiakkaille):</strong> Sisältää teknisen rakennuksen, 100/100-laadunvarmistuksen ja modernin ulkoasun.</span>
                                             </li>
-                                            <li className="flex items-start text-slate-300">
+                                            <li className={`${inter.className} flex items-start text-slate-300`}>
                                                 <svg className="w-5 h-5 text-green-400 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
                                                 <span><strong className="text-white">Ylläpito (50 € / kk):</strong> Sisältää domainin, teknisen huolenpidon ja takuun siitä, että sivusi pysyy salamannopeana vuodesta toiseen.</span>
                                             </li>
-                                            <li className="flex items-start text-slate-300">
+                                            <li className={`${inter.className} flex items-start text-slate-300`}>
                                                 <svg className="w-5 h-5 text-green-400 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
                                                 <span><strong className="text-white">Haluatko yrityksesi takaisin kartalle?</strong> Nettisivu on työntekijä, joka ei nuku koskaan. Pienyrittäjälle (esim. LVI tai talkkari) sivu maksaa itsensä takaisin jo 3–4 uuden asiakkaan myötä – sen jälkeen kaikki on puhdasta voittoa.</span>
                                             </li>
@@ -266,18 +296,15 @@ export function SalesSection() {
                                     </div>
 
                                     <div className="flex flex-col justify-center">
-                                        <h4 className="text-2xl font-bold text-white mb-2">Valmiina 7 päivässä<span className="text-cyan-400">*</span></h4>
-                                        <p className="text-xs text-slate-400 mb-4 italic">
+                                        <h4 className={`${inter.className} text-2xl font-bold text-white mb-2`}>Valmiina 7 päivässä<span className="text-cyan-400">*</span></h4>
+                                        <p className={`${inter.className} text-xs text-slate-400 mb-4 italic`}>
                                             * 7 päivän toimitusaika lasketaan siitä hetkestä, kun olet toimittanut meille kaiken sivustolle tulevan materiaalin.
                                         </p>
-                                        <p className="text-slate-300 mb-6">
-                                            Lopeta tekninen säätö. Me rakennamme sinulle sivut, joilla asiakkaat löytävät sinut Googlesta ja tekoälyhauista.
-                                        </p>
                                         <div className="mb-10">
-                                            <h4 className="text-sm font-bold text-cyan-400 mb-6 uppercase tracking-widest border-b border-slate-800 pb-2">Hinnoittelu – Ei piilokuluja</h4>
+                                            <h4 className={`${inter.className} text-sm font-bold text-cyan-400 mb-6 uppercase tracking-widest border-b border-slate-800 pb-2`}>Hinnoittelu – Ei piilokuluja</h4>
 
                                             <div className="space-y-4">
-                                                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 rounded-lg bg-slate-900/40 border border-slate-800/50">
+                                                <div className={`flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 rounded-lg bg-slate-900/40 border border-slate-800/50 ${inter.className}`}>
                                                     <div>
                                                         <div className="font-bold text-white text-lg">Sivuston toteutus</div>
                                                         <div className="text-sm text-slate-400">Avaimet käteen -laskeutumissivu.</div>
@@ -288,10 +315,10 @@ export function SalesSection() {
                                                 </div>
 
                                                 <div className="mt-6 mb-2">
-                                                    <span className="text-xs text-cyan-500 font-bold uppercase tracking-wider">Ylläpitovaihtoehdot:</span>
+                                                    <span className={`${inter.className} text-xs text-cyan-500 font-bold uppercase tracking-wider`}>Ylläpitovaihtoehdot:</span>
                                                 </div>
 
-                                                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 rounded-lg bg-slate-900/40 border border-slate-800/50">
+                                                <div className={`flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 rounded-lg bg-slate-900/40 border border-slate-800/50 ${inter.className}`}>
                                                     <div>
                                                         <div className="font-bold text-white text-lg">Ylläpito & Turva – Perus</div>
                                                         <div className="text-sm text-slate-400">Tekninen ylläpito ja päivitykset.</div>
@@ -300,7 +327,7 @@ export function SalesSection() {
                                                         50 € <span className="text-sm font-normal text-slate-400">/ kk</span>
                                                     </div>
                                                 </div>
-                                                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 rounded-lg bg-slate-900/40 border border-slate-800/50">
+                                                <div className={`flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 rounded-lg bg-slate-900/40 border border-slate-800/50 ${inter.className}`}>
                                                     <div>
                                                         <div className="font-bold text-white text-lg">Ylläpito & Turva – Plus</div>
                                                         <div className="text-sm text-slate-400">Sisältää 2 h asiantuntijatyötä kuukaudessa.</div>
@@ -332,20 +359,29 @@ export function SalesSection() {
                     </div>
 
                     <div className="max-w-xl mx-auto mt-24 border-t border-slate-800 pt-16">
-                        <h3 className="text-2xl font-bold text-center mb-8">Ota yhteyttä heti</h3>
-                        <form action="https://api.web3forms.com/submit" method="POST" className="space-y-4">
-                            <input type="hidden" name="access_key" value={siteConfig.web3formsKey} />
-                            <input type="hidden" name="subject" value="Yhteydenotto: Sivumaakarit 2025" />
-
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <input aria-label="Nimi / Yritys" type="text" name="name" placeholder="Nimi / Yritys" required className="bg-slate-900/50 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-cyan-500 outline-none w-full min-w-0" />
-                                <input aria-label="Sähköposti" type="email" name="email" placeholder="Sähköposti" required className="bg-slate-900/50 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-cyan-500 outline-none w-full min-w-0" />
+                        {!formSubmitted ? (
+                            <>
+                                <h3 className={`${playfair.className} text-2xl font-bold text-center mb-8 italic`}>Ota yhteyttä heti</h3>
+                                <form className="space-y-4" onSubmit={handleSubmit}>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <input aria-label="Nimi / Yritys" type="text" name="name" placeholder="Nimi / Yritys" required className="bg-slate-900/50 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-cyan-500 outline-none w-full min-w-0" />
+                                        <input aria-label="Sähköposti" type="email" name="email" placeholder="Sähköposti" required className="bg-slate-900/50 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-cyan-500 outline-none w-full min-w-0" />
+                                    </div>
+                                    <textarea aria-label="Viesti" name="message" rows={3} placeholder="Miten voin auttaa?" className="w-full min-w-0 bg-slate-900/50 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-cyan-500 outline-none"></textarea>
+                                    <button type="submit" className={`${inter.className} w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-lg transition-colors`}>
+                                        Lähetä tarjouspyyntö
+                                    </button>
+                                </form>
+                            </>
+                        ) : (
+                            <div className="bg-slate-900 border border-cyan-500/30 p-12 rounded-[2rem] text-center shadow-2xl animate-in fade-in zoom-in duration-500">
+                                <div className="w-20 h-20 bg-cyan-500 text-slate-950 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-cyan-500/30">
+                                    <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <h3 className="text-3xl font-black text-white mb-4 tracking-tight">Kiitos viestistäsi!</h3>
+                                <p className="text-cyan-400 text-lg font-medium">Laitoimme viestin eteenpäin. Olemme sinuun yhteydessä pian!</p>
                             </div>
-                            <textarea aria-label="Viesti" name="message" rows={3} placeholder="Miten voin auttaa?" className="w-full min-w-0 bg-slate-900/50 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-cyan-500 outline-none"></textarea>
-                             <button type="submit" className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-lg transition-colors">
-                                 Lähetä tarjouspyyntö
-                             </button>
-                        </form>
+                        )}
                     </div>
 
                 </div>
