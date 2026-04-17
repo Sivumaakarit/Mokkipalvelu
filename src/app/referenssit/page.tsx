@@ -123,7 +123,7 @@ export default function ReferenssitPage() {
                   <img
                     src={project.desktopImage}
                     alt={project.title}
-                    className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-700"
+                    className="absolute inset-0 w-full h-full object-cover object-top transform scale-[1.12] origin-bottom group-hover:scale-[1.18] transition-transform duration-700"
                     style={{ imageRendering: "-webkit-optimize-contrast" }}
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500 z-10"></div>

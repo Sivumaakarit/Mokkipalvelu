@@ -48,7 +48,7 @@ export const CaseStudyShowcase: React.FC<CaseStudyShowcaseProps> = ({
   const tabletBg = getBgStyles(tabletBgColor);
 
   return (
-    <div className="relative w-full max-w-6xl mx-auto py-2 lg:py-4 flex flex-col lg:flex-row items-center gap-12 overflow-visible">
+    <div className="relative w-full max-w-6xl mx-auto py-2 lg:py-4 flex flex-col lg:flex-row items-center gap-4 lg:gap-12 overflow-visible">
       
       {/* Vasen puoli: Tekstit & Kuvaus */}
       <div className="w-full lg:w-1/3 flex flex-col gap-6 z-10 px-6">
@@ -72,7 +72,7 @@ export const CaseStudyShowcase: React.FC<CaseStudyShowcaseProps> = ({
       </div>
 
       {/* Oikea puoli: Elävä 3D Mockup */}
-      <div className="w-full lg:w-2/3 h-[520px] lg:h-[700px] perspective-container relative flex items-center justify-center lg:ml-8 transform-gpu overflow-visible">
+      <div className="w-full lg:w-2/3 h-[450px] md:h-[500px] lg:h-[700px] -mt-8 lg:mt-0 perspective-container relative flex items-center justify-center lg:ml-8 transform-gpu overflow-visible">
         
         {/* MacBook Pro Model */}
         <div className="absolute w-[95%] lg:w-[90%] max-w-[850px] transition-transform duration-700 hover:scale-[1.02] z-10 pb-12">
@@ -93,7 +93,7 @@ export const CaseStudyShowcase: React.FC<CaseStudyShowcaseProps> = ({
         </div>
 
         {/* iPhone Model */}
-        <div className="absolute w-[42%] md:w-[32%] lg:w-[22%] max-w-[200px] aspect-[9/18] iphone-tilt transition-transform duration-700 hover:-translate-y-4 hover:scale-105 z-30 left-4 md:left-12 lg:left-0 bottom-4 lg:bottom-6">
+        <div className="absolute w-[30%] md:w-[32%] lg:w-[22%] max-w-[200px] aspect-[9/18] iphone-tilt transition-transform duration-700 hover:-translate-y-4 hover:scale-105 z-30 left-2 md:left-12 lg:left-0 bottom-[-12px] lg:bottom-6">
           <div className="w-full h-full border-[3px] lg:border-[5px] border-stone-800 bg-black rounded-[1.2rem] lg:rounded-[1.8rem] overflow-hidden shadow-[20px_20px_50px_rgba(0,0,0,0.7)] relative">
             <div className="absolute top-0.5 lg:top-1 w-full flex justify-between px-3 lg:px-5 z-50 text-[4px] lg:text-[6px] font-medium text-stone-900 pointer-events-none">
               <span className="font-bold">9.41</span>
@@ -127,7 +127,7 @@ export const CaseStudyShowcase: React.FC<CaseStudyShowcaseProps> = ({
 
         {/* iPad Model */}
         <div 
-          className="absolute w-[68%] md:w-[55%] lg:w-[45%] max-w-[460px] aspect-[4/3] transition-transform duration-700 hover:-translate-y-4 hover:scale-105 z-20 -right-4 lg:-right-10 bottom-2 lg:bottom-4" 
+          className="absolute w-[62%] md:w-[55%] lg:w-[45%] max-w-[460px] aspect-[4/3] transition-transform duration-700 hover:-translate-y-4 hover:scale-105 z-20 -right-2 lg:-right-10 bottom-0 lg:bottom-4" 
           style={{ transform: "translateZ(60px) rotateY(-3deg) rotateX(4deg) rotateZ(-1deg)", transformStyle: "preserve-3d" }}
         >
           <div className="w-full h-full border-[4px] lg:border-[7px] border-[#151515] bg-[#0a0a0a] rounded-xl lg:rounded-[1.5rem] overflow-hidden shadow-[15px_20px_40px_rgba(0,0,0,0.6)] relative">
