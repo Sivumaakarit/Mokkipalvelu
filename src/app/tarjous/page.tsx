@@ -1,15 +1,18 @@
 "use client";
 
 import { useState } from "react";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Playfair_Display, Inter, Urbanist, Luckiest_Guy } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
 import { StandalonePricing } from "@/components/landing/StandalonePricing";
 import { PricingTiers } from "@/components/landing/PricingTiers";
+import { Footer } from "@/components/layout/Footer";
 
 const playfair = Playfair_Display({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
+const urbanist = Urbanist({ subsets: ["latin"] });
+const lucky = Luckiest_Guy({ weight: "400", subsets: ["latin"] });
 
 export default function TarjousPage() {
     const [formSubmitted, setFormSubmitted] = useState(false);
@@ -75,12 +78,12 @@ export default function TarjousPage() {
                 </div>
 
                 <div className="max-w-5xl mx-auto relative z-10 text-center">
-                    <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-blue-500/20 border border-blue-400/30 backdrop-blur-md text-blue-300 text-sm font-bold tracking-[0.2em] uppercase">
+                    <div className="inline-block px-3 py-1 md:px-4 md:py-1.5 mb-4 md:mb-6 rounded-full bg-blue-500/20 border border-blue-400/30 backdrop-blur-md text-blue-300 text-[10px] md:text-sm font-bold tracking-[0.2em] uppercase">
                         Premium Palvelusivut
                     </div>
-                    <h1 className={`${playfair.className} text-3xl sm:text-4xl md:text-7xl font-bold mb-8 leading-[1.1] tracking-tight drop-shadow-2xl`}>
-                        Palvelusivut yrittäjälle –<br className="hidden md:block" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-white to-cyan-300">Valmiina 7 päivässä</span>
+                    <h1 className={`${playfair.className} text-[30px] md:text-7xl font-bold mb-8 leading-[1.1] tracking-tight drop-shadow-2xl`}>
+                        Palvelusivut yrittäjälle –<br className="md:hidden" />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-white to-cyan-300 block md:inline">Valmiina 7 päivässä</span>
                     </h1>
 
                     <p className={`${inter.className} text-lg md:text-2xl text-slate-200 mb-8 max-w-4xl mx-auto font-light leading-relaxed opacity-90`}>
@@ -88,28 +91,27 @@ export default function TarjousPage() {
                     </p>
 
                     {/* Quick Answer Block: High-density data for AI Citation */}
-                    <div className="mb-12 p-6 bg-slate-900/40 backdrop-blur-md rounded-2xl border border-white/10 text-white max-w-3xl mx-auto shadow-2xl">
+                    <div className="mb-12 py-3 px-8 bg-slate-900/40 backdrop-blur-md rounded-2xl border border-white/10 text-white w-fit mx-auto shadow-2xl">
                         <p className="font-bold mb-3 uppercase tracking-[0.2em] text-[10px] text-blue-400 text-center">Lupauksemme:</p>
-                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm md:text-base font-medium">
-                            <div className="flex items-center justify-center gap-2">
-                                <span className="text-emerald-400">✓</span>
-                                Nykyaikainen ulkoasu
+                        <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center gap-3 sm:gap-12 text-sm md:text-base font-medium">
+                            <div className="flex items-start gap-3">
+                                <svg className="w-5 h-5 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                <span className="text-white/90">Nykyaikainen ulkoasu</span>
                             </div>
-                            <div className="flex items-center justify-center gap-2">
-                                <span className="text-emerald-400">✓</span>
-                                Nopeus ja löydettävyys
+                            <div className="flex items-start gap-3">
+                                <svg className="w-5 h-5 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                <span className="text-white/90">Nopeus ja löydettävyys</span>
                             </div>
-                            <div className="flex items-center justify-center gap-2">
-                                <span className="text-emerald-400">✓</span>
-                                Valmis 7 päivässä
+                            <div className="flex items-start gap-3">
+                                <svg className="w-5 h-5 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                <span className="text-white/90">Valmis 7 päivässä</span>
                             </div>
                         </div>
                     </div>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-
-                        <Link 
-                            href="#hinnasto" 
+                        <Link
+                            href="#hinnasto"
                             onClick={scrollToHinnasto}
                             className={`${playfair.className} bg-yellow-400 hover:bg-yellow-500 text-slate-950 px-10 py-5 rounded-2xl font-bold text-xl shadow-[0_20px_40px_rgba(234,179,8,0.3)] transition-all transform hover:-translate-y-1 active:scale-95 uppercase tracking-wide`}
                         >
@@ -168,6 +170,19 @@ export default function TarjousPage() {
                         <p className={`${inter.className} text-slate-600`}>Myyt osaamistasi ja asiantuntemustasi. Teetpä työtäsi vasaralla, tietokoneella tai uunilla, me huolehdimme, että digitaalinen mökkitie on kunnossa ja kauppa käy.</p>
                     </div>
                 </div>
+
+                {/* Contextual Case Study Link */}
+                <div className="mt-20 text-center">
+                    <Link href="/referenssit" className="group inline-flex flex-col items-center gap-4">
+                        <span className="text-slate-500 uppercase tracking-[0.2em] text-[10px] font-bold">Ei vain puhetta, vaan tuloksia</span>
+                        <div className="flex items-center gap-3 text-xl md:text-3xl font-serif italic text-slate-900 border-b border-stone-200 group-hover:border-slate-900 transition-all pb-1 leading-tight text-center">
+                            Selaa toteutettuja työnäytteitä
+                            <svg className="w-5 h-5 md:w-6 md:h-6 transform group-hover:translate-x-2 transition-transform shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </div>
+                    </Link>
+                </div>
             </section>
 
             {/* Price Section */}
@@ -197,10 +212,18 @@ export default function TarjousPage() {
                         Miksi Sivumaakarit?
                     </h2>
                     <p className="text-xl md:text-2xl text-slate-300 mb-10 leading-relaxed font-light">
-                        <strong className="text-white font-semibold">Olemme 100 % suomalainen yritys Lohjalta.</strong> Tavoitteenamme on auttaa paikallisia ja käytännönläheisiä yrittäjiä pärjäämään isoja tekijöitä vastaan.
+                        <strong className="text-white font-semibold">Olemme 100 % suomalainen yritys Lohjalta.</strong> Tavoitteenamme on auttaa käytännönläheisiä yrittäjiä pärjäämään isoja tekijöitä vastaan.
                         <br /><br />
-                        <strong className="text-white font-semibold">Me emme puhu koodia</strong> (vaikka osaamme sitä lukea kuin sanomalehteä). Me puhumme liiketoimintaa. Me emme halua vain tehdä sinulle verkkosivua – me haluamme korjata yrityksesi digitaalisen &quot;mökkitien&quot;, jotta asiakkaat löytävät perille asti ilman turhia mutkia.
+                        <strong className="text-white font-semibold">Me emme puhu sinulle koodia</strong> (vaikka osaamme sitä lukea kuin sanomalehteä). Me puhumme liiketoimintaa. Haluamme tehdä sinulle verkkosivut, joiden kautta asiakkaat löytävät sinut ja palvelusi ilman turhia mutkia.
                     </p>
+
+                    {/* Subtle Portfolio Picks */}
+                    <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-6 mb-16 opacity-40 hover:opacity-100 transition-opacity duration-700">
+                        <div className="text-white font-sans font-black text-2xl tracking-tighter">PuhdasPutki</div>
+                        <div className={`${lucky.className} text-white text-2xl tracking-wider`}>Mölyapinat</div>
+                        <div className={`${urbanist.className} text-white font-black text-2xl tracking-[0.2em] uppercase`}>Roboline Group</div>
+                        <div className="text-white font-serif italic text-xl tracking-tight">sivumaakarit.</div>
+                    </div>
                     <div className="bg-slate-800/50 p-8 md:p-12 rounded-3xl border border-slate-700/50 mb-12 shadow-2xl">
                         <h3 className={`${playfair.className} text-2xl md:text-4xl font-bold text-white mb-6 tracking-tight`}>
                             Oletko valmis lopettamaan demottelun ja aloittamaan oikeat kaupat?
@@ -208,8 +231,8 @@ export default function TarjousPage() {
                         <p className="text-slate-400 mb-8 max-w-2xl mx-auto text-sm md:text-base">
                             Ammattitaitosi ansaitsee arvoisensa näyteikkunan. Otetaan yhdessä askel kohti tuloksellisempaa arkea.
                         </p>
-                        <Link 
-                            href="#hinnasto" 
+                        <Link
+                            href="#hinnasto"
                             onClick={scrollToHinnasto}
                             className={`${playfair.className} inline-block bg-blue-600 hover:bg-blue-500 text-white font-bold py-5 px-10 rounded-xl transition-all shadow-lg text-lg ring-4 ring-slate-900/10`}
                         >
@@ -439,32 +462,7 @@ export default function TarjousPage() {
                 </div>
             </section>
 
-            <footer className="bg-slate-900 text-slate-400 py-16 px-4 text-center border-t border-slate-800">
-                <div className="container mx-auto">
-                    <div className="mb-6 font-bold text-white text-2xl tracking-tight italic">Sivumaakarit</div>
-                    <p className="max-w-md mx-auto mb-8 text-sm md:text-base leading-relaxed opacity-80">
-                        Rakennamme digitaalista tietä yrittäjille, jotka arvostavat suoraviivaisuutta, nopeutta ja todistettua laatua.
-                    </p>
-
-                    <address className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 mb-10 text-slate-200 font-medium not-italic">
-                        <a href="tel:+358505403661" className="hover:text-blue-400 transition-colors flex items-center gap-2">
-                            <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                            050 540 3661
-                        </a>
-                        <a href="mailto:info@sivumaakarit.fi" className="hover:text-blue-400 transition-colors flex items-center gap-2">
-                            <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                            info@sivumaakarit.fi
-                        </a>
-                    </address>
-
-                    <div className="text-[10px] opacity-40 uppercase tracking-widest mt-12 pb-2">
-                        Päivitetty viimeksi: Huhtikuu 2026
-                    </div>
-                    <div className="text-xs opacity-30">
-                        © 2026 Sivumaakarit. Kaikki oikeudet pidätetään.
-                    </div>
-                </div>
-            </footer>
+            <Footer />
         </main>
     );
 }

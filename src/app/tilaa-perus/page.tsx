@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Inter, Playfair_Display } from 'next/font/google';
 import { siteConfig } from "@/lib/site-config";
+import { Footer } from "@/components/layout/Footer";
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' });
@@ -130,6 +131,7 @@ export default function TilaaPerus() {
                     </div>
                 </div>
             </main>
+            <Footer />
         </div>
     );
 }

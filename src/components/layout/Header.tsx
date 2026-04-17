@@ -166,16 +166,15 @@ export function Header() {
                 <div className="container mx-auto px-4">
                     <div className="flex justify-between items-center h-16 md:h-20">
                         {/* Logo - Dark Theme */}
-                        <Link href="/" className="min-w-0 flex items-center gap-3 mr-4 group">
-                            <div className={`${urbanist.className} font-bold text-xl md:text-3xl text-white tracking-widest uppercase line-clamp-1 group-hover:text-cyan-400 transition-colors opacity-90`}>
-                                Sivumaakarit
+                        <Link href="/" className="min-w-0 flex items-center mr-4 group">
+                            <div className={`${playfair.className} text-xl md:text-3xl italic text-white lowercase group-hover:text-cyan-400 transition-colors`}>
+                                sivumaakarit.
                             </div>
                         </Link>
 
-                        {/* Promotional Content - Desktop */}
                         <div className="hidden md:flex items-center gap-8">
                             <span className="text-blue-100 text-lg font-medium">
-                                Tarjous: Kotisivut nyt vain <span className="text-cyan-400 font-bold text-2xl">990€</span>
+                                Huolettomat kotisivut avaimet käteen -pakettina nyt <span className="text-cyan-400 font-bold text-2xl">990€</span>
                             </span>
 
                             {/* Animated Arrow pointing to button */}
@@ -188,7 +187,7 @@ export function Header() {
                                  onClick={scrollToHinnasto}
                                  className="bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white px-8 py-3.5 rounded-full font-bold transition-all shadow-lg hover:shadow-cyan-500/25 hover:scale-105 text-lg"
                              >
-                                 Osta nyt 990 €
+                                 Katso paketti
                              </Link>
                         </div>
 
@@ -215,7 +214,7 @@ export function Header() {
                 {isOpen && showBlueHeader && (
                     <div className="md:hidden absolute top-16 left-0 w-full bg-[#0A1128] border-t border-blue-900/50 shadow-2xl py-8 px-6 flex flex-col gap-6 animate-in slide-in-from-top-2 duration-250 text-center">
                         <span className="text-blue-100 text-xl font-medium block">
-                            Tarjous: Kotisivut nyt vain <span className="text-cyan-400 font-bold">990€</span>
+                            Huolettomat kotisivut avaimet käteen -pakettina nyt <span className="text-cyan-400 font-bold">990€</span>
                         </span>
                         <div className="flex justify-center">
                             <svg className="w-6 h-6 text-cyan-400 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -227,7 +226,7 @@ export function Header() {
                             onClick={scrollToHinnasto}
                             className="w-full bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white py-4 rounded-xl font-bold text-center shadow-lg block text-xl"
                         >
-                            Osta nyt 990 €
+                            Katso paketti
                         </Link>
                     </div>
                 )}

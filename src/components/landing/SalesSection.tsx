@@ -58,7 +58,7 @@ export function SalesSection() {
                         <div className="mb-16 animate-in fade-in zoom-in duration-1000 delay-300">
                             <h3 className={`${playfair.className} text-blue-500 font-bold tracking-[0.2em] mb-8 uppercase text-lg md:text-xl italic`}>
                                 Sivumaakarit - laadukkaat ja nopeat nettisivut
-                            </h3>            
+                            </h3>
                             <div className="relative inline-block animate-swing origin-top">
                                 <Image
                                     src="/images/sivumaakarit.webp"
@@ -70,7 +70,7 @@ export function SalesSection() {
                             </div>
                         </div>
                         <h2 className={`${playfair.className} text-3xl md:text-5xl lg:text-6xl font-bold mb-8 text-white tracking-tight leading-tight italic`}>
-                            Karut faktat: Jos yritystäsi ei löydy heti haun alusta, 
+                            Karut faktat: Jos yritystäsi ei löydy heti netistä,
                             <span className="text-red-400 block sm:inline font-bold italic mt-2 md:mt-0 md:ml-2">kaupat menevät ohi.</span>
                         </h2>
                         <p className={`${inter.className} text-slate-200 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto font-light`}>
@@ -85,10 +85,10 @@ export function SalesSection() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-32 max-w-6xl mx-auto">
                         {/* Google Visibility */}
                         <div className="group relative overflow-hidden rounded-[2.5rem] h-[400px] border border-white/5 hover:border-cyan-500/30 transition-all duration-700 hover:-translate-y-2 shadow-2xl">
-                            <Image 
-                                src="/images/google-visibility-cottage.webp" 
-                                alt="Google Näkyvyys mökillä" 
-                                fill 
+                            <Image
+                                src="/images/google-visibility-cottage.webp"
+                                alt="Google Näkyvyys mökillä"
+                                fill
                                 className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-50 group-hover:opacity-70"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent p-10 flex flex-col justify-end">
@@ -102,10 +102,10 @@ export function SalesSection() {
 
                         {/* Google Maps */}
                         <div className="group relative overflow-hidden rounded-[2.5rem] h-[400px] border border-white/5 hover:border-green-500/30 transition-all duration-700 hover:-translate-y-2 shadow-2xl">
-                            <Image 
-                                src="/images/google-maps-countryside.webp" 
-                                alt="Google Maps maaseudulla" 
-                                fill 
+                            <Image
+                                src="/images/google-maps-countryside.webp"
+                                alt="Google Maps maaseudulla"
+                                fill
                                 className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-50 group-hover:opacity-70"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent p-10 flex flex-col justify-end">
@@ -119,10 +119,10 @@ export function SalesSection() {
 
                         {/* ChatGPT Readiness */}
                         <div className="group relative overflow-hidden rounded-[2.5rem] h-[400px] border border-white/5 hover:border-purple-500/30 transition-all duration-700 hover:-translate-y-2 shadow-2xl">
-                            <Image 
-                                src="/images/ai-readiness-person.webp" 
-                                alt="Tekoälyvalmius" 
-                                fill 
+                            <Image
+                                src="/images/ai-readiness-person.webp"
+                                alt="Tekoälyvalmius"
+                                fill
                                 className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-50 group-hover:opacity-70"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent p-10 flex flex-col justify-end">
@@ -149,9 +149,9 @@ export function SalesSection() {
                                 />
                             </div>
                             <h2 className={`${playfair.className} text-2xl md:text-6xl font-bold tracking-tight text-white leading-tight italic`}>
-                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-white to-cyan-300 block">
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-white to-cyan-300 block">
                                     Teemme sivuistasi huippuunsa viritetyn myyntikoneen.
-                                    </span>
+                                </span>
                             </h2>
                         </div>
                     </div>
@@ -162,13 +162,13 @@ export function SalesSection() {
                         <div className="group relative p-1 rounded-2xl transition-all duration-500 hover:scale-105 shadow-[0_0_15px_rgba(34,211,238,0.1)] hover:shadow-[0_0_40px_rgba(34,211,238,0.3)]">
                             <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 rounded-2xl animate-shimmer opacity-30 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '1px', backgroundSize: '200% 200%' }}></div>
                             <div className="relative bg-slate-950 p-8 rounded-2xl h-full flex flex-col items-center">
-                                 <div className="w-20 h-20 rounded-full border-4 border-green-400 flex items-center justify-center text-green-400 font-black text-3xl mb-6 shadow-[0_0_20px_rgba(74,222,128,0.6)] bg-green-400/5">
-                                     100
-                                 </div>
-                                 <h3 className={`${playfair.className} text-xl font-bold text-white mb-4 text-center italic`}>Tekoäly- ja hakukonelöytyvyys</h3>
-                                 <p className={`${inter.className} text-slate-300 text-sm md:text-base text-center leading-relaxed font-light`}>
-                                     Tekninen 100/100 SEO-takuu. Varmistamme, että yrityksesi on täydellinen sekä Googlelle että tekoälysovelluksille (kuten ChatGPT ja Gemini).
-                                 </p>
+                                <div className="w-20 h-20 rounded-full border-4 border-green-400 flex items-center justify-center text-green-400 font-black text-3xl mb-6 shadow-[0_0_20px_rgba(74,222,128,0.6)] bg-green-400/5">
+                                    100
+                                </div>
+                                <h3 className={`${playfair.className} text-xl font-bold text-white mb-4 text-center italic`}>Tekoäly- ja hakukonelöytyvyys</h3>
+                                <p className={`${inter.className} text-slate-300 text-sm md:text-base text-center leading-relaxed font-light`}>
+                                    Tekninen 100/100 SEO-takuu. Varmistamme, että yrityksesi on täydellinen sekä Googlelle että tekoälysovelluksille (kuten ChatGPT ja Gemini).
+                                </p>
                             </div>
                         </div>
 
@@ -176,14 +176,14 @@ export function SalesSection() {
                         <div className="group relative p-1 rounded-2xl transition-all duration-500 hover:scale-105 shadow-[0_0_15px_rgba(74,222,128,0.1)] hover:shadow-[0_0_40px_rgba(74,222,128,0.3)]">
                             <div className="absolute inset-0 bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 rounded-2xl animate-shimmer opacity-30 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '1px', backgroundSize: '200% 200%' }}></div>
                             <div className="relative bg-slate-950 p-8 rounded-2xl h-full flex flex-col items-center">
-                                 <div className="w-20 h-20 rounded-full border-4 border-cyan-400 flex flex-col items-center justify-center text-cyan-400 font-black mb-6 shadow-[0_0_20px_rgba(34,211,238,0.6)] animate-glitter bg-cyan-400/5">
-                                     <span className="text-[10px] uppercase tracking-tighter opacity-70">Eliitti</span>
-                                     <span className="text-xl leading-none">85-100</span>
-                                 </div>
-                                 <h3 className={`${playfair.className} text-xl font-bold text-white mb-4 text-center italic`}>Esteettömyys</h3>
-                                 <p className={`${inter.className} text-slate-300 text-sm md:text-base text-center leading-relaxed font-light`}>
-                                     Lupaamme vähintään 85+ tason. Sivusi noudattaa Googlen käytettävyysstandardeja, jotta kaikki asiakkaat pääsevät perille ilman esteitä.
-                                 </p>
+                                <div className="w-20 h-20 rounded-full border-4 border-cyan-400 flex flex-col items-center justify-center text-cyan-400 font-black mb-6 shadow-[0_0_20px_rgba(34,211,238,0.6)] animate-glitter bg-cyan-400/5">
+                                    <span className="text-[10px] uppercase tracking-tighter opacity-70">Eliitti</span>
+                                    <span className="text-xl leading-none">85-100</span>
+                                </div>
+                                <h3 className={`${playfair.className} text-xl font-bold text-white mb-4 text-center italic`}>Esteettömyys</h3>
+                                <p className={`${inter.className} text-slate-300 text-sm md:text-base text-center leading-relaxed font-light`}>
+                                    Lupaamme vähintään 85+ tason. Sivusi noudattaa Googlen käytettävyysstandardeja, jotta kaikki asiakkaat pääsevät perille ilman esteitä.
+                                </p>
                             </div>
                         </div>
 
@@ -191,14 +191,14 @@ export function SalesSection() {
                         <div className="group relative p-1 rounded-2xl transition-all duration-500 hover:scale-105 shadow-[0_0_15px_rgba(192,132,252,0.1)] hover:shadow-[0_0_40px_rgba(192,132,252,0.3)]">
                             <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 rounded-2xl animate-shimmer opacity-30 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '1px', backgroundSize: '200% 200%' }}></div>
                             <div className="relative bg-slate-950 p-8 rounded-2xl h-full flex flex-col items-center">
-                                 <div className="w-20 h-20 rounded-full border-4 border-purple-400 flex flex-col items-center justify-center text-purple-400 font-black mb-6 shadow-[0_0_20px_rgba(192,132,252,0.6)] animate-glitter bg-purple-400/5">
-                                     <span className="text-[10px] uppercase tracking-tighter opacity-70">Eliitti</span>
-                                     <span className="text-xl leading-none">95-100</span>
-                                 </div>
-                                 <h3 className={`${playfair.className} text-xl font-bold text-white mb-4 text-center italic`}>Parhaat käytännöt</h3>
-                                 <p className={`${inter.className} text-slate-300 text-sm md:text-base text-center leading-relaxed font-light`}>
-                                     Teollisuuden kärkeä. Käytämme vain moderneinta ja turvallisinta tekniikkaa. Sivusi on aina teknisesti aikaansa edellä.
-                                 </p>
+                                <div className="w-20 h-20 rounded-full border-4 border-purple-400 flex flex-col items-center justify-center text-purple-400 font-black mb-6 shadow-[0_0_20px_rgba(192,132,252,0.6)] animate-glitter bg-purple-400/5">
+                                    <span className="text-[10px] uppercase tracking-tighter opacity-70">Eliitti</span>
+                                    <span className="text-xl leading-none">95-100</span>
+                                </div>
+                                <h3 className={`${playfair.className} text-xl font-bold text-white mb-4 text-center italic`}>Parhaat käytännöt</h3>
+                                <p className={`${inter.className} text-slate-300 text-sm md:text-base text-center leading-relaxed font-light`}>
+                                    Teollisuuden kärkeä. Käytämme vain moderneinta ja turvallisinta tekniikkaa. Sivusi on aina teknisesti aikaansa edellä.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -214,7 +214,7 @@ export function SalesSection() {
                                     {/* Guarantee Badge */}
                                     <div className="absolute -top-6 -right-6 z-20 animate-bounce">
                                         <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 text-black font-black text-[10px] md:text-xs px-3 py-1 rounded-full border-2 border-black shadow-[0_0_20px_rgba(234,179,8,0.5)] rotate-12 flex items-center gap-1">
-                                            <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 13.17l7.59-7.59L19 7l-9 10z"/></svg>
+                                            <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 13.17l7.59-7.59L19 7l-9 10z" /></svg>
                                             TAKUU
                                         </div>
                                     </div>
