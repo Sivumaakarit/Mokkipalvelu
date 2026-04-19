@@ -30,19 +30,26 @@ export function PricingTiers() {
 
                         <div className="space-y-4 flex-grow mb-8">
                             <ul className="space-y-4">
-                                {[
-                                    "Moderni, huomiota herättävä ja mobiilioptimoitu sivusto.",
-                                    "Huippuunsa viritetty latausnopeus (Google tykkää).",
-                                    <><strong className="text-slate-900">Maksaa itsensä takaisin nopeasti!</strong> Esim. jo kahdella uudella palveluasiakkaalla.</>,
-                                    "Valmiiksi optimoitu tekstirakenne ja hakukonenäkyvyys.",
-                                    "Yhteydenottolomake ja painikkeet tai upotukset Facebookiin, Instagramiin ja muihin sosiaalisiin medioihin.",
-                                    <><strong className="text-slate-900">Täysi omistajuus</strong> kaikkeen työhön.</>
-                                ].map((feature, idx) => (
-                                    <li key={idx} className="flex gap-3 text-slate-700 text-sm items-start">
-                                        <svg className="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                                        <span className="leading-snug">{feature}</span>
-                                    </li>
-                                ))}
+                                <li className="flex gap-3 text-slate-700 text-sm items-start">
+                                    <svg className="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span className="leading-snug"><strong className="text-slate-900">1–3 myyntioptimoitua sivua:</strong> Tehokas kokonaisuus: esim. etusivu, palvelukuvaukset ja yhteystiedot.</span>
+                                </li>
+                                <li className="flex gap-3 text-slate-700 text-sm items-start">
+                                    <svg className="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span className="leading-snug"><strong className="text-slate-900">Harkittu tekstirakenne:</strong> Myyvä sisältömuotoilu, joka ohjaa asiakkaan suoraan yhteydenottoon.</span>
+                                </li>
+                                <li className="flex gap-3 text-slate-700 text-sm items-start">
+                                    <svg className="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span className="leading-snug"><strong className="text-slate-900">Huippuunsa viritetty nopeus:</strong> Salama-nopea latausaika parantaa käyttäjäkokemusta ja Google-näkyvyyttä.</span>
+                                </li>
+                                <li className="flex gap-3 text-slate-700 text-sm items-start">
+                                    <svg className="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span className="leading-snug"><strong className="text-slate-900">Moderni & mobiilioptimoitu:</strong> Sivusto toimii upeasti puhelimella, tabletilla ja tietokoneella.</span>
+                                </li>
+                                <li className="flex gap-3 text-slate-700 text-sm items-start">
+                                    <svg className="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span className="leading-snug"><strong className="text-slate-900">Someliitännät & yhteydenotto:</strong> Integroidut some-painikkeet (FB/IG) ja ammattimainen lomake.</span>
+                                </li>
                             </ul>
                         </div>
 
@@ -73,22 +80,31 @@ export function PricingTiers() {
                                 <p className="text-xs text-slate-400">Kertamaksu, ei erillistä aloitusmaksua.</p>
                             </div>
 
-                            <p className="text-slate-400 text-sm">Huoleton arki sen jälkeen, kun sivut on julkaistu.</p>
+                            <p className="text-slate-400 text-sm">Huoleton avaimet käteen -ratkaisu julkaisun jälkeen.</p>
                         </div>
 
                         <div className="space-y-4 flex-grow mb-8">
                             <ul className="space-y-4">
-                                {[
-                                    <><strong className="text-white">Hoidamme kaiken julkaisuun ja ylläpitoon:</strong> Domain, web-hotelli ja täysin avaimet käteen -asennus nettiin. Sinun ei tarvitse tehdä mitään.</>,
-                                    <><strong className="text-white">Tekninen sydän:</strong> SSL-salaus, tietoturva, automaattiset varmuuskopiot ja nopeusseuranta.</>,
-                                    <><strong className="text-white">1 pieni päivitys/kk:</strong> Uusi kuva tai tekstinmuutos esim. &quot;Nyt kesätarjous:&quot; (max 15min).</>,
-                                    "Tukipyyntöjen vasteaika max kaksi arkipäivää (lisätyöt 75 €/h)."
-                                ].map((feature, idx) => (
-                                    <li key={idx} className="flex gap-3 text-slate-300 text-sm items-start">
-                                        <svg className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                                        <span className="leading-snug">{feature}</span>
-                                    </li>
-                                ))}
+                                <li className="flex gap-3 text-slate-300 text-sm items-start">
+                                    <svg className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span className="leading-snug"><strong className="text-white">Sisältää kaiken 'Pelkkä sivu' -paketista:</strong> Kaikki myyntioptimoidut ominaisuudet ja nopeus.</span>
+                                </li>
+                                <li className="flex gap-3 text-slate-300 text-sm items-start">
+                                    <svg className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span className="leading-snug"><strong className="text-white">Täysi asennus nettiin:</strong> Hoidamme domainin, web-hotellin ja julkaisun puolestasi.</span>
+                                </li>
+                                <li className="flex gap-3 text-slate-300 text-sm items-start">
+                                    <svg className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span className="leading-snug"><strong className="text-white">Tekninen suojaus:</strong> SSL-salaus, tietoturva, automaattiset varmuuskopiot ja valvonta.</span>
+                                </li>
+                                <li className="flex gap-3 text-slate-300 text-sm items-start">
+                                    <svg className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span className="leading-snug"><strong className="text-white">Kuukausittainen päivitys:</strong> Sisältää yhden pienen muutoksen (esim. uusi kuva tai teksti).</span>
+                                </li>
+                                <li className="flex gap-3 text-slate-300 text-sm items-start">
+                                    <svg className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span className="leading-snug"><strong className="text-white">Luotettava tuki:</strong> Henkilökohtainen tuki ja vasteaika max 2 arkipäivää (lisätyöt 75 €/h).</span>
+                                </li>
                             </ul>
                         </div>
 
@@ -119,18 +135,26 @@ export function PricingTiers() {
 
                         <div className="space-y-4 flex-grow mb-8">
                             <ul className="space-y-4">
-                                {[
-                                    "Sisältää kaikki Perus-tason huolenpitopalvelut.",
-                                    <><strong className="text-white">Asiantuntijapankki (2 h/kk):</strong> Käytä aika sisältöjen päivitykseen, visuaalisen ilmeen viilaukseen tai analytiikkatukeen.</>,
-                                    <><strong className="text-white">Jatkuva SEO ja valvonta:</strong> Tsekkaamme kuukausittain Google-sijoitukset ja tekniikan, jotta pysyt kisassa kärjessä.</>,
-                                    "Tieto hyvissä ajoin ajan loppumisesta (lisätyöt 75 €/h).",
-                                    <><strong className="text-white">Priorisoitu vasteaika max 24h.</strong></>
-                                ].map((feature, idx) => (
-                                    <li key={idx} className="flex gap-3 text-slate-300 text-sm items-start">
-                                        <svg className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                                        <span className="leading-snug">{feature}</span>
-                                    </li>
-                                ))}
+                                <li className="flex gap-3 text-slate-300 text-sm items-start">
+                                    <svg className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span className="leading-snug"><strong className="text-white">Kaikki Perus-tason edut:</strong> Sisältää kaiken domain-asennuksesta ja tietoturvasta varmuuskopioihin.</span>
+                                </li>
+                                <li className="flex gap-3 text-slate-300 text-sm items-start">
+                                    <svg className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span className="leading-snug"><strong className="text-white">Asiantuntijapankki (2 h/kk):</strong> Oma ”digiassistenttisi” – käytä aika sisältöjen päivitykseen, ilmeen viilaukseen tai analytiikkaan.</span>
+                                </li>
+                                <li className="flex gap-3 text-slate-300 text-sm items-start">
+                                    <svg className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span className="leading-snug"><strong className="text-white">Jatkuva SEO-valvonta:</strong> Tsekkaamme kuukausittain Google-sijoituksesi ja teknisen kunnon, jotta pysyt kisassa kärjessä.</span>
+                                </li>
+                                <li className="flex gap-3 text-slate-300 text-sm items-start">
+                                    <svg className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span className="leading-snug"><strong className="text-white">Priorisoitu tuki:</strong> Olet aina jonon kärjessä. Vasteaikamme on erittäin nopea, max 24 tuntia.</span>
+                                </li>
+                                <li className="flex gap-3 text-slate-300 text-sm items-start">
+                                    <svg className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <span className="leading-snug"><strong className="text-white">Läpinäkyvä seuranta:</strong> Saat tiedon tuntien käytöstä hyvissä ajoin (lisätyöt 75 €/h).</span>
+                                </li>
                             </ul>
                         </div>
 

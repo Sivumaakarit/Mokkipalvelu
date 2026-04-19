@@ -6,74 +6,71 @@ import Link from "next/link";
 import { CaseStudyShowcase } from "@/components/landing/CaseStudyShowcase";
 import { Footer } from "@/components/layout/Footer";
 
-const projects = [
-  {
-    id: "roboline",
-    title: "Roboline Group",
-    category: "Brändi ja verkkosivusto",
-    description: "Innovaatioiden digitaalinen koti. Fokus asiantuntijuuden esiintuomisessa ja palveluiden uskottavassa esittelyssä.",
-    tags: ["UX Design", "Copywriting", "Performance"],
-    desktopImage: "/images/roboline-desktop.webp",
-    mobileImage: "/images/roboline-mobile2.webp",
-    tabletImage: "/images/roboline-tablet.webp",
-    accentColor: "amber-600",
-    accentBorder: "border-amber-600",
-    mobileBgColor: "#ffffff",
-    tabletBgColor: "#ffffff",
-    link: "https://roboline-innovations.fi",
-    linkText: "Tutustu Robolineen →"
-  },
-  {
-    id: "molarit",
-    title: "Mölyapinat",
-    category: "Yhteisö ja esiintyminen",
-    description: "Mölyapinat on energinen lastenmusiikkibändi, joka tarjoaa osallistavia esityksiä ja tarttuvaa musiikkia koko perheelle.",
-    tags: ["Mobile First", "Community", "Fast Load"],
-    desktopImage: "/images/molarit-desktop.webp",
-    mobileImage: "/images/molarit-mobile2.webp",
-    tabletImage: "/images/molarit-tablet.webp",
-    accentColor: "teal-600",
-    accentBorder: "border-teal-600",
-    mobileBgColor: "#d5ecd9",
-    tabletBgColor: "#fefbe9",
-    link: "https://molyapinat.fi",
-    linkText: "Katso mölyapinat.fi →"
-  },
-  {
-    id: "mokkipalvelu",
-    title: "Mokkipalvelu",
-    category: "Huoltopalvelut & Digi",
-    description: "Nykyaikainen mökkihuollon tilausjärjestelmä ja brändi-ilme. Toteutus, jossa huippunopea suorituskyky kohtaa luotettavan ja helposti lähestyttävän palvelumuotoilun.",
-    tags: ["100/100 Performance", "User Experience", "Identity"],
-    desktopImage: "/images/mokkipalvelu_desktop.webp",
-    mobileImage: "/images/mokkipalvelu_mobile.webp",
-    tabletImage: "/images/mokkipalvelu_tablet.webp",
-    accentColor: "blue-600",
-    accentBorder: "border-blue-600",
-    mobileBgColor: "#ffffff",
-    tabletBgColor: "#ffffff",
-    link: "/mokkipalvelu",
-    linkText: "Mokkipalvelu-sivustolle →"
-  }
-];
+  const projects = [
+    {
+      id: "roboline",
+      title: "Roboline Group",
+      category: "Brändi ja verkkosivusto",
+      description: "Innovaatioiden digitaalinen koti. Painopiste asiantuntijuuden esiintuomisessa ja palveluiden uskottavassa esittelyssä.",
+      tags: ["UX-SUUNNITTELU", "SISÄLLÖNTUOTANTO", "SUORITUSKYKY"],
+      desktopImage: "/images/roboline-desktop.webp",
+      mobileImage: "/images/roboline-mobile2.webp",
+      tabletImage: "/images/roboline-tablet.webp",
+      accentColor: "blue-600",
+      accentBorder: "border-blue-600",
+      link: "https://www.roboline.fi",
+      linkText: "Tutustu Robolineen →",
+      mobileBgColor: "#ffffff",
+      tabletBgColor: "#ffffff"
+    },
+    {
+      id: "molarit",
+      title: "Mölyapinat",
+      category: "Yhteisö ja esiintyminen",
+      description: "Lastenmusiikkibändin iloinen ja värikäs yhteisö. Painopiste bändin energian välittämisessä ja keikkatietojen selkeässä esittämisessä.",
+      tags: ["MOBIILI EDELLÄ", "YHTEISÖ", "NOPEA LATAUS"],
+      desktopImage: "/images/molarit-desktop.webp",
+      mobileImage: "/images/molarit-mobile2.webp",
+      tabletImage: "/images/molarit-tablet.webp",
+      accentColor: "blue-600",
+      accentBorder: "border-blue-600",
+      link: "https://molyapinat.fi",
+      linkText: "Katso Mölyapinat-sivusto →",
+      mobileBgColor: "#d3f0db",
+      tabletBgColor: "#fefce8"
+    },
+    {
+      id: "mokkipalvelu",
+      title: "Mokkipalvelu",
+      category: "Huoltopalvelut & Digi",
+      description: "Mökkihuollon moderni brändi-uudistus. Painopiste tilaamisen vaivattomuudessa ja luotettavuuden vahvistamisessa.",
+      tags: ["100/100 SUORITUSKYKY", "KÄYTTÖKOKEMUS", "IDENTITEETTI"],
+      desktopImage: "/images/mokkipalvelu_desktop.webp",
+      mobileImage: "/images/mokkipalvelu_mobile.webp",
+      tabletImage: "/images/mokkipalvelu_tablet.webp",
+      accentColor: "blue-600",
+      accentBorder: "border-blue-600",
+      link: "/mokkipalvelu",
+      linkText: "Mokkipalvelu-sivustolle →",
+      mobileBgColor: "#ffffff",
+      tabletBgColor: "#ffffff"
+    }
+  ];
 
 export default function ReferenssitPage() {
   const [selectedProject, setSelectedProject] = useState(projects[0]);
 
   return (
-    <div className="bg-stone-50 min-h-screen">
+    <div className="bg-white min-h-screen">
       {/* Hero Section */}
       <section className="pt-32 pb-0 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
-            <div className="text-stone-400 text-sm font-bold uppercase tracking-[0.2em] mb-4">
-              Tekoälyavusteisen muotoilun showcase
-            </div>
-            <h1 className="text-4xl md:text-6xl font-serif text-stone-900 mb-6 leading-[1.1]">
-              Katso työmme – autamme yrityksiä <span className="italic text-stone-500">loistamaan verkossa</span>.
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-stone-900 mb-8 leading-[1.05] tracking-tight">
+              Selkeä viesti, enemmän asiakkaita.
             </h1>
-            <p className="text-xl text-stone-600 mb-6 leading-relaxed font-sans">
-              Emme vain koodaa sivuja. Me muotoilemme kokemuksia, jotka ovat sisällöllisesti kirkkaita. Tässä poimintoja töistämme.
+            <p className="text-xl md:text-2xl text-stone-600 mb-6 leading-relaxed font-sans max-w-2xl">
+              Digitaalisia kokemuksia, jotka on hiottu lopputulos edellä. Katso valitut palat projekteistamme.
             </p>
           </div>
         </div>
@@ -99,11 +96,10 @@ export default function ReferenssitPage() {
       </section>
 
       {/* Portfolio Grid */}
-      <section className="py-24 bg-stone-50">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="w-full border-t border-stone-200 mb-12"></div>
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-3xl font-serif text-stone-900">Kaikki projektit</h2>
+            <h2 className="text-3xl font-serif text-stone-900">Poimintoja töistämme</h2>
             <div className="text-stone-400 text-sm font-medium tracking-widest uppercase">Klikkaa nähdäksesi 3D-esittely</div>
           </div>
 
@@ -115,37 +111,50 @@ export default function ReferenssitPage() {
                   setSelectedProject(project);
                   document.getElementById('showcase')?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className={`group text-left bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all border-2 ${selectedProject.id === project.id ? project.accentBorder : 'border-stone-200'}`}
+                className={`group text-left bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-stone-100 flex flex-col ${selectedProject.id === project.id ? 'ring-2 ring-offset-4 ring-blue-600/20' : ''}`}
               >
-                <div className="aspect-[16/10] bg-stone-100 relative overflow-hidden">
-                  {/* Background pattern for placeholder */}
-                  <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-stone-900 via-transparent to-transparent"></div>
-                  <img
-                    src={project.desktopImage}
-                    alt={project.title}
-                    className="absolute inset-0 w-full h-full object-cover object-top transform scale-[1.12] origin-bottom group-hover:scale-[1.18] transition-transform duration-700"
-                    style={{ imageRendering: "-webkit-optimize-contrast" }}
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500 z-10"></div>
-                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-20">
-                    <span className={`px-6 py-3 rounded-full bg-white/95 backdrop-blur text-stone-900 text-xs font-bold uppercase tracking-widest shadow-xl transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ring-1 ring-white/20`}>
-                      Katso esittely
-                    </span>
+                {/* Image Container with Padding and Frame */}
+                <div className="p-6 bg-stone-50/50">
+                  <div className="aspect-[16/10] relative rounded-xl overflow-hidden shadow-lg border border-stone-200/50 bg-white group-hover:shadow-2xl transition-all duration-500">
+                    {/* Browser Header Bar */}
+                    <div className="absolute top-0 left-0 right-0 h-6 bg-stone-100/80 border-b border-stone-200/50 flex items-center px-3 gap-1 z-20">
+                      <div className="w-1.5 h-1.5 rounded-full bg-stone-300"></div>
+                      <div className="w-1.5 h-1.5 rounded-full bg-stone-300"></div>
+                      <div className="w-1.5 h-1.5 rounded-full bg-stone-300"></div>
+                    </div>
+                    
+                    {/* The Website Image */}
+                    <div className="absolute inset-0 pt-6 overflow-hidden">
+                      <img
+                        src={project.desktopImage}
+                        alt={project.title}
+                        className="w-full h-full object-cover object-top transform scale-[1.05] origin-top group-hover:scale-[1.10] transition-transform duration-700"
+                        style={{ imageRendering: "-webkit-optimize-contrast" }}
+                      />
+                    </div>
                   </div>
                 </div>
-                <div className="p-8">
-                  <div className={`text-xs uppercase tracking-widest font-bold mb-3 text-${project.accentColor}`}>
-                    {project.category}
+
+                {/* Text Content */}
+                <div className="p-8 pb-10 flex-grow flex flex-col">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className={`h-1.5 w-1.5 rounded-full bg-${project.accentColor}`}></span>
+                    <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-stone-400">
+                      {project.category}
+                    </span>
                   </div>
-                  <h3 className="text-2xl font-serif text-stone-900 mb-4 group-hover:text-stone-700 transition-colors">
+                  
+                  <h3 className="text-2xl font-serif text-stone-900 mb-4 tracking-tight">
                     {project.title}
                   </h3>
-                  <p className="text-stone-600 mb-6 leading-relaxed text-sm">
+                  
+                  <p className="text-stone-500 text-sm leading-relaxed mb-8 flex-grow">
                     {project.description}
                   </p>
-                  <div className="flex flex-wrap gap-2">
+                  
+                  <div className="flex flex-wrap gap-1.5">
                     {project.tags.map((tag, tIdx) => (
-                      <span key={tIdx} className="text-[10px] px-2 py-1 bg-stone-100 text-stone-500 rounded-full font-bold uppercase tracking-tighter">
+                      <span key={tIdx} className="text-[9px] px-2.5 py-1 bg-white text-stone-400 border border-stone-100 rounded-lg font-bold uppercase tracking-wider">
                         {tag}
                       </span>
                     ))}
