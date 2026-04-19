@@ -13,7 +13,7 @@ export function PricingTiers() {
                         Mitä saat tällä hinnalla?
                     </h2>
                     <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-                        Valitse tarpeisiisi sopiva malli. Ei piilokuluja.
+                        Valitse tarpeisiisi sopiva malli. Ei piilokuluja tai lukkovuosia.
                     </p>
                 </div>
 
@@ -67,9 +67,12 @@ export function PricingTiers() {
                         </div>
                         <div className="mb-8 mt-2">
                             <h3 className="text-xl font-bold text-white mb-2">Ylläpito & Turva – Perus</h3>
-                            <div className="flex items-baseline gap-2 mb-4">
-                                <span className="text-4xl md:text-5xl font-extrabold text-white">50 €</span>
-                                <span className="text-slate-400 text-base md:text-lg">/ kk</span>
+                            <div className="flex flex-col mb-4">
+                                <div className="flex items-baseline gap-2">
+                                    <span className="text-4xl md:text-5xl font-extrabold text-white">50 €</span>
+                                    <span className="text-slate-400 text-base md:text-lg">/ kk</span>
+                                </div>
+                                <span className="text-cyan-400/80 text-xs mt-1 font-medium">Voit irtisanoa milloin vain (1 kk).</span>
                             </div>
 
                             <div className="bg-slate-800/80 rounded-xl p-4 border border-cyan-900/40 mb-4 shadow-inner">
@@ -117,9 +120,12 @@ export function PricingTiers() {
                     <div className="bg-slate-800 rounded-3xl p-8 shadow-sm border border-slate-600 relative flex flex-col cursor-default group hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                         <div className="mb-8">
                             <h3 className="text-xl font-bold text-white mb-2">Ylläpito & Turva – Plus</h3>
-                            <div className="flex items-baseline gap-2 mb-4">
-                                <span className="text-4xl md:text-5xl font-extrabold text-blue-400">150 €</span>
-                                <span className="text-slate-400 text-base md:text-lg">/ kk</span>
+                            <div className="flex flex-col mb-4">
+                                <div className="flex items-baseline gap-2">
+                                    <span className="text-4xl md:text-5xl font-extrabold text-blue-400">150 €</span>
+                                    <span className="text-slate-400 text-base md:text-lg">/ kk</span>
+                                </div>
+                                <span className="text-blue-400/80 text-xs mt-1 font-medium">Voit irtisanoa milloin vain (1 kk).</span>
                             </div>
 
                             <div className="bg-slate-700/30 rounded-xl p-4 border border-slate-600/50 mb-4 shadow-inner">
@@ -170,6 +176,7 @@ export function PricingTiers() {
                     <p className="font-semibold text-slate-700">Tärkeää tietoa hinnoittelusta:</p>
                     <ul className="list-disc pl-5 space-y-2">
                         <li>Kaikkiin hintoihin lisätään voimassa oleva arvonlisävero (alv 25,5 %).</li>
+                        <li><strong className="text-slate-700">Ei määräaikaisia lukkovuosia.</strong> Kuukausitilauksen (Perus ja Plus) voi perua milloin tahansa (1 kk tilausjakso/irtisanomisaika).</li>
                         <li>Ylläpito- ja Turvapaketit saatetaan laskuttaa aloitusmaksulla yrityksen tarpeiden mukaan. 7 päivän toimitusaika koskee normaaleja onepagereita heti materiaalien saavuttua.</li>
                     </ul>
                 </div>

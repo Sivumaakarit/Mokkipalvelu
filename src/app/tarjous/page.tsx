@@ -434,6 +434,10 @@ export default function TarjousPage() {
                                             <button type="submit" className={`${playfair.className} w-full bg-blue-700 text-white font-bold py-5 rounded-2xl hover:bg-blue-800 transition-all shadow-[0_15px_30px_rgba(29,78,216,0.3)] hover:shadow-none hover:translate-y-0.5 transform active:scale-95 text-xl tracking-tight`}>
                                                 Pyydä lisätietoja tai arvio
                                             </button>
+                                            <p className="text-center text-xs text-slate-400 mt-4 leading-relaxed">
+                                                <strong className="font-semibold text-slate-500">Ei määräaikaisia lukkovuosia.</strong><br />
+                                                Tilauksen voi perua milloin tahansa (1 kk irtisanomisaika). Yhteydenotto ei sido sinua tilaamaan.
+                                            </p>
                                         </form>
                                     </div>
                                     <div className="mt-10 pt-10 border-t border-slate-200/50 flex flex-col sm:flex-row items-center justify-center gap-6 text-slate-400 text-sm font-bold uppercase tracking-widest">

@@ -47,6 +47,9 @@ export default function MokkipalveluPage() {
           >
             KYSY LISÄÄ TAI PYYDÄ ARVIO
           </Link>
+          <p className="mt-6 text-sm text-slate-400/80 max-w-sm mx-auto leading-relaxed">
+            <strong className="text-slate-300">Ei määräaikaisia lukkovuosia.</strong><br/>Kuukausitilauksen voi perua milloin tahansa (1 kk irtisanomisaika). Yhteydenotto ei sido sinua tilaamaan.
+          </p>
         </div>
       </section>
 

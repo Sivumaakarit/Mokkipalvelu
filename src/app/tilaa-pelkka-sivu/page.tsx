@@ -73,15 +73,15 @@ export default function TilaaPelkkaSivu() {
                                 <ul className="space-y-4">
                                     <li className="flex gap-3 text-slate-700">
                                         <svg className="w-6 h-6 text-blue-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                        <span><strong>Moderni toteutus:</strong> Mobiilioptimoitu ja huomiota herättävä sivusto, joka on viritetty huippunopeuteen.</span>
+                                        <span><strong>1–3 myyntioptimoitua sivua:</strong> Tehokas kokonaisuus, esim. etusivu, palvelukuvaukset ja yhteystiedot.</span>
                                     </li>
                                     <li className="flex gap-3 text-slate-700">
                                         <svg className="w-6 h-6 text-blue-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                        <span><strong>Täysi oikeus koodiin:</strong> Saat kaikki lähdekoodit itsellesi ilman jatkuvia kuluja. Sivusto on 100 % yrityksesi omaisuutta.</span>
+                                        <span><strong>Harkittu tekstirakenne:</strong> Myyvä sisältömuotoilu, joka ohjaa asiakkaan suoraan yhteydenottoon.</span>
                                     </li>
                                     <li className="flex gap-3 text-slate-700">
                                         <svg className="w-6 h-6 text-blue-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                        <span><strong>Valmis tiedostopaketti:</strong> Selkeät materiaalit, jotka mikä tahansa web-hotelli tai it-kumppani osaa julkaista.</span>
+                                        <span><strong>Täysi omistajuus:</strong> Saat kaikki lähdekoodit itsellesi. Sivusto on 100 % yrityksesi omaisuutta.</span>
                                     </li>
                                 </ul>
                             </div>
@@ -105,15 +105,15 @@ export default function TilaaPelkkaSivu() {
                                                 <textarea 
                                                     name="message"
                                                     className="w-full min-w-0 p-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 outline-none h-32" 
-                                                    defaultValue="Olen kiinnostunut Pelkkä sivu -paketista (990 €). Tämä on alustava tarjouspyyntö eikä se sido vielä mihinkään. Haluaisin kuulla lisää toimituksesta."
+                                                    defaultValue="Hei! Olen kiinnostunut Pelkkä sivu -paketista (990 €). Haluaisin kuulla lyhyesti lisää, miten tämä toimisi meidän yrityksellemme. Yhteydenotto ei sido minua mihinkään."
                                                 ></textarea>
                                             </div>
                                             <button type="submit" className="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition shadow-lg shadow-blue-600/30">
                                                 Pyydä lisätietoja tai arvio
                                             </button>
-                                            <p className="text-center text-xs text-slate-500 mt-4">
-                                                Ei sitoutumispakkoa. Otamme yhteyttä puhelimitse yksityiskohtien vahvistamiseksi. <br />
-                                                Sivuston toteutus 990 € veloitetaan käynnistyksen yhteydessä.
+                                            <p className="text-center text-xs text-slate-500 mt-4 leading-relaxed">
+                                                Ei sitoutumispakkoa. Otamme yhteyttä yksityiskohtien vahvistamiseksi.<br />
+                                                Laskutus tapahtuu vasta kun olemme sopineet projektin käynnistyksestä.
                                             </p>
                                         </form>
                                     </>

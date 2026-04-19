@@ -45,8 +45,8 @@ export function Header() {
                 setShowBlueHeader(currentScroll >= swapThreshold);
                 setShowPlainHeader(false);
             } else if (isMainPage) {
-                // Main page: switch from white header to blue header after 400px
-                const threshold = 400;
+                // Main page: switch from white header to dark header quickly so mobile navigation is available
+                const threshold = 50;
                 setShowPlainHeader(currentScroll < threshold);
                 setShowBlueHeader(currentScroll >= threshold);
                 setShowGreenHeader(false);
@@ -145,9 +145,11 @@ export function Header() {
                 <header 
                     className={`py-4 md:py-6 px-4 md:px-12 flex justify-between items-center bg-white shadow-sm fixed top-0 left-0 w-full z-40 transition-transform duration-500 ease-in-out ${showPlainHeader ? "translate-y-0" : "-translate-y-full"}`}
                 >
-                    <div className={`text-lg md:text-2xl font-bold text-blue-900 ${playfair.className} tracking-tight leading-tight min-w-0 pr-2`}>
-                        <span className="whitespace-nowrap">Sivumaakareiden</span> <span className="text-blue-600 block sm:inline whitespace-nowrap">Palvelusivut</span>
-                    </div>
+                    <Link href="/" className="min-w-0 flex items-center pr-2 group">
+                        <div className={`${playfair.className} text-xl md:text-3xl italic text-slate-900 lowercase group-hover:text-blue-600 transition-colors`}>
+                            sivumaakarit.
+                        </div>
+                    </Link>
                     <Link 
                         href={isMainPage ? "#hinnasto" : "/tarjous#hinnasto"}
                         onClick={scrollToHinnasto}
@@ -173,21 +175,17 @@ export function Header() {
                         </Link>
 
                         <div className="hidden md:flex items-center gap-8">
-                            <span className="text-blue-100 text-lg font-medium">
-                                Huolettomat kotisivut avaimet käteen -pakettina nyt <span className="text-cyan-400 font-bold text-2xl">990€</span>
-                            </span>
-
-                            {/* Animated Arrow pointing to button */}
-                            <svg className="w-8 h-8 text-cyan-400 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                            </svg>
+                            <nav className="flex items-center gap-8 text-blue-100 text-sm md:text-base font-medium tracking-wide">
+                                <Link href="/referenssit" className="hover:text-cyan-400 transition-colors">Työnäytteet</Link>
+                                <Link href="/mokkipalvelu" className="hover:text-cyan-400 transition-colors">Esimerkkitoteutus</Link>
+                                <Link href={isMainPage ? "#hinnasto" : "/tarjous#hinnasto"} onClick={scrollToHinnasto} className="hover:text-cyan-400 transition-colors">Paketit & hinnat</Link>
+                            </nav>
 
                              <Link
-                                 href={isMainPage ? "#hinnasto" : "/tarjous#hinnasto"}
-                                 onClick={scrollToHinnasto}
+                                 href={isMainPage ? "#tilaa" : "/tarjous#tilaa"}
                                  className="bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white px-8 py-3.5 rounded-full font-bold transition-all shadow-lg hover:shadow-cyan-500/25 hover:scale-105 text-lg"
                              >
-                                 Katso paketti
+                                 Ota yhteyttä
                              </Link>
                         </div>
 
@@ -212,21 +210,17 @@ export function Header() {
 
                 {/* Mobile Menu (Dropdown/Slide) */}
                 {isOpen && showBlueHeader && (
-                    <div className="md:hidden absolute top-16 left-0 w-full bg-[#0A1128] border-t border-blue-900/50 shadow-2xl py-8 px-6 flex flex-col gap-6 animate-in slide-in-from-top-2 duration-250 text-center">
-                        <span className="text-blue-100 text-xl font-medium block">
-                            Huolettomat kotisivut avaimet käteen -pakettina nyt <span className="text-cyan-400 font-bold">990€</span>
-                        </span>
-                        <div className="flex justify-center">
-                            <svg className="w-6 h-6 text-cyan-400 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                            </svg>
-                        </div>
+                    <div className="md:hidden absolute top-16 left-0 w-full bg-[#0A1128] border-t border-blue-900/50 shadow-2xl py-6 px-6 flex flex-col gap-2 animate-in slide-in-from-top-2 duration-250">
+                        <Link href="/referenssit" onClick={() => setIsOpen(false)} className="text-lg font-medium text-blue-100 py-4 border-b border-blue-900/50 hover:text-white transition-all block text-center uppercase tracking-widest">Työnäytteet</Link>
+                        <Link href="/mokkipalvelu" onClick={() => setIsOpen(false)} className="text-lg font-medium text-blue-100 py-4 border-b border-blue-900/50 hover:text-white transition-all block text-center uppercase tracking-widest">Esimerkkitoteutus</Link>
+                        <Link href={isMainPage ? "#hinnasto" : "/tarjous#hinnasto"} onClick={(e) => { setIsOpen(false); scrollToHinnasto(e); }} className="text-lg font-medium text-blue-100 py-4 border-b border-blue-900/50 hover:text-white transition-all block text-center uppercase tracking-widest">Paketit & hinnat</Link>
+                        
                         <Link
-                            href={isMainPage ? "#hinnasto" : "/tarjous#hinnasto"}
-                            onClick={scrollToHinnasto}
-                            className="w-full bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white py-4 rounded-xl font-bold text-center shadow-lg block text-xl"
+                            href={isMainPage ? "#tilaa" : "/tarjous#tilaa"}
+                            onClick={() => setIsOpen(false)}
+                            className="w-full mt-6 bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white py-4 rounded-xl font-bold text-center shadow-lg block text-xl"
                         >
-                            Katso paketti
+                            Ota yhteyttä
                         </Link>
                     </div>
                 )}

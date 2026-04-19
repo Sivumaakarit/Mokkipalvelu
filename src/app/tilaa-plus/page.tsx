@@ -73,15 +73,15 @@ export default function TilaaPlus() {
                                 <ul className="space-y-4">
                                     <li className="flex gap-3 text-slate-700">
                                         <svg className="w-6 h-6 text-blue-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                        <span><strong>Kaikki tekninen turva:</strong> Domain, web-hotelli, SSL-salaus ja täysin avaimet käteen -asennus nettiin. Sinun ei tarvitse tehdä mitään.</span>
+                                        <span><strong>Asiantuntijapankki (2 h/kk):</strong> Oma ”digiassistenttisi”. Käytä aikaa mihin haluat: sisältöön, visuaalisuuteen tai analytiikkaan.</span>
                                     </li>
                                     <li className="flex gap-3 text-slate-700">
                                         <svg className="w-6 h-6 text-blue-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                        <span><strong>Asiantuntijapankki (2 h/kk):</strong> Käytä aikaa mihin haluat: sisältöjen päivitykseen, visuaalisen ilmeen viilaukseen tai analytiikkatukeen.</span>
+                                        <span><strong>Jatkuva SEO-valvonta:</strong> Tsekkaamme kuukausittain Google-sijoitukset ja tekniikan, jotta pysyt kisassa aina askeleen edellä.</span>
                                     </li>
                                     <li className="flex gap-3 text-slate-700">
                                         <svg className="w-6 h-6 text-blue-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                        <span><strong>Jatkuva SEO ja valvonta:</strong> Tsekkaamme kuukausittain Google-sijoitukset ja tekniikan, jotta pysyt kisassa kärjessä.</span>
+                                        <span><strong>Priorisoitu tuki:</strong> Olet aina jonon kärjessä. Vasteaikamme on erittäin nopea, maksimissaan 24 tuntia. (Kaikki tekninen turva sisältyy).</span>
                                     </li>
                                 </ul>
                             </div>
@@ -105,15 +105,15 @@ export default function TilaaPlus() {
                                                 <textarea
                                                     name="message"
                                                     className="w-full min-w-0 p-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 outline-none h-32"
-                                                    defaultValue="Olen kiinnostunut Sivu + Plus-paketista (150 €/kk). Tämä on alustava tarjouspyyntö eikä se sido vielä mihinkään. Kerrothan lisää SEO-valvonnasta."
+                                                    defaultValue="Hei! Olen kiinnostunut Plus-paketista (150 €/kk). Haluan ulkoistaa sivuston digimurheet ja varmistaa aktiivisen näkyvyyden Googlessa. Jutellaanko lisää? Huomioin, ettei yhteydenotto sido minua ja tilauksen voi halutessaan perua."
                                                 ></textarea>
                                             </div>
                                             <button type="submit" className="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition shadow-lg shadow-blue-600/30">
                                                 Pyydä lisätietoja tai arvio
                                             </button>
-                                            <p className="text-center text-xs text-slate-500 mt-4">
-                                                Ei sitoutumispakkoa. Otamme yhteyttä puhelimitse yksityiskohtien vahvistamiseksi. <br />
-                                                Sivuston toteutus 990 € veloitetaan käynnistyksen yhteydessä.
+                                            <p className="text-center text-xs text-slate-500 mt-4 leading-relaxed">
+                                                <strong className="text-slate-600">Ei määräaikaisia lukkovuosia.</strong> Kuukausitilauksen voi perua milloin tahansa (1 kk irtisanomisaika).<br />
+                                                Yhteydenotto ei sido sinua tilaamaan.
                                             </p>
                                         </form>
                                     </>

@@ -73,11 +73,11 @@ export default function TilaaPerus() {
                                 <ul className="space-y-4">
                                     <li className="flex gap-3 text-slate-700">
                                         <svg className="w-6 h-6 text-cyan-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                        <span><strong>Julkaisu ja Tekninen ylläpito:</strong> Domain, web-hotelli, tietoturva ja SSL-salaus. Sinun ei tarvitse murehtia teknisistä asioista.</span>
+                                        <span><strong>Täysi asennus nettiin:</strong> Hoidamme domainin, web-hotellin ja julkaisun puolestasi avaimet käteen -periaatteella.</span>
                                     </li>
                                     <li className="flex gap-3 text-slate-700">
                                         <svg className="w-6 h-6 text-cyan-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                        <span><strong>Automaattiset varmuuskopiot:</strong> Sivustostasi otetaan säännöllisesti varmuuskopiot, joten tietosi ovat aina turvassa.</span>
+                                        <span><strong>Tekninen suojaus:</strong> SSL-salaus, tietoturva, automaattiset varmuuskopiot ja sivuston säännöllinen valvonta.</span>
                                     </li>
                                     <li className="flex gap-3 text-slate-700">
                                         <svg className="w-6 h-6 text-cyan-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
@@ -105,15 +105,15 @@ export default function TilaaPerus() {
                                                 <textarea 
                                                     name="message"
                                                     className="w-full min-w-0 p-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-cyan-500 outline-none h-32" 
-                                                    defaultValue="Olen kiinnostunut Sivu + Perusturva -paketista (50 €/kk). Tämä on alustava tarjouspyyntö eikä se sido vielä mihinkään."
+                                                    defaultValue="Hei! Olen kiinnostunut Sivu + Perusturva -paketista (50 €/kk). Haluaisin kuulla lisää avaimet käteen -toteutuksesta. Ymmärrän, että tämä viesti ei sido minua mihinkään ja kuukausisopimuksen voi halutessaan perua milloin vain."
                                                 ></textarea>
                                             </div>
                                             <button type="submit" className="w-full bg-cyan-600 text-white font-bold py-4 rounded-xl hover:bg-cyan-700 transition shadow-lg shadow-cyan-600/30">
                                                 Pyydä lisätietoja tai arvio
                                             </button>
-                                            <p className="text-center text-xs text-slate-500 mt-4">
-                                                Ei sitoutumispakkoa. Otamme yhteyttä puhelimitse yksityiskohtien vahvistamiseksi. <br />
-                                                Sivuston toteutus 990 € veloitetaan käynnistyksen yhteydessä.
+                                            <p className="text-center text-xs text-slate-500 mt-4 leading-relaxed">
+                                                <strong className="text-slate-600">Ei määräaikaisia lukkovuosia.</strong> Kuukausitilauksen voi perua milloin tahansa (1 kk irtisanomisaika).<br />
+                                                Yhteydenotto ei sido sinua tilaamaan.
                                             </p>
                                         </form>
                                     </>
