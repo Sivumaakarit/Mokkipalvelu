@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
 import { StandalonePricing } from "@/components/landing/StandalonePricing";
+import { ProofSection } from "@/components/landing/ProofSection";
 import { PricingTiers } from "@/components/landing/PricingTiers";
 import { Footer } from "@/components/layout/Footer";
 
@@ -240,6 +241,8 @@ export default function TarjousPage() {
                     </div>
                 </div>
             </section>
+
+            <ProofSection />
 
             {/* Tarina: Esimerkki arjesta */}
             <section className="py-24 px-4 bg-blue-50">
