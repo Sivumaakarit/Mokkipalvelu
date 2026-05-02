@@ -6,56 +6,56 @@ import Link from "next/link";
 import { CaseStudyShowcase } from "@/components/landing/CaseStudyShowcase";
 import { Footer } from "@/components/layout/Footer";
 
-  const projects = [
-    {
-      id: "roboline",
-      title: "Roboline Group",
-      category: "Brändi ja verkkosivusto",
-      description: "Innovaatioiden digitaalinen koti. Painopiste asiantuntijuuden esiintuomisessa ja palveluiden uskottavassa esittelyssä.",
-      tags: ["UX-SUUNNITTELU", "SISÄLLÖNTUOTANTO", "SUORITUSKYKY"],
-      desktopImage: "/images/roboline-desktop.webp",
-      mobileImage: "/images/roboline-mobile2.webp",
-      tabletImage: "/images/roboline-tablet.webp",
-      accentColor: "blue-600",
-      accentBorder: "border-blue-600",
-      link: "https://www.roboline.fi",
-      linkText: "Tutustu Robolineen →",
-      mobileBgColor: "#ffffff",
-      tabletBgColor: "#ffffff"
-    },
-    {
-      id: "molarit",
-      title: "Mölyapinat",
-      category: "Yhteisö ja esiintyminen",
-      description: "Lastenmusiikkibändin iloinen ja värikäs yhteisö. Painopiste bändin energian välittämisessä ja keikkatietojen selkeässä esittämisessä.",
-      tags: ["MOBIILI EDELLÄ", "YHTEISÖ", "NOPEA LATAUS"],
-      desktopImage: "/images/molarit-desktop.webp",
-      mobileImage: "/images/molarit-mobile2.webp",
-      tabletImage: "/images/molarit-tablet.webp",
-      accentColor: "blue-600",
-      accentBorder: "border-blue-600",
-      link: "https://molyapinat.fi",
-      linkText: "Katso Mölyapinat-sivusto →",
-      mobileBgColor: "#d3f0db",
-      tabletBgColor: "#fefce8"
-    },
-    {
-      id: "mokkipalvelu",
-      title: "Mokkipalvelu",
-      category: "Huoltopalvelut & Digi",
-      description: "Mökkihuollon moderni brändi-uudistus. Painopiste tilaamisen vaivattomuudessa ja luotettavuuden vahvistamisessa.",
-      tags: ["100/100 SUORITUSKYKY", "KÄYTTÖKOKEMUS", "IDENTITEETTI"],
-      desktopImage: "/images/mokkipalvelu_desktop.webp",
-      mobileImage: "/images/mokkipalvelu_mobile.webp",
-      tabletImage: "/images/mokkipalvelu_tablet.webp",
-      accentColor: "blue-600",
-      accentBorder: "border-blue-600",
-      link: "/mokkipalvelu",
-      linkText: "Mokkipalvelu-sivustolle →",
-      mobileBgColor: "#ffffff",
-      tabletBgColor: "#ffffff"
-    }
-  ];
+const projects = [
+  {
+    id: "mokkipalvelu",
+    title: "Mökkipalvelu",
+    category: "Huoltopalvelut & Digi",
+    description: "Mökkihuollon moderni brändi-ilme. Painopiste tilaamisen vaivattomuudessa ja luotettavuuden vahvistamisessa.",
+    tags: ["100/100 SUORITUSKYKY", "KÄYTTÖKOKEMUS", "IDENTITEETTI"],
+    desktopImage: "/images/mokkipalvelu_desktop.webp",
+    mobileImage: "/images/mokkipalvelu_mobile.webp",
+    tabletImage: "/images/mokkipalvelu_tablet.webp",
+    accentColor: "blue-600",
+    accentBorder: "border-blue-600",
+    link: "/mokkipalvelu",
+    linkText: "Mokkipalvelu-sivustolle →",
+    mobileBgColor: "#ffffff",
+    tabletBgColor: "#ffffff"
+  },
+  {
+    id: "roboline",
+    title: "Roboline Group",
+    category: "Brändi ja verkkosivusto",
+    description: "Innovaatioiden digitaalinen koti. Painopiste asiantuntijuuden esiintuomisessa ja palveluiden uskottavassa esittelyssä.",
+    tags: ["UX-SUUNNITTELU", "SISÄLLÖNTUOTANTO", "SUORITUSKYKY"],
+    desktopImage: "/images/roboline-desktop.webp",
+    mobileImage: "/images/roboline-mobile2.webp",
+    tabletImage: "/images/roboline-tablet.webp",
+    accentColor: "blue-600",
+    accentBorder: "border-blue-600",
+    link: "https://www.roboline.fi",
+    linkText: "Tutustu Robolineen →",
+    mobileBgColor: "#ffffff",
+    tabletBgColor: "#ffffff"
+  },
+  {
+    id: "molarit",
+    title: "Mölyapinat",
+    category: "Yhteisö ja esiintyminen",
+    description: "Lastenmusiikkibändin iloinen ja värikäs yhteisö. Painopiste bändin energian välittämisessä ja keikkatietojen selkeässä esittämisessä.",
+    tags: ["MOBIILI EDELLÄ", "YHTEISÖ", "NOPEA LATAUS"],
+    desktopImage: "/images/molarit-desktop.webp",
+    mobileImage: "/images/molarit-mobile2.webp",
+    tabletImage: "/images/molarit-tablet.webp",
+    accentColor: "blue-600",
+    accentBorder: "border-blue-600",
+    link: "https://molyapinat.fi",
+    linkText: "Katso Mölyapinat-sivusto →",
+    mobileBgColor: "#d3f0db",
+    tabletBgColor: "#fefce8"
+  }
+];
 
 export default function ReferenssitPage() {
   const [selectedProject, setSelectedProject] = useState(projects[0]);
@@ -122,7 +122,7 @@ export default function ReferenssitPage() {
                       <div className="w-1.5 h-1.5 rounded-full bg-stone-300"></div>
                       <div className="w-1.5 h-1.5 rounded-full bg-stone-300"></div>
                     </div>
-                    
+
                     {/* The Website Image */}
                     <div className="absolute inset-0 pt-6 overflow-hidden">
                       <img
@@ -143,15 +143,15 @@ export default function ReferenssitPage() {
                       {project.category}
                     </span>
                   </div>
-                  
+
                   <h3 className="text-2xl font-serif text-stone-900 mb-4 tracking-tight">
                     {project.title}
                   </h3>
-                  
+
                   <p className="text-stone-500 text-sm leading-relaxed mb-8 flex-grow">
                     {project.description}
                   </p>
-                  
+
                   <div className="flex flex-wrap gap-1.5">
                     {project.tags.map((tag, tIdx) => (
                       <span key={tIdx} className="text-[9px] px-2.5 py-1 bg-white text-stone-400 border border-stone-100 rounded-lg font-bold uppercase tracking-wider">
@@ -188,10 +188,10 @@ export default function ReferenssitPage() {
             >
               Lue lisää työtavoistamme &rarr;
             </Link>
+          </div>
         </div>
-      </div>
-    </section>
-    <Footer />
-  </div>
-);
+      </section>
+      <Footer />
+    </div>
+  );
 }

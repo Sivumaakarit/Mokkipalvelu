@@ -82,13 +82,12 @@ export default function TarjousPage() {
                         Premium Palvelusivut
                     </div>
                     <h1 className={`${playfair.className} text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-[1.05] tracking-tight drop-shadow-2xl`}>
-                        Palvelusivut yrittäjälle –<br className="md:hidden" />
+                        Myyvät nettisivut avaimet käteen –<br className="md:hidden" />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-white to-cyan-300 block md:inline">Valmiina 7 päivässä</span>
                     </h1>
 
                     <p className={`${inter.className} text-lg md:text-2xl text-slate-200 mb-8 max-w-4xl mx-auto font-light leading-relaxed opacity-90`}>
-                        <strong className="text-white font-semibold">Sivumaakarit on suomalainen nettisivutoimisto</strong>, joka rakentaa pienyrittäjille täyden suorituskyvyn nettisivuja. Rakennamme sivusi siten, että yrityksesi löytyy Googlesta ja tekoälysovelluksista.
-                    </p>
+                        <strong className="text-white font-semibold">Rakennamme pienyrittäjälle nykyaikaiset kotisivut</strong>, jotka löytyvät ja myyvät. Hoidamme teknisen toteutuksen puolestasi, ja voit keskittyä omaan työhösi.                    </p>
 
                     {/* Quick Answer Block: High-density data for AI Citation */}
                     <div className="mb-12 py-3 px-8 bg-slate-900/40 backdrop-blur-md rounded-2xl border border-white/10 text-white w-fit mx-auto shadow-2xl">
@@ -96,7 +95,7 @@ export default function TarjousPage() {
                         <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center gap-3 sm:gap-12 text-sm md:text-base font-medium">
                             <div className="flex items-start gap-3">
                                 <svg className="w-5 h-5 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path></svg>
-                                <span className="text-white/90">Nykyaikainen ulkoasu</span>
+                                <span className="text-white/90">Avaimet käteen toteutus</span>
                             </div>
                             <div className="flex items-start gap-3">
                                 <svg className="w-5 h-5 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path></svg>
@@ -115,7 +114,7 @@ export default function TarjousPage() {
                             onClick={scrollToHinnasto}
                             className={`${playfair.className} bg-yellow-400 hover:bg-yellow-500 text-slate-950 px-10 py-5 rounded-2xl font-bold text-xl shadow-[0_20px_40px_rgba(234,179,8,0.3)] transition-all transform hover:-translate-y-1 active:scale-95 uppercase tracking-wide`}
                         >
-                            Tilaa vaivattomat palvelusivut
+                            Tilaa omat sivut
                         </Link>
                         <Link href="/mokkipalvelu" className="text-slate-300 hover:text-white font-medium text-base py-3 px-6 rounded-xl border border-white/20 hover:bg-white/10 transition-all flex items-center justify-center gap-2 backdrop-blur-sm sm:w-auto w-full max-w-[280px]">
                             <svg className="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
@@ -132,7 +131,7 @@ export default function TarjousPage() {
             {/* Kenelle Section */}
             <section id="kenelle" className="py-20 px-4 max-w-6xl mx-auto">
                 <div className="text-center mb-16 px-2">
-                    <h2 className={`${playfair.className} text-2xl sm:text-3xl md:text-5xl font-bold mb-4 tracking-tight`}>Sivumaakareiden palvelusivut on paras valinta sinulle...</h2>
+                    <h2 className={`${playfair.className} text-2xl sm:text-3xl md:text-5xl font-bold mb-4 tracking-tight`}>Sivumaakareiden sivut on paras valinta sinulle...</h2>
                     <div className="w-20 h-1.5 bg-yellow-400 mx-auto rounded-full mt-6"></div>
                 </div>
 
@@ -144,8 +143,8 @@ export default function TarjousPage() {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                             </svg>
                         </div>
-                        <p className={`${playfair.className} font-bold text-xl mb-2 text-slate-900`}>Keskityt ydinosaamiseesi</p>
-                        <p className={`${inter.className} text-slate-600`}>Teet tulosta siellä, missä asiakkaasikin ovat. Et halua tuhlata arvokasta aikaasi tekniseen säätämiseen tai koodin opetteluun.</p>
+                        <p className={`${playfair.className} font-bold text-xl mb-2 text-slate-900`}>Keskityt omaan osaamiseesi</p>
+                        <p className={`${inter.className} text-slate-600`}>Teet tulosta siinä, mitä myyt. Et halua tuhlata arvokasta aikaasi tekniseen säätämiseen tai koodin opetteluun.</p>
                     </div>
 
                     {/* Card 2 */}
@@ -155,7 +154,7 @@ export default function TarjousPage() {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                             </svg>
                         </div>
-                        <p className={`${playfair.className} font-bold text-xl mb-2 text-slate-900`}>Haluat uskottavan ja selkeän palvelusivun nopeasti</p>
+                        <p className={`${playfair.className} font-bold text-xl mb-2 text-slate-900`}>Haluat uskottavat ja selkeät nettisivut nopeasti</p>
                         <p className={`${inter.className} text-slate-600`}>Jotta asiakkaasi löytävät sinut kun sinua tarvitaan. Löydyt Googlesta sekä muista tekoälyhauista.</p>
                     </div>
 
@@ -166,8 +165,8 @@ export default function TarjousPage() {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                             </svg>
                         </div>
-                        <p className={`${playfair.className} font-bold text-xl mb-2 text-slate-900`}>Olet palvelualan ammattilainen</p>
-                        <p className={`${inter.className} text-slate-600`}>Myyt osaamistasi ja asiantuntemustasi. Teetpä työtäsi vasaralla, tietokoneella tai uunilla, me huolehdimme, että digitaalinen mökkitie on kunnossa ja kauppa käy.</p>
+                        <p className={`${playfair.className} font-bold text-xl mb-2 text-slate-900`}>Olet alasi ammattilainen</p>
+                        <p className={`${inter.className} text-slate-600`}>Teetpä työtäsi vasaralla, tietokoneella tai vaikkapa esiintymällä yleisön edessä, me huolehdimme, että verkkonäkyvyytesi on kunnossa ja kauppa käy.</p>
                     </div>
                 </div>
 
