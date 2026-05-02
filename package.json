@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "lighthouse:check": "node scripts/lighthouse-runner.js"
+    "lighthouse:check": "node scripts/lighthouse-runner.js",
+    "deploy": "bash /Users/eskomaki/.gemini/antigravity/skills/sivumaakarit_deploy/scripts/deploy.sh ."
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
