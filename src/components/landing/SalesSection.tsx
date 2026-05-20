@@ -282,7 +282,7 @@ export function SalesSection() {
                                         <ul className="space-y-6">
                                             <li className={`${inter.className} flex items-start text-slate-300`}>
                                                 <svg className="w-5 h-5 text-green-400 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                                <span><strong className="text-white">Toteutus (990 € tai 0 € pilottiasiakkaille):</strong> Sisältää teknisen rakennuksen, 100/100-laadunvarmistuksen ja modernin ulkoasun.</span>
+                                                <span><strong className="text-white">Avausmaksu (499 €, vuositilauksella 399 €):</strong> Sisältää teknisen rakennuksen, 100/100-laadunvarmistuksen ja modernin ulkoasun.</span>
                                             </li>
                                             <li className={`${inter.className} flex items-start text-slate-300`}>
                                                 <svg className="w-5 h-5 text-green-400 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
@@ -306,11 +306,11 @@ export function SalesSection() {
                                             <div className="space-y-4">
                                                 <div className={`flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 rounded-lg bg-slate-900/40 border border-slate-800/50 ${inter.className}`}>
                                                     <div>
-                                                        <div className="font-bold text-white text-lg">Sivuston toteutus</div>
+                                                        <div className="font-bold text-white text-lg">Sivuston avausmaksu</div>
                                                         <div className="text-sm text-slate-400">Avaimet käteen -laskeutumissivu.</div>
                                                     </div>
                                                     <div className="text-2xl font-bold text-white mt-2 sm:mt-0 whitespace-nowrap sm:pl-4">
-                                                        990 € <span className="text-sm font-normal text-slate-400">(tai 0 €)</span>
+                                                        499 € <span className="text-sm font-normal text-slate-400">(Vuositilauksella 399 €)</span>
                                                     </div>
                                                 </div>
 

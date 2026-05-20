@@ -65,18 +65,18 @@ export function Schema() {
                 "mainEntity": [
                     {
                         "@type": "Question",
-                        "name": "Mistä 990 euron hinta koostuu ja miten voitte myydä tähän hintaan?",
+                        "name": "Miksi valitsisin kuukausimaksullisen ylläpidon?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Käytämme tekoälyä asiantuntevasti apuna koodauksessa ja tekstintuotannossa. Tekoäly ei tee sivuja puolestamme, mutta se poistaa rutiinityön, jolloin voimme keskittyä tuomaan sinulle rahaa hakukonenäkyvyydellä ja myyvällä asettelulla."
+                            "text": "Keskity omaan yritykseesi, me pidämme huolen tekniikasta. Helppo avaimet käteen -ratkaisu kuukausimaksulla, ilman stressiä. Kun valitset ylläpidon, saat sivuston avausmaksun reilusti alennettuun hintaan. Me hoidamme palvelimet, tietoturvan ja päivitykset."
                         }
                     },
                     {
                         "@type": "Question",
-                        "name": "Miksi maksaisin 150 €/kk ylläpidosta?",
+                        "name": "Miksi maksaisin kuukausittaista ylläpitoa?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "150 €/kk on VIP-huoltosopimus: me pesemme auton, katsomme moottoriin ja huolehdimme, että oikeat asiakkaat nousevat kyytiin. Se on sijoitus siihen, että sivusi tuo jatkuvasti uutta kauppaa."
+                            "text": "Jatkuva ylläpito on VIP-huoltosopimus: me pesemme auton, katsomme moottoriin ja huolehdimme, että oikeat asiakkaat nousevat kyytiin. Se on sijoitus siihen, että sivusi tuo jatkuvasti uutta kauppaa."
                         }
                     },
                     {

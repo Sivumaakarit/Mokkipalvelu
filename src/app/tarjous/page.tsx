@@ -109,16 +109,16 @@ export default function TarjousPage() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+                    <div className="flex flex-col sm:flex-row items-stretch justify-center gap-4 sm:gap-6 w-full max-w-sm sm:max-w-none mx-auto">
                         <Link
                             href="#hinnasto"
                             onClick={scrollToHinnasto}
-                            className={`${playfair.className} bg-yellow-400 hover:bg-yellow-500 text-slate-950 px-10 py-5 rounded-2xl font-bold text-xl shadow-[0_20px_40px_rgba(234,179,8,0.3)] transition-all transform hover:-translate-y-1 active:scale-95 uppercase tracking-wide`}
+                            className={`${playfair.className} bg-yellow-400 hover:bg-yellow-500 text-slate-950 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl font-bold text-lg sm:text-xl shadow-[0_20px_40px_rgba(234,179,8,0.3)] transition-all transform hover:-translate-y-1 active:scale-95 uppercase tracking-wide w-full sm:w-[340px] flex items-center justify-center whitespace-nowrap`}
                         >
                             Tilaa omat sivut
                         </Link>
-                        <Link href="/mokkipalvelu" className="text-slate-300 hover:text-white font-medium text-base py-3 px-6 rounded-xl border border-white/20 hover:bg-white/10 transition-all flex items-center justify-center gap-2 backdrop-blur-sm sm:w-auto w-full max-w-[280px]">
-                            <svg className="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+                        <Link href="/mokkipalvelu" className={`${playfair.className} bg-white hover:bg-slate-100 text-slate-900 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl font-bold text-lg sm:text-xl shadow-[0_20px_40px_rgba(255,255,255,0.1)] transition-all transform hover:-translate-y-1 active:scale-95 tracking-wide w-full sm:w-[340px] flex items-center justify-center gap-3 whitespace-nowrap`}>
+                            <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
                             <span className="md:inline hidden">Katso esimerkkisivua</span>
                             <span className="inline md:hidden">Esimerkkisivu</span>
                         </Link>
@@ -236,7 +236,7 @@ export default function TarjousPage() {
                             onClick={scrollToHinnasto}
                             className={`${playfair.className} inline-block bg-blue-600 hover:bg-blue-500 text-white font-bold py-5 px-10 rounded-xl transition-all shadow-lg text-lg ring-4 ring-slate-900/10`}
                         >
-                            Tilaa omat sivut (990 €)
+                            Tilaa omat sivut
                         </Link>
                     </div>
                 </div>
@@ -314,32 +314,31 @@ export default function TarjousPage() {
                     <div className="space-y-4">
                         <details className="group bg-slate-50 border border-slate-200 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
                             <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-900 font-bold">
-                                <span>Mistä 990 euron hinta koostuu ja miten voitte myydä tähän hintaan?</span>
+                                <span>Miksi valitsisin kuukausimaksullisen ylläpidon?</span>
                                 <span className="relative size-5 shrink-0">
                                     <svg className="absolute inset-0 size-5 opacity-100 group-open:opacity-0 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path></svg>
                                     <svg className="absolute inset-0 size-5 opacity-0 group-open:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 12H4"></path></svg>
                                 </span>
                             </summary>
                             <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 mt-2 pt-4">
-                                <p>Monet toimistot laskuttavat tuhansia euroja, koska prosessi on hidas ja &quot;keksitään pyörä uudelleen&quot; jokaisen asiakkaan kohdalla. Me teemme asiat toisin.</p>
-                                <p className="mt-2 text-slate-900 font-medium">Käytämme tekoälyä asiantuntevasti apuna koodauksessa ja tekstintuotannossa.</p>
+                                <p>Keskity omaan yritykseesi, me pidämme huolen tekniikasta. Helppo avaimet käteen -ratkaisu kuukausimaksulla, ilman stressiä.</p>
                                 <p className="mt-2 text-slate-600">
-                                    Tekoäly (AI) ei tee sivuja puolestamme, mutta se poistaa meiltä ohjelmoinnin ja oikoluvun &quot;raskaan raatamisen&quot;. Tämän ansiosta voimme keskittyä siihen, mikä tuo sinulle rahaa: <strong>optimaalisen hakukonenäkyvyyden, huippunopeuden ja psykologisesti myyvän asettelun rakentamiseen.</strong> Siirrämme säästyneen ajan suoraan sinun lompakkoosi, ja siksi pystymme tarjoamaan markkinoiden parhaan teknisen laadun (100/100) näin järkevään hintaan.
+                                    Kun valitset ylläpidon (esim. Perus-paketti alkaen 33 €/kk), saat sivuston avausmaksun reilusti alennettuun hintaan (399 €). Me hoidamme palvelimet, tietoturvan ja päivitykset. Sinun tehtäväksesi jää vain uusien asiakkaiden palveleminen.
                                 </p>
                             </div>
                         </details>
 
                         <details className="group bg-slate-50 border border-slate-200 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
                             <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-900 font-bold">
-                                <span>Miksi maksaisin 150 €/kk ylläpidosta (Plus-paketti)?</span>
+                                <span>Miksi valitsisin laajemman Plus-paketin ylläpidon?</span>
                                 <span className="relative size-5 shrink-0">
                                     <svg className="absolute inset-0 size-5 opacity-100 group-open:opacity-0 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path></svg>
                                     <svg className="absolute inset-0 size-5 opacity-0 group-open:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 12H4"></path></svg>
                                 </span>
                             </summary>
                             <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 mt-2 pt-4">
-                                <p>Mieti sivustoasi firman autona. 990 € kertamaksu on se, jolla ostat uuden, kiiltävän auton autoliikkeestä. Mutta jos et koskaan vaihda öljyjä, katso rengaspaineita tai pese sitä, se menettää arvonsa nopeasti.</p>
-                                <p className="mt-2 text-slate-600">150 €/kk on VIP-huoltosopimus: me pesemme auton, katsomme moottoriin ja huolehdimme jopa siitä, että oikeat asiakkaat nousevat kyytiin. Se on sijoitus siihen, että olemassa oleva sivusi ei vain &quot;ole&quot;, vaan tuo jatkuvasti uutta kauppaa.</p>
+                                <p>Mieti sivustoasi firman autona. Halpa kertamaksu on se, jolla ostat uuden auton. Mutta jos et koskaan vaihda öljyjä, katso rengaspaineita tai pese sitä, se menettää arvonsa nopeasti.</p>
+                                <p className="mt-2 text-slate-600">Jatkuva ylläpito on VIP-huoltosopimus: me pesemme auton, katsomme moottoriin ja huolehdimme jopa siitä, että oikeat asiakkaat nousevat kyytiin. Se on sijoitus siihen, että olemassa oleva sivusi ei vain &quot;ole&quot;, vaan tuo jatkuvasti uutta kauppaa.</p>
                             </div>
                         </details>
 

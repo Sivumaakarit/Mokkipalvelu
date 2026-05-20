@@ -15,7 +15,7 @@ export function StandalonePricing() {
                         Me haluamme, että sinun kova työsi ja ammattitaitosi <span className="text-blue-600">ovat asiakkaittesi saatavilla.</span>
                     </h2>
                     <p className="text-xl md:text-2xl text-slate-600 leading-relaxed">
-                        Nettisivu ei ole menoerä. Se on paras työntekijäsi, joka ei nuku koskaan. Kertamaksulla (990 €) ilman piilokuluja.
+                        Nettisivu ei ole menoerä. Se on paras työntekijäsi, joka ei nuku koskaan. Kuukausimaksulla ilman piilokuluja.
                     </p>
                 </div>
 
@@ -69,7 +69,7 @@ export function StandalonePricing() {
                             Laskelma: Kuinka nopeasti sivut maksavat itsensä takaisin?
                         </h3>
                         <p className="text-slate-600 text-lg max-w-2xl mx-auto">
-                            990 € sijoitus tuottaa tulosta nopeammin kuin uskotkaan.
+                            Sivut maksavat itsensä takaisin nopeammin kuin uskotkaan – usein jo ensimmäisellä yhteydenotolla.
                         </p>
                     </div>
 

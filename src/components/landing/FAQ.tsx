@@ -15,8 +15,8 @@ export function FAQ() {
 
     const faqs = [
         {
-            question: "Miksi maksaisin 990 € verkkosivuista, kun niitä saa halvalla muualtakin?",
-            answer: "Useimmat halvat ratkaisut tarjoavat vain ”digitaalisen tontin”, mutta me toimitamme valmiin myyntikoneen. 990 € investointi sisältää Tehorunko-nettisivu-standardin mukaisen toteutuksen, joka on optimoitu tuomaan uusia asiakkaita heti ensimmäisestä päivästä alkaen. Koska suuri osa asiakkaista tekee valintansa yrityksen nettisivujen perusteella, sivu maksaa itsensä takaisin jo muutamalla uudella keikalla. Esimerkiksi perinteinen kattoremontti saattaa maksaa 8000 € – meiltä saat työkalun, joka maksaa itsensä takaisin viikoissa ja palvelee vuosia."
+            question: "Miksi valitsisin kuukausimaksullisen ylläpidon?",
+            answer: "Keskity omaan yritykseesi, me pidämme huolen tekniikasta. Helppo avaimet käteen -ratkaisu kuukausimaksulla, ilman stressiä. Kun valitset ylläpidon (esim. Perus-paketti 50 €/kk), saat sivuston avausmaksun reilusti alennettuun hintaan (399 €). Me hoidamme palvelimet, tietoturvan ja päivitykset. Sinun tehtäväksesi jää vain uusien asiakkaiden palveleminen."
         },
         {
             question: "Mitä 50 € kuukausittainen ylläpito oikeasti sisältää?",

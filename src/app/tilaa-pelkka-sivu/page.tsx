@@ -61,7 +61,7 @@ export default function TilaaPelkkaSivu() {
                         <div className="p-8 md:p-12">
                             <div className="prose prose-slate max-w-none text-lg leading-relaxed mb-10 text-slate-600">
                                 <p>
-                                    Paras valinta, jos yritykselläsi on jo teknistä osaamista tai haluat hallinnoida sivustoa täysin itsenäisesti. Toimitamme sivuston lähdekoodit ja tarvittavat materiaalit valmiina asennettavaksi omalle palvelimellesi.
+                                    Paras valinta, jos yritykselläsi on jo teknistä osaamista tai haluat hallinnoida sivustoa täysin itsenäisesti. Kertamaksu. Sivut toimitetaan tiedostopakettina. Hoidat itse julkaisun ja ylläpidon.
                                 </p>
                             </div>
 
@@ -73,7 +73,7 @@ export default function TilaaPelkkaSivu() {
                                 <ul className="space-y-4">
                                     <li className="flex gap-3 text-slate-700">
                                         <svg className="w-6 h-6 text-blue-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                        <span><strong>1–3 myyntioptimoitua sivua:</strong> Tehokas kokonaisuus, esim. etusivu, palvelukuvaukset ja yhteystiedot.</span>
+                                        <span><strong>1–3 myyntioptimoitua sivua:</strong> Tehokas kokonaisuus: esim. etusivu, palvelukuvaukset ja yhteystiedot.</span>
                                     </li>
                                     <li className="flex gap-3 text-slate-700">
                                         <svg className="w-6 h-6 text-blue-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
@@ -81,7 +81,15 @@ export default function TilaaPelkkaSivu() {
                                     </li>
                                     <li className="flex gap-3 text-slate-700">
                                         <svg className="w-6 h-6 text-blue-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                        <span><strong>Täysi omistajuus:</strong> Saat kaikki lähdekoodit itsellesi. Sivusto on 100 % yrityksesi omaisuutta.</span>
+                                        <span><strong>Huippuunsa viritetty nopeus:</strong> Salama-nopea latausaika parantaa käyttäjäkokemusta ja Google-näkyvyyttä.</span>
+                                    </li>
+                                    <li className="flex gap-3 text-slate-700">
+                                        <svg className="w-6 h-6 text-blue-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                                        <span><strong>Moderni & mobiilioptimoitu:</strong> Sivusto toimii upeasti puhelimella, tabletilla ja tietokoneella.</span>
+                                    </li>
+                                    <li className="flex gap-3 text-slate-700">
+                                        <svg className="w-6 h-6 text-blue-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                                        <span><strong>Someliitännät & yhteydenotto:</strong> Integroidut some-painikkeet (esim. FB/IG) ja ammattimainen lomake.</span>
                                     </li>
                                 </ul>
                             </div>
@@ -90,7 +98,7 @@ export default function TilaaPelkkaSivu() {
                             <div>
                                 {!formSubmitted ? (
                                     <>
-                                        <h2 className={`${playfair.className} text-2xl font-bold mb-6 text-slate-900`}>Kysy lisää "Pelkkä sivu" -vaihtoehdosta</h2>
+                                        <h2 className={`${playfair.className} text-2xl font-bold mb-6 text-slate-900`}>Kysy lisää &quot;Pelkkä sivu&quot; -vaihtoehdosta</h2>
                                         <form className="space-y-4" onSubmit={handleSubmit}>
                                             <div>
                                                 <label className="block text-sm font-semibold mb-1 text-slate-700">Nimi</label>

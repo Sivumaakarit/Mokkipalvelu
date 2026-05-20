@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Inter, Playfair_Display } from 'next/font/google';
 import { siteConfig } from "@/lib/site-config";
 import { Footer } from "@/components/layout/Footer";
@@ -10,6 +10,16 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 
 export default function TilaaPerus() {
     const [formSubmitted, setFormSubmitted] = useState(false);
+    const [billing, setBilling] = useState<'kuukausi' | 'vuosi'>('kuukausi');
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const params = new URLSearchParams(window.location.search);
+            if (params.get('billing') === 'vuosi') {
+                setBilling('vuosi');
+            }
+        }
+    }, []);
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -49,7 +59,7 @@ export default function TilaaPerus() {
                             <span className="inline-block px-3 py-1 bg-cyan-500/20 text-cyan-300 text-xs font-bold uppercase tracking-widest rounded-full mb-6 border border-cyan-400/30">Huoleton Arki</span>
 
                             <h1 className={`${playfair.className} text-3xl md:text-5xl font-bold text-white mb-6 leading-tight`}>
-                                Perus-paketti <span className="text-cyan-400">(50 €/kk)</span>
+                                Perus-paketti <span className="text-cyan-400">({billing === 'vuosi' ? '33 €/kk' : '50 €/kk'})</span>
                             </h1>
 
                             <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
@@ -77,11 +87,11 @@ export default function TilaaPerus() {
                                     </li>
                                     <li className="flex gap-3 text-slate-700">
                                         <svg className="w-6 h-6 text-cyan-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                        <span><strong>Tekninen suojaus:</strong> SSL-salaus, tietoturva, automaattiset varmuuskopiot ja sivuston säännöllinen valvonta.</span>
+                                        <span><strong>Tekninen suojaus ja palvelin:</strong> Sivustosi toimii turvallisella ja huippunopealla pilvipalvelimella. Hoidamme SSL-salauksen ja varmuuskopiot.</span>
                                     </li>
                                     <li className="flex gap-3 text-slate-700">
                                         <svg className="w-6 h-6 text-cyan-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                        <span><strong>Päivitystuki:</strong> Sisältää yhden pienen kuukausittaisen päivityksen (esim. aukioloaikojen muutos tai uusi kuva).</span>
+                                        <span><strong>Päivitystuki:</strong> Sisältää yhden pienen kuukausittaisen päivityksen (esim. aukioloaikojen muutos tai uusi kuva) sekä luotettavan tuen.</span>
                                     </li>
                                 </ul>
                             </div>
@@ -91,7 +101,7 @@ export default function TilaaPerus() {
                                 {!formSubmitted ? (
                                     <>
                                         <h2 className={`${playfair.className} text-2xl font-bold mb-6 text-slate-900`}>Kysy lisää Perus-paketista</h2>
-                                        <form className="space-y-4" onSubmit={handleSubmit}>
+                                        <form key={billing} className="space-y-4" onSubmit={handleSubmit}>
                                             <div>
                                                 <label className="block text-sm font-semibold mb-1 text-slate-700">Nimi</label>
                                                 <input type="text" name="name" className="w-full min-w-0 p-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-cyan-500 outline-none" placeholder="Matti Meikäläinen" required />
@@ -105,7 +115,7 @@ export default function TilaaPerus() {
                                                 <textarea 
                                                     name="message"
                                                     className="w-full min-w-0 p-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-cyan-500 outline-none h-32" 
-                                                    defaultValue="Hei! Olen kiinnostunut Sivu + Perusturva -paketista (50 €/kk). Haluaisin kuulla lisää avaimet käteen -toteutuksesta. Ymmärrän, että tämä viesti ei sido minua mihinkään ja kuukausisopimuksen voi halutessaan perua milloin vain."
+                                                    defaultValue={`Hei! Olen kiinnostunut Sivu + Perusturva -paketista (${billing === 'vuosi' ? '33 €/kk vuosilaskutuksella' : '50 €/kk kuukausilaskutuksella'}). Haluaisin kuulla lisää avaimet käteen -toteutuksesta. Ymmärrän, että tämä viesti ei sido minua mihinkään ja sopimuksen voi halutessaan perua.`}
                                                 ></textarea>
                                             </div>
                                             <button type="submit" className="w-full bg-cyan-600 text-white font-bold py-4 rounded-xl hover:bg-cyan-700 transition shadow-lg shadow-cyan-600/30">

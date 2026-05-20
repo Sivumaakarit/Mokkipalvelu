@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Inter, Playfair_Display } from 'next/font/google';
 import { siteConfig } from "@/lib/site-config";
 import { Footer } from "@/components/layout/Footer";
@@ -10,6 +10,16 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 
 export default function TilaaPlus() {
     const [formSubmitted, setFormSubmitted] = useState(false);
+    const [billing, setBilling] = useState<'kuukausi' | 'vuosi'>('kuukausi');
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const params = new URLSearchParams(window.location.search);
+            if (params.get('billing') === 'vuosi') {
+                setBilling('vuosi');
+            }
+        }
+    }, []);
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -49,7 +59,7 @@ export default function TilaaPlus() {
                             <span className="inline-block px-3 py-1 bg-blue-500/20 text-blue-300 text-xs font-bold uppercase tracking-widest rounded-full mb-6 border border-blue-400/30">VIP-Huoltosopimus</span>
 
                             <h1 className={`${playfair.className} text-3xl md:text-5xl font-bold text-white mb-6 leading-tight`}>
-                                Plus-paketti <span className="text-blue-400">(150 €/kk)</span>
+                                Plus-paketti <span className="text-blue-400">({billing === 'vuosi' ? '99 €/kk' : '150 €/kk'})</span>
                             </h1>
 
                             <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
@@ -77,7 +87,7 @@ export default function TilaaPlus() {
                                     </li>
                                     <li className="flex gap-3 text-slate-700">
                                         <svg className="w-6 h-6 text-blue-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                        <span><strong>Jatkuva SEO-valvonta:</strong> Tsekkaamme kuukausittain Google-sijoitukset ja tekniikan, jotta pysyt kisassa aina askeleen edellä.</span>
+                                        <span><strong>Jatkuva laadunvalvonta:</strong> Varmistamme säännöllisesti sivustosi nopeuden ja teknisen kunnon, jotta näkyvyys Googlessa ja tekoälyhauissa säilyy vahvana.</span>
                                     </li>
                                     <li className="flex gap-3 text-slate-700">
                                         <svg className="w-6 h-6 text-blue-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
@@ -91,7 +101,7 @@ export default function TilaaPlus() {
                                 {!formSubmitted ? (
                                     <>
                                         <h2 className={`${playfair.className} text-2xl font-bold mb-6 text-slate-900`}>Kysy lisää Plus-paketista</h2>
-                                        <form className="space-y-4" onSubmit={handleSubmit}>
+                                        <form key={billing} className="space-y-4" onSubmit={handleSubmit}>
                                             <div>
                                                 <label className="block text-sm font-semibold mb-1 text-slate-700">Nimi</label>
                                                 <input type="text" name="name" className="w-full min-w-0 p-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 outline-none" placeholder="Matti Meikäläinen" required />
@@ -105,7 +115,7 @@ export default function TilaaPlus() {
                                                 <textarea
                                                     name="message"
                                                     className="w-full min-w-0 p-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 outline-none h-32"
-                                                    defaultValue="Hei! Olen kiinnostunut Plus-paketista (150 €/kk). Haluan ulkoistaa sivuston digimurheet ja varmistaa aktiivisen näkyvyyden Googlessa. Jutellaanko lisää? Huomioin, ettei yhteydenotto sido minua ja tilauksen voi halutessaan perua."
+                                                    defaultValue={`Hei! Olen kiinnostunut Plus-paketista (${billing === 'vuosi' ? '99 €/kk vuosilaskutuksella' : '150 €/kk kuukausilaskutuksella'}). Haluan ulkoistaa sivuston digimurheet ja varmistaa aktiivisen näkyvyyden Googlessa ja tekoälyhauissa. Jutellaanko lisää? Huomioin, ettei yhteydenotto sido minua ja tilauksen voi halutessaan perua.`}
                                                 ></textarea>
                                             </div>
                                             <button type="submit" className="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition shadow-lg shadow-blue-600/30">
