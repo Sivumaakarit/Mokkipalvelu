@@ -1,7 +1,5 @@
 "use client";
 
-import { siteConfig } from "@/lib/site-config";
-import Link from "next/link";
 import { Footer } from "@/components/layout/Footer";
 
 const steps = [
@@ -60,7 +58,7 @@ export default function MetodiPage() {
                   {step.title}
                 </h3>
                 <p className="text-lg text-stone-600 leading-relaxed italic">
-                  "{step.description}"
+                  &ldquo;{step.description}&rdquo;
                 </p>
               </div>
             ))}
@@ -99,7 +97,7 @@ export default function MetodiPage() {
               <div className="relative">
                 <div className="absolute -inset-4 bg-amber-100 rounded-full blur-3xl opacity-50"></div>
                 <div className="w-64 h-64 md:w-80 md:h-80 bg-stone-900 rounded-full relative z-10 flex items-center justify-center p-12 text-stone-100 text-center font-serif italic text-2xl border-4 border-stone-800 shadow-2xl">
-                  "Sivuston arvo mitataan siinä, kuinka vähän ylimääräistä työtä se vaatii käyttäjältään."
+                  &ldquo;Sivuston arvo mitataan siinä, kuinka vähän ylimääräistä työtä se vaatii käyttäjältään.&rdquo;
                 </div>
               </div>
             </div>

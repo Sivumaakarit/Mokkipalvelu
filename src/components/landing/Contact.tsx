@@ -1,4 +1,3 @@
-import { siteConfig } from "@/lib/site-config";
 import Image from "next/image";
 import { Playfair_Display, Inter } from "next/font/google";
 
@@ -66,7 +65,7 @@ export function Contact() {
                                     <div className="bg-white/30 backdrop-blur-sm p-8 md:p-10 border-l-[12px] border-black text-left shadow-inner">
                                         <p className={`${inter.className} text-lg md:text-xl italic font-medium text-black/80`}>
                                             Se on kiistaton todiste siitä, että Sivumaakareiden Tehorunko-nettisivu toimii.
-                                            Me emme korjaa mökkejä, me korjaamme yrityksesi digitaalisen "mökkitien".
+                                            Me emme korjaa mökkejä, me korjaamme yrityksesi digitaalisen &ldquo;mökkitien&rdquo;.
                                         </p>
                                     </div>
                                 </div>

@@ -23,7 +23,7 @@ export function StandalonePricing() {
                 <div className="mb-24 flex flex-col justify-center items-center max-w-4xl mx-auto">
                     <div className="text-center w-full">
                         <h3 className={`${playfair.className} text-3xl md:text-4xl font-bold text-blue-900 mb-6`}>
-                            Mitä saat tällä hinnalla? <br />
+                            Mitä saat alkaen 33 € /kk? <br />
                             <span className="text-xl md:text-2xl text-slate-500 font-normal mt-2 block">(Sitä, mitä muut eivät pysty tarjoamaan)</span>
                         </h3>
                         <p className="text-lg md:text-xl text-slate-700 mb-12 leading-relaxed max-w-3xl mx-auto">
@@ -32,21 +32,21 @@ export function StandalonePricing() {
 
                         <ul className="grid sm:grid-cols-3 gap-8 text-left">
                             <li className="flex flex-col items-center text-center gap-4 bg-slate-50 p-6 rounded-3xl border border-slate-100 hover:shadow-lg transition-shadow">
-                                <div className="bg-green-100 text-green-700 p-4 rounded-full h-fit">
-                                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                                </div>
-                                <div>
-                                    <strong className="text-slate-900 text-xl block mb-2">Elite-suorituskyky</strong>
-                                    <p className="text-slate-600 text-sm md:text-base">Sivusi latautuu silmänräpäyksessä ja pysyy aina 85–100 pisteen eliittiluokassa.</p>
-                                </div>
-                            </li>
-                            <li className="flex flex-col items-center text-center gap-4 bg-slate-50 p-6 rounded-3xl border border-slate-100 hover:shadow-lg transition-shadow">
                                 <div className="bg-blue-100 text-blue-700 p-4 rounded-full h-fit">
                                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
                                 </div>
                                 <div>
                                     <strong className="text-slate-900 text-xl block mb-2">AI-valmius</strong>
                                     <p className="text-slate-600 text-sm md:text-base">Jotta asiakkaasi löytävät sinut Googlesta, Mapsista ja uusista tekoälysovelluksista (esim. ChatGPT).</p>
+                                </div>
+                            </li>
+                            <li className="flex flex-col items-center text-center gap-4 bg-slate-50 p-6 rounded-3xl border border-slate-100 hover:shadow-lg transition-shadow">
+                                <div className="bg-green-100 text-green-700 p-4 rounded-full h-fit">
+                                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                </div>
+                                <div>
+                                    <strong className="text-slate-900 text-xl block mb-2">Elite-suorituskyky</strong>
+                                    <p className="text-slate-600 text-sm md:text-base">Sivusi latautuu silmänräpäyksessä ja pysyy aina 85–100 pisteen eliittiluokassa.</p>
                                 </div>
                             </li>
                             <li className="flex flex-col items-center text-center gap-4 bg-slate-50 p-6 rounded-3xl border border-slate-100 hover:shadow-lg transition-shadow">

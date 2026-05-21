@@ -273,7 +273,7 @@ export function SalesSection() {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-10">
                                     <div className="md:pr-8">
                                         <div className="text-center md:text-left mb-8">
-                                            <h4 className={`${playfair.className} text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight italic`}>Mitä saat tällä hinnalla?</h4>
+                                            <h4 className={`${playfair.className} text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight italic`}>Alkaen 33 € /kk</h4>
                                             <div className="w-16 h-1 bg-cyan-500 mb-6 hidden md:block"></div>
                                         </div>
                                         <p className={`${inter.className} text-slate-300 mb-8 text-lg leading-relaxed`}>

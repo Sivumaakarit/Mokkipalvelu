@@ -115,15 +115,20 @@ export default function TilaaPerus() {
                                                 <textarea 
                                                     name="message"
                                                     className="w-full min-w-0 p-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-cyan-500 outline-none h-32" 
-                                                    defaultValue={`Hei! Olen kiinnostunut Sivu + Perusturva -paketista (${billing === 'vuosi' ? '33 €/kk vuosilaskutuksella' : '50 €/kk kuukausilaskutuksella'}). Haluaisin kuulla lisää avaimet käteen -toteutuksesta. Ymmärrän, että tämä viesti ei sido minua mihinkään ja sopimuksen voi halutessaan perua.`}
+                                                    defaultValue={`Hei! Olen kiinnostunut Sivu + Perusturva -paketista (${billing === 'vuosi' ? '33 €/kk vuosilaskutuksella' : '50 €/kk kuukausilaskutuksella'}). Haluaisin kuulla lisää avaimet käteen -toteutuksesta. Ymmärrän, että tämä viesti ei sido minua mihinkään.\n\nTarvitsen nettisivut: (kirjoita esim. yrityksen nimi, toimiala ja paikkakunta. Voit myös kirjoittaa lyhyesti toiveistasi, jotta osaamme tarjota juuri sinulle parasta ratkaisua)`}
                                                 ></textarea>
                                             </div>
                                             <button type="submit" className="w-full bg-cyan-600 text-white font-bold py-4 rounded-xl hover:bg-cyan-700 transition shadow-lg shadow-cyan-600/30">
                                                 Pyydä lisätietoja tai arvio
                                             </button>
                                             <p className="text-center text-xs text-slate-500 mt-4 leading-relaxed">
-                                                <strong className="text-slate-600">Ei määräaikaisia lukkovuosia.</strong> Kuukausitilauksen voi perua milloin tahansa (1 kk irtisanomisaika).<br />
-                                                Yhteydenotto ei sido sinua tilaamaan.
+                                                <strong className="text-slate-600">
+                                                    {billing === 'vuosi' 
+                                                        ? 'Vuositilaus laskutetaan 12 kk erissä.' 
+                                                        : 'Alennettu avausmaksu edellyttää 12 kk sopimuskautta, jonka jälkeen tilaus jatkuu toistaiseksi voimassa olevana.'}
+                                                </strong>
+                                                <br />
+                                                Peruutus 1 kk irtisanomisajalla sopimuskauden päätyttyä. Yhteydenotto ei sido sinua tilaamaan.
                                             </p>
                                         </form>
                                     </>

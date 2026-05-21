@@ -176,8 +176,8 @@ export function Header() {
 
                         <div className="hidden md:flex items-center gap-8">
                             <nav className="flex items-center gap-8 text-blue-100 text-sm md:text-base font-medium tracking-wide">
-                                <Link href="/referenssit" className="hover:text-cyan-400 transition-colors">Työnäytteet</Link>
                                 <Link href="/mokkipalvelu" className="hover:text-cyan-400 transition-colors">Esimerkkitoteutus</Link>
+                                <Link href="/referenssit" className="hover:text-cyan-400 transition-colors">Töitämme</Link>
                                 <Link href={isMainPage ? "#hinnasto" : "/tarjous#hinnasto"} onClick={scrollToHinnasto} className="hover:text-cyan-400 transition-colors">Paketit & hinnat</Link>
                             </nav>
 
@@ -211,8 +211,8 @@ export function Header() {
                 {/* Mobile Menu (Dropdown/Slide) */}
                 {isOpen && showBlueHeader && (
                     <div className="md:hidden absolute top-16 left-0 w-full bg-[#0A1128] border-t border-blue-900/50 shadow-2xl py-6 px-6 flex flex-col gap-2 animate-in slide-in-from-top-2 duration-250">
-                        <Link href="/referenssit" onClick={() => setIsOpen(false)} className="text-lg font-medium text-blue-100 py-4 border-b border-blue-900/50 hover:text-white transition-all block text-center uppercase tracking-widest">Työnäytteet</Link>
                         <Link href="/mokkipalvelu" onClick={() => setIsOpen(false)} className="text-lg font-medium text-blue-100 py-4 border-b border-blue-900/50 hover:text-white transition-all block text-center uppercase tracking-widest">Esimerkkitoteutus</Link>
+                        <Link href="/referenssit" onClick={() => setIsOpen(false)} className="text-lg font-medium text-blue-100 py-4 border-b border-blue-900/50 hover:text-white transition-all block text-center uppercase tracking-widest">Töitämme</Link>
                         <Link href={isMainPage ? "#hinnasto" : "/tarjous#hinnasto"} onClick={(e) => { setIsOpen(false); scrollToHinnasto(e); }} className="text-lg font-medium text-blue-100 py-4 border-b border-blue-900/50 hover:text-white transition-all block text-center uppercase tracking-widest">Paketit & hinnat</Link>
                         
                         <Link

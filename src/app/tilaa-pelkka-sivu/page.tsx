@@ -113,7 +113,7 @@ export default function TilaaPelkkaSivu() {
                                                 <textarea 
                                                     name="message"
                                                     className="w-full min-w-0 p-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 outline-none h-32" 
-                                                    defaultValue="Hei! Olen kiinnostunut Pelkkä sivu -paketista (990 €). Haluaisin kuulla lyhyesti lisää, miten tämä toimisi meidän yrityksellemme. Yhteydenotto ei sido minua mihinkään."
+                                                    defaultValue={`Hei! Olen kiinnostunut Pelkkä sivu -paketista (990 €). Haluaisin kuulla lyhyesti lisää, miten tämä toimisi meidän yrityksellemme. Yhteydenotto ei sido minua mihinkään.\n\nTarvitsen nettisivut: (kirjoita esim. yrityksen nimi, toimiala ja paikkakunta. Voit myös kirjoittaa lyhyesti toiveistasi, jotta osaamme tarjota juuri sinulle parasta ratkaisua)`}
                                                 ></textarea>
                                             </div>
                                             <button type="submit" className="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition shadow-lg shadow-blue-600/30">

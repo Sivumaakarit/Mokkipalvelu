@@ -14,7 +14,7 @@ export function PricingTiers() {
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-10">
                     <h2 className={`${playfair.className} text-4xl md:text-5xl font-bold mb-4 text-blue-900`}>
-                        Mitä saat tällä hinnalla?
+                        Alkaen 33 € /kk
                     </h2>
                     <p className="text-xl text-slate-600 max-w-2xl mx-auto">
                         Valitse tarpeisiisi sopiva malli. Säästä valitsemalla vuosilaskutus.
@@ -109,7 +109,7 @@ export function PricingTiers() {
                             <ul className="space-y-4">
                                 <li className="flex gap-3 text-slate-300 text-sm items-start">
                                     <svg className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                                    <span className="leading-snug"><strong className="text-white">Täysi palvelin & webhotelli:</strong> Sivustosi toimii turvallisella ja huippunopealla pilvipalvelimella.</span>
+                                    <span className="leading-snug"><strong className="text-white">Täyden palvelun webhotelli:</strong> Sivustosi toimii turvallisella ja huippunopealla pilvipalvelimella.</span>
                                 </li>
                                 <li className="flex gap-3 text-slate-300 text-sm items-start">
                                     <svg className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>

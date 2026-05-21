@@ -20,7 +20,7 @@ export const Footer = () => {
         </Link>
         
         <div className="flex flex-wrap justify-center gap-8 text-xs uppercase tracking-widest font-bold text-stone-400">
-          <Link href="/referenssit" className="hover:text-stone-900 transition-colors">Työnäytteet</Link>
+          <Link href="/referenssit" className="hover:text-stone-900 transition-colors">Töitämme</Link>
           <Link href="/metodi" className="hover:text-stone-900 transition-colors">Metodi</Link>
           <Link href="/tarjous" className="hover:text-stone-900 transition-colors">Ota yhteyttä</Link>
         </div>
