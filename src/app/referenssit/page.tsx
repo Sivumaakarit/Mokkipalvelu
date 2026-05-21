@@ -1,12 +1,28 @@
 "use client";
 
 import { useState } from "react";
-import { siteConfig } from "@/lib/site-config";
 import Link from "next/link";
 import { CaseStudyShowcase } from "@/components/landing/CaseStudyShowcase";
 import { Footer } from "@/components/layout/Footer";
 
-const projects = [
+interface Project {
+  id: string;
+  title: string;
+  category: string;
+  description: string;
+  tags: string[];
+  desktopImage: string;
+  mobileImage: string;
+  tabletImage: string;
+  accentColor: string;
+  accentBorder: string;
+  link: string;
+  linkText: string;
+  mobileBgColor: string;
+  tabletBgColor: string;
+}
+
+const projects: Project[] = [
   {
     id: "mokkipalvelu",
     title: "Mökkipalvelu",
@@ -34,7 +50,7 @@ const projects = [
     tabletImage: "/images/roboline-tablet.webp",
     accentColor: "blue-600",
     accentBorder: "border-blue-600",
-    link: "https://www.roboline.fi",
+    link: "https://www.roboline-innovations.fi/",
     linkText: "Tutustu Robolineen →",
     mobileBgColor: "#ffffff",
     tabletBgColor: "#ffffff"
@@ -58,7 +74,7 @@ const projects = [
 ];
 
 export default function ReferenssitPage() {
-  const [selectedProject, setSelectedProject] = useState(projects[0]);
+  const [selectedProject, setSelectedProject] = useState<Project>(projects[0]);
 
   return (
     <div className="bg-white min-h-screen">
@@ -90,7 +106,7 @@ export default function ReferenssitPage() {
             accentBorderClass={selectedProject.accentBorder}
             mobileBgColor={selectedProject.mobileBgColor}
             tabletBgColor={selectedProject.tabletBgColor}
-            linkText={(selectedProject as any).linkText}
+            linkText={selectedProject.linkText}
           />
         </div>
       </section>
