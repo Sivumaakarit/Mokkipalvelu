@@ -82,9 +82,9 @@ export default function TarjousPage() {
                     <div className="inline-block px-3 py-1 md:px-4 md:py-1.5 mb-4 md:mb-6 rounded-full bg-blue-500/20 border border-blue-400/30 backdrop-blur-md text-blue-300 text-[10px] md:text-sm font-bold tracking-[0.2em] uppercase">
                         Premium Palvelusivut
                     </div>
-                    <h1 className={`${playfair.className} text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-[1.15] md:leading-[1.05] tracking-tight drop-shadow-2xl`}>
+                    <h1 className={`${playfair.className} text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-[1.15] md:leading-[1.15] tracking-tight drop-shadow-2xl`}>
                         Myyvät nettisivut –<br className="md:hidden" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-white to-cyan-300 block md:inline-block py-2 md:py-0"> avaimet käteen yrittäjälle</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-white to-cyan-300 block md:inline-block py-2 md:py-3 md:pb-4"> avaimet käteen yrittäjälle</span>
                     </h1>
 
                     <p className={`${inter.className} text-lg md:text-2xl text-slate-200 mb-8 max-w-4xl mx-auto font-light leading-relaxed opacity-90`}>
@@ -93,8 +93,11 @@ export default function TarjousPage() {
                     {/* Quick Answer Block: High-density data for AI Citation */}
                     <div className="mb-12 py-5 px-8 bg-slate-900/50 backdrop-blur-md rounded-2xl border border-white/10 text-white w-fit mx-auto shadow-2xl text-center">
                         <p className="font-bold mb-2 uppercase tracking-[0.2em] text-[10px] text-blue-400">REILU HINNOITTELU & LUPAUS:</p>
-                        <div className="text-xl md:text-2xl font-black text-white">
-                            Alkaen 33 €/kk* <span className="text-slate-300 font-medium text-base md:text-lg">+ avausmaksu 399 €</span>
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-white mb-2">
+                            <span className="text-slate-400 text-sm md:text-base font-normal">Alkaen</span>
+                            <span className="text-2xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-amber-400 py-1 px-0.5">33 €/kk*</span>
+                            <span className="text-slate-600 font-light mx-2 hidden sm:inline">|</span>
+                            <span className="text-slate-300 text-sm md:text-base font-medium">+ avausmaksu 399 €</span>
                         </div>
                         <p className="text-xs text-slate-300 mt-1.5 mb-4 max-w-lg mx-auto">
                             (Ensimmäinen vuosi yhteensä vain 795 € + alv)
