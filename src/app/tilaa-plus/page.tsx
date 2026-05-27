@@ -59,11 +59,11 @@ export default function TilaaPlus() {
                             <span className="inline-block px-3 py-1 bg-blue-500/20 text-blue-300 text-xs font-bold uppercase tracking-widest rounded-full mb-6 border border-blue-400/30">VIP-Huoltosopimus</span>
 
                             <h1 className={`${playfair.className} text-3xl md:text-5xl font-bold text-white mb-6 leading-tight`}>
-                                Plus-paketti <span className="text-blue-400">({billing === 'vuosi' ? '99 €/kk' : '150 €/kk'})</span>
+                                Plus-paketti <span className="text-blue-400">({billing === 'vuosi' ? '99 €/kk + avausmaksu 399 €' : '150 €/kk + avausmaksu 499 €'})</span>
                             </h1>
 
                             <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                                Enemmän kuin pelkkä ylläpito – se on väline kasvuun. Sisältää teknisen turvan ja julkaisun lisäksi <strong className="text-white">2 tuntia asiantuntijatyötä joka kuukausi</strong>.
+                                Enemmän kuin pelkkä ylläpito – se on väline kasvuun. Ensimmäinen vuosi yhteensä vain {billing === 'vuosi' ? '1 587 €' : '2 299 €'} + alv. Sisältää teknisen turvan ja julkaisun lisäksi <strong className="text-white">2 tuntia asiantuntijatyötä joka kuukausi</strong>.
                             </p>
                         </div>
 
@@ -91,7 +91,7 @@ export default function TilaaPlus() {
                                     </li>
                                     <li className="flex gap-3 text-slate-700">
                                         <svg className="w-6 h-6 text-blue-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                        <span><strong>Priorisoitu tuki:</strong> Olet aina jonon kärjessä. Vasteaikamme on erittäin nopea, maksimissaan 24 tuntia. (Kaikki tekninen turva sisältyy).</span>
+                                        <span><strong>Priorisoitu tuki:</strong> Olet aina jonon kärjessä. Vasteaikamme on erittäin nopea, maksimissaan 24 tuntia arkipäivisin. (Kaikki tekninen turva sisältyy).</span>
                                     </li>
                                 </ul>
                             </div>
@@ -124,11 +124,11 @@ export default function TilaaPlus() {
                                             <p className="text-center text-xs text-slate-500 mt-4 leading-relaxed">
                                                 <strong className="text-slate-600">
                                                     {billing === 'vuosi' 
-                                                        ? 'Vuositilaus laskutetaan 12 kk erissä.' 
-                                                        : 'Alennettu avausmaksu edellyttää 12 kk sopimuskautta, jonka jälkeen tilaus jatkuu toistaiseksi voimassa olevana.'}
+                                                        ? 'Vuositilaus laskutetaan 12 kk erässä (ylläpito 1 188 € + avausmaksu 399 € = 1 587 € + alv).' 
+                                                        : 'Alennettu avausmaksu edellyttää 12 kk sopimuskautta (ylläpito 150 €/kk + avausmaksu 499 €).'}
                                                 </strong>
                                                 <br />
-                                                Peruutus 1 kk irtisanomisajalla sopimuskauden päätyttyä. Yhteydenotto ei sido sinua tilaamaan.
+                                                Määräaikaisen 12 kk kauden jälkeen sopimus jatkuu toistaiseksi voimassa olevana 3 kk irtisanomisajalla hintaan 150 €/kk + alv (tai voit valita uuden, tuolloin tarjolla olevan vuosisopimuksen). Yhteydenotto tai tarjouspyyntö ei sido sinua mihinkään.
                                             </p>
                                         </form>
                                     </>

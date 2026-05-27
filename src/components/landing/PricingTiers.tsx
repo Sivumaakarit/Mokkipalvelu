@@ -8,7 +8,7 @@ const playfair = Playfair_Display({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
 
 export function PricingTiers() {
-    const [isAnnual, setIsAnnual] = useState(false);
+    const [isAnnual, setIsAnnual] = useState(true);
     return (
         <section className={`py-24 px-4 bg-slate-50 ${inter.className}`} id="hinnasto">
             <div className="max-w-7xl mx-auto">
@@ -87,7 +87,7 @@ export function PricingTiers() {
                                     <span className="text-4xl md:text-5xl font-extrabold text-white">{isAnnual ? "33 €" : "50 €"}</span>
                                     <span className="text-slate-400 text-base md:text-lg">/ kk</span>
                                 </div>
-                                <span className="text-cyan-400/80 text-xs mt-1 font-medium">{isAnnual ? "Laskutetaan kerralla 399 € / vuosi. (Säästä 201 €/v)." : "12 kk sopimuskausi."}</span>
+                                 <span className="text-cyan-400/80 text-xs mt-1 font-medium">{isAnnual ? "Säästö-ale 1. vuosi kerralla (399 €). Jatkossa ylläpito jatkuu toistaiseksi voimassaolevana 50 €/kk (tai voit valita uuden, tuolloin tarjolla olevan vuosijakson)." : "12 kk sopimuskausi, jonka jälkeen jatkuu 50 €/kk."}</span>
                             </div>
 
                             <div className="bg-slate-800/80 rounded-xl p-4 border border-cyan-900/40 mb-4 shadow-inner relative overflow-hidden">
@@ -100,6 +100,18 @@ export function PricingTiers() {
                                 </div>
                                 <p className="text-xs text-slate-400 line-through decoration-slate-500 mr-2 inline-block">Norm. 990 €</p>
                                 <p className="text-xs text-slate-400 inline-block">Kertamaksu.</p>
+                            </div>
+
+                            {/* Ensimmäisen vuoden kokonaiskustannus */}
+                            <div className="bg-slate-800/40 rounded-xl p-4 border border-slate-700/50 mb-4 shadow-inner">
+                                <div className="flex justify-between items-center text-xs text-slate-400 mb-1">
+                                    <span>1. vuoden kokonaishinta:</span>
+                                    <span className="font-semibold text-slate-300">({isAnnual ? "12 × 33 € + 399 €" : "12 × 50 € + 499 €"})</span>
+                                </div>
+                                <div className="flex justify-between items-baseline">
+                                    <span className="text-xs font-bold text-slate-300">Yhteensä 1. vuosi:</span>
+                                    <span className="text-lg font-extrabold text-emerald-400">{isAnnual ? "795 €" : "1 099 €"} <span className="text-[10px] text-slate-400 font-normal font-sans">+ alv</span></span>
+                                </div>
                             </div>
 
                             <p className="text-slate-400 text-sm">Huoleton avaimet käteen -ratkaisu julkaisun jälkeen.</p>
@@ -121,7 +133,7 @@ export function PricingTiers() {
                                 </li>
                                 <li className="flex gap-3 text-slate-300 text-sm items-start">
                                     <svg className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                                    <span className="leading-snug"><strong className="text-white">Kuukausittainen päivitys:</strong> Sisältää yhden pienen muutoksen (esim. uusi kuva tai teksti).</span>
+                                    <span className="leading-snug"><strong className="text-white">Kuukausittainen päivitys:</strong> Sisältää yhden pienen muutoksen (esim. uusi kuva, teksti tai vaikkapa "tarjousmainos").</span>
                                 </li>
                                 <li className="flex gap-3 text-slate-300 text-sm items-start">
                                     <svg className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
@@ -144,7 +156,7 @@ export function PricingTiers() {
                                     <span className="text-4xl md:text-5xl font-extrabold text-blue-500">{isAnnual ? "99 €" : "150 €"}</span>
                                     <span className="text-slate-400 text-base md:text-lg">/ kk</span>
                                 </div>
-                                <span className="text-blue-500/80 text-xs mt-1 font-medium">{isAnnual ? "Laskutetaan kerralla 1 188 € / vuosi. (Säästä 612 €/v)." : "12 kk sopimuskausi."}</span>
+                                <span className="text-blue-500/80 text-xs mt-1 font-medium">{isAnnual ? "Säästö-ale 1. vuosi kerralla (1 188 €). Jatkossa ylläpito jatkuu toistaiseksi voimassaolevana 150 €/kk (tai voit valita uuden, tuolloin tarjolla olevan vuosijakson)." : "12 kk sopimuskausi, jonka jälkeen jatkuu 150 €/kk."}</span>
                             </div>
 
                             <div className="bg-slate-700/30 rounded-xl p-4 border border-slate-600/50 mb-4 shadow-inner relative overflow-hidden">
@@ -159,6 +171,18 @@ export function PricingTiers() {
                                 <p className="text-xs text-slate-400 inline-block">Kertamaksu.</p>
                             </div>
 
+                            {/* Ensimmäisen vuoden kokonaiskustannus */}
+                            <div className="bg-slate-700/20 rounded-xl p-4 border border-slate-650/40 mb-4 shadow-inner">
+                                <div className="flex justify-between items-center text-xs text-slate-400 mb-1">
+                                    <span>1. vuoden kokonaishinta:</span>
+                                    <span className="font-semibold text-slate-300">({isAnnual ? "12 × 99 € + 399 €" : "12 × 150 € + 499 €"})</span>
+                                </div>
+                                <div className="flex justify-between items-baseline">
+                                    <span className="text-xs font-bold text-slate-300">Yhteensä 1. vuosi:</span>
+                                    <span className="text-lg font-extrabold text-emerald-400">{isAnnual ? "1 587 €" : "2 299 €"} <span className="text-[10px] text-slate-400 font-normal font-sans">+ alv</span></span>
+                                </div>
+                            </div>
+
                             <p className="text-slate-400 text-sm">Aktiivista näkyvyyttä ja jatkuvaa tukea kasvulle.</p>
                         </div>
 
@@ -170,7 +194,12 @@ export function PricingTiers() {
                                 </li>
                                 <li className="flex gap-3 text-slate-300 text-sm items-start">
                                     <svg className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                                    <span className="leading-snug"><strong className="text-white">Asiantuntijapankki (2 h/kk):</strong> Oma ”digiassistenttisi” – käytä aika sisältöjen päivitykseen, ilmeen viilaukseen tai analytiikkaan.</span>
+                                    <span className="leading-snug">
+                                        <strong className="text-white">Asiantuntijapankki (2 h/kk):</strong> Oma ”digiassistenttisi” – käytä aika sisältöjen päivitykseen, ilmeen viilaukseen tai analytiikkaan.
+                                        <span className="text-slate-400 block mt-1 text-xs leading-normal">
+                                            Laskettu erittäin edulliseksi osaksi kuukausipakettia (säästät erillisiin, tyypillisesti 75–120 €/h kehittäjähintoihin ja aloitusmaksuihin verrattuna). Saat oman luottotekijäsi ilman lisälaskutuksen huolia.
+                                        </span>
+                                    </span>
                                 </li>
                                 <li className="flex gap-3 text-slate-300 text-sm items-start">
                                     <svg className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
@@ -178,7 +207,7 @@ export function PricingTiers() {
                                 </li>
                                 <li className="flex gap-3 text-slate-300 text-sm items-start">
                                     <svg className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                                    <span className="leading-snug"><strong className="text-white">Priorisoitu tuki:</strong> Olet aina jonon kärjessä. Vasteaikamme on erittäin nopea, max 24 tuntia.</span>
+                                    <span className="leading-snug"><strong className="text-white">Priorisoitu tuki:</strong> Olet aina jonon kärjessä. Vasteaikamme on erittäin nopea, max 24 tuntia arkipäivisin.</span>
                                 </li>
                                 <li className="flex gap-3 text-slate-300 text-sm items-start">
                                     <svg className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
@@ -205,8 +234,10 @@ export function PricingTiers() {
                     <p className="font-semibold text-slate-700">Tärkeää tietoa hinnoittelusta:</p>
                     <ul className="list-disc pl-5 space-y-2">
                         <li>Kaikkiin hintoihin lisätään voimassa oleva arvonlisävero (alv 25,5 %).</li>
-                        <li><strong className="text-slate-700">Sopimuskausi:</strong> Alennettu avausmaksu (399 €) edellyttää 12 kuukauden ylläpitosopimusta valitulla tasolla.</li>
-                        <li>Ylläpito- ja Turvapaketit voidaan laskuttaa aloitusmaksulla yrityksen tarpeiden mukaan. 7 päivän toimitusaika koskee normaaleja onepagereita heti materiaalien saavuttua.</li>
+                        <li>Erilliset lisätyöt ja ylläpitopaketin ylittävät asiantuntijatunnit (lisätyöhinnasto 75 €/h + alv) veloitetaan aina alkavalta tunnilta.</li>
+                        <li><strong className="text-slate-700">Vasteajat ja loma-ajat:</strong> Ilmoitetut vasteajat (Perus max 2 arkipäivää, Plus max 24 h) koskevat arkipäiviä. Mahdollisista loma-ajoista (kuten kesälomat tai arkipyhät) ilmoitetaan asiakkaille aina hyvissä ajoin etukäteen.</li>
+                        <li><strong className="text-slate-700">Sopimuskausi:</strong> Avausmaksu on kertaluonteinen sivuston yksilöllisen suunnittelun ja koodauksen kustannus. Ylläpitosopimus solmitaan 12 kuukauden määräajaksi, jonka jälkeen se jatkuu toistaiseksi voimassaolevana 3 kuukauden irtisanomisajalla kuukausihintaan (Perus: 50 €/kk, Plus: 150 €/kk + alv), tai voit valita uuden, tuolloin tarjolla olevan vuosisopimuksen.</li>
+                        <li>Ylläpito- ja Turvapaketit voidaan laskuttaa kuukausittain tai kerralla vuodeksi eteenpäin, jolloin vuosittainen laskutus säästää huomattavasti kuukausihinnoissa ja vähentää avausmaksua 100 €.</li>
                     </ul>
                 </div>
             </div>

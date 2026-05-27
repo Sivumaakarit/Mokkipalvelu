@@ -16,7 +16,7 @@ export function FAQ() {
     const faqs = [
         {
             question: "Miksi valitsisin kuukausimaksullisen ylläpidon?",
-            answer: "Keskity omaan yritykseesi, me pidämme huolen tekniikasta. Helppo avaimet käteen -ratkaisu kuukausimaksulla, ilman stressiä. Kun valitset ylläpidon (esim. Perus-paketti 50 €/kk), saat sivuston avausmaksun reilusti alennettuun hintaan (399 €). Me hoidamme palvelimet, tietoturvan ja päivitykset. Sinun tehtäväksesi jää vain uusien asiakkaiden palveleminen."
+            answer: "Keskity omaan yritykseesi, me pidämme huolen tekniikasta. Helppo avaimet käteen -ratkaisu kuukausimaksulla, ilman stressiä. Kun valitset ylläpidon (esim. Perus-paketti alkaen 33 €/kk* vuosilaskutuksella tai 50 €/kk kuukausilaskutuksella), saat sivuston avausmaksun reilusti alennettuun hintaan (399 € / 499 €). Me hoidamme palvelimet, tietoturvan ja päivitykset. Sinun tehtäväksesi jää vain uusien asiakkaiden palveleminen."
         },
         {
             question: "Mitä 50 € kuukausittainen ylläpito oikeasti sisältää?",
@@ -37,8 +37,8 @@ export function FAQ() {
             answer: "Se on meidän lupauksemme teknisestä täydellisyydestä. Takaamme Google-raportissa täydet 100 pistettä hakukonelöytyvyydestä, esteettömyydestä ja parhaista käytännöistä. Suorituskyvyn osalta lupaamme aina 85–100 pisteen eliittiluokan. Miksi ei aina 100? Koska teemme sivuista visuaalisesti upeita – ja se vaatii ripauksen tehoa. 85+ on silti nopeampi kuin 99 % nykyisistä nettisivuista (useimmat pörssiyhtiöt jäävät alle 50 pisteen)."
         },
         {
-            question: "Miten toimitus voi olla vasta 7 päivää?",
-            answer: "Me teemme työt puolestasi. Emme aloita nollasta, vaan käytämme huippuunsa testattua pohjaa ja hyödynnämme tekoälyä sisällöntuotannon optimoinnissa. Kun annat meille perustiedot palvelustasi, me jalostamme siitä iskevän myyntipuheen ja istutamme sen valmiiseen runkoon. Sinun tehtäväksesi jää vain nauttia tuloksista."
+            question: "Miten toimitus voi olla näin nopea?",
+            answer: "Me teemme työt puolestasi. Nopeus perustuu siihen, että käytämme valmiiksi testattua, erittäin tehokkaasti myyvää sivustorakennetta emmekä aloita jokaista projektia alusta asti nollasta. Kun annat meille perustiedot yrityksestäsi, me jalostamme siitä iskevän myyntipuheen ja istutamme sen tähän toimivaksi todettuun runkoon. Sivusi valmistuvat nopeasti – parhaimmillaan jopa vuorokaudessa siitä, kun olemme saaneet kaikki materiaalit (kyseessä ei kuitenkaan ole sitova yleislupaus, sillä toimitusaika riippuu aina projektin koosta). Tämä säästää valtavasti aikaa ja takaa laadukkaan tuloksen."
         },
         {
             question: "Voinko todella saada sivut ilmaiseksi pilottiasiakkaana?",

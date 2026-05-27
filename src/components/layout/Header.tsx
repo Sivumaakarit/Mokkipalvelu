@@ -98,7 +98,7 @@ export function Header() {
                                      href="/tarjous#hinnasto"
                                      className="bg-white hover:bg-green-50 text-green-900 px-6 py-2 rounded-lg font-bold transition-colors shadow-sm normal-case tracking-normal"
                                  >
-                                     Alkaen 50 € / kk
+                                     Katso hinnasto
                                  </Link>
                             </nav>
 
@@ -133,7 +133,7 @@ export function Header() {
                                 onClick={() => setIsOpen(false)}
                                 className="mt-4 w-full bg-white text-green-900 py-3.5 rounded-xl font-bold text-center shadow-sm"
                             >
-                                Alkaen 50 € / kk
+                                Katso hinnasto
                             </Link>
                         </div>
                     )}
@@ -155,7 +155,7 @@ export function Header() {
                         onClick={scrollToHinnasto}
                         className="flex-shrink-0 bg-blue-700 hover:bg-blue-800 text-white px-4 md:px-6 py-3 rounded-full font-bold transition text-sm md:text-base whitespace-nowrap shadow-md"
                     >
-                        Alkaen 50 € / kk
+                        Katso hinnasto
                     </Link>
                 </header>
             )}

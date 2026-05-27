@@ -290,15 +290,15 @@ export function SalesSection() {
                                             </li>
                                             <li className={`${inter.className} flex items-start text-slate-300`}>
                                                 <svg className="w-5 h-5 text-green-400 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                                <span><strong className="text-white">Haluatko yrityksesi takaisin kartalle?</strong> Nettisivu on työntekijä, joka ei nuku koskaan. Pienyrittäjälle (esim. LVI tai talkkari) sivu maksaa itsensä takaisin jo 3–4 uuden asiakkaan myötä – sen jälkeen kaikki on puhdasta voittoa.</span>
+                                                <span><strong className="text-white">Haluatko yrityksesi takaisin kartalle?</strong> Nettisivu on työntekijä, joka ei nuku koskaan. Pienyrittäjälle (esim. LVI tai puutarhuri) sivu maksaa itsensä takaisin jo 3–4 uuden asiakkaan myötä – sen jälkeen kaikki on puhdasta voittoa.</span>
                                             </li>
                                         </ul>
                                     </div>
 
                                     <div className="flex flex-col justify-center">
-                                        <h4 className={`${inter.className} text-2xl font-bold text-white mb-2`}>Valmiina 7 päivässä<span className="text-cyan-400">*</span></h4>
+                                        <h4 className={`${inter.className} text-2xl font-bold text-white mb-2`}>Valmiina nopeasti<span className="text-cyan-400">*</span></h4>
                                         <p className={`${inter.className} text-xs text-slate-400 mb-4 italic`}>
-                                            * 7 päivän toimitusaika lasketaan siitä hetkestä, kun olet toimittanut meille kaiken sivustolle tulevan materiaalin.
+                                            * Toimitamme sivut nopeasti – parhaimmillaan jopa vuorokaudessa siitä, kun olet toimittanut meille kaiken materiaalin, eikä kyseessä ole poikkeuksellisen laaja kokonaisuus.
                                         </p>
                                         <div className="mb-10">
                                             <h4 className={`${inter.className} text-sm font-bold text-cyan-400 mb-6 uppercase tracking-widest border-b border-slate-800 pb-2`}>Hinnoittelu – Ei piilokuluja</h4>

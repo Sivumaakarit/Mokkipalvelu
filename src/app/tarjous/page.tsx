@@ -82,29 +82,35 @@ export default function TarjousPage() {
                     <div className="inline-block px-3 py-1 md:px-4 md:py-1.5 mb-4 md:mb-6 rounded-full bg-blue-500/20 border border-blue-400/30 backdrop-blur-md text-blue-300 text-[10px] md:text-sm font-bold tracking-[0.2em] uppercase">
                         Premium Palvelusivut
                     </div>
-                    <h1 className={`${playfair.className} text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-[1.05] tracking-tight drop-shadow-2xl`}>
-                        Myyvät nettisivut avaimet käteen –<br className="md:hidden" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-white to-cyan-300 block md:inline">Valmiina 7 päivässä</span>
+                    <h1 className={`${playfair.className} text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-[1.15] md:leading-[1.05] tracking-tight drop-shadow-2xl`}>
+                        Myyvät nettisivut –<br className="md:hidden" />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-white to-cyan-300 block md:inline-block py-2 md:py-0"> avaimet käteen palveluna</span>
                     </h1>
 
                     <p className={`${inter.className} text-lg md:text-2xl text-slate-200 mb-8 max-w-4xl mx-auto font-light leading-relaxed opacity-90`}>
                         <strong className="text-white font-semibold">Rakennamme pienyrittäjälle nykyaikaiset kotisivut</strong>, jotka löytyvät ja myyvät. Hoidamme teknisen toteutuksen puolestasi, ja voit keskittyä omaan työhösi.                    </p>
 
                     {/* Quick Answer Block: High-density data for AI Citation */}
-                    <div className="mb-12 py-3 px-8 bg-slate-900/40 backdrop-blur-md rounded-2xl border border-white/10 text-white w-fit mx-auto shadow-2xl">
-                        <p className="font-bold mb-3 uppercase tracking-[0.2em] text-[10px] text-blue-400 text-center">Lupauksemme:</p>
-                        <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center gap-3 sm:gap-12 text-sm md:text-base font-medium">
-                            <div className="flex items-start gap-3">
-                                <svg className="w-5 h-5 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path></svg>
-                                <span className="text-white/90">Avaimet käteen toteutus</span>
+                    <div className="mb-12 py-5 px-8 bg-slate-900/50 backdrop-blur-md rounded-2xl border border-white/10 text-white w-fit mx-auto shadow-2xl text-center">
+                        <p className="font-bold mb-2 uppercase tracking-[0.2em] text-[10px] text-blue-400">REILU HINNOITTELU & LUPAUS:</p>
+                        <div className="text-xl md:text-2xl font-black text-white">
+                            Alkaen 33 €/kk* <span className="text-slate-300 font-medium text-base md:text-lg">+ avausmaksu 399 €</span>
+                        </div>
+                        <p className="text-xs text-slate-300 mt-1.5 mb-4 max-w-lg mx-auto">
+                            (Ensimmäinen vuosi yhteensä vain 795 € + alv)
+                        </p>
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-8 text-xs font-semibold text-slate-200 border-t border-white/10 pt-3">
+                            <div className="flex items-center gap-2">
+                                <svg className="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Avaimet käteen</span>
                             </div>
-                            <div className="flex items-start gap-3">
-                                <svg className="w-5 h-5 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path></svg>
-                                <span className="text-white/90">Nopeus ja löydettävyys</span>
+                            <div className="flex items-center gap-2">
+                                <svg className="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                <span>100/100 nopeus & SEO</span>
                             </div>
-                            <div className="flex items-start gap-3">
-                                <svg className="w-5 h-5 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path></svg>
-                                <span className="text-white/90">Valmis 7 päivässä</span>
+                            <div className="flex items-center gap-2">
+                                <svg className="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Valmis nopeasti</span>
                             </div>
                         </div>
                     </div>
@@ -226,7 +232,8 @@ export default function TarjousPage() {
                     </div>
                     <div className="bg-slate-800/50 p-8 md:p-12 rounded-3xl border border-slate-700/50 mb-12 shadow-2xl">
                         <h3 className={`${playfair.className} text-2xl md:text-4xl font-bold text-white mb-6 tracking-tight`}>
-                            Oletko valmis lopettamaan demottelun ja aloittamaan oikeat kaupat?
+                            Oletko valmis nostamaan<br />
+                            kaupankäyntisi uudelle tasolle?
                         </h3>
                         <p className="text-slate-400 mb-8 max-w-2xl mx-auto text-sm md:text-base">
                             Ammattitaitosi ansaitsee arvoisensa näyteikkunan. Otetaan yhdessä askel kohti tuloksellisempaa arkea.
@@ -239,10 +246,136 @@ export default function TarjousPage() {
                             Tilaa omat sivut
                         </Link>
                     </div>
+
+                    {/* ROI Laskelma */}
+                    <div className="mt-20 mb-8 text-left">
+                        <div className="text-center mb-10">
+                            <h3 className={`${playfair.className} text-3xl font-bold text-white mb-4`}>
+                                Laskelma: Kuinka nopeasti sivut maksavat itsensä takaisin?
+                            </h3>
+                            <p className="text-slate-300 text-lg max-w-2xl mx-auto">
+                                Sivut maksavat itsensä takaisin nopeammin kuin uskotkaan – usein jo ensimmäisellä yhteydenotolla.
+                            </p>
+                        </div>
+
+                        <div className="overflow-hidden rounded-2xl border border-slate-800 shadow-xl bg-slate-950/40 backdrop-blur-sm">
+                            <table className="w-full text-left border-collapse block md:table">
+                                <thead className="hidden md:table-header-group">
+                                    <tr className="bg-slate-900/80 border-b border-slate-800">
+                                        <th className="p-5 font-bold text-slate-200 border-r border-slate-800">Yritys / Tilanne</th>
+                                        <th className="p-5 font-bold text-slate-200 border-r border-slate-800 w-1/4">Keskimääräinen keikka</th>
+                                        <th className="p-5 font-bold text-slate-200">Milloin sivu on maksettu?</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="block md:table-row-group">
+                                    <tr className="block md:table-row border-b border-slate-800 hover:bg-slate-900/20 transition-colors">
+                                        <td className="block md:table-cell p-4 md:p-5 border-b md:border-b-0 md:border-r border-slate-800">
+                                            <span className="md:hidden text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1">Yritys / Tilanne</span>
+                                            <div className="text-slate-200 font-medium">Yhden hengen tehopakkaus</div>
+                                            <div className="text-sm text-slate-400 mt-1">(esim. puutarhuri tai LVI)</div>
+                                        </td>
+                                        <td className="block md:table-cell p-4 md:p-5 border-b md:border-b-0 md:border-r border-slate-800">
+                                            <span className="md:hidden text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1">Keskimääräinen keikka</span>
+                                            <div className="text-yellow-400 font-bold">n. 250 € - 400 €</div>
+                                        </td>
+                                        <td className="block md:table-cell p-4 md:p-5 text-emerald-400 font-medium bg-emerald-950/10 md:bg-transparent">
+                                            <span className="md:hidden text-xs font-bold text-emerald-500 uppercase tracking-wider block mb-1">Milloin sivu on maksettu?</span>
+                                            <div className="mb-1 italic">3–4 uutta asiakasta vuodessa.</div>
+                                            <div className="text-sm text-emerald-300/80 font-normal mt-1">Tämän jälkeen kaikki on puhdasta voittoa.</div>
+                                        </td>
+                                    </tr>
+                                    <tr className="block md:table-row hover:bg-slate-900/20 transition-colors">
+                                        <td className="block md:table-cell p-4 md:p-5 border-b md:border-b-0 md:border-r border-slate-800">
+                                            <span className="md:hidden text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1">Yritys / Tilanne</span>
+                                            <div className="text-slate-200 font-medium">Hieman isompi tiimi</div>
+                                            <div className="text-sm text-slate-400 mt-1">(esim. kattoremontit tai urakointi)</div>
+                                        </td>
+                                        <td className="block md:table-cell p-4 md:p-5 border-b md:border-b-0 md:border-r border-slate-800">
+                                            <span className="md:hidden text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1">Keskimääräinen keikka</span>
+                                            <div className="text-yellow-400 font-bold">n. 1 500 €+</div>
+                                        </td>
+                                        <td className="block md:table-cell p-4 md:p-5 text-emerald-400 font-medium bg-emerald-950/10 md:bg-transparent">
+                                            <span className="md:hidden text-xs font-bold text-emerald-500 uppercase tracking-wider block mb-1">Milloin sivu on maksettu?</span>
+                                            <div className="mb-1">Heti ensimmäisestä kaupasta.</div>
+                                            <div className="text-sm text-emerald-300/80 font-normal mt-1">Sivu on tienannut itsensä ja ylikin kerralla.</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <ProofSection />
+
+            {/* Sivumaakarit FAQ */}
+            <section className="py-24 px-4 bg-white scroll-mt-20" id="ukk">
+
+                <div className="max-w-3xl mx-auto">
+                    <h2 className={`${playfair.className} text-3xl md:text-5xl font-bold mb-12 text-center text-slate-900 tracking-tight`}>
+                        Usein kysyttyjä kysymyksiä
+                    </h2>
+
+                    <div className="space-y-4">
+                        <details className="group bg-slate-50 border border-slate-200 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                            <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-900 font-bold">
+                                <span>Miksi valitsisin kuukausimaksullisen ylläpidon?</span>
+                                <span className="relative size-5 shrink-0">
+                                    <svg className="absolute inset-0 size-5 opacity-100 group-open:opacity-0 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path></svg>
+                                    <svg className="absolute inset-0 size-5 opacity-0 group-open:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 12H4"></path></svg>
+                                </span>
+                            </summary>
+                            <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 mt-2 pt-4">
+                                <p>Keskity omaan yritykseesi, me pidämme huolen tekniikasta. Helppo avaimet käteen -ratkaisu kuukausimaksulla, ilman stressiä.</p>
+                                <p className="mt-2 text-slate-600">
+                                    Kun valitset ylläpidon (esim. Perus-paketti alkaen 33 €/kk), saat sivuston avausmaksun reilusti alennettuun hintaan (399 €). Me hoidamme palvelimet, tietoturvan ja päivitykset. Sinun tehtäväksesi jää vain uusien asiakkaiden palveleminen.
+                                </p>
+                            </div>
+                        </details>
+
+                        <details className="group bg-slate-50 border border-slate-200 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                            <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-900 font-bold">
+                                <span>Miksi valitsisin laajemman Plus-paketin ylläpidon?</span>
+                                <span className="relative size-5 shrink-0">
+                                    <svg className="absolute inset-0 size-5 opacity-100 group-open:opacity-0 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path></svg>
+                                    <svg className="absolute inset-0 size-5 opacity-0 group-open:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 12H4"></path></svg>
+                                </span>
+                            </summary>
+                            <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 mt-2 pt-4">
+                                <p>Mieti sivustoasi firman autona. Halpa kertamaksu on se, jolla ostat uuden auton. Mutta jos et koskaan vaihda öljyjä, katso rengaspaineita tai pese sitä, se menettää arvonsa nopeasti.</p>
+                                <p className="mt-2 text-slate-600">Jatkuva ylläpito on VIP-huoltosopimus: me pesemme auton, katsomme moottoriin ja huolehdimme jopa siitä, että oikeat asiakkaat nousevat kyytiin. Se on sijoitus siihen, että olemassa oleva sivusi ei vain &quot;ole&quot;, vaan tuo jatkuvasti uutta kauppaa.</p>
+                            </div>
+                        </details>
+
+                        <details className="group bg-slate-50 border border-slate-200 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                            <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-900 font-bold">
+                                <span>Miten voitte tarjota näin nopeat toimitukset?</span>
+                                <span className="relative size-5 shrink-0">
+                                    <svg className="absolute inset-0 size-5 opacity-100 group-open:opacity-0 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path></svg>
+                                    <svg className="absolute inset-0 size-5 opacity-0 group-open:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 12H4"></path></svg>
+                                </span>
+                            </summary>
+                            <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 mt-2 pt-4">
+                                Keskitymme olennaiseen: selkeyteen, toimivuuteen ja löydettävyyteen. Emme rakenna raskaita himmeleitä tai kymmeniä turhia alasivuja. Nopeus perustuu siihen, että käytämme valmiiksi testattua, erittäin tehokkaasti myyvää sivustorakennetta emmekä aloita jokaista projektia alusta asti nollasta. Tämä säästää valtavasti aikaa ja takaa, että sivustosi valmistuu nopeasti – parhaimmillaan jopa vuorokaudessa siitä, kun olemme saaneet kaikki materiaalit (kyseessä ei kuitenkaan ole sitova yleislupaus, sillä toimitusaika riippuu aina projektin koosta).
+                            </div>
+                        </details>
+
+                        <details className="group bg-slate-50 border border-slate-200 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                            <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-900 font-bold">
+                                <span>Mikä on ylläpitosopimuksen sitovuus ja irtisanomisaika?</span>
+                                <span className="relative size-5 shrink-0">
+                                    <svg className="absolute inset-0 size-5 opacity-100 group-open:opacity-0 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path></svg>
+                                    <svg className="absolute inset-0 size-5 opacity-0 group-open:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 12H4"></path></svg>
+                                </span>
+                            </summary>
+                            <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 mt-2 pt-4">
+                                Reilun ja erittäin edullisen avausmaksun (399 €) mahdollistamiseksi ylläpito- ja turvasopimus solmitaan aluksi 12 kuukauden määräajaksi. Tämän jälkeen sopimus jatkuu joustavasti toistaiseksi voimassaolevana kuukausihinnalla (Perus: 50 €/kk, Plus: 150 €/kk + alv) vain 3 kuukauden irtisanomisajalla (tai voit valita uuden, tuolloin tarjolla olevan vuosisopimuksen). Kun ylläpito päättyy, sivusto koodineen ja sisältöineen on täysin sinun omaisuuttasi – ei alustaloukkuja.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </section>
 
             {/* Tarina: Esimerkki arjesta */}
             <section className="py-24 px-4 bg-blue-50">
@@ -301,74 +434,6 @@ export default function TarjousPage() {
                     </div>
                 </details>
 
-            </section>
-
-            {/* Sivumaakarit FAQ */}
-            <section className="py-24 px-4 bg-white scroll-mt-20" id="ukk">
-
-                <div className="max-w-3xl mx-auto">
-                    <h2 className={`${playfair.className} text-3xl md:text-5xl font-bold mb-12 text-center text-slate-900 tracking-tight`}>
-                        Usein kysyttyjä kysymyksiä
-                    </h2>
-
-                    <div className="space-y-4">
-                        <details className="group bg-slate-50 border border-slate-200 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
-                            <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-900 font-bold">
-                                <span>Miksi valitsisin kuukausimaksullisen ylläpidon?</span>
-                                <span className="relative size-5 shrink-0">
-                                    <svg className="absolute inset-0 size-5 opacity-100 group-open:opacity-0 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path></svg>
-                                    <svg className="absolute inset-0 size-5 opacity-0 group-open:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 12H4"></path></svg>
-                                </span>
-                            </summary>
-                            <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 mt-2 pt-4">
-                                <p>Keskity omaan yritykseesi, me pidämme huolen tekniikasta. Helppo avaimet käteen -ratkaisu kuukausimaksulla, ilman stressiä.</p>
-                                <p className="mt-2 text-slate-600">
-                                    Kun valitset ylläpidon (esim. Perus-paketti alkaen 33 €/kk), saat sivuston avausmaksun reilusti alennettuun hintaan (399 €). Me hoidamme palvelimet, tietoturvan ja päivitykset. Sinun tehtäväksesi jää vain uusien asiakkaiden palveleminen.
-                                </p>
-                            </div>
-                        </details>
-
-                        <details className="group bg-slate-50 border border-slate-200 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
-                            <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-900 font-bold">
-                                <span>Miksi valitsisin laajemman Plus-paketin ylläpidon?</span>
-                                <span className="relative size-5 shrink-0">
-                                    <svg className="absolute inset-0 size-5 opacity-100 group-open:opacity-0 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path></svg>
-                                    <svg className="absolute inset-0 size-5 opacity-0 group-open:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 12H4"></path></svg>
-                                </span>
-                            </summary>
-                            <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 mt-2 pt-4">
-                                <p>Mieti sivustoasi firman autona. Halpa kertamaksu on se, jolla ostat uuden auton. Mutta jos et koskaan vaihda öljyjä, katso rengaspaineita tai pese sitä, se menettää arvonsa nopeasti.</p>
-                                <p className="mt-2 text-slate-600">Jatkuva ylläpito on VIP-huoltosopimus: me pesemme auton, katsomme moottoriin ja huolehdimme jopa siitä, että oikeat asiakkaat nousevat kyytiin. Se on sijoitus siihen, että olemassa oleva sivusi ei vain &quot;ole&quot;, vaan tuo jatkuvasti uutta kauppaa.</p>
-                            </div>
-                        </details>
-
-                        <details className="group bg-slate-50 border border-slate-200 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
-                            <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-900 font-bold">
-                                <span>Miten voitte tarjota näin nopeat, 7 päivän toimitukset?</span>
-                                <span className="relative size-5 shrink-0">
-                                    <svg className="absolute inset-0 size-5 opacity-100 group-open:opacity-0 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path></svg>
-                                    <svg className="absolute inset-0 size-5 opacity-0 group-open:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 12H4"></path></svg>
-                                </span>
-                            </summary>
-                            <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 mt-2 pt-4">
-                                Keskitymme olennaiseen: selkeyteen, toimivuuteen ja löydettävyyteen. Emme rakenna raskaita himmeleitä tai kymmeniä alasivuja joita asiakkaasi eivät koskaan lue. Kun tiedämme tarkan rakenteen ja tavoitteen etukäteen, työskentelemme tehokkaasti ja viivyttelemättä heti kun toimitat meille materiaalisi.
-                            </div>
-                        </details>
-
-                        <details className="group bg-slate-50 border border-slate-200 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
-                            <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-900 font-bold">
-                                <span>Jos otan jatkuvan tilauksen (Ylläpito), voinko peruuttaa sen milloin vain?</span>
-                                <span className="relative size-5 shrink-0">
-                                    <svg className="absolute inset-0 size-5 opacity-100 group-open:opacity-0 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path></svg>
-                                    <svg className="absolute inset-0 size-5 opacity-0 group-open:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 12H4"></path></svg>
-                                </span>
-                            </summary>
-                            <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 mt-2 pt-4">
-                                Kyllä voit. Meillä ei ole pitkiä pakollisia &quot;lukkovuosia&quot;. Voit lopettaa jatkuvan tilauksen kalenterikuukauden irtisanomisajalla. Jos olet maksanut sivuston rakennuksesta erillisen aloitusmaksun / kertamaksun, sivusto koodineen on täysin sinun omaisuuttasi jatkossakin.
-                            </div>
-                        </details>
-                    </div>
-                </div>
             </section>
 
             {/* CTA / Contact Section */}
@@ -430,14 +495,15 @@ export default function TarjousPage() {
                                             </div>
                                             <div className="space-y-2">
                                                 <label className="block text-sm font-bold text-slate-700 ml-1">Viesti / Yrityksesi ala</label>
-                                                <textarea name="message" className="w-full min-w-0 p-4 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-500 outline-none transition-all h-32 placeholder:text-slate-400" placeholder="Kerro lyhyesti mitä teet..." defaultValue="Olen kiinnostunut kuulemaan lisää. Tämä on alustava kysely eikä sido vielä mihinkään."></textarea>
+                                                <textarea name="message" className="w-full min-w-0 p-4 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-500 outline-none transition-all h-48 placeholder:text-slate-400" placeholder="Kerro lyhyesti mitä teet..." defaultValue={`Hei! Haluan kysyä lisää nettisivuista tai pyytää maksuttoman arvion. Ymmärrän, että tämä ei sido minua mihinkään.
+
+Toimialani ja lyhyt kuvaus yrityksestäni: (esim. LVI, siivous tai puutarhuri, ja paikkakunta)`}></textarea>
                                             </div>
                                             <button type="submit" className={`${playfair.className} w-full bg-blue-700 text-white font-bold py-5 rounded-2xl hover:bg-blue-800 transition-all shadow-[0_15px_30px_rgba(29,78,216,0.3)] hover:shadow-none hover:translate-y-0.5 transform active:scale-95 text-xl tracking-tight`}>
                                                 Pyydä lisätietoja tai arvio
                                             </button>
                                             <p className="text-center text-xs text-slate-400 mt-4 leading-relaxed">
-                                                <strong className="font-semibold text-slate-500">Ei määräaikaisia lukkovuosia.</strong><br />
-                                                Tilauksen voi perua milloin tahansa (1 kk irtisanomisaika). Yhteydenotto ei sido sinua tilaamaan.
+                                                Yhteydenotto ei sido sinua tilaamaan.
                                             </p>
                                         </form>
                                     </div>

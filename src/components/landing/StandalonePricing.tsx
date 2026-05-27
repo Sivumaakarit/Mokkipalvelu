@@ -23,8 +23,8 @@ export function StandalonePricing() {
                 <div className="mb-24 flex flex-col justify-center items-center max-w-4xl mx-auto">
                     <div className="text-center w-full">
                         <h3 className={`${playfair.className} text-3xl md:text-4xl font-bold text-blue-900 mb-6`}>
-                            Mitä saat alkaen 33 € /kk? <br />
-                            <span className="text-xl md:text-2xl text-slate-500 font-normal mt-2 block">(Sitä, mitä muut eivät pysty tarjoamaan)</span>
+                            Mitä saat alkaen 33 € /kk + 399 € avausmaksu? <br />
+                            <span className="text-xl md:text-2xl text-slate-500 font-normal mt-2 block">(Ensimmäisenä vuonna yhteensä vain 795 € + alv)</span>
                         </h3>
                         <p className="text-lg md:text-xl text-slate-700 mb-12 leading-relaxed max-w-3xl mx-auto">
                             Useimmat tekevät &quot;nättejä&quot; sivuja. Me teemme teknisesti täydellisiä myyntikoneita. Tähän hintaan et saa muualta tätä teknistä ylivertaisuutta:
@@ -62,61 +62,37 @@ export function StandalonePricing() {
                     </div>
                 </div>
 
-                {/* ROI Laskelma */}
-                <div className="mb-16">
-                    <div className="text-center mb-10">
-                        <h3 className={`${playfair.className} text-3xl font-bold text-blue-900 mb-4`}>
-                            Laskelma: Kuinka nopeasti sivut maksavat itsensä takaisin?
-                        </h3>
-                        <p className="text-slate-600 text-lg max-w-2xl mx-auto">
-                            Sivut maksavat itsensä takaisin nopeammin kuin uskotkaan – usein jo ensimmäisellä yhteydenotolla.
-                        </p>
+                {/* Hinnoittelun jakautuminen ja perustelu */}
+                <div className="mb-24 bg-slate-50 border border-slate-200/60 rounded-3xl p-6 md:p-8 max-w-4xl mx-auto shadow-sm">
+                    <h4 className={`${playfair.className} text-2xl font-bold text-blue-900 mb-6 text-center flex items-center justify-center gap-2`}>
+                        ⚖️ Miten hinnoittelu jakautuu – ja miksi se on reilu?
+                    </h4>
+                    <div className="grid md:grid-cols-2 gap-8 items-stretch">
+                        <div className="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col hover:shadow-md transition-shadow">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="p-3 bg-blue-50 text-blue-600 rounded-xl">
+                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                                </div>
+                                <h5 className="font-bold text-slate-900 text-lg">🛠️ Avausmaksu (alkaen 399 €*)</h5>
+                            </div>
+                            <p className="text-slate-600 text-sm md:text-base leading-relaxed flex-grow">
+                                Kattaa sivuston <strong>suunnittelun, ammattimaisen koodauksen, hakukoneoptimoinnin (SEO) ja täyden asennuksen nettiin</strong>. Tämä on kertaluontoinen investointi itse sivuston rakennustyöhön.
+                            </p>
+                        </div>
+                        <div className="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col hover:shadow-md transition-shadow">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="p-3 bg-cyan-50 text-cyan-600 rounded-xl">
+                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                                </div>
+                                <h5 className="font-bold text-slate-900 text-lg">☁️ Kuukausimaksu (alkaen 33 € /kk*)</h5>
+                            </div>
+                            <p className="text-slate-600 text-sm md:text-base leading-relaxed flex-grow">
+                                Kattaa <strong>huippunopean palvelimen (hosting), SSL-salausturvan, automaattiset varmuuskopiot, jatkuvan laadunvalvonnan ja yhden pienen (esim. tarjousmainos) kuukausittaisen päivityksen</strong>. Sivusi pysyy aina turvassa ja toiminnassa ilman omaa vaivaasi.
+                            </p>
+                        </div>
                     </div>
-
-                    <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-sm bg-white">
-                        <table className="w-full text-left border-collapse block md:table">
-                            <thead className="hidden md:table-header-group">
-                                <tr className="bg-slate-50 border-b border-slate-200">
-                                    <th className="p-5 font-bold text-slate-800 border-r border-slate-200">Yritys / Tilanne</th>
-                                    <th className="p-5 font-bold text-slate-800 border-r border-slate-200 w-1/4">Keskimääräinen keikka</th>
-                                    <th className="p-5 font-bold text-slate-800">Milloin sivu on maksettu?</th>
-                                </tr>
-                            </thead>
-                            <tbody className="block md:table-row-group">
-                                <tr className="block md:table-row border-b border-slate-200 md:border-slate-100 hover:bg-slate-50/50 transition-colors">
-                                    <td className="block md:table-cell p-4 md:p-5 border-b md:border-b-0 md:border-r border-slate-100">
-                                        <span className="md:hidden text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1">Yritys / Tilanne</span>
-                                        <div className="text-slate-700 font-medium">Yhden hengen tehopakkaus</div>
-                                        <div className="text-sm text-slate-500 mt-1">(esim. talkkari tai LVI)</div>
-                                    </td>
-                                    <td className="block md:table-cell p-4 md:p-5 border-b md:border-b-0 md:border-r border-slate-100">
-                                        <span className="md:hidden text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1">Keskimääräinen keikka</span>
-                                        <div className="text-slate-900 font-bold">n. 250 € - 400 €</div>
-                                    </td>
-                                    <td className="block md:table-cell p-4 md:p-5 text-green-700 font-medium bg-green-50/30 md:bg-transparent">
-                                        <span className="md:hidden text-xs font-bold text-green-800 uppercase tracking-wider block mb-1">Milloin sivu on maksettu?</span>
-                                        <div className="mb-1 italic">3–4 uutta asiakasta.</div>
-                                        <div className="text-sm text-green-600 font-normal mt-1">Tämän jälkeen kaikki on puhdasta voittoa.</div>
-                                    </td>
-                                </tr>
-                                <tr className="block md:table-row hover:bg-slate-50/50 transition-colors">
-                                    <td className="block md:table-cell p-4 md:p-5 border-b md:border-b-0 md:border-r border-slate-100">
-                                        <span className="md:hidden text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1">Yritys / Tilanne</span>
-                                        <div className="text-slate-700 font-medium">Hieman isompi tiimi</div>
-                                        <div className="text-sm text-slate-500 mt-1">(esim. kattoremontit tai urakointi)</div>
-                                    </td>
-                                    <td className="block md:table-cell p-4 md:p-5 border-b md:border-b-0 md:border-r border-slate-100">
-                                        <span className="md:hidden text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1">Keskimääräinen keikka</span>
-                                        <div className="text-slate-900 font-bold">n. 1 500 €+</div>
-                                    </td>
-                                    <td className="block md:table-cell p-4 md:p-5 text-green-700 font-medium bg-green-50/30 md:bg-transparent">
-                                        <span className="md:hidden text-xs font-bold text-green-800 uppercase tracking-wider block mb-1">Milloin sivu on maksettu?</span>
-                                        <div className="mb-1">Heti ensimmäisestä kaupasta.</div>
-                                        <div className="text-sm text-green-600 font-normal mt-1">Sivu on tienannut itsensä ja ylikin kerralla.</div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div className="mt-6 pt-4 border-t border-slate-100 text-center text-slate-700 text-sm md:text-base font-medium">
+                        👉 <strong>Yhteenveto:</strong> Ensimmäisen vuoden kokonaiskustannuksesi on vain <strong>795 € + alv</strong> (vuosilaskutuksella) tai <strong>1099 € + alv</strong> (kuukausilaskutuksella). Tämän jälkeen ylläpito jatkuu toistaiseksi voimassa olevana kuukausilaskutuksella (nyt 50 €/kk + alv) tai voit valita uuden, tuolloin tarjolla olevan vuosisopimuskauden.
                     </div>
                 </div>
 

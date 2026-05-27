@@ -59,11 +59,11 @@ export default function TilaaPerus() {
                             <span className="inline-block px-3 py-1 bg-cyan-500/20 text-cyan-300 text-xs font-bold uppercase tracking-widest rounded-full mb-6 border border-cyan-400/30">Huoleton Arki</span>
 
                             <h1 className={`${playfair.className} text-3xl md:text-5xl font-bold text-white mb-6 leading-tight`}>
-                                Perus-paketti <span className="text-cyan-400">({billing === 'vuosi' ? '33 €/kk' : '50 €/kk'})</span>
+                                Perus-paketti <span className="text-cyan-400">({billing === 'vuosi' ? '33 €/kk + avausmaksu 399 €' : '50 €/kk + avausmaksu 499 €'})</span>
                             </h1>
 
                             <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                                Kaikki mitä tarvitset sivuston turvalliseen ja nopeaan toimintaan. Me hoidamme tekniikan, sinä hoidat liiketoimintasi.
+                                Kaikki mitä tarvitset sivuston turvalliseen ja nopeaan toimintaan. Ensimmäinen vuosi yhteensä vain {billing === 'vuosi' ? '795 €' : '1 099 €'} + alv. Me hoidamme tekniikan ja koodauksen, sinä hoidat liiketoimintasi.
                             </p>
                         </div>
 
@@ -124,11 +124,11 @@ export default function TilaaPerus() {
                                             <p className="text-center text-xs text-slate-500 mt-4 leading-relaxed">
                                                 <strong className="text-slate-600">
                                                     {billing === 'vuosi' 
-                                                        ? 'Vuositilaus laskutetaan 12 kk erissä.' 
-                                                        : 'Alennettu avausmaksu edellyttää 12 kk sopimuskautta, jonka jälkeen tilaus jatkuu toistaiseksi voimassa olevana.'}
+                                                        ? 'Vuositilaus laskutetaan 12 kk erässä (ylläpito 396 € + avausmaksu 399 € = 795 € + alv).' 
+                                                        : 'Alennettu avausmaksu edellyttää 12 kk sopimuskautta (ylläpito 50 €/kk + avausmaksu 499 €).'}
                                                 </strong>
                                                 <br />
-                                                Peruutus 1 kk irtisanomisajalla sopimuskauden päätyttyä. Yhteydenotto ei sido sinua tilaamaan.
+                                                Määräaikaisen 12 kk kauden jälkeen sopimus jatkuu toistaiseksi voimassa olevana 3 kk irtisanomisajalla hintaan 50 €/kk + alv (tai voit valita uuden, tuolloin tarjolla olevan vuosisopimuksen). Yhteydenotto tai tarjouspyyntö ei sido sinua mihinkään.
                                             </p>
                                         </form>
                                     </>

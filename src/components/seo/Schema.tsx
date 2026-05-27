@@ -81,10 +81,10 @@ export function Schema() {
                     },
                     {
                         "@type": "Question",
-                        "name": "Miten voitte tarjota näin nopeat, 7 päivän toimitukset?",
+                        "name": "Miten voitte tarjota näin nopeat toimitukset?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Keskitymme olennaiseen: selkeyteen, toimivuuteen ja löydettävyyteen. Emme rakenna raskaita himmeleitä, vaan työskentelemme tehokkaasti ja viivyttelemättä heti kun toimitat meille materiaalisi."
+                            "text": "Keskitymme olennaiseen: selkeyteen, toimivuuteen ja löydettävyyteen. Emme rakenna raskaita himmeleitä, vaan työskentelemme erittäin tehokkaasti heti kun materiaalit ovat kasassa. Sivustosi valmistuu nopeasti – parhaimmillaan jopa vuorokaudessa, joskin toimitusaika riippuu aina projektin laajuudesta ja materiaaleistasi."
                         }
                     }
                 ]
@@ -109,8 +109,8 @@ export function Schema() {
                     {
                         "@type": "ListItem",
                         "position": 3,
-                        "name": "Toimitus 7 päivässä",
-                        "description": "Sivustot ovat valmiina viikossa materiaalin toimittamisen jälkeen."
+                        "name": "Toimitus nopeasti",
+                        "description": "Sivustot ovat valmiina nopeasti materiaalin toimittamisen jälkeen."
                     }
                 ]
             }

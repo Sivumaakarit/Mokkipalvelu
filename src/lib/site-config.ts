@@ -1,8 +1,8 @@
 export const siteConfig = {
     name: "Kotisivut yrittäjälle | Sivumaakarit",
     brandName: "Sivumaakarit",
-    slogan: "Uskottava palvelusivu yrittäjälle – Valmiina 7 päivässä",
-    description: "Löydy Googlesta ja tekoälystä. Kotisivut yrittäjälle 100/100-suorituskyvyllä. Valmis viikossa – ammattitaidolla.",
+    slogan: "Uskottava palvelusivu yrittäjälle – nopeasti",
+    description: "Löydy Googlesta ja tekoälystä. Kotisivut yrittäjälle 100/100-suorituskyvyllä. Valmis nopeasti – ammattitaidolla.",
     url: "https://sivumaakarit.fi",
 
     // Yhteystiedot (NAP - Name, Address, Phone)
@@ -30,7 +30,7 @@ export const siteConfig = {
     ],
 
     // SEO & AIO
-    keywords: ["Sivumaakarit", "Kodikotkot", "LVI-verkkosivut", "Yrittäjän kotisivut", "Huippunopeat kotisivut", "Sivustot 7 päivässä"],
+    keywords: ["Sivumaakarit", "Kodikotkot", "LVI-verkkosivut", "Yrittäjän kotisivut", "Huippunopeat kotisivut", "Sivustot nopeasti"],
 
     // Lomake-integraatio
     formspreeKey: "mvzvbrby",
