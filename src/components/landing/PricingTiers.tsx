@@ -46,16 +46,16 @@ export function PricingTiers() {
 
                 {/* Toggle Kytkin */}
                 <div className="flex flex-col items-center justify-center mb-16">
-                    <div className="bg-slate-200/70 p-1.5 rounded-full inline-grid grid-cols-2 relative shadow-[inset_0_2px_6px_rgba(0,0,0,0.06)] mb-3 group">
+                    <div className="bg-slate-200/60 p-1.5 rounded-full inline-grid grid-cols-2 relative shadow-[inset_0_2px_8px_rgba(0,0,0,0.08)] border border-slate-300/30 mb-3 group cursor-pointer hover:scale-[1.02] hover:border-slate-300/60 transition-all duration-300">
                         <button 
                             onClick={() => setIsAnnual(false)}
-                            className={`relative z-10 px-6 sm:px-8 py-3 rounded-full text-sm font-bold transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-2 flex items-center justify-center ${!isAnnual ? 'text-slate-900' : 'text-slate-500 hover:text-slate-700'}`}
+                            className={`relative z-10 px-6 sm:px-8 py-3 rounded-full text-sm font-bold transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-2 flex items-center justify-center cursor-pointer ${!isAnnual ? 'text-slate-900' : 'text-slate-500 hover:text-slate-700'}`}
                         >
                             Kuukausittain
                         </button>
                         <button 
                             onClick={() => setIsAnnual(true)}
-                            className={`relative z-10 px-6 sm:px-8 py-3 rounded-full text-sm font-bold transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-2 flex items-center justify-center gap-2 ${isAnnual ? 'text-slate-900' : 'text-slate-500 hover:text-slate-700'}`}
+                            className={`relative z-10 px-6 sm:px-8 py-3 rounded-full text-sm font-bold transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-2 flex items-center justify-center gap-2 cursor-pointer ${isAnnual ? 'text-slate-900' : 'text-slate-500 hover:text-slate-700'}`}
                         >
                             Vuosittain 
                             <span className={`px-2.5 py-0.5 rounded-full text-[11px] font-extrabold transition-colors duration-300 ${isAnnual ? 'bg-green-100 text-green-700 shadow-sm' : 'bg-slate-300/50 text-slate-500 group-hover:bg-slate-300/80 group-hover:text-slate-700'}`}>
@@ -64,11 +64,11 @@ export function PricingTiers() {
                         </button>
                         {/* Aktiivisen napin tausta */}
                         <div 
-                            className={`absolute top-1.5 bottom-1.5 left-1.5 w-[calc(50%-0.375rem)] bg-white rounded-full transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] shadow-[0_2px_8px_rgba(0,0,0,0.12)] border border-slate-200/80 ${isAnnual ? 'translate-x-full' : 'translate-x-0'}`}
+                            className={`absolute top-1.5 bottom-1.5 left-1.5 w-[calc(50%-0.375rem)] bg-white rounded-full transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] shadow-[0_4px_12px_rgba(0,0,0,0.15)] border ${isAnnual ? 'border-green-300/80 translate-x-full' : 'border-slate-200/90 translate-x-0'}`}
                         />
                     </div>
                     <div className={`text-sm font-medium transition-all duration-300 ${isAnnual ? 'text-green-600 opacity-100 scale-100' : 'text-slate-500 opacity-80 scale-95'}`}>
-                        {isAnnual ? '✨ Etusi valittuna: Avausmaksu -100 € & kuukausimaksu -33 %' : 'Vinkki: Vuosilaskutuksella säästät myös avausmaksusta 100 €!'}
+                        {isAnnual ? '✨ Etusi valittuna: Avausmaksu -100 € & kuukausimaksu -33 %' : '👉 Klikkaa "Vuosittain" säästääksesi kuukausihinnasta 33 % + avausmaksusta 100 €!'}
                     </div>
                 </div>
 
