@@ -95,7 +95,7 @@ export default function TarjousPage() {
                         <p className="font-bold mb-2 uppercase tracking-[0.2em] text-[10px] text-blue-400">REILU HINNOITTELU & LUPAUS:</p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-white mb-2">
                             <span className="text-slate-400 text-sm md:text-base font-normal">Alkaen</span>
-                            <span className="text-2xl md:text-3xl font-extrabold text-white py-1 px-0.5">33 €/kk*</span>
+                            <span className="text-2xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-cyan-300 py-1 px-0.5">33 €/kk*</span>
                             <span className="text-slate-600 font-light mx-2 hidden sm:inline">|</span>
                             <span className="text-slate-300 text-sm md:text-base font-medium">+ avausmaksu 399 €</span>
                         </div>
