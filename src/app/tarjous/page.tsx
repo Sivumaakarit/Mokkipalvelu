@@ -97,7 +97,7 @@ export default function TarjousPage() {
                             <span className="text-slate-400 text-sm md:text-base font-normal">Alkaen</span>
                             <span className="text-2xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-emerald-100 py-1 px-0.5">33 €/kk*</span>
                             <span className="text-slate-600 font-light mx-2 hidden sm:inline">|</span>
-                            <span className="text-slate-300 text-sm md:text-base font-medium">+ avausmaksu 399 €</span>
+                            <span className="text-slate-300 text-sm md:text-base font-medium">+ sivuston rakennus 399 €</span>
                         </div>
                         <p className="text-xs text-slate-300 mt-1.5 mb-4 max-w-lg mx-auto">
                             (Ensimmäinen vuosi yhteensä vain 795 € + alv)

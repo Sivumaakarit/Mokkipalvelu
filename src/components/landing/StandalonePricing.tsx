@@ -23,7 +23,7 @@ export function StandalonePricing() {
                 <div className="mb-24 flex flex-col justify-center items-center max-w-4xl mx-auto">
                     <div className="text-center w-full">
                         <h3 className={`${playfair.className} text-3xl md:text-4xl font-bold text-blue-900 mb-6`}>
-                            Mitä saat alkaen 33 € /kk + 399 € avausmaksu? <br />
+                            Mitä saat alkaen 33 €/kk* + sivuston rakennus 399 €? <br />
                             <span className="text-xl md:text-2xl text-slate-500 font-normal mt-2 block">(Ensimmäisenä vuonna yhteensä vain 795 € + alv)</span>
                         </h3>
                         <p className="text-lg md:text-xl text-slate-700 mb-12 leading-relaxed max-w-3xl mx-auto">
@@ -73,7 +73,7 @@ export function StandalonePricing() {
                                 <div className="p-3 bg-blue-50 text-blue-600 rounded-xl">
                                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
                                 </div>
-                                <h5 className="font-bold text-slate-900 text-lg">🛠️ Avausmaksu (alkaen 399 €*)</h5>
+                                <h5 className="font-bold text-slate-900 text-lg">🛠️ Sivuston rakennus (alkaen 399 €*)</h5>
                             </div>
                             <p className="text-slate-600 text-sm md:text-base leading-relaxed flex-grow">
                                 Kattaa sivuston <strong>suunnittelun, ammattimaisen koodauksen, hakukoneoptimoinnin (SEO) ja täyden asennuksen nettiin</strong>. Tämä on kertaluontoinen investointi itse sivuston rakennustyöhön.
