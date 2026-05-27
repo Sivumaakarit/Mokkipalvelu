@@ -84,7 +84,7 @@ export function Schema() {
                         "name": "Miten voitte tarjota näin nopeat toimitukset?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Keskitymme olennaiseen: selkeyteen, toimivuuteen ja löydettävyyteen. Emme rakenna raskaita himmeleitä, vaan hyödynnämme huippuluokan AI-pohjaisia työkaluja ja työskentelemme erittäin tehokkaasti heti kun materiaalit ovat kasassa. Sivustosi valmistuu nopeasti – parhaimmillaan jopa vuorokaudessa, joskin toimitusaika riippuu aina projektin laajuudesta ja materiaaleistasi."
+                            "text": "Keskitymme olennaiseen: selkeyteen, toimivuuteen ja löydettävyyteen. Emme rakenna raskaita himmeleitä, vaan käytämme valmiiksi testattua, tehokkaasti myyvää sivustorakennetta ja hyödynnämme työssämme huippuluokan AI-pohjaisia työkaluja heti kun materiaalit ovat kasassa. Sivustosi valmistuu nopeasti – parhaimmillaan jopa vuorokaudessa, joskin toimitusaika riippuu aina projektin laajuudesta ja materiaaleistasi."
                         }
                     }
                 ]

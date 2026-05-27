@@ -360,7 +360,7 @@ export default function TarjousPage() {
                                 </span>
                             </summary>
                             <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 mt-2 pt-4">
-                                Keskitymme olennaiseen: selkeyteen, toimivuuteen ja löydettävyyteen. Emme rakenna raskaita himmeleitä tai kymmeniä turhia alasivuja. Nopeus perustuu siihen, että hyödynnämme työssämme huippuluokan AI-pohjaisia työkaluja sekä valmiiksi testattua, erittäin tehokkaasti myyvää sivustorakennetta. Emme aloita jokaista projektia alusta asti nollasta, mikä säästää valtavasti aikaa ja takaa, että sivustosi valmistuu nopeasti – parhaimmillaan jopa vuorokaudessa siitä, kun olemme saaneet kaikki materiaalit (kyseessä ei kuitenkaan ole sitova yleislupaus, sillä toimitusaika riippuu aina projektin koosta).
+                                Keskitymme olennaiseen: selkeyteen, toimivuuteen ja löydettävyyteen. Emme rakenna raskaita himmeleitä tai kymmeniä turhia alasivuja. Nopeus perustuu siihen, että käytämme valmiiksi testattua, erittäin tehokkaasti myyvää sivustorakennetta sekä hyödynnämme työssämme huippuluokan AI-pohjaisia työkaluja. Emme aloita jokaista projektia alusta asti nollasta, mikä säästää valtavasti aikaa ja takaa, että sivustosi valmistuu nopeasti – parhaimmillaan jopa vuorokaudessa siitä, kun olemme saaneet kaikki materiaalit (kyseessä ei kuitenkaan ole sitova yleislupaus, sillä toimitusaika riippuu aina projektin koosta).
                             </div>
                         </details>
 
