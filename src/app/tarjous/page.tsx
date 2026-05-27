@@ -279,12 +279,12 @@ export default function TarjousPage() {
                                         </td>
                                         <td className="block md:table-cell p-4 md:p-5 border-b md:border-b-0 md:border-r border-slate-800">
                                             <span className="md:hidden text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1">Keskimääräinen keikka</span>
-                                            <div className="text-yellow-400 font-bold">n. 250 € - 400 €</div>
+                                            <div className="text-emerald-400 font-bold">n. 250 € - 400 €</div>
                                         </td>
-                                        <td className="block md:table-cell p-4 md:p-5 text-emerald-400 font-medium bg-emerald-950/10 md:bg-transparent">
-                                            <span className="md:hidden text-xs font-bold text-emerald-500 uppercase tracking-wider block mb-1">Milloin sivu on maksettu?</span>
-                                            <div className="mb-1 italic">3–4 uutta asiakasta vuodessa.</div>
-                                            <div className="text-sm text-emerald-300/80 font-normal mt-1">Tämän jälkeen kaikki on puhdasta voittoa.</div>
+                                        <td className="block md:table-cell p-4 md:p-5 text-yellow-400 font-medium bg-yellow-950/10 md:bg-transparent">
+                                            <span className="md:hidden text-xs font-bold text-yellow-500 uppercase tracking-wider block mb-1">Milloin sivu on maksettu?</span>
+                                            <div className="mb-1 italic text-yellow-400 font-bold">3–4 uutta asiakasta vuodessa.</div>
+                                            <div className="text-sm text-yellow-300/80 font-normal mt-1">Tämän jälkeen kaikki on puhdasta voittoa.</div>
                                         </td>
                                     </tr>
                                     <tr className="block md:table-row hover:bg-slate-900/20 transition-colors">
@@ -295,12 +295,12 @@ export default function TarjousPage() {
                                         </td>
                                         <td className="block md:table-cell p-4 md:p-5 border-b md:border-b-0 md:border-r border-slate-800">
                                             <span className="md:hidden text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1">Keskimääräinen keikka</span>
-                                            <div className="text-yellow-400 font-bold">n. 1 500 €+</div>
+                                            <div className="text-emerald-400 font-bold">n. 1 500 €+</div>
                                         </td>
-                                        <td className="block md:table-cell p-4 md:p-5 text-emerald-400 font-medium bg-emerald-950/10 md:bg-transparent">
-                                            <span className="md:hidden text-xs font-bold text-emerald-500 uppercase tracking-wider block mb-1">Milloin sivu on maksettu?</span>
-                                            <div className="mb-1">Heti ensimmäisestä kaupasta.</div>
-                                            <div className="text-sm text-emerald-300/80 font-normal mt-1">Sivu on tienannut itsensä ja ylikin kerralla.</div>
+                                        <td className="block md:table-cell p-4 md:p-5 text-yellow-400 font-medium bg-yellow-950/10 md:bg-transparent">
+                                            <span className="md:hidden text-xs font-bold text-yellow-500 uppercase tracking-wider block mb-1">Milloin sivu on maksettu?</span>
+                                            <div className="mb-1 text-yellow-400 font-bold">Heti ensimmäisestä kaupasta.</div>
+                                            <div className="text-sm text-yellow-300/80 font-normal mt-1">Sivu on tienannut itsensä ja ylikin kerralla.</div>
                                         </td>
                                     </tr>
                                 </tbody>
