@@ -147,7 +147,7 @@ export function Header() {
                 >
                     <Link href="/" className="min-w-0 flex items-center pr-2 group">
                         <div className={`${playfair.className} text-xl md:text-3xl italic text-slate-900 lowercase group-hover:text-blue-600 transition-colors`}>
-                            sivumaakarit.
+                            sivumaakarit<span className="text-cyan-500">.</span>
                         </div>
                     </Link>
                     <Link 
@@ -170,7 +170,7 @@ export function Header() {
                         {/* Logo - Dark Theme */}
                         <Link href="/" className="min-w-0 flex items-center mr-4 group">
                             <div className={`${playfair.className} text-xl md:text-3xl italic text-white lowercase group-hover:text-cyan-400 transition-colors`}>
-                                sivumaakarit.
+                                sivumaakarit<span className="text-cyan-400">.</span>
                             </div>
                         </Link>
 

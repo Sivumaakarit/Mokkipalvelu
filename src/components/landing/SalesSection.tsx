@@ -59,14 +59,10 @@ export function SalesSection() {
                             <h3 className={`${playfair.className} text-blue-500 font-bold tracking-[0.2em] mb-8 uppercase text-lg md:text-xl italic`}>
                                 Sivumaakarit - laadukkaat ja nopeat nettisivut
                             </h3>
-                            <div className="relative inline-block animate-swing origin-top">
-                                <Image
-                                    src="/images/sivumaakarit.webp"
-                                    alt="Sivumaakarit Logo"
-                                    width={300}
-                                    height={100}
-                                    className="h-24 md:h-32 w-auto object-contain mx-auto drop-shadow-2xl"
-                                />
+                            <div className="relative inline-block animate-swing origin-top select-none">
+                                <div className={`${playfair.className} text-4xl md:text-5xl italic text-white lowercase bg-[#0A1128] border border-blue-500/20 px-8 pt-2 pb-3.5 md:pt-3 md:pb-4.5 rounded-2xl shadow-2xl tracking-tight`}>
+                                    sivumaakarit<span className="text-cyan-400">.</span>
+                                </div>
                             </div>
                         </div>
                         <h2 className={`${playfair.className} text-3xl md:text-5xl lg:text-6xl font-bold mb-8 text-white tracking-tight leading-tight italic`}>
@@ -139,14 +135,10 @@ export function SalesSection() {
                     <div className="text-center mb-16 relative">
                         <div className="absolute top-1/2 left-0 w-full h-px bg-slate-800 -z-10"></div>
                         <div className="inline-block bg-slate-950 px-6">
-                            <div className="inline-block mb-4">
-                                <Image
-                                    src="/images/sivumaakarit.webp"
-                                    alt="Sivumaakarit Logo"
-                                    width={300}
-                                    height={100}
-                                    className="h-16 md:h-20 w-auto object-contain mx-auto opacity-80"
-                                />
+                            <div className="inline-block mb-6 select-none">
+                                <div className={`${playfair.className} text-2xl md:text-3xl italic text-white lowercase bg-[#0A1128] border border-blue-500/20 px-6 pt-1.5 pb-2.5 md:pt-2 md:pb-3 rounded-xl shadow-lg tracking-tight`}>
+                                    sivumaakarit<span className="text-cyan-400">.</span>
+                                </div>
                             </div>
                             <h2 className={`${playfair.className} text-2xl md:text-6xl font-bold tracking-tight text-white leading-tight italic`}>
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-white to-cyan-300 block">
@@ -255,15 +247,11 @@ export function SalesSection() {
                             <div className="bg-slate-900 rounded-[22px] p-8 md:p-16 border border-slate-700 relative overflow-hidden before:content-['2026'] before:absolute before:top-4 before:right-4 before:text-white/5 before:text-[clamp(100px,12vw,160px)] before:font-bold before:leading-none before:select-none before:pointer-events-none">
 
                                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4 mt-12">
-                                    <div className="flex items-center gap-4 flex-wrap sm:flex-nowrap min-w-0">
-                                        <Image
-                                            src="/images/sivumaakarit.webp"
-                                            alt="Sivumaakarit Logo"
-                                            width={300}
-                                            height={100}
-                                            className="h-16 md:h-20 w-auto object-contain flex-shrink-0"
-                                        />
-                                        <h3 className={`${playfair.className} text-2xl md:text-3xl font-bold text-white break-words min-w-0 italic`}>Sivumaakarit 2026</h3>
+                                    <div className="flex items-center gap-4 flex-wrap sm:flex-nowrap min-w-0 select-none">
+                                        <div className={`${playfair.className} text-xl md:text-2xl italic text-white lowercase bg-[#0A1128] border border-blue-500/20 px-5 pt-1 pb-2 md:pt-1.5 md:pb-2.5 rounded-xl shadow-md tracking-tight`}>
+                                            sivumaakarit<span className="text-cyan-400">.</span>
+                                        </div>
+                                        <h3 className={`${playfair.className} text-xl md:text-2xl font-bold text-slate-400 break-words min-w-0 italic`}>2026</h3>
                                     </div>
                                     <span className={`${inter.className} px-4 py-1 rounded-full bg-cyan-900/30 border border-cyan-800 text-cyan-400 text-sm font-semibold whitespace-nowrap`}>
                                         Moderni teknologia
@@ -273,7 +261,9 @@ export function SalesSection() {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-10">
                                     <div className="md:pr-8">
                                         <div className="text-center md:text-left mb-8">
-                                            <h4 className={`${playfair.className} text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight italic`}>Alkaen 33 € /kk</h4>
+                                            <h4 className={`${playfair.className} text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight italic flex items-baseline justify-center md:justify-start gap-1.5`}>
+                                                Alkaen 33 €/kk <span className="text-xs font-sans font-normal text-slate-400 lowercase tracking-normal"> + alv</span>
+                                            </h4>
                                             <div className="w-16 h-1 bg-cyan-500 mb-6 hidden md:block"></div>
                                         </div>
                                         <p className={`${inter.className} text-slate-300 mb-8 text-lg leading-relaxed`}>
@@ -282,11 +272,11 @@ export function SalesSection() {
                                         <ul className="space-y-6">
                                             <li className={`${inter.className} flex items-start text-slate-300`}>
                                                 <svg className="w-5 h-5 text-green-400 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                                <span><strong className="text-white">Avausmaksu (499 €, vuositilauksella 399 €):</strong> Sisältää teknisen rakennuksen, 100/100-laadunvarmistuksen ja modernin ulkoasun.</span>
+                                                <span><strong className="text-white">Sivuston rakennus (499 € + alv, vuositilauksella 399 € + alv):</strong> Sisältää teknisen rakennuksen, 100/100-laadunvarmistuksen ja modernin ulkoasun.</span>
                                             </li>
                                             <li className={`${inter.className} flex items-start text-slate-300`}>
                                                 <svg className="w-5 h-5 text-green-400 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                                <span><strong className="text-white">Ylläpito (50 € / kk):</strong> Sisältää domainin, teknisen huolenpidon ja takuun siitä, että sivusi pysyy salamannopeana vuodesta toiseen.</span>
+                                                <span><strong className="text-white">Ylläpito (50 €/kk + alv):</strong> Sisältää domainin, teknisen huolenpidon ja takuun siitä, että sivusi pysyy salamannopeana vuodesta toiseen.</span>
                                             </li>
                                             <li className={`${inter.className} flex items-start text-slate-300`}>
                                                 <svg className="w-5 h-5 text-green-400 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
@@ -302,29 +292,28 @@ export function SalesSection() {
                                         </p>
                                         <div className="mb-10">
                                             <h4 className={`${inter.className} text-sm font-bold text-cyan-400 mb-6 uppercase tracking-widest border-b border-slate-800 pb-2`}>Hinnoittelu – Ei piilokuluja</h4>
-
                                             <div className="space-y-4">
                                                 <div className={`flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 rounded-lg bg-slate-900/40 border border-slate-800/50 ${inter.className}`}>
                                                     <div>
-                                                        <div className="font-bold text-white text-lg">Sivuston avausmaksu</div>
+                                                        <div className="font-bold text-white text-lg">Sivuston rakennus</div>
                                                         <div className="text-sm text-slate-400">Avaimet käteen -laskeutumissivu.</div>
                                                     </div>
-                                                    <div className="text-2xl font-bold text-white mt-2 sm:mt-0 whitespace-nowrap sm:pl-4">
-                                                        499 € <span className="text-sm font-normal text-slate-400">(Vuositilauksella 399 €)</span>
+                                                    <div className="text-2xl font-bold text-white mt-2 sm:mt-0 whitespace-nowrap sm:pl-4 flex items-baseline gap-1">
+                                                        499 € <span className="text-xs font-normal text-slate-500 lowercase">+ alv</span> <span className="text-sm font-normal text-slate-400">(Vuositilauksella 399 € <span className="text-xs lowercase">+ alv</span>)</span>
                                                     </div>
                                                 </div>
-
+ 
                                                 <div className="mt-6 mb-2">
                                                     <span className={`${inter.className} text-xs text-cyan-500 font-bold uppercase tracking-wider`}>Ylläpitovaihtoehdot:</span>
                                                 </div>
-
+ 
                                                 <div className={`flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 rounded-lg bg-slate-900/40 border border-slate-800/50 ${inter.className}`}>
                                                     <div>
                                                         <div className="font-bold text-white text-lg">Ylläpito & Turva – Perus</div>
                                                         <div className="text-sm text-slate-400">Tekninen ylläpito ja päivitykset.</div>
                                                     </div>
                                                     <div className="text-xl font-bold text-cyan-400 mt-2 sm:mt-0 whitespace-nowrap sm:pl-4">
-                                                        50 € <span className="text-sm font-normal text-slate-400">/ kk</span>
+                                                        50 € <span className="text-sm font-normal text-slate-400">/ kk + alv</span>
                                                     </div>
                                                 </div>
                                                 <div className={`flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 rounded-lg bg-slate-900/40 border border-slate-800/50 ${inter.className}`}>
@@ -333,7 +322,7 @@ export function SalesSection() {
                                                         <div className="text-sm text-slate-400">Sisältää 2 h asiantuntijatyötä kuukaudessa.</div>
                                                     </div>
                                                     <div className="text-xl font-bold text-blue-400 mt-2 sm:mt-0 whitespace-nowrap sm:pl-4">
-                                                        150 € <span className="text-sm font-normal text-slate-400">/ kk</span>
+                                                        150 € <span className="text-sm font-normal text-slate-400">/ kk + alv</span>
                                                     </div>
                                                 </div>
                                             </div>

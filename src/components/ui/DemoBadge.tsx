@@ -3,6 +3,9 @@
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({ subsets: ["latin"] });
 
 export function DemoBadge() {
     const pathname = usePathname();
@@ -45,14 +48,9 @@ export function DemoBadge() {
             <div
                 className={`fixed top-[85px] md:top-24 left-2 md:left-4 z-50 bg-white/95 backdrop-blur-sm border-2 border-dashed border-cyan-500 shadow-xl rounded-xl p-2 md:p-4 flex flex-col gap-2 transition-all duration-500 cursor-default select-none pointer-events-auto origin-top-left max-w-[120px] md:max-w-[200px] hover:scale-105 animate-slow-blink ${isHidden ? 'opacity-0 -translate-x-full pointer-events-none' : ''}`}
             >
-                <div className="flex items-center gap-2 md:gap-3">
-                    <div className="relative w-5 h-5 md:w-8 md:h-8 flex-shrink-0">
-                        <Image
-                            src="/images/sivumaakarit.webp"
-                            alt="Sivumaakarit"
-                            fill
-                            className="object-contain drop-shadow-md"
-                        />
+                <div className="flex flex-col gap-1.5 select-none">
+                    <div className={`${playfair.className} text-[9px] md:text-[11px] italic text-white lowercase bg-[#0A1128] border border-blue-500/20 px-2 py-0.5 rounded-md tracking-tight w-fit`}>
+                        sivumaakarit<span className="text-cyan-400">.</span>
                     </div>
                     <div className="flex flex-col">
                         <span className="text-[9px] md:text-sm uppercase tracking-wider font-black text-cyan-600 leading-none">DEMOSIVU</span>

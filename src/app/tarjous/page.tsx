@@ -82,7 +82,7 @@ export default function TarjousPage() {
                     <div className="inline-block px-3 py-1 md:px-4 md:py-1.5 mb-4 md:mb-6 rounded-full bg-blue-500/20 border border-blue-400/30 backdrop-blur-md text-blue-300 text-[10px] md:text-sm font-bold tracking-[0.2em] uppercase">
                         Premium Palvelusivut
                     </div>
-                    <h1 className={`${playfair.className} text-5xl md:text-7xl lg:text-[5.5rem] font-extrabold mb-8 leading-[1.15] md:leading-[1.1] tracking-tight drop-shadow-2xl`}>
+                    <h1 className={`${playfair.className} text-[3.25rem] md:text-[4.75rem] lg:text-[6.5rem] font-extrabold mb-8 leading-[1.1] md:leading-[1.05] tracking-tight drop-shadow-2xl`}>
                         Myyvät nettisivut<br className="md:hidden" />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-white to-cyan-300 block md:inline-block pt-0 pb-1.5 md:py-2 md:pb-4"> yrittäjälle</span>
                     </h1>

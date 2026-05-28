@@ -151,8 +151,10 @@ export function Contact() {
                                         <p className="text-[10px] text-slate-400 italic">
                                             * Lighthouse 11 Benchmark — Analysoitu: Tänään {new Date().getHours()}:00
                                         </p>
-                                        <div className="opacity-30 grayscale hover:grayscale-0 transition-all cursor-pointer">
-                                            <Image src="/images/sivumaakarit.webp" alt="Sivumaakarit Verified" width={80} height={25} className="h-6 w-auto" />
+                                        <div className="opacity-40 hover:opacity-100 transition-all cursor-pointer select-none">
+                                            <div className={`${playfair.className} text-[10px] md:text-xs italic text-white lowercase bg-[#0A1128] border border-blue-500/20 px-3 py-1.5 rounded-md tracking-tight`}>
+                                                sivumaakarit<span className="text-cyan-400">.</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
