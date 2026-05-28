@@ -221,7 +221,7 @@ export default function TarjousPage() {
                         Miksi Sivumaakarit?
                     </h2>
                     <p className="text-xl md:text-2xl text-slate-300 mb-10 leading-relaxed font-light">
-                        <strong className="text-white font-semibold">Olemme 100 % suomalainen yritys Lohjalta.</strong> Palvelemme yrittäjiä joustavasti ympäri Suomen – Hangosta Utsjoelle – aina nopeasti ja ilman turhaa koodijargonia. Tapaamme mielellämme myös kasvotusten Uudellamaalla ja pääkaupunkiseudulla, tai sujuvasti etänä missä päin Suomea tahansa.
+                        <strong className="text-white font-semibold">Olemme 100 % suomalainen yritys Lohjalta.</strong> Palvelemme yrittäjiä joustavasti ympäri Suomen – Hangosta Utsjoelle – aina nopeasti ja ilman turhaa koodijargonia. Tapaamme kasvotusten toimistollamme Lohjalla, tai sujuvasti etänä missä päin Suomea tahansa.
                         <br /><br />
                         <strong className="text-white font-semibold">Me emme puhu sinulle koodia</strong> (vaikka osaamme sitä lukea kuin sanomalehteä). Me puhumme liiketoimintaa. Haluamme tehdä sinulle verkkosivut, joiden kautta asiakkaat löytävät sinut ja palvelusi ilman turhia mutkia.
                     </p>
@@ -547,7 +547,7 @@ Toimialani ja lyhyt kuvaus yrityksestäni: (esim. LVI, siivous tai puutarhuri, j
                         Luotettavaa verkkosivupalvelua koko Suomessa
                     </h3>
                     <p className="text-slate-600 max-w-2xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
-                        Toimistomme sijaitsee Uudellamaalla Lohjalla, mutta teemme tiivistä yhteistyötä yrittäjien kanssa <strong className="text-slate-800 font-semibold">ympäri Suomen</strong>. Tapaamme joustavasti joko etänä tai kasvotusten seuraavilla lähialueilla:
+                        Toimistomme sijaitsee Uudellamaalla Lohjalla, mutta teemme yhteistyötä yrittäjien kanssa <strong className="text-slate-800 font-semibold">ympäri Suomen</strong>. Tapaamme joustavasti joko etänä tai kasvotusten toimistollamme Lohjalla. Palvelemme yrittäjiä muun muassa seuraavilla alueilla:
                     </p>
 
                     {/* Alue-kapselit */}
