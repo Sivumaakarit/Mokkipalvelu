@@ -221,7 +221,7 @@ export default function TarjousPage() {
                         Miksi Sivumaakarit?
                     </h2>
                     <p className="text-xl md:text-2xl text-slate-300 mb-10 leading-relaxed font-light">
-                        <strong className="text-white font-semibold">Olemme 100 % suomalainen yritys Lohjalta.</strong> Tavoitteenamme on auttaa käytännönläheisiä yrittäjiä pärjäämään isoja tekijöitä vastaan.
+                        <strong className="text-white font-semibold">Olemme 100 % suomalainen yritys Lohjalta.</strong> Palvelemme yrittäjiä joustavasti ympäri Suomen – Hangosta Utsjoelle – aina nopeasti ja ilman turhaa koodijargonia. Tapaamme mielellämme myös kasvotusten Uudellamaalla ja pääkaupunkiseudulla, tai sujuvasti etänä missä päin Suomea tahansa.
                         <br /><br />
                         <strong className="text-white font-semibold">Me emme puhu sinulle koodia</strong> (vaikka osaamme sitä lukea kuin sanomalehteä). Me puhumme liiketoimintaa. Haluamme tehdä sinulle verkkosivut, joiden kautta asiakkaat löytävät sinut ja palvelusi ilman turhia mutkia.
                     </p>
