@@ -332,7 +332,7 @@ export default function TarjousPage() {
                             <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 mt-2 pt-4">
                                 <p>Keskity omaan yritykseesi, me pidämme huolen tekniikasta. Helppo avaimet käteen -ratkaisu kuukausimaksulla, ilman stressiä.</p>
                                 <p className="mt-2 text-slate-600">
-                                    Kun valitset ylläpidon (esim. Perus-paketti alkaen 33 €/kk), saat sivuston avausmaksun reilusti alennettuun hintaan (399 €). Me hoidamme palvelimet, tietoturvan ja päivitykset. Sinun tehtäväksesi jää vain uusien asiakkaiden palveleminen.
+                                    Kun valitset ylläpidon (esim. Perus-paketti alkaen 33 €/kk + alv), saat sivuston avausmaksun reilusti alennettuun hintaan (399 € + alv). Me hoidamme palvelimet, tietoturvan ja päivitykset. Sinun tehtäväksesi jää vain uusien asiakkaiden palveleminen.
                                 </p>
                             </div>
                         </details>
@@ -373,7 +373,7 @@ export default function TarjousPage() {
                                 </span>
                             </summary>
                             <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 mt-2 pt-4">
-                                Reilun ja erittäin edullisen avausmaksun (399 €) mahdollistamiseksi ylläpito- ja turvasopimus solmitaan aluksi 12 kuukauden määräajaksi. Tämän jälkeen sopimus jatkuu joustavasti toistaiseksi voimassaolevana kuukausihinnalla (Perus: 50 €/kk, Plus: 150 €/kk + alv) vain 3 kuukauden irtisanomisajalla (tai voit valita uuden, tuolloin tarjolla olevan vuosisopimuksen). Kun ylläpito päättyy, sivusto koodineen ja sisältöineen on täysin sinun omaisuuttasi – ei alustaloukkuja.
+                                Reilun ja erittäin edullisen avausmaksun (399 € + alv) mahdollistamiseksi ylläpito- ja turvasopimus solmitaan aluksi 12 kuukauden määräajaksi. Tämän jälkeen sopimus jatkuu joustavasti toistaiseksi voimassaolevana kuukausihinnalla (Perus: 50 €/kk + alv, Plus: 150 €/kk + alv) vain 3 kuukauden irtisanomisajalla (tai voit valita uuden, tuolloin tarjolla olevan vuosisopimuksen). Kun ylläpito päättyy, sivusto koodineen ja sisältöineen on täysin sinun omaisuuttasi – ei alustaloukkuja.
                             </div>
                         </details>
                     </div>

@@ -49,7 +49,7 @@ export default function TilaaPelkkaSivu() {
                             <span className="inline-block px-3 py-1 bg-blue-500/20 text-blue-300 text-xs font-bold uppercase tracking-widest rounded-full mb-6 border border-blue-400/30">Hanki täysi omistajuus</span>
 
                             <h1 className={`${playfair.className} text-3xl md:text-5xl font-bold text-white mb-6 leading-tight`}>
-                                Pelkkä sivu <span className="text-blue-400">(990 €)</span>
+                                Pelkkä sivu <span className="text-blue-400">(990 € + alv)</span>
                             </h1>
 
                             <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
@@ -113,7 +113,7 @@ export default function TilaaPelkkaSivu() {
                                                 <textarea 
                                                     name="message"
                                                     className="w-full min-w-0 p-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 outline-none h-32" 
-                                                    defaultValue={`Hei! Olen kiinnostunut Pelkkä sivu -paketista (990 €). Haluaisin kuulla lyhyesti lisää, miten tämä toimisi meidän yrityksellemme. Yhteydenotto ei sido minua mihinkään.\n\nTarvitsen nettisivut: (kirjoita esim. yrityksen nimi, toimiala ja paikkakunta. Voit myös kirjoittaa lyhyesti toiveistasi, jotta osaamme tarjota juuri sinulle parasta ratkaisua)`}
+                                                    defaultValue={`Hei! Olen kiinnostunut Pelkkä sivu -paketista (990 € + alv). Haluaisin kuulla lyhyesti lisää, miten tämä toimisi meidän yrityksellemme. Yhteydenotto ei sido minua mihinkään.\n\nTarvitsen nettisivut: (kirjoita esim. yrityksen nimi, toimiala ja paikkakunta. Voit myös kirjoittaa lyhyesti toiveistasi, jotta osaamme tarjota juuri sinulle parasta ratkaisua)`}
                                                 ></textarea>
                                             </div>
                                             <button type="submit" className="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition shadow-lg shadow-blue-600/30">

@@ -14,7 +14,7 @@ export function PricingTiers() {
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-10">
                     <h2 className={`${playfair.className} text-4xl md:text-5xl font-bold mb-4 text-blue-900`}>
-                        Alkaen 33 € /kk
+                        Alkaen 33 € /kk <span className="text-xl font-normal text-slate-500 lowercase">(+ alv)</span>
                     </h2>
                     <p className="text-xl text-slate-600 max-w-2xl mx-auto">
                         Valitse tarpeisiisi sopiva malli. Säästä valitsemalla vuosilaskutus.
@@ -85,9 +85,9 @@ export function PricingTiers() {
                             <div className="flex flex-col mb-4">
                                 <div className="flex items-baseline gap-2">
                                     <span className="text-4xl md:text-5xl font-extrabold text-white">{isAnnual ? "33 €" : "50 €"}</span>
-                                    <span className="text-slate-400 text-base md:text-lg">/ kk</span>
+                                    <span className="text-slate-400 text-base md:text-lg">/ kk <span className="text-xs font-normal text-slate-500 lowercase">(+ alv)</span></span>
                                 </div>
-                                 <span className="text-cyan-400/80 text-xs mt-1 font-medium">{isAnnual ? "Säästö-ale 1. vuosi kerralla (399 €). Jatkossa ylläpito jatkuu toistaiseksi voimassaolevana 50 €/kk (tai voit valita uuden, tuolloin tarjolla olevan vuosijakson)." : "12 kk sopimuskausi, jonka jälkeen jatkuu 50 €/kk."}</span>
+                                 <span className="text-cyan-400/80 text-xs mt-1 font-medium">{isAnnual ? "Säästö-ale 1. vuosi kerralla (399 € + alv). Jatkossa ylläpito jatkuu toistaiseksi voimassaolevana 50 €/kk + alv (tai voit valita uuden, tuolloin tarjolla olevan vuosijakson)." : "12 kk sopimuskausi, jonka jälkeen jatkuu 50 €/kk + alv."}</span>
                             </div>
 
                             <div className="bg-slate-800/80 rounded-xl p-4 border border-cyan-900/40 mb-4 shadow-inner relative overflow-hidden">
@@ -96,7 +96,7 @@ export function PricingTiers() {
                                 )}
                                 <div className="flex justify-between items-center mb-1 gap-2">
                                     <span className="text-xs text-cyan-400 font-bold uppercase tracking-wider">Sivuston avausmaksu</span>
-                                    <span className="text-lg font-bold text-white whitespace-nowrap">{isAnnual ? "399 €" : "499 €"}</span>
+                                    <span className="text-lg font-bold text-white whitespace-nowrap">{isAnnual ? "399 €" : "499 €"} <span className="text-xs font-normal text-slate-400 lowercase">+ alv</span></span>
                                 </div>
                                 <p className="text-xs text-slate-400 line-through decoration-slate-500 mr-2 inline-block">Norm. 990 €</p>
                                 <p className="text-xs text-slate-400 inline-block">Kertamaksu.</p>
@@ -106,7 +106,7 @@ export function PricingTiers() {
                             <div className="bg-slate-800/40 rounded-xl p-4 border border-slate-700/50 mb-4 shadow-inner">
                                 <div className="flex justify-between items-center text-xs text-slate-400 mb-1">
                                     <span>1. vuoden kokonaishinta:</span>
-                                    <span className="font-semibold text-slate-300">({isAnnual ? "12 × 33 € + 399 €" : "12 × 50 € + 499 €"})</span>
+                                    <span className="font-semibold text-slate-300">({isAnnual ? "12 × 33 € + 399 €" : "12 × 50 € + 499 €"}) + alv</span>
                                 </div>
                                 <div className="flex justify-between items-baseline">
                                     <span className="text-xs font-bold text-slate-300">Yhteensä 1. vuosi:</span>
@@ -154,9 +154,9 @@ export function PricingTiers() {
                             <div className="flex flex-col mb-4">
                                 <div className="flex items-baseline gap-2">
                                     <span className="text-4xl md:text-5xl font-extrabold text-blue-500">{isAnnual ? "99 €" : "150 €"}</span>
-                                    <span className="text-slate-400 text-base md:text-lg">/ kk</span>
+                                    <span className="text-slate-400 text-base md:text-lg">/ kk <span className="text-xs font-normal text-slate-500 lowercase">(+ alv)</span></span>
                                 </div>
-                                <span className="text-blue-500/80 text-xs mt-1 font-medium">{isAnnual ? "Säästö-ale 1. vuosi kerralla (1 188 €). Jatkossa ylläpito jatkuu toistaiseksi voimassaolevana 150 €/kk (tai voit valita uuden, tuolloin tarjolla olevan vuosijakson)." : "12 kk sopimuskausi, jonka jälkeen jatkuu 150 €/kk."}</span>
+                                <span className="text-blue-500/80 text-xs mt-1 font-medium">{isAnnual ? "Säästö-ale 1. vuosi kerralla (1 188 € + alv). Jatkossa ylläpito jatkuu toistaiseksi voimassaolevana 150 €/kk + alv (tai voit valita uuden, tuolloin tarjolla olevan vuosijakson)." : "12 kk sopimuskausi, jonka jälkeen jatkuu 150 €/kk + alv."}</span>
                             </div>
 
                             <div className="bg-slate-700/30 rounded-xl p-4 border border-slate-600/50 mb-4 shadow-inner relative overflow-hidden">
@@ -165,7 +165,7 @@ export function PricingTiers() {
                                 )}
                                 <div className="flex justify-between items-center mb-1 gap-2">
                                     <span className="text-xs text-blue-500 font-bold uppercase tracking-wider">Sivuston avausmaksu</span>
-                                    <span className="text-lg font-bold text-white whitespace-nowrap">{isAnnual ? "399 €" : "499 €"}</span>
+                                    <span className="text-lg font-bold text-white whitespace-nowrap">{isAnnual ? "399 €" : "499 €"} <span className="text-xs font-normal text-slate-400 lowercase">+ alv</span></span>
                                 </div>
                                 <p className="text-xs text-slate-400 line-through decoration-slate-500 mr-2 inline-block">Norm. 990 €</p>
                                 <p className="text-xs text-slate-400 inline-block">Kertamaksu.</p>
@@ -175,7 +175,7 @@ export function PricingTiers() {
                             <div className="bg-slate-700/20 rounded-xl p-4 border border-slate-650/40 mb-4 shadow-inner">
                                 <div className="flex justify-between items-center text-xs text-slate-400 mb-1">
                                     <span>1. vuoden kokonaishinta:</span>
-                                    <span className="font-semibold text-slate-300">({isAnnual ? "12 × 99 € + 399 €" : "12 × 150 € + 499 €"})</span>
+                                    <span className="font-semibold text-slate-300">({isAnnual ? "12 × 99 € + 399 €" : "12 × 150 € + 499 €"}) + alv</span>
                                 </div>
                                 <div className="flex justify-between items-baseline">
                                     <span className="text-xs font-bold text-slate-300">Yhteensä 1. vuosi:</span>

@@ -59,7 +59,7 @@ export default function TilaaPerus() {
                             <span className="inline-block px-3 py-1 bg-cyan-500/20 text-cyan-300 text-xs font-bold uppercase tracking-widest rounded-full mb-6 border border-cyan-400/30">Huoleton Arki</span>
 
                             <h1 className={`${playfair.className} text-3xl md:text-5xl font-bold text-white mb-6 leading-tight`}>
-                                Perus-paketti <span className="text-cyan-400">({billing === 'vuosi' ? '33 €/kk + avausmaksu 399 €' : '50 €/kk + avausmaksu 499 €'})</span>
+                                Perus-paketti <span className="text-cyan-400">({billing === 'vuosi' ? '33 €/kk + avausmaksu 399 € + alv' : '50 €/kk + avausmaksu 499 € + alv'})</span>
                             </h1>
 
                             <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">

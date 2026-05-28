@@ -59,7 +59,7 @@ export default function TilaaPlus() {
                             <span className="inline-block px-3 py-1 bg-blue-500/20 text-blue-300 text-xs font-bold uppercase tracking-widest rounded-full mb-6 border border-blue-400/30">VIP-Huoltosopimus</span>
 
                             <h1 className={`${playfair.className} text-3xl md:text-5xl font-bold text-white mb-6 leading-tight`}>
-                                Plus-paketti <span className="text-blue-400">({billing === 'vuosi' ? '99 €/kk + avausmaksu 399 €' : '150 €/kk + avausmaksu 499 €'})</span>
+                                Plus-paketti <span className="text-blue-400">({billing === 'vuosi' ? '99 €/kk + avausmaksu 399 € + alv' : '150 €/kk + avausmaksu 499 € + alv'})</span>
                             </h1>
 
                             <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">

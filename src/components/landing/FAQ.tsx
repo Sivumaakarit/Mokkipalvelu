@@ -16,7 +16,7 @@ export function FAQ() {
     const faqs = [
         {
             question: "Miksi valitsisin kuukausimaksullisen ylläpidon?",
-            answer: "Keskity omaan yritykseesi, me pidämme huolen tekniikasta. Helppo avaimet käteen -ratkaisu kuukausimaksulla, ilman stressiä. Kun valitset ylläpidon (esim. Perus-paketti alkaen 33 €/kk* vuosilaskutuksella tai 50 €/kk kuukausilaskutuksella), saat sivuston avausmaksun reilusti alennettuun hintaan (399 € / 499 €). Me hoidamme palvelimet, tietoturvan ja päivitykset. Sinun tehtäväksesi jää vain uusien asiakkaiden palveleminen."
+            answer: "Keskity omaan yritykseesi, me pidämme huolen tekniikasta. Helppo avaimet käteen -ratkaisu kuukausimaksulla, ilman stressiä. Kun valitset ylläpidon (esim. Perus-paketti alkaen 33 €/kk + alv* vuosilaskutuksella tai 50 €/kk + alv kuukausilaskutuksella), saat sivuston avausmaksun reilusti alennettuun hintaan (399 € / 499 € + alv). Me hoidamme palvelimet, tietoturvan ja päivitykset. Sinun tehtäväksesi jää vain uusien asiakkaiden palveleminen."
         },
         {
             question: "Mitä 50 € kuukausittainen ylläpito oikeasti sisältää?",
