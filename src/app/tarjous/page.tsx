@@ -82,9 +82,9 @@ export default function TarjousPage() {
                     <div className="inline-block px-3 py-1 md:px-4 md:py-1.5 mb-4 md:mb-6 rounded-full bg-blue-500/20 border border-blue-400/30 backdrop-blur-md text-blue-300 text-[10px] md:text-sm font-bold tracking-[0.2em] uppercase">
                         Premium Palvelusivut
                     </div>
-                    <h1 className={`${playfair.className} text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-[1.15] md:leading-[1.15] tracking-tight drop-shadow-2xl`}>
-                        Myyvät nettisivut –<br className="md:hidden" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-white to-cyan-300 block md:inline-block py-2 md:py-3 md:pb-4"> avaimet käteen yrittäjälle</span>
+                    <h1 className={`${playfair.className} text-5xl md:text-7xl lg:text-[5.5rem] font-extrabold mb-8 leading-[1.15] md:leading-[1.1] tracking-tight drop-shadow-2xl`}>
+                        Myyvät nettisivut<br className="md:hidden" />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-white to-cyan-300 block md:inline-block pt-0 pb-1.5 md:py-2 md:pb-4"> yrittäjälle</span>
                     </h1>
 
                     <p className={`${inter.className} text-lg md:text-2xl text-slate-200 mb-8 max-w-4xl mx-auto font-light leading-relaxed opacity-90`}>
@@ -532,6 +532,41 @@ Toimialani ja lyhyt kuvaus yrityksestäni: (esim. LVI, siivous tai puutarhuri, j
                                 </div>
                             )}
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Toimialue ja valtakunnallinen kattavuus (SEO/GEO) */}
+            <section className="py-16 px-4 bg-white border-t border-slate-100" id="toimialue">
+                <div className="max-w-4xl mx-auto text-center">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 mb-4 rounded-full bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wider">
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        Toimialue & Kattavuus
+                    </div>
+                    <h3 id="operating-area-title" className={`${playfair.className} text-2xl md:text-3xl font-bold text-slate-900 mb-4`}>
+                        Luotettavaa verkkosivupalvelua koko Suomessa
+                    </h3>
+                    <p className="text-slate-600 max-w-2xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
+                        Toimistomme sijaitsee Uudellamaalla Lohjalla, mutta teemme tiivistä yhteistyötä yrittäjien kanssa <strong className="text-slate-800 font-semibold">ympäri Suomen</strong>. Tapaamme joustavasti joko etänä tai kasvotusten seuraavilla lähialueilla:
+                    </p>
+
+                    {/* Alue-kapselit */}
+                    <div className="flex flex-wrap justify-center gap-2 max-w-2xl mx-auto mb-8">
+                        {["Lohja", "Helsinki", "Espoo", "Vantaa", "Vihti", "Kirkkonummi", "Siuntio", "Karkkila", "Uusimaa"].map((city) => (
+                            <span key={city} className="px-4 py-2 bg-slate-50 border border-slate-200/80 rounded-full text-slate-700 text-xs font-semibold hover:bg-blue-50 hover:border-blue-200 hover:text-blue-700 transition-all cursor-default shadow-sm hover:-translate-y-0.5 transform">
+                                {city}
+                            </span>
+                        ))}
+                    </div>
+
+                    <div className="inline-flex items-center gap-3 p-4 bg-gradient-to-r from-blue-600/5 to-cyan-500/5 border border-blue-500/10 rounded-2xl text-slate-800 text-xs md:text-sm font-medium shadow-sm">
+                        <span className="flex h-2.5 w-2.5 relative">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                        </span>
+                        <span>
+                            <strong>Palvelemme etänä Hangosta Utsjoelle!</strong> Ota yhteyttä ja aloitetaan yhteistyö sijainnistasi riippumatta.
+                        </span>
                     </div>
                 </div>
             </section>
