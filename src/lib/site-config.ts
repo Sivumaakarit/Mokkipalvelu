@@ -5,6 +5,29 @@ export const siteConfig = {
     description: "Löydy Googlesta ja tekoälystä. Kotisivut yrittäjälle 100/100-suorituskyvyllä. Valmis nopeasti – ammattitaidolla.",
     url: "https://sivumaakarit.fi",
 
+    pricingStrategy: "premium" as "premium" | "legacy",
+
+    pricingPresets: {
+        premium: {
+            starterSetup: "990 €",
+            growthSetup: "990 €",
+            enterpriseSetup: "2 490 €",
+            basicAnnual: "49 €",
+            basicMonthly: "69 €",
+            plusAnnual: "129 €",
+            plusMonthly: "149 €",
+        },
+        legacy: {
+            starterSetup: "399 €",
+            growthSetup: "499 €",
+            enterpriseSetup: "990 €",
+            basicAnnual: "33 €",
+            basicMonthly: "50 €",
+            plusAnnual: "99 €",
+            plusMonthly: "150 €",
+        }
+    },
+
     // Yhteystiedot (NAP - Name, Address, Phone)
     contact: {
         phone: "+358 50 540 3661",

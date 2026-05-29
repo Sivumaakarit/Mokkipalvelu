@@ -68,7 +68,7 @@ export function Schema() {
                         "name": "Miksi valitsisin kuukausimaksullisen ylläpidon?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Keskity omaan yritykseesi, me pidämme huolen tekniikasta. Helppo avaimet käteen -ratkaisu kuukausimaksulla, ilman stressiä. Kun valitset ylläpidon, saat sivuston avausmaksun reilusti alennettuun hintaan. Me hoidamme palvelimet, tietoturvan ja päivitykset."
+                            "text": "Keskity omaan yritykseesi, me pidämme huolen tekniikasta. Helppo avaimet käteen -ratkaisu kuukausimaksulla, ilman stressiä. Kun valitset ylläpidon, saat sivuston rakennusmaksun reilusti alennettuun hintaan. Me hoidamme palvelimet, tietoturvan ja päivitykset."
                         }
                     },
                     {

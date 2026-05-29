@@ -11,6 +11,21 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 export default function TilaaPerus() {
     const [formSubmitted, setFormSubmitted] = useState(false);
     const [billing, setBilling] = useState<'kuukausi' | 'vuosi'>('kuukausi');
+    const isPremium = siteConfig.pricingStrategy === "premium";
+    const preset = siteConfig.pricingPresets[siteConfig.pricingStrategy];
+
+    // Helper functions for dynamic pricing
+    const parsePrice = (priceStr: string) => {
+        return parseInt(priceStr.replace(/[^0-9]/g, ""), 10);
+    };
+
+    const formatPrice = (val: number) => {
+        return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " €";
+    };
+
+    const annualYllapitoSum = parsePrice(preset.basicAnnual) * 12;
+    const starterSetupVal = parsePrice(preset.starterSetup);
+    const annualTotalSum = annualYllapitoSum + starterSetupVal;
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
@@ -59,11 +74,11 @@ export default function TilaaPerus() {
                             <span className="inline-block px-3 py-1 bg-cyan-500/20 text-cyan-300 text-xs font-bold uppercase tracking-widest rounded-full mb-6 border border-cyan-400/30">Huoleton Arki</span>
 
                             <h1 className={`${playfair.className} text-3xl md:text-5xl font-bold text-white mb-6 leading-tight`}>
-                                Perus-paketti <span className="text-cyan-400">({billing === 'vuosi' ? '33 €/kk + avausmaksu 399 € + alv' : '50 €/kk + avausmaksu 499 € + alv'})</span>
+                                Perus-paketti <span className="text-cyan-400">({billing === 'vuosi' ? `${preset.basicAnnual}/kk + rakennusmaksu alkaen ${preset.starterSetup} + alv` : `${preset.basicMonthly}/kk + rakennusmaksu alkaen ${preset.growthSetup} + alv`})</span>
                             </h1>
 
                             <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                                Kaikki mitä tarvitset sivuston turvalliseen ja nopeaan toimintaan. Ensimmäinen vuosi yhteensä vain {billing === 'vuosi' ? '795 €' : '1 099 €'} + alv. Me hoidamme tekniikan ja koodauksen, sinä hoidat liiketoimintasi.
+                                Kaikki mitä tarvitset sivuston turvalliseen ja nopeaan toimintaan. Me hoidamme tekniikan ja koodauksen, sinä hoidat liiketoimintasi.
                             </p>
                         </div>
 
@@ -115,7 +130,7 @@ export default function TilaaPerus() {
                                                 <textarea 
                                                     name="message"
                                                     className="w-full min-w-0 p-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-cyan-500 outline-none h-32" 
-                                                    defaultValue={`Hei! Olen kiinnostunut Sivu + Perusturva -paketista (${billing === 'vuosi' ? '33 €/kk vuosilaskutuksella' : '50 €/kk kuukausilaskutuksella'}). Haluaisin kuulla lisää avaimet käteen -toteutuksesta. Ymmärrän, että tämä viesti ei sido minua mihinkään.\n\nTarvitsen nettisivut: (kirjoita esim. yrityksen nimi, toimiala ja paikkakunta. Voit myös kirjoittaa lyhyesti toiveistasi, jotta osaamme tarjota juuri sinulle parasta ratkaisua)`}
+                                                    defaultValue={`Hei! Olen kiinnostunut Sivu + Perusturva -paketista (${billing === 'vuosi' ? `${preset.basicAnnual}/kk vuosilaskutuksella` : `${preset.basicMonthly}/kk kuukausilaskutuksella`}). Haluaisin kuulla lisää avaimet käteen -toteutuksesta. Ymmärrän, että tämä viesti ei sido minua mihinkään.\n\nTarvitsen nettisivut: (kirjoita esim. yrityksen nimi, toimiala ja paikkakunta. Voit myös kirjoittaa lyhyesti toiveistasi, jotta osaamme tarjota juuri sinulle parasta ratkaisua)`}
                                                 ></textarea>
                                             </div>
                                             <button type="submit" className="w-full bg-cyan-600 text-white font-bold py-4 rounded-xl hover:bg-cyan-700 transition shadow-lg shadow-cyan-600/30">
@@ -123,12 +138,12 @@ export default function TilaaPerus() {
                                             </button>
                                             <p className="text-center text-xs text-slate-500 mt-4 leading-relaxed">
                                                 <strong className="text-slate-600">
-                                                    {billing === 'vuosi' 
-                                                        ? 'Vuositilaus laskutetaan 12 kk erässä (ylläpito 396 € + avausmaksu 399 € = 795 € + alv).' 
-                                                        : 'Alennettu avausmaksu edellyttää 12 kk sopimuskautta (ylläpito 50 €/kk + avausmaksu 499 €).'}
+                                                     {billing === 'vuosi' 
+                                                         ? `Vuositilaus laskutetaan 12 kk erässä (ylläpito ${preset.basicAnnual}/kk + rakennusmaksu alkaen ${preset.starterSetup} + alv, lopullinen hinta määräytyy tarpeiden ja laajuuden mukaan).` 
+                                                         : `Kuukausitilaus laskutetaan kuukausittain (ylläpito ${preset.basicMonthly}/kk + rakennusmaksu alkaen ${preset.growthSetup} + alv, lopullinen hinta määräytyy tarpeiden ja laajuuden mukaan).`}
                                                 </strong>
                                                 <br />
-                                                Määräaikaisen 12 kk kauden jälkeen sopimus jatkuu toistaiseksi voimassa olevana 3 kk irtisanomisajalla hintaan 50 €/kk + alv (tai voit valita uuden, tuolloin tarjolla olevan vuosisopimuksen). Yhteydenotto tai tarjouspyyntö ei sido sinua mihinkään.
+                                                Määräaikaisen 12 kk kauden jälkeen sopimus jatkuu toistaiseksi voimassa olevana 3 kk irtisanomisajalla hintaan {preset.basicMonthly}/kk + alv (tai voit valita uuden, tuolloin tarjolla olevan vuosisopimuksen). Yhteydenotto tai tarjouspyyntö ei sido sinua mihinkään.
                                             </p>
                                         </form>
                                     </>

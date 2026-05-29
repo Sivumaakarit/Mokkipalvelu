@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Playfair_Display, Inter } from "next/font/google";
+import { siteConfig } from "@/lib/site-config";
 
 const playfair = Playfair_Display({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
@@ -13,13 +14,20 @@ export function FAQ() {
         setOpenIndex(openIndex === index ? null : index);
     };
 
+    const isPremium = siteConfig.pricingStrategy === "premium";
+    const preset = siteConfig.pricingPresets[siteConfig.pricingStrategy];
+
     const faqs = [
         {
             question: "Miksi valitsisin kuukausimaksullisen ylläpidon?",
-            answer: "Keskity omaan yritykseesi, me pidämme huolen tekniikasta. Helppo avaimet käteen -ratkaisu kuukausimaksulla, ilman stressiä. Kun valitset ylläpidon (esim. Perus-paketti alkaen 33 €/kk + alv* vuosilaskutuksella tai 50 €/kk + alv kuukausilaskutuksella), saat sivuston avausmaksun reilusti alennettuun hintaan (399 € / 499 € + alv). Me hoidamme palvelimet, tietoturvan ja päivitykset. Sinun tehtäväksesi jää vain uusien asiakkaiden palveleminen."
+            answer: isPremium ? (
+                `Keskity omaan yritykseesi, me pidämme huolen tekniikasta. Helppo avaimet käteen -ratkaisu kuukausimaksulla, ilman stressiä. Kun valitset ylläpidon (esim. Perus-paketti alkaen 49 €/kk + alv vuosilaskutuksella tai 69 €/kk + alv kuukausilaskutuksella), hoidamme palvelimet, tietoturvan ja päivitykset. Sinun tehtäväksesi jää vain uusien asiakkaiden palveleminen.`
+            ) : (
+                `Keskity omaan yritykseesi, me pidämme huolen tekniikasta. Helppo avaimet käteen -ratkaisu kuukausimaksulla, ilman stressiä. Kun valitset ylläpidon (esim. Perus-paketti alkaen 33 €/kk + alv* vuosilaskutuksella tai 50 €/kk + alv kuukausilaskutuksella), saat sivuston rakennusmaksun reilusti alennettuun hintaan (399 € / 499 € + alv). Me hoidamme palvelimet, tietoturvan ja päivitykset. Sinun tehtäväksesi jää vain uusien asiakkaiden palveleminen.`
+            )
         },
         {
-            question: "Mitä 50 € kuukausittainen ylläpito oikeasti sisältää?",
+            question: isPremium ? `Mitä ${preset.basicMonthly} kuukausiylläpito oikeasti sisältää?` : "Mitä 50 € kuukausittainen ylläpito oikeasti sisältää?",
             answer: (
                 <div className="space-y-3">
                     <p>Ylläpito ei ole vain säilytystä, vaan <strong>vakuutus sivusi suorituskyvylle ja mielenrauhallesi</strong>. Sinä keskityt täysillä omaan työhösi – me hoidamme teknisen tekemisen. Se sisältää:</p>

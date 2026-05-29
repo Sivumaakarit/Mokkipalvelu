@@ -17,6 +17,8 @@ const lucky = Luckiest_Guy({ weight: "400", subsets: ["latin"] });
 
 export default function TarjousPage() {
     const [formSubmitted, setFormSubmitted] = useState(false);
+    const isPremium = siteConfig.pricingStrategy === "premium";
+    const preset = siteConfig.pricingPresets[siteConfig.pricingStrategy];
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -94,13 +96,28 @@ export default function TarjousPage() {
                     <div className="mb-12 py-5 px-8 bg-slate-900/50 backdrop-blur-md rounded-2xl border border-white/10 text-white w-fit mx-auto shadow-2xl text-center">
                         <p className="font-bold mb-2 uppercase tracking-[0.2em] text-[10px] text-blue-400">REILU HINNOITTELU & LUPAUS:</p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-white mb-2">
-                            <span className="text-slate-400 text-sm md:text-base font-normal">Alkaen</span>
-                            <span className="text-2xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-emerald-100 py-1 px-0.5">33 €/kk*</span>
-                            <span className="text-slate-600 font-light mx-2 hidden sm:inline">|</span>
-                            <span className="text-slate-300 text-sm md:text-base font-medium">+ sivuston rakennus 399 €</span>
+                            {isPremium ? (
+                                <>
+                                    <span className="text-slate-400 text-sm md:text-base font-normal">Sivusto alkaen</span>
+                                    <span className="text-2xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-emerald-100 py-1 px-0.5">{preset.starterSetup} + alv</span>
+                                    <span className="text-slate-600 font-light mx-2 hidden sm:inline">|</span>
+                                    <span className="text-slate-300 text-sm md:text-base font-medium">Ylläpito alkaen {preset.basicAnnual}/kk + alv</span>
+                                </>
+                            ) : (
+                                <>
+                                    <span className="text-slate-400 text-sm md:text-base font-normal">Alkaen</span>
+                                    <span className="text-2xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-emerald-100 py-1 px-0.5">33 €/kk*</span>
+                                    <span className="text-slate-600 font-light mx-2 hidden sm:inline">|</span>
+                                    <span className="text-slate-300 text-sm md:text-base font-medium">+ sivuston rakennus 399 €</span>
+                                </>
+                            )}
                         </div>
                         <p className="text-xs text-slate-300 mt-1.5 mb-4 max-w-lg mx-auto">
-                            (Ensimmäinen vuosi yhteensä vain 795 € + alv)
+                            {isPremium ? (
+                                "Testattu ja valmiiksi optimoitu myyntirakenne, joka räätälöidään brändillesi"
+                            ) : (
+                                "(Ensimmäinen vuosi yhteensä vain 795 € + alv)"
+                            )}
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-8 text-xs font-semibold text-slate-200 border-t border-white/10 pt-3">
                             <div className="flex items-center gap-2">
@@ -206,7 +223,7 @@ export default function TarjousPage() {
                 <h2 className={`${playfair.className} text-3xl font-bold mb-8 tracking-tight`}>Tämä palvelu ei ole sinulle, jos...</h2>
                 <div className="bg-slate-100 p-8 rounded-r-2xl text-left border-l-4 border-[#ecc94b]">
                     <p className={`${inter.className} text-xl text-slate-700 italic opacity-80`}>
-                        &quot;...etsit täysin räätälöityä ja kuukausia kestävää design-projektia.&quot;
+                        &quot;...etsit täysin kuukausia kestävää design-projektia.&quot;
                     </p>
                     <p className={`${inter.className} mt-6 text-slate-600 leading-relaxed`}>
                         Jos tavoitteesi on täysin yksilöllinen erikoisratkaisu, tämä ei ole oikea valinta. Me tarjoamme suoran tien tuloksiin ilman hämmentävää ”digitaalista polkua”, joka karkottaa asiakkaat jo ensimetreillä.
@@ -332,7 +349,11 @@ export default function TarjousPage() {
                             <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 mt-2 pt-4">
                                 <p>Keskity omaan yritykseesi, me pidämme huolen tekniikasta. Helppo avaimet käteen -ratkaisu kuukausimaksulla, ilman stressiä.</p>
                                 <p className="mt-2 text-slate-600">
-                                    Kun valitset ylläpidon (esim. Perus-paketti alkaen 33 €/kk + alv), saat sivuston avausmaksun reilusti alennettuun hintaan (399 € + alv). Me hoidamme palvelimet, tietoturvan ja päivitykset. Sinun tehtäväksesi jää vain uusien asiakkaiden palveleminen.
+                                    {isPremium ? (
+                                        `Kun valitset ylläpidon (esim. Perus-paketti alkaen ${preset.basicAnnual}/kk + alv), saat sivuston asennuksen ja käyttöönoton erittäin sujuvasti. Me hoidamme palvelimet, tietoturvan ja päivitykset. Sinun tehtäväksesi jää vain uusien asiakkaiden palveleminen.`
+                                    ) : (
+                                        `Kun valitset ylläpidon (esim. Perus-paketti alkaen 33 €/kk + alv), saat sivuston rakennusmaksun reilusti alennettuun hintaan (399 € + alv). Me hoidamme palvelimet, tietoturvan ja päivitykset. Sinun tehtäväksesi jää vain uusien asiakkaiden palveleminen.`
+                                    )}
                                 </p>
                             </div>
                         </details>
@@ -373,7 +394,11 @@ export default function TarjousPage() {
                                 </span>
                             </summary>
                             <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 mt-2 pt-4">
-                                Reilun ja erittäin edullisen avausmaksun (399 € + alv) mahdollistamiseksi ylläpito- ja turvasopimus solmitaan aluksi 12 kuukauden määräajaksi. Tämän jälkeen sopimus jatkuu joustavasti toistaiseksi voimassaolevana kuukausihinnalla (Perus: 50 €/kk + alv, Plus: 150 €/kk + alv) vain 3 kuukauden irtisanomisajalla (tai voit valita uuden, tuolloin tarjolla olevan vuosisopimuksen). Kun ylläpito päättyy, sivusto koodineen ja sisältöineen on täysin sinun omaisuuttasi – ei alustaloukkuja.
+                                {isPremium ? (
+                                    `Reilun ja asiantuntevan kumppanuuden mahdollistamiseksi ylläpito- ja turvasopimus solmitaan aluksi 12 kuukauden määräajaksi. Tämän jälkeen sopimus jatkuu joustavasti toistaiseksi voimassaolevana kuukausihinnalla (Perus: ${preset.basicMonthly} + alv, Plus: ${preset.plusMonthly} + alv) vain 3 kuukauden irtisanomisajalla (tai voit valita uuden, tuolloin tarjolla olevan vuosisopimuksen). Kun ylläpito päättyy, sivusto koodineen ja sisältöineen on täysin sinun omaisuuttasi – ei alustaloukkuja.`
+                                ) : (
+                                    `Reilun ja erittäin edullisen rakennusmaksun (399 € + alv) mahdollistamiseksi ylläpito- ja turvasopimus solmitaan aluksi 12 kuukauden määräajaksi. Tämän jälkeen sopimus jatkuu joustavasti toistaiseksi voimassaolevana kuukausihinnalla (Perus: 50 €/kk + alv, Plus: 150 €/kk + alv) vain 3 kuukauden irtisanomisajalla (tai voit valita uuden, tuolloin tarjolla olevan vuosisopimuksen). Kun ylläpito päättyy, sivusto koodineen ja sisältöineen on täysin sinun omaisuuttasi – ei alustaloukkuja.`
+                                )}
                             </div>
                         </details>
                     </div>

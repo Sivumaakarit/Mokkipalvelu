@@ -11,6 +11,21 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 export default function TilaaPlus() {
     const [formSubmitted, setFormSubmitted] = useState(false);
     const [billing, setBilling] = useState<'kuukausi' | 'vuosi'>('kuukausi');
+    const isPremium = siteConfig.pricingStrategy === "premium";
+    const preset = siteConfig.pricingPresets[siteConfig.pricingStrategy];
+
+    // Helper functions for dynamic pricing
+    const parsePrice = (priceStr: string) => {
+        return parseInt(priceStr.replace(/[^0-9]/g, ""), 10);
+    };
+
+    const formatPrice = (val: number) => {
+        return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " €";
+    };
+
+    const annualYllapitoSum = parsePrice(preset.plusAnnual) * 12;
+    const starterSetupVal = parsePrice(preset.starterSetup);
+    const annualTotalSum = annualYllapitoSum + starterSetupVal;
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
@@ -59,11 +74,11 @@ export default function TilaaPlus() {
                             <span className="inline-block px-3 py-1 bg-blue-500/20 text-blue-300 text-xs font-bold uppercase tracking-widest rounded-full mb-6 border border-blue-400/30">VIP-Huoltosopimus</span>
 
                             <h1 className={`${playfair.className} text-3xl md:text-5xl font-bold text-white mb-6 leading-tight`}>
-                                Plus-paketti <span className="text-blue-400">({billing === 'vuosi' ? '99 €/kk + avausmaksu 399 € + alv' : '150 €/kk + avausmaksu 499 € + alv'})</span>
+                                Plus-paketti <span className="text-blue-400">({billing === 'vuosi' ? `${preset.plusAnnual}/kk + rakennusmaksu alkaen ${preset.starterSetup} + alv` : `${preset.plusMonthly}/kk + rakennusmaksu alkaen ${preset.growthSetup} + alv`})</span>
                             </h1>
 
                             <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                                Enemmän kuin pelkkä ylläpito – se on väline kasvuun. Ensimmäinen vuosi yhteensä vain {billing === 'vuosi' ? '1 587 €' : '2 299 €'} + alv. Sisältää teknisen turvan ja julkaisun lisäksi <strong className="text-white">2 tuntia asiantuntijatyötä joka kuukausi</strong>.
+                                Enemmän kuin pelkkä ylläpito – se on väline kasvuun. Sisältää teknisen turvan ja julkaisun lisäksi <strong className="text-white">2 tuntia asiantuntijatyötä joka kuukausi</strong>.
                             </p>
                         </div>
 
@@ -115,7 +130,7 @@ export default function TilaaPlus() {
                                                 <textarea
                                                     name="message"
                                                     className="w-full min-w-0 p-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 outline-none h-32"
-                                                    defaultValue={`Hei! Olen kiinnostunut Plus-paketista (${billing === 'vuosi' ? '99 €/kk vuosilaskutuksella' : '150 €/kk kuukausilaskutuksella'}). Haluan ulkoistaa sivuston digimurheet ja varmistaa aktiivisen näkyvyyden Googlessa ja tekoälyhauissa. Jutellaanko lisää? Ymmärrän, että tämä viesti ei sido minua mihinkään.\n\nTarvitsen nettisivut: (kirjoita esim. yrityksen nimi, toimiala ja paikkakunta. Voit myös kirjoittaa lyhyesti toiveistasi, jotta osaamme tarjota juuri sinulle parasta ratkaisua)`}
+                                                    defaultValue={`Hei! Olen kiinnostunut Plus-paketista (${billing === 'vuosi' ? `${preset.plusAnnual}/kk vuosilaskutuksella` : `${preset.plusMonthly}/kk kuukausilaskutuksella`}). Haluan ulkoistaa sivuston digimurheet ja varmistaa aktiivisen näkyvyyden Googlessa ja tekoälyhauissa. Jutellaanko lisää? Ymmärrän, että tämä viesti ei sido minua mihinkään.\n\nTarvitsen nettisivut: (kirjoita esim. yrityksen nimi, toimiala ja paikkakunta. Voit myös kirjoittaa lyhyesti toiveistasi, jotta osaamme tarjota juuri sinulle parasta ratkaisua)`}
                                                 ></textarea>
                                             </div>
                                             <button type="submit" className="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition shadow-lg shadow-blue-600/30">
@@ -123,12 +138,12 @@ export default function TilaaPlus() {
                                             </button>
                                             <p className="text-center text-xs text-slate-500 mt-4 leading-relaxed">
                                                 <strong className="text-slate-600">
-                                                    {billing === 'vuosi' 
-                                                        ? 'Vuositilaus laskutetaan 12 kk erässä (ylläpito 1 188 € + avausmaksu 399 € = 1 587 € + alv).' 
-                                                        : 'Alennettu avausmaksu edellyttää 12 kk sopimuskautta (ylläpito 150 €/kk + avausmaksu 499 €).'}
+                                                     {billing === 'vuosi' 
+                                                         ? `Vuositilaus laskutetaan 12 kk erässä (ylläpito ${preset.plusAnnual}/kk + rakennusmaksu alkaen ${preset.starterSetup} + alv, lopullinen hinta määräytyy tarpeiden ja laajuuden mukaan).` 
+                                                         : `Kuukausitilaus laskutetaan kuukausittain (ylläpito ${preset.plusMonthly}/kk + rakennusmaksu alkaen ${preset.growthSetup} + alv, lopullinen hinta määräytyy tarpeiden ja laajuuden mukaan).`}
                                                 </strong>
                                                 <br />
-                                                Määräaikaisen 12 kk kauden jälkeen sopimus jatkuu toistaiseksi voimassa olevana 3 kk irtisanomisajalla hintaan 150 €/kk + alv (tai voit valita uuden, tuolloin tarjolla olevan vuosisopimuksen). Yhteydenotto tai tarjouspyyntö ei sido sinua mihinkään.
+                                                Määräaikaisen 12 kk kauden jälkeen sopimus jatkuu toistaiseksi voimassa olevana 3 kk irtisanomisajalla hintaan {preset.plusMonthly}/kk + alv (tai voit valita uuden, tuolloin tarjolla olevan vuosisopimuksen). Yhteydenotto tai tarjouspyyntö ei sido sinua mihinkään.
                                             </p>
                                         </form>
                                     </>
