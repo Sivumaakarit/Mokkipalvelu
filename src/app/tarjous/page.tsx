@@ -90,7 +90,8 @@ export default function TarjousPage() {
                     </h1>
 
                     <p className={`${inter.className} text-lg md:text-2xl text-slate-200 mb-8 max-w-4xl mx-auto font-light leading-relaxed opacity-90`}>
-                        <strong className="text-white font-semibold">Rakennamme pienyrittäjälle nykyaikaiset kotisivut</strong>, jotka löytyvät ja myyvät. Hoidamme teknisen toteutuksen puolestasi, ja voit keskittyä omaan työhösi.                    </p>
+                        Rakennamme yrittäjälle nykyaikaiset kotisivut, jotka löytyvät ja myyvät.
+                    </p>
 
                     {/* Quick Answer Block: High-density data for AI Citation */}
                     <div className="mb-12 py-5 px-8 bg-slate-900/50 backdrop-blur-md rounded-2xl border border-white/10 text-white w-fit mx-auto shadow-2xl text-center">
