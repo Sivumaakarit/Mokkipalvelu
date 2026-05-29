@@ -65,7 +65,7 @@ export function PricingTiers() {
                     </p>
                     {isPremium && (
                         <div className="mt-6 flex justify-center">
-                            <Link href="#contact" className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-slate-950 px-6 py-3.5 rounded-xl font-bold text-base shadow-md transition-all transform hover:-translate-y-0.5 active:scale-95 uppercase tracking-wider">
+                            <Link href="#tilaa" className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-slate-950 px-6 py-3.5 rounded-xl font-bold text-base shadow-md transition-all transform hover:-translate-y-0.5 active:scale-95 uppercase tracking-wider">
                                 <svg className="w-5 h-5 text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                                 Varaa maksuton arviointi
                             </Link>
