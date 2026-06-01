@@ -81,7 +81,7 @@ export default function MetodiPage() {
               <ul className="space-y-4 text-stone-700 font-medium">
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
-                  Kielellinen tarkkuus ja selkeä viesti.
+                  Selkeä, myyntiä edistävä viesti.
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
@@ -89,7 +89,7 @@ export default function MetodiPage() {
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
-                  Sivun selkeys ei kuormita, kynnys ottaa yhteyttä pysyy matalana.
+                  Kynnys ottaa yhteyttä pysyy matalana.
                 </li>
               </ul>
             </div>
