@@ -12,13 +12,14 @@ export function WhatsAppButton() {
     const whatsappUrl = `https://wa.me/${cleanPhone}?text=${defaultMessage}`;
 
     const [isPulsing, setIsPulsing] = useState(true);
+    const [pulseCount, setPulseCount] = useState(0);
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
-        // Stop pulsing after exactly 3 iterations (each takes 1s) to prevent user annoyance
-        const timer = setTimeout(() => {
+        // Safe fallback timer (5s) to guarantee pulsing stops eventually
+        const fallbackTimer = setTimeout(() => {
             setIsPulsing(false);
-        }, 3000);
+        }, 5000);
 
         const handleScroll = () => {
             if (window.scrollY > 20) {
@@ -30,7 +31,7 @@ export function WhatsAppButton() {
 
         window.addEventListener("scroll", handleScroll, { passive: true });
         return () => {
-            clearTimeout(timer);
+            clearTimeout(fallbackTimer);
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
@@ -48,9 +49,20 @@ export function WhatsAppButton() {
             aria-label="Ota yhteyttä WhatsAppilla"
             id="whatsapp-floating-button"
         >
-            {/* Pulsing ripple effect to capture attention subtly - stops after 3 pulses and never restarts on hover */}
+            {/* Pulsing ripple effect - stops at the absolute millisecond the 3rd pulse finishes */}
             {isPulsing && (
-                <span className="absolute inset-0 rounded-full bg-[#25D366]/40 animate-ping -z-10 pointer-events-none"></span>
+                <span 
+                    className="absolute inset-0 rounded-full bg-[#25D366]/40 animate-ping -z-10 pointer-events-none"
+                    onAnimationIteration={() => {
+                        setPulseCount((prev) => {
+                            const next = prev + 1;
+                            if (next >= 3) {
+                                setIsPulsing(false);
+                            }
+                            return next;
+                        });
+                    }}
+                ></span>
             )}
 
             {/* Premium, High-Fidelity Font Awesome 6 WhatsApp SVG Icon */}
