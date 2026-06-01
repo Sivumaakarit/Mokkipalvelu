@@ -71,7 +71,7 @@ export function Header() {
                     className={`bg-green-900 shadow-md fixed top-0 left-0 w-full z-40 transition-transform duration-500 ease-in-out ${showGreenHeader ? "translate-y-0" : "-translate-y-full"
                         }`}
                 >
-                    <div className="container mx-auto px-4 text-white">
+                    <div className="px-4 md:px-12 text-white w-full">
                         <div className="flex justify-between items-center h-16">
                             {/* Logo */}
                             <Link href="/" className="flex-1 min-w-0 flex items-center gap-2 md:gap-4 mr-2">
@@ -165,7 +165,7 @@ export function Header() {
                 className={`bg-[#0A1128]/95 backdrop-blur-lg shadow-[0_8px_30px_rgba(0,0,0,0.5)] border-b border-blue-500/20 fixed top-0 left-0 w-full z-50 transition-transform duration-500 ease-in-out ${showBlueHeader ? "translate-y-0" : "-translate-y-full"
                     }`}
             >
-                <div className="container mx-auto px-4">
+                <div className="px-4 md:px-12 w-full">
                     <div className="flex justify-between items-center h-16 md:h-20">
                         {/* Logo - Dark Theme */}
                         <Link href="/" className="min-w-0 flex items-center mr-4 group">
@@ -183,7 +183,7 @@ export function Header() {
 
                              <Link
                                  href={isMainPage ? "#tilaa" : "/tarjous#tilaa"}
-                                 className="bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white px-8 py-3.5 rounded-full font-bold transition-all shadow-lg hover:shadow-cyan-500/25 hover:scale-105 text-lg"
+                                 className="bg-blue-700 hover:bg-blue-800 text-white px-5 md:px-8 py-3 rounded-full font-bold transition-all shadow-md hover:shadow-blue-500/20 hover:scale-105 text-sm md:text-base whitespace-nowrap"
                              >
                                  Ota yhteyttä
                              </Link>
@@ -218,7 +218,7 @@ export function Header() {
                         <Link
                             href={isMainPage ? "#tilaa" : "/tarjous#tilaa"}
                             onClick={() => setIsOpen(false)}
-                            className="w-full mt-6 bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white py-4 rounded-xl font-bold text-center shadow-lg block text-xl"
+                            className="w-full mt-6 bg-blue-700 hover:bg-blue-800 text-white py-4 rounded-xl font-bold text-center shadow-lg block text-xl transition-colors"
                         >
                             Ota yhteyttä
                         </Link>
