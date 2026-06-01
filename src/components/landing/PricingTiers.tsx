@@ -212,7 +212,7 @@ export function PricingTiers() {
                             <div className="flex flex-col mb-4">
                                 <div className="flex flex-wrap items-center gap-3">
                                     <div className="flex items-baseline gap-2">
-                                        <span className="text-4xl md:text-5xl font-extrabold text-blue-500">{isAnnual ? preset.plusAnnual : preset.plusMonthly}</span>
+                                        <span className="text-4xl md:text-5xl font-extrabold text-blue-400">{isAnnual ? preset.plusAnnual : preset.plusMonthly}</span>
                                         <span className="text-slate-400 text-base md:text-lg">/ kk <span className="text-xs font-normal text-slate-500 lowercase">(+ alv)</span></span>
                                     </div>
                                     {isAnnual && !isPremium && (
@@ -222,12 +222,12 @@ export function PricingTiers() {
                                         </div>
                                     )}
                                 </div>
-                                <span className="text-blue-500/80 text-xs mt-1.5 font-medium">{isAnnual ? (isPremium ? `Vuosimaksulla (129 € × 12 + rakennusmaksu 990 €). Jatkossa ylläpito jatkuu toistaiseksi voimassaolevana 149 €/kk + alv (tai voit valita uuden vuosijakson).` : `Säästö-ale 1. vuosi kerralla (99 € × 12 + rakennusmaksu). Jatkossa ylläpito jatkuu toistaiseksi voimassaolevana 150 €/kk + alv (tai voit valita uuden vuosijakson).`) : `12 kk sopimuskausi, jonka jälkeen jatkuu ${preset.plusMonthly}/kk + alv.`}</span>
+                                <span className="text-blue-400/80 text-xs mt-1.5 font-medium">{isAnnual ? (isPremium ? `Vuosimaksulla (129 € × 12 + rakennusmaksu 990 €). Jatkossa ylläpito jatkuu toistaiseksi voimassaolevana 149 €/kk + alv (tai voit valita uuden vuosijakson).` : `Säästö-ale 1. vuosi kerralla (99 € × 12 + rakennusmaksu). Jatkossa ylläpito jatkuu toistaiseksi voimassaolevana 150 €/kk + alv (tai voit valita uuden vuosijakson).`) : `12 kk sopimuskausi, jonka jälkeen jatkuu ${preset.plusMonthly}/kk + alv.`}</span>
                             </div>
 
                             <div className="bg-slate-700/30 rounded-xl p-4 border border-slate-600/50 mb-4 shadow-inner relative overflow-hidden">
                                 <div className="flex justify-between items-center mb-1 gap-2">
-                                    <span className="text-xs text-blue-500 font-bold uppercase tracking-wider">Sivuston rakennusmaksu</span>
+                                    <span className="text-xs text-blue-400 font-bold uppercase tracking-wider">Sivuston rakennusmaksu</span>
                                     <span className="text-lg font-bold text-white whitespace-nowrap">
                                         {isPremium ? "Alk. " : ""}{isAnnual ? preset.starterSetup : preset.growthSetup} <span className="text-xs font-normal text-slate-400 lowercase">+ alv</span>
                                     </span>
@@ -253,11 +253,11 @@ export function PricingTiers() {
                         <div className="space-y-4 flex-grow mb-8">
                             <ul className="space-y-4">
                                 <li className="flex gap-3 text-slate-300 text-sm items-start">
-                                    <svg className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <svg className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
                                     <span className="leading-snug"><strong className="text-white">Kaikki Perus-tason edut:</strong> Sisältää kaiken domain-asennuksesta ja tietoturvasta varmuuskopioihin.</span>
                                 </li>
                                 <li className="flex gap-3 text-slate-300 text-sm items-start">
-                                    <svg className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <svg className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
                                     <span className="leading-snug">
                                         <strong className="text-white">Asiantuntijapankki (2 h/kk):</strong> Oma ”digiassistenttisi” – käytä aika sisältöjen päivitykseen, ilmeen viilaukseen tai analytiikkaan.
                                         <span className="text-slate-400 block mt-1 text-xs leading-normal">
@@ -266,15 +266,15 @@ export function PricingTiers() {
                                     </span>
                                 </li>
                                 <li className="flex gap-3 text-slate-300 text-sm items-start">
-                                    <svg className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <svg className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
                                     <span className="leading-snug"><strong className="text-white">Jatkuva laadunvalvonta:</strong> Varmistamme säännöllisesti sivustosi nopeuden ja teknisen kunnon (SEO), jotta näkyvyys Googlessa ja tekoälyhauissa säilyy vahvana.</span>
                                 </li>
                                 <li className="flex gap-3 text-slate-300 text-sm items-start">
-                                    <svg className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <svg className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
                                     <span className="leading-snug"><strong className="text-white">Priorisoitu tuki:</strong> Olet aina jonon kärjessä. Vasteaikamme on erittäin nopea, max 24 tuntia arkipäivisin.</span>
                                 </li>
                                 <li className="flex gap-3 text-slate-300 text-sm items-start">
-                                    <svg className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    <svg className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
                                     <span className="leading-snug"><strong className="text-white">Läpinäkyvä seuranta:</strong> Saat tiedon tuntien käytöstä hyvissä ajoin (lisätyöt 75 €/h).</span>
                                 </li>
                             </ul>
