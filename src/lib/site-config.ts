@@ -55,9 +55,10 @@ export const siteConfig = {
     // SEO & AIO
     keywords: ["Sivumaakarit", "Kodikotkot", "LVI-verkkosivut", "Yrittäjän kotisivut", "Huippunopeat kotisivut", "Sivustot nopeasti"],
 
-    // Lomake-integraatio
+    // Lomake-integraatio & Chatit
     formspreeKey: "mvzvbrby",
     web3formsKey: "YOUR_WEB3FORMS_KEY_HERE",
+    crispWebsiteId: "e1c5c107-a194-4fa9-9a73-92cdd00e296d",
 
     // Niche-kohtaiset palvelut
     services: [
