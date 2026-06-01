@@ -1,6 +1,6 @@
-# ⚖️ Sivumaakarit – Hinnasto ja Palvelupaketit (Uusi Voimassaoleva Hinnasto)
+# ⚖️ Sivumaakarit – Hinnasto ja Palvelupaketit (Voimassaoleva Hinnasto)
 
-Tämä asiakirja sisältää kootusti Sivumaakareiden nykyiset voimassa olevat hinnastot, palvelupaketit, sopimusehdot, arvonlisäverot (alv) ja yksityiskohtaiset selitykset. Tämä tiedosto toimii yrityksen virallisena hinnasto- ja tuotedokumentaationa. Vanha legacy-hinnasto on arkistoitu tiedostoon [HINNASTO_LEGACY.md](file:///Users/eskomaki/Antigravity/VerkkoSivut/Velocity-core/Clients/Mokkipalvelu/HINNASTO_LEGACY.md).
+Tämä asiakirja sisältää kootusti Sivumaakareiden nykyiset voimassa olevat hinnastot, palvelupaketit, laajennukset, sopimusehdot, arvonlisäverot (alv) ja yksityiskohtaiset selitykset. Tämä tiedosto toimii yrityksen virallisena hinnasto- ja tuotedokumentaationa. Vanha legacy-hinnasto on arkistoitu tiedostoon [HINNASTO_LEGACY.md](file:///Users/eskomaki/Antigravity/VerkkoSivut/Velocity-core/Clients/Mokkipalvelu/HINNASTO_LEGACY.md).
 
 ---
 
@@ -24,7 +24,7 @@ Lisäksi tarjoamme Enterprise-tason täysin räätälöityjä ratkaisuja sekä p
 
 ---
 
-## 2. Mitä sivuston rakennus ja ylläpito sisältävät?
+## 2. Mitä perussivuston rakennus ja ylläpito sisältävät?
 
 ### 🛠️ Sivuston rakennus (Rakennusmaksu alkaen 990 € + alv)
 Rakennusmaksu kattaa sivuston yksilöllisen suunnittelun, ammattimaisen koodauksen, perushakukoneoptimoinnin (SEO) ja asennustyön nettiin.
@@ -38,50 +38,37 @@ Kaikkiin ylläpitopaketteihin sisältyy huippuunsa viritetty sivusto:
 
 ---
 
-### ☁️ Paketit ja ylläpitotasot
+## 3. Laajennukset ja yksilölliset lisätyöt (Add-ons)
 
-#### Taso 1: Ylläpito & Turva – Perus
-Huoletonta perusturvaa yrittäjälle, joka haluaa sivuston toimivan luotettavasti ja nopeasti taustalla ilman omaa vaivaa.
+Perusrakenteen päälle voimme lisätä juuri ne toiminnot, joita yrityksesi tarvitsee kasvaakseen. Näiden avulla muutamme sivustosi passiivisesta tiedottajasta aktiiviseksi myyntikanavaksi.
 
-* **Hinta:**
-  * **Vuosittain:** 49 € / kk + alv (laskutetaan 1. vuosi kerralla: ylläpito 588 € + rakennusmaksu 990 € = yhteensä **1 578 € + alv**).
-  * **Kuukausittain:** 69 € / kk + alv (ensimmäisen vuoden kokonaiskustannus: **1 818 € + alv**).
-* **Mitä paketti sisältää:**
-  * **Täyden palvelun webhotelli (Hosting):** Sivusto sijaitsee huippunopealla, skaalautuvalla ja erittäin turvallisella pilvipalvelimella (Vercel Edge Network).
-  * **SSL-salaussertifikaatti:** Pakollinen salaus (https-protokolla), joka takaa tietoturvan ja parantaa Google-näkyvyyttä.
-  * **Automaattiset varmuuskopiot:** Sivustosta otetaan säännöllisesti varmuuskopiot, joten se voidaan palauttaa välittömästi ongelmatilanteessa.
-  * **Tekninen valvonta:** Sivuston toimintaa, nopeutta ja palvelimen vasteaikoja seurataan jatkuvasti.
-  * **Kuukausittainen päivitys:** Sisältää yhden pienen kuukausittaisen muutoksen (esimerkiksi uusi valokuva, pieni tekstimuutos, loma-ilmoitus tai ajankohtainen tarjouskampanja).
-  * **Tuki:** Henkilökohtainen sähköposti- ja puhelintuki vasteajalla **max 2 arkipäivää**.
+Nämä ovat **arvio- ja alkaen-hintoja** perustoteutuksille. Jokaisen lisätyön tarkka hinta voidaan sopia kiinteästi tai ne voidaan tehdä tuntiveloituksella (**75 € / h + alv**) riippuen siitä, kuinka paljon räätälöintiä ja yhteissuunnittelua asiakkaan kanssa tarvitaan.
 
----
-
-#### Taso 2: Ylläpito & Turva – Plus (Suositelluin)
-Aktiivisille yrittäjille, jotka haluavat jatkuvaa näkyvyyden kehittämistä, säännöllisiä sisältöpäivityksiä ja nopeampaa tukea ilman lisäkustannusten pelkoa.
-
-* **Hinta:**
-  * **Vuosittain:** 129 € / kk + alv (laskutetaan 1. vuosi kerralla: ylläpito 1 548 € + rakennusmaksu 990 € = yhteensä **2 538 € + alv**).
-  * **Kuukausittain:** 149 € / kk + alv (ensimmäisen vuoden kokonaiskustannus: **2 778 € + alv**).
-* **Mitä paketti sisältää:**
-  * **Kaikki Perus-tason edut:** Sisältää webhotellin, SSL-salauksen, varmuuskopiot ja perustietoturvan.
-  * **Asiantuntijapankki (2 h / kk):** Oma "digiassistenttisi". Voit käyttää nämä kaksi tuntia kuukaudessa vapaasti sivuston kehittämiseen, laajempiin tekstipäivityksiin, kuvagallerioiden luomiseen, ilmeen hienosäätöön, analytiikan seurantaan tai muihin digitaalisiin töihin.
-    * *Säästövihje:* Tunnit on leivottu pakettiin erittäin edullisesti. Erikseen ostettuna kaksi tuntia asiantuntijatyötä maksaisi 150 € + alv, joten säästät merkittävästi.
-  * **Jatkuva laadunvalvonta & Optimointi:** Varmistamme aktiivisesti ja säännöllisesti sivustosi nopeuden sekä hakukonenäkyvyyden (SEO), jotta sijoituksesi tekoäly- ja Google-hauissa pysyvät huipulla.
-  * **Priorisoitu tuki:** Olet aina jonon kärjessä. Vasteaikamme on erittäin nopea – **max 24 tuntia arkipäivisin**.
-  * **Läpinäkyvä seuranta:** Saat selkeän tiedon asiantuntijatuntien käytöstä ja jäljellä olevasta ajasta hyvissä ajoin.
+| Lisäpalvelu / Toiminto | Kehitysaika (arvio) | Kertahinta (Alkaen, + alv) | Kuvaus ja toimitussisältö |
+| :--- | :--- | :--- | :--- |
+| **WhatsApp-integraatio** | 1–2 h | **150 €** | Dynaaminen, kevyt wa.me-linkitys ja kelluva premium-painike (sykkivällä aloituksella ja scroll-kutistumisella). |
+| **Interaktiiviset laskurit** *(esim. säästölaskuri)* | 5–8 h | **390 €** | Dynaaminen React-pohjainen laskuri liukusäätimillä, joka konkretisoi asiakkaalle taloudellisen tai ajallisen hyödyn heti. |
+| **Live-chat ja markkinointipopupit** | 2–4 h | **190 €** | Crisp/Tidio-chatin integrointi, uutiskirjeen tilaus-modaalit ja huomiota herättävät kampanja-popupit 24/7 myyntiin. |
+| **Portfoliogalleriat & työnäytteet** | 4–6 h | **290 €** | Yrityksen työnäytteiden näyttävä, suodatettava (esim. LVI, huolto) ja personoitu esittely kuvagallerioilla. |
+| **Arvosteluautomaatio (Google)** | 2–4 h | **190 €** | Palautteenanto-ohjaus sivustolla, joka ohjaa asiakkaan antamaan 5 tähden arvostelun Googleen keikan jälkeen. |
+| **Ulkopuoliset integraatiot** *(esim. Slotti)* | 2–4 h | **190 €** | Sähköisen varausjärjestelmän (Slotti, Vello jne.) tai edistyneiden karttapalveluiden upotus ja tyylittely. |
+| **PDF-liidilataukset & lomakkeet** | 2–3 h | **190 €** | Ladattavan oppaan, esitteen tai hinnaston toimitus automaattisesti asiakkaan sähköpostiin yhteystietoja (liidejä) vastaan. |
+| **Logon kirkastus ja vektorointi** | 4–5 h | **290 €** | Vanhan suttuisen logon piirtäminen puhtaaksi vektoriksi (PDF, SVG) kaikille laitteille ja painoon sopivaksi. |
+| **Uusi logo ja perusilme** | 8–10 h | **590 €** | 2–3 uniikkia logoluonnosta, logon viimeistely, brändivärit ja viralliset fonttisuositukset yritykselle. |
+| **Kattava yritysilme & Brändikirja** | 14–20 h | **990 €** | Logo useissa muodoissa, Brand Book (graafinen ohjeisto), käyntikorttidesign ja teippausluonnokset autoihin/vaatteisiin. |
 
 ---
 
-## 3. Erilliset lisätyöt ja tuntihinnasto
+## 4. Erilliset lisätyöt ja tuntihinnasto
 
 Mikäli asiakas tarvitsee ylläpitopakettiin kuulumattomia lisätöitä (esimerkiksi kokonaan uusia sivuja, laajoja integraatioita kolmannen osapuolen järjestelmiin tai Plus-paketin 2 tunnin kuukausikiintiön ylittäviä töitä), ne veloitetaan tuntihinnaston mukaan:
 
 * **Asiantuntijatyön tuntihinta:** **75 € / h + alv**
-* **Veloitusperuste:** Työt veloitetaan aina alkavalta tunnilta.
+* **Veloitusperuste:** Työt veloitetaan aina alkavalta tunnilta. Teemme kanssasi aina kirjallisen arvion tarvittavista tunneista ennen työn aloitusta.
 
 ---
 
-## 4. Tärkeimmät sopimusehdot lyhyesti
+## 5. Tärkeimmät sopimusehdot lyhyesti
 
 Sopimusehtomme on laadittu reiluiksi ja läpinäkyviksi. Haluamme ansaita asiakkaan luottamuksen laadukkaalla työllä, emme sitomalla heitä ikuisiin "alustaloukkuihin".
 
@@ -97,7 +84,7 @@ Sopimusehtomme on laadittu reiluiksi ja läpinäkyviksi. Haluamme ansaita asiakk
 
 ---
 
-## 5. Esimerkki: Kuinka nopeasti investointi maksaa itsensä takaisin?
+## 6. Esimerkki: Kuinka nopeasti investointi maksaa itsensä takaisin?
 
 Nettisivusto on yrityksen tehokkain työntekijä, joka tekee myyntiä 24/7. Tässä on kaksi tyypillistä esimerkkiä siitä, kuinka nopeasti Sivumaakareiden nettisivu maksaa itsensä takaisin yrittäjälle:
 
