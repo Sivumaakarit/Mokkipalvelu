@@ -11,16 +11,9 @@ export function WhatsAppButton() {
     const defaultMessage = encodeURIComponent("Hei! Haluaisin kysyä lisää palveluistanne.");
     const whatsappUrl = `https://wa.me/${cleanPhone}?text=${defaultMessage}`;
 
-    const [isPulsing, setIsPulsing] = useState(true);
-    const [pulseCount, setPulseCount] = useState(0);
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
-        // Safe fallback timer (5s) to guarantee pulsing stops eventually
-        const fallbackTimer = setTimeout(() => {
-            setIsPulsing(false);
-        }, 5000);
-
         const handleScroll = () => {
             if (window.scrollY > 20) {
                 setIsScrolled(true);
@@ -31,7 +24,6 @@ export function WhatsAppButton() {
 
         window.addEventListener("scroll", handleScroll, { passive: true });
         return () => {
-            clearTimeout(fallbackTimer);
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
@@ -49,21 +41,14 @@ export function WhatsAppButton() {
             aria-label="Ota yhteyttä WhatsAppilla"
             id="whatsapp-floating-button"
         >
-            {/* Pulsing ripple effect - stops at the absolute millisecond the 3rd pulse finishes */}
-            {isPulsing && (
-                <span 
-                    className="absolute inset-0 rounded-full bg-[#25D366]/40 animate-ping -z-10 pointer-events-none"
-                    onAnimationIteration={() => {
-                        setPulseCount((prev) => {
-                            const next = prev + 1;
-                            if (next >= 3) {
-                                setIsPulsing(false);
-                            }
-                            return next;
-                        });
-                    }}
-                ></span>
-            )}
+            {/* Pulsing ripple effect - natively stopped at exactly 3 iterations by the browser with forwards fill-mode (never shudders or flashes a 4th time) */}
+            <span 
+                className="absolute inset-0 rounded-full bg-[#25D366]/40 animate-ping -z-10 pointer-events-none"
+                style={{
+                    animationIterationCount: 3,
+                    animationFillMode: "forwards"
+                }}
+            ></span>
 
             {/* Premium, High-Fidelity Font Awesome 6 WhatsApp SVG Icon */}
             <svg 
