@@ -48,6 +48,7 @@ export const metadata: Metadata = {
 
 import { DemoBadge } from "@/components/ui/DemoBadge";
 import { MobileCTA } from "@/components/ui/MobileCTA";
+import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 
 export default function RootLayout({
   children,
@@ -66,6 +67,7 @@ export default function RootLayout({
           {children}
         </main>
         <MobileCTA />
+        <WhatsAppButton />
         <Analytics />
         <SpeedInsights />
       </body>
