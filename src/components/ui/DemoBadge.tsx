@@ -1,11 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Playfair_Display } from "next/font/google";
-
-const playfair = Playfair_Display({ subsets: ["latin"] });
 
 export function DemoBadge() {
     const pathname = usePathname();
@@ -46,17 +42,9 @@ export function DemoBadge() {
                 }
             `}</style>
             <div
-                className={`fixed top-[85px] md:top-24 left-2 md:left-4 z-50 bg-white/95 backdrop-blur-sm border-2 border-dashed border-cyan-500 shadow-xl rounded-xl p-2 md:p-4 flex flex-col gap-2 transition-all duration-500 cursor-default select-none pointer-events-auto origin-top-left max-w-[120px] md:max-w-[200px] hover:scale-105 animate-slow-blink ${isHidden ? 'opacity-0 -translate-x-full pointer-events-none' : ''}`}
+                className={`fixed top-[74px] md:top-[92px] left-3 md:left-6 z-50 bg-white/95 backdrop-blur-sm border border-dashed border-blue-600 shadow-md rounded-full py-1.5 md:py-2 px-3.5 md:px-5 flex items-center justify-center transition-all duration-500 cursor-default select-none pointer-events-auto origin-top-left hover:scale-105 animate-slow-blink ${isHidden ? 'opacity-0 -translate-x-full pointer-events-none' : ''}`}
             >
-                <div className="flex flex-col gap-1.5 select-none">
-                    <div className={`${playfair.className} text-[9px] md:text-[11px] italic text-white lowercase bg-[#0A1128] border border-blue-500/20 px-2 py-0.5 rounded-md tracking-tight w-fit`}>
-                        sivumaakarit<span className="text-cyan-400">.</span>
-                    </div>
-                    <div className="flex flex-col">
-                        <span className="text-[9px] md:text-sm uppercase tracking-wider font-black text-cyan-600 leading-none">DEMOSIVU</span>
-                        <span className="text-[6px] md:text-[10px] font-bold text-slate-500 leading-tight">Esittely</span>
-                    </div>
-                </div>
+                <span className="text-[9px] md:text-xs uppercase tracking-[0.2em] font-black text-blue-700 leading-none">DEMOSIVU</span>
             </div>
         </>
     );
