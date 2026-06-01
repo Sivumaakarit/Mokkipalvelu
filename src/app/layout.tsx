@@ -49,7 +49,6 @@ export const metadata: Metadata = {
 import { DemoBadge } from "@/components/ui/DemoBadge";
 import { MobileCTA } from "@/components/ui/MobileCTA";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
-import { CrispChat } from "@/components/seo/CrispChat";
 
 export default function RootLayout({
   children,
@@ -64,7 +63,6 @@ export default function RootLayout({
         <Header />
         <DemoBadge />
         <Schema />
-        <CrispChat />
         <main className="min-h-screen w-full overflow-x-hidden">
           {children}
         </main>

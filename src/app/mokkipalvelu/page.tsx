@@ -13,6 +13,8 @@ import { Testimonials } from "@/components/landing/Testimonials";
 import { Pricing } from "@/components/landing/Pricing";
 import { Footer } from "@/components/layout/Footer";
 import { Playfair_Display, Inter } from "next/font/google";
+import { CrispChat } from "@/components/seo/CrispChat";
+import { CustomChatButton } from "@/components/ui/CustomChatButton";
 
 const playfair = Playfair_Display({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
@@ -20,6 +22,8 @@ const inter = Inter({ subsets: ["latin"] });
 export default function MokkipalveluPage() {
   return (
     <>
+      <CrispChat />
+      <CustomChatButton />
       <Hero />
       <Services />
       <ContactBanner />

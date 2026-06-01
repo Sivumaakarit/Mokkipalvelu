@@ -2,6 +2,7 @@
 
 import { siteConfig } from "@/lib/site-config";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export function WhatsAppButton() {
     const rawPhone = siteConfig.contact.phone;
@@ -12,6 +13,8 @@ export function WhatsAppButton() {
     const whatsappUrl = `https://wa.me/${cleanPhone}?text=${defaultMessage}`;
 
     const [isScrolled, setIsScrolled] = useState(false);
+    const pathname = usePathname();
+    const isMokkiPage = pathname?.startsWith("/mokkipalvelu");
 
     useEffect(() => {
         const handleScroll = () => {
@@ -33,10 +36,14 @@ export function WhatsAppButton() {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className={`fixed bottom-6 right-6 z-40 group flex items-center bg-[#25D366] hover:bg-[#20BA56] text-white p-3.5 rounded-full shadow-[0_10px_30px_rgba(37,211,102,0.3)] hover:shadow-[0_15px_35px_rgba(37,211,102,0.4)] hover:-translate-y-1 active:scale-95 transition-all duration-500 ease-in-out select-none cursor-pointer ${
+            className={`fixed z-40 group flex items-center bg-[#25D366] hover:bg-[#20BA56] text-white p-3.5 rounded-full shadow-[0_10px_30px_rgba(37,211,102,0.3)] hover:shadow-[0_15px_35px_rgba(37,211,102,0.4)] hover:-translate-y-1 active:scale-95 transition-all duration-500 ease-in-out select-none cursor-pointer ${
                 isScrolled 
                     ? 'md:p-3.5 group-hover:md:px-5 group-hover:md:py-3.5' 
                     : 'md:px-5 md:py-3.5'
+            } ${
+                isMokkiPage 
+                    ? 'bottom-24 right-6 md:bottom-[72px]' 
+                    : 'bottom-6 right-6'
             }`}
             aria-label="Ota yhteyttä WhatsAppilla"
             id="whatsapp-floating-button"
