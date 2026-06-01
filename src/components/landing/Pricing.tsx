@@ -23,7 +23,7 @@ export function Pricing() {
     ];
 
     return (
-        <section className="py-24 bg-stone-50" id="pricing">
+        <section className="pt-12 pb-24 bg-stone-50" id="pricing">
             <div className="container mx-auto px-4 max-w-5xl">
                 <h2 className={`${urbanist.className} text-4xl md:text-5xl font-bold mb-16 text-stone-900 tracking-tight`}>
                     Hinnasto

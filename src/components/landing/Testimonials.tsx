@@ -119,7 +119,7 @@ export function Testimonials() {
     };
 
     return (
-        <section className="py-24 bg-stone-50 overflow-hidden relative" id="testimonials">
+        <section className="pt-24 pb-12 bg-stone-50 overflow-hidden relative" id="testimonials">
             <div className="container mx-auto px-4 mb-16 relative z-20">
                 <h2 className={`${urbanist.className} text-4xl md:text-6xl font-bold text-center text-slate-900 break-words tracking-tight`}>
                     Mitä asiakkaamme sanovat
