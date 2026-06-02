@@ -15,9 +15,9 @@ export function MobileCTA() {
             <div className="fixed bottom-0 left-0 w-full z-50 p-4 md:hidden bg-gradient-to-t from-white via-white/90 to-transparent pb-6 pt-12 animate-in slide-in-from-bottom-10 fade-in duration-500">
                 <Link 
                     href="/tarjous"
-                    className="flex items-center justify-center w-full bg-[#0A1128] hover:bg-[#121B3A] text-white font-black text-lg py-4 px-6 rounded-2xl border border-blue-500/20 shadow-[0_10px_25px_rgba(10,17,40,0.3)] tracking-wide uppercase"
+                    className="flex items-center justify-center w-full bg-[#0A1128] hover:bg-[#121B3A] text-white font-black text-lg py-4 px-6 rounded-2xl border border-white/10 shadow-[0_10px_25px_rgba(10,17,40,0.3)] tracking-wide uppercase"
                 >
-                    <svg className="w-5 h-5 mr-3 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-5 h-5 mr-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                     </svg>
                     <span className="font-black">Takaisin pääsivulle</span>
@@ -29,9 +29,9 @@ export function MobileCTA() {
                 <span className="font-bold">Tämä on demosivu → </span>
                 <Link 
                     href="/tarjous"
-                    className="flex items-center gap-2 bg-[#0A1128] hover:bg-[#121B3A] text-white px-5 py-1.5 rounded-full ml-4 border border-blue-500/30 transition-all font-black text-xs uppercase tracking-widest shadow-lg shadow-[#0A1128]/35"
+                    className="flex items-center gap-2 bg-[#0A1128] hover:bg-[#121B3A] text-white px-5 py-1.5 rounded-full ml-4 border border-white/20 transition-all font-black text-xs uppercase tracking-widest shadow-lg shadow-[#0A1128]/35"
                 >
-                    <svg className="w-4 h-4 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                     </svg>
                     Takaisin pääsivulle

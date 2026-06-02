@@ -315,12 +315,12 @@ export function SalesSection() {
                                     </div>
 
                                     <div className="flex flex-col justify-center">
-                                        <h4 className={`${inter.className} text-2xl font-bold text-white mb-2`}>Valmiina nopeasti<span className="text-cyan-400">*</span></h4>
+                                        <h4 className={`${playfair.className} text-2xl font-bold text-white mb-2 italic`}>Valmiina nopeasti<span className="text-cyan-400">*</span></h4>
                                         <p className={`${inter.className} text-xs text-slate-400 mb-4 italic`}>
                                             * Toimitamme sivut nopeasti – parhaimmillaan jopa vuorokaudessa siitä, kun olet toimittanut meille kaiken materiaalin, eikä kyseessä ole poikkeuksellisen laaja kokonaisuus.
                                         </p>
                                         <div className="mb-10">
-                                            <h4 className={`${inter.className} text-sm font-bold text-cyan-400 mb-6 uppercase tracking-widest border-b border-slate-800 pb-2`}>Hinnoittelu – Ei piilokuluja</h4>
+                                            <h4 className={`${playfair.className} text-base font-bold text-cyan-400 mb-6 tracking-wide border-b border-slate-800 pb-2 italic`}>Hinnoittelu – ei piilokuluja</h4>
                                             <div className="space-y-4">
                                                 <div className={`flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 rounded-lg bg-slate-900/40 border border-slate-800/50 ${inter.className}`}>
                                                     <div>
@@ -341,7 +341,7 @@ export function SalesSection() {
                                                 </div>
  
                                                 <div className="mt-6 mb-2">
-                                                    <span className={`${inter.className} text-xs text-cyan-500 font-bold uppercase tracking-wider`}>Ylläpitovaihtoehdot:</span>
+                                                    <span className={`${playfair.className} text-sm font-bold text-cyan-500 tracking-wide italic`}>Ylläpitovaihtoehdot:</span>
                                                 </div>
  
                                                 <div className={`flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 rounded-lg bg-slate-900/40 border border-slate-800/50 ${inter.className}`}>
@@ -367,15 +367,15 @@ export function SalesSection() {
                                         <div className="flex flex-col sm:flex-row gap-4 mt-8">
                                             <Link
                                                 href="/tarjous#hinnasto"
-                                                className="flex-1 py-5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-black text-center rounded-2xl hover:brightness-110 transition-all shadow-xl shadow-cyan-900/40 hover:scale-[1.02] active:scale-95 uppercase tracking-tighter text-lg"
+                                                className={`${playfair.className} flex-1 py-5 bg-blue-600 hover:bg-blue-700 text-white font-bold text-center rounded-2xl transition-all shadow-[0_20px_40px_rgba(37,99,235,0.25)] hover:scale-[1.02] active:scale-95 text-xl italic`}
                                             >
                                                 Katso paketit
                                             </Link>
                                             <Link
                                                 href="/tarjous#pelkka-sivu"
-                                                className="flex-1 py-5 bg-slate-800 border border-slate-700 text-slate-300 font-bold text-center rounded-2xl hover:bg-slate-700 transition-all flex items-center justify-center uppercase tracking-tighter text-lg italic"
+                                                className={`${playfair.className} flex-1 py-5 bg-slate-800 border border-slate-700 text-slate-300 hover:text-white hover:bg-slate-700 transition-all rounded-2xl flex items-center justify-center hover:scale-[1.02] active:scale-95 text-xl italic`}
                                             >
-                                                MITÄ SILLÄ SAA?
+                                                Mitä sillä saa?
                                             </Link>
                                         </div>
                                     </div>
@@ -403,8 +403,8 @@ export function SalesSection() {
                                         <input aria-label="Sähköposti" type="email" name="email" placeholder="Sähköposti" required className="bg-slate-900/50 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-cyan-500 outline-none w-full min-w-0" />
                                     </div>
                                     <textarea aria-label="Viesti" name="message" rows={3} placeholder="Miten voin auttaa?" className="w-full min-w-0 bg-slate-900/50 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-cyan-500 outline-none" defaultValue="Olen kiinnostunut kuulemaan lisää. Tämä on alustava kysely eikä sido vielä mihinkään."></textarea>
-                                    <button type="submit" className={`${inter.className} w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-indigo-600/20 hover:shadow-none active:scale-[0.98]`}>
-                                        PYYDÄ LISÄTIETOJA TAI ARVIO
+                                    <button type="submit" className={`${playfair.className} w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-5 rounded-2xl transition-all shadow-[0_15px_30px_rgba(37,99,235,0.3)] hover:scale-[1.01] active:scale-[0.99] text-xl italic`}>
+                                        Pyydä lisätietoja tai arvio
                                     </button>
                                 </form>
                             </>

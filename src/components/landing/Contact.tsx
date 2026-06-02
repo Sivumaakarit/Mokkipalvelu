@@ -9,7 +9,7 @@ export function Contact() {
         <>
             {/* Transition Guide: Bouncing arrow and glow spill placed AT THE SEAM */}
             <div className="w-full h-0 relative z-40 flex justify-center pointer-events-none">
-                <div className="absolute -top-32 flex flex-col items-center">
+                <div className="absolute -top-16 flex flex-col items-center">
                     {/* The glow spill extending upwards */}
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-blue-600/30 blur-[100px] rounded-full opacity-60 z-0"></div>
 
@@ -44,27 +44,27 @@ export function Contact() {
                             <div className="absolute inset-0 bg-blue-900/40 translate-x-3 translate-y-3 md:translate-x-6 md:translate-y-6 blur-xl"></div>
                             <div className="absolute inset-0 bg-black translate-x-2 translate-y-2 md:translate-x-4 md:translate-y-4"></div>
 
-                            <div className="relative bg-yellow-400 text-black px-6 py-10 md:p-16 border-4 border-black shadow-2xl overflow-hidden">
-                                <div className={`${playfair.className} absolute -top-6 left-1/2 transform -translate-x-1/2 bg-black text-yellow-400 px-8 py-3 font-bold text-lg md:text-xl tracking-[0.2em] shadow-xl rotate-2 ring-4 ring-yellow-400 whitespace-nowrap`}>
+                            <div className="relative bg-yellow-400 text-black px-6 py-10 md:p-16 border-4 border-black shadow-2xl">
+                                <div className={`${playfair.className} absolute -top-6 left-1/2 transform -translate-x-1/2 bg-black text-yellow-400 px-8 py-3 font-bold text-lg md:text-xl tracking-wide shadow-xl rotate-2 ring-4 ring-yellow-400 whitespace-nowrap`}>
                                     Varoitus
                                 </div>
 
-                                <h2 className={`${playfair.className} text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 tracking-tighter leading-none mt-6 uppercase italic break-words`}>
-                                    STOP! <br /> OLET <br className="sm:hidden" /> KUMMITUSSIVUILLA <br className="hidden sm:block" />
-                                    <span className={`${inter.className} text-xl md:text-3xl font-light block mt-6 opacity-90 normal-case not-italic`}>
-                                        – tätä yritystä, <span className="underline decoration-4 decoration-black/20 text-black/80 font-bold">Etelä-Suomen Mökki & Vahti</span>, ei ole olemassa. 👻
+                                <h2 className={`${playfair.className} text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 tracking-tight leading-none mt-6 break-words`}>
+                                    Stop! <br /> Olet <br className="sm:hidden" /> kummitussivuilla <br className="hidden sm:block" />
+                                    <span className={`${inter.className} text-xl md:text-3xl font-light block mt-6 opacity-90 normal-case not-italic tracking-normal`}>
+                                        – tätä yritystä, <span className="underline decoration-4 decoration-black/20 text-black/80 font-bold">Etelä-Suomen mökkihuolto & vahti</span>, ei ole olemassa.
                                     </span>
                                 </h2>
 
                                 <div className="max-w-3xl mx-auto">
                                     <p className={`${inter.className} text-xl md:text-2xl font-bold mb-10 leading-relaxed`}>
                                         Pahoittelut, jos ehdit jo innostua – meiltä ei saa lumitöitä, vaan nettisivuja. <br className="hidden md:block" />
-                                        Mutta huomasitko? <span className="bg-black text-yellow-400 px-3 py-1 rotate-1 inline-block mt-2 font-bold">Melkein jo tilasit palvelun.*</span>
+                                        Mutta huomasitko? <span className="bg-black text-yellow-400 px-3 py-1 rotate-1 inline-block mt-2 font-bold">Melkein jo tilasit palvelun</span>
                                     </p>
 
                                     <div className="bg-white/30 backdrop-blur-sm p-8 md:p-10 border-l-[12px] border-black text-left shadow-inner">
                                         <p className={`${inter.className} text-lg md:text-xl italic font-medium text-black/80`}>
-                                            Se on kiistaton todiste siitä, että Sivumaakareiden Tehorunko-nettisivu toimii.
+                                            Se on kiistaton todiste siitä, että Sivumaakareiden nettisivu toimii.
                                             Me emme korjaa mökkejä, me korjaamme yrityksesi digitaalisen &ldquo;mökkitien&rdquo;.
                                         </p>
                                     </div>
@@ -76,7 +76,7 @@ export function Contact() {
                     {/* Highly Visual "Proof" Section - PageSpeed Dashboard Redesign */}
                     <div className="relative mt-32 mb-20 max-w-5xl mx-auto">
                         <div className="text-center mb-16 px-4">
-                            <h2 className={`${playfair.className} text-4xl md:text-5xl lg:text-7xl font-black text-white mb-6 uppercase tracking-tight italic`}>
+                            <h2 className={`${playfair.className} text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 tracking-tight italic`}>
                                 Todisteet puhuvat <br className="sm:hidden" /> puolestaan
                             </h2>
                             <p className={`${inter.className} text-xl text-blue-300 max-w-2xl mx-auto font-light leading-relaxed`}>
@@ -100,7 +100,7 @@ export function Contact() {
                                         <div className="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></div>
                                     </div>
                                     <div className="flex-1 bg-white h-6 rounded-full flex items-center px-3 shadow-sm border border-slate-200 max-w-md hidden sm:flex">
-                                        <span className={`${inter.className} text-[10px] text-slate-400 truncate`}>pagespeed.web.dev/report/sivumaakarit-tehorunko</span>
+                                        <span className={`${inter.className} text-[10px] text-slate-400 truncate`}>pagespeed.web.dev/report/sivumaakarit.fi</span>
                                     </div>
                                 </div>
 
