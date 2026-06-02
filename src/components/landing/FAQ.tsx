@@ -47,10 +47,6 @@ export function FAQ() {
         {
             question: "Miten toimitus voi olla näin nopea?",
             answer: "Me teemme työt puolestasi. Nopeus perustuu siihen, että käytämme valmiiksi testattua, erittäin tehokkaasti myyvää sivustorakennetta emmekä aloita jokaista projektia alusta asti nollasta. Kun annat meille perustiedot yrityksestäsi, me jalostamme siitä iskevän myyntipuheen ja istutamme sen tähän toimivaksi todettuun runkoon. Sivusi valmistuvat nopeasti – parhaimmillaan jopa vuorokaudessa siitä, kun olemme saaneet kaikki materiaalit (kyseessä ei kuitenkaan ole sitova yleislupaus, sillä toimitusaika riippuu aina projektin koosta). Tämä säästää valtavasti aikaa ja takaa laadukkaan tuloksen."
-        },
-        {
-            question: "Voinko todella saada sivut ilmaiseksi pilottiasiakkaana?",
-            answer: "Kyllä. Etsimme juuri nyt referenssejä, joille tarjoamme toteutuksen 0 eurolla. Ainoa ehtosi on sitoutua kuukausittaiseen ylläpitoon, jotta voimme taata sivun laadun jatkossakin, sekä antaa rehellisen palautteen yhteistyöstä."
         }
     ];
 
