@@ -46,6 +46,7 @@ export function CustomChatButton() {
         if (typeof window !== "undefined") {
             // Varmistetaan, että $crisp-taulukko on alustettu ja komentojono toimii heti latautuessa
             (window as any).$crisp = (window as any).$crisp || [];
+            (window as any).$crisp.push(["do", "session:reset"]);
             (window as any).$crisp.push(["do", "chat:show"]);
             (window as any).$crisp.push(["do", "chat:open"]);
         }

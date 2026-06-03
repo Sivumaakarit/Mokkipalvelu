@@ -11,6 +11,7 @@ import { ContactBanner } from "@/components/landing/ContactBanner";
 import { SalesSection } from "@/components/landing/SalesSection";
 import { Testimonials } from "@/components/landing/Testimonials";
 import { Pricing } from "@/components/landing/Pricing";
+import { HowItWorks } from "@/components/landing/HowItWorks";
 import { Footer } from "@/components/layout/Footer";
 import { Playfair_Display, Inter } from "next/font/google";
 import { CrispChat } from "@/components/seo/CrispChat";
@@ -30,6 +31,7 @@ export default function MokkipalveluPage() {
       <MarketInfo />
       <Testimonials />
       <Pricing />
+      <HowItWorks />
       <FakeContact />
       <Contact />
       <SalesSection />
