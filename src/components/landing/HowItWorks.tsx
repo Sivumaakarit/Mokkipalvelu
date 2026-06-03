@@ -9,7 +9,7 @@ export function HowItWorks() {
         {
             number: "01",
             title: "Ota yhteyttä",
-            desc: "Kerro mökkisi tarpeista ja toiveista. Olipa kyseessä nurmikon leikkuu, lumityöt tai säännöllinen valvonta, me kuuntelemme.",
+            desc: "Kerro mökkisi tarpeista ja toiveista. Olipa kyseessä nurmikon leikkuu, lumityöt tai säännöllinen valvonta, me kuuntelemme ja laadimme sinulle tarjouksen.",
             icon: MessageSquare
         },
         {
