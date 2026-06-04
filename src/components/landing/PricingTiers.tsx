@@ -268,14 +268,24 @@ export function PricingTiers() {
                     <p className="text-xs font-bold text-slate-800 uppercase tracking-wider mb-3">
                         Esimerkkilaskelma 1. vuodelle vuosimaksulla (alv 0 %):
                     </p>
-                    <div className="grid md:grid-cols-2 gap-3 text-xs text-slate-600 max-w-xl mx-auto">
-                        <div className="bg-white/60 px-4 py-2.5 rounded-xl border border-slate-200/60 flex justify-between items-center">
-                            <span className="font-semibold text-slate-700">Perus-paketti:</span>
-                            <span className="font-sans text-slate-600">12 × 49 € + 990 € = <strong className="text-slate-950 font-bold whitespace-nowrap">alk. 1 578 €</strong></span>
+                    <div className="grid md:grid-cols-2 gap-4 text-slate-600 max-w-2xl mx-auto">
+                        <div className="bg-white/60 p-4 rounded-xl border border-slate-200/60 flex flex-col justify-between text-left">
+                            <div className="flex justify-between items-baseline mb-2">
+                                <span className="font-bold text-slate-800 text-sm">Perus (sivusto + 1. vuosi)</span>
+                                <span className="text-slate-950 font-extrabold text-base whitespace-nowrap">alk. 1 578 €</span>
+                            </div>
+                            <p className="text-[11px] text-slate-500 leading-normal">
+                                Sisältää sivuston suunnittelun ja kertaluonteisen rakennusmaksun (alk. 990 €) sekä 1. vuoden ylläpidon (12 × 49 €). Jatkossa (2. vuodesta alkaen) vain ylläpito 49 €/kk.
+                            </p>
                         </div>
-                        <div className="bg-white/60 px-4 py-2.5 rounded-xl border border-slate-200/60 flex justify-between items-center">
-                            <span className="font-semibold text-slate-700">Plus-paketti:</span>
-                            <span className="font-sans text-slate-600">12 × 129 € + 990 € = <strong className="text-slate-950 font-bold whitespace-nowrap">alk. 2 538 €</strong></span>
+                        <div className="bg-white/60 p-4 rounded-xl border border-slate-200/60 flex flex-col justify-between text-left">
+                            <div className="flex justify-between items-baseline mb-2">
+                                <span className="font-bold text-slate-800 text-sm">Plus (sivusto + 1. vuosi)</span>
+                                <span className="text-slate-950 font-extrabold text-base whitespace-nowrap">alk. 2 538 €</span>
+                            </div>
+                            <p className="text-[11px] text-slate-500 leading-normal">
+                                Sisältää sivuston suunnittelun ja kertaluonteisen rakennusmaksun (alk. 990 €) sekä 1. vuoden ylläpidon ja asiantuntijatunnit (12 × 129 €). Jatkossa (2. vuodesta alkaen) vain ylläpito 129 €/kk.
+                            </p>
                         </div>
                     </div>
                 </div>
