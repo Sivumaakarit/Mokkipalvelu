@@ -271,7 +271,7 @@ export function PricingTiers() {
                     <div className="grid md:grid-cols-2 gap-4 text-slate-600 max-w-2xl mx-auto">
                         <div className="bg-white/60 p-4 rounded-xl border border-slate-200/60 flex flex-col justify-between text-left">
                             <div className="flex justify-between items-baseline mb-2">
-                                <span className="font-bold text-slate-800 text-sm">Perus (sivusto + 1. vuosi)</span>
+                                <span className="text-slate-600 text-xs">Perus (sivuston rakennus + 1. vuosi)</span>
                                 <span className="text-slate-700 font-medium text-sm whitespace-nowrap">alk. 1 578 €</span>
                             </div>
                             <p className="text-[11px] text-slate-500 leading-normal">
@@ -280,7 +280,7 @@ export function PricingTiers() {
                         </div>
                         <div className="bg-white/60 p-4 rounded-xl border border-slate-200/60 flex flex-col justify-between text-left">
                             <div className="flex justify-between items-baseline mb-2">
-                                <span className="font-bold text-slate-800 text-sm">Plus (sivusto + 1. vuosi)</span>
+                                <span className="text-slate-600 text-xs">Plus (sivuston rakennus + 1. vuosi)</span>
                                 <span className="text-slate-700 font-medium text-sm whitespace-nowrap">alk. 2 538 €</span>
                             </div>
                             <p className="text-[11px] text-slate-500 leading-normal">
