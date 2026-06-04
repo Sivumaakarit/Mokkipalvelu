@@ -272,7 +272,7 @@ export function PricingTiers() {
                         <div className="bg-white/60 p-4 rounded-xl border border-slate-200/60 flex flex-col justify-between text-left">
                             <div className="flex justify-between items-baseline mb-2">
                                 <span className="text-slate-600 text-xs">Perus (sivuston rakennus + 1. vuosi)</span>
-                                <span className="text-slate-700 font-medium text-sm whitespace-nowrap">alk. 1 578 €</span>
+                                <span className="text-slate-600 text-xs whitespace-nowrap">alk. 1 578 €</span>
                             </div>
                             <p className="text-[11px] text-slate-500 leading-normal">
                                 Sisältää sivuston suunnittelun ja kertaluonteisen rakennusmaksun (alk. 990 €) sekä 1. vuoden ylläpidon (12 × 49 €). Jatkossa (2. vuodesta alkaen) vain ylläpito 49 €/kk.
@@ -281,7 +281,7 @@ export function PricingTiers() {
                         <div className="bg-white/60 p-4 rounded-xl border border-slate-200/60 flex flex-col justify-between text-left">
                             <div className="flex justify-between items-baseline mb-2">
                                 <span className="text-slate-600 text-xs">Plus (sivuston rakennus + 1. vuosi)</span>
-                                <span className="text-slate-700 font-medium text-sm whitespace-nowrap">alk. 2 538 €</span>
+                                <span className="text-slate-600 text-xs whitespace-nowrap">alk. 2 538 €</span>
                             </div>
                             <p className="text-[11px] text-slate-500 leading-normal">
                                 Sisältää sivuston suunnittelun ja kertaluonteisen rakennusmaksun (alk. 990 €) sekä 1. vuoden ylläpidon ja asiantuntijatunnit (12 × 129 €). Jatkossa (2. vuodesta alkaen) vain ylläpito 129 €/kk.
