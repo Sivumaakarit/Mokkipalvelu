@@ -224,10 +224,10 @@ export default function TarjousPage() {
                 <h2 className={`${playfair.className} text-3xl font-bold mb-8 tracking-tight`}>Tämä palvelu ei ole sinulle, jos...</h2>
                 <div className="bg-slate-100 p-8 rounded-r-2xl text-left border-l-4 border-[#ecc94b]">
                     <p className={`${inter.className} text-xl text-slate-700 italic opacity-80`}>
-                        &quot;...etsit täysin kuukausia kestävää design-projektia.&quot;
+                        &quot;...etsit kuukausia kestävää kehittelyprojektia.&quot;
                     </p>
                     <p className={`${inter.className} mt-6 text-slate-600 leading-relaxed`}>
-                        Jos tavoitteesi on täysin yksilöllinen erikoisratkaisu, tämä ei ole oikea valinta. Me tarjoamme suoran tien tuloksiin ilman hämmentävää ”digitaalista polkua”, joka karkottaa asiakkaat jo ensimetreillä.
+                        Jos tavoitteesi on kuukausia kestävä erikoisratkaisu, tämä ei ole oikea valinta. Me tarjoamme suoran tien tuloksiin ilman hämmentävää ”digitaalista polkua”, tyylikkäästi ja ammattimaisesti.
                     </p>
                 </div>
             </section>

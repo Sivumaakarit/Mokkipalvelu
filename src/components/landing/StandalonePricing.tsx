@@ -97,7 +97,7 @@ export function StandalonePricing() {
                             <p className="text-slate-600 text-sm md:text-base leading-relaxed flex-grow">
                                 {isPremium ? (
                                     <>
-                                        Kattaa sivuston <strong>suunnittelun, ammattimaisen toteutuksen, hakukoneoptimoinnin (SEO) ja käyttöönoton nettiin</strong>. Käytämme pohjana valmiiksi optimoitua ja testattua sivustorakennetta, joka mukautetaan yrityksesi tarpeisiin.
+                                        Kattaa sivuston <strong>suunnittelun, ammattimaisen toteutuksen, hakukone- ja tekoälyoptimoinnin (SEO ja GEO) ja käyttöönoton nettiin</strong>. Käytämme pohjana valmiiksi optimoitua ja testattua sivustorakennetta, joka mukautetaan yrityksesi tarpeisiin.
                                     </>
                                 ) : (
                                     <>
