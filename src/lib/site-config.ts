@@ -34,7 +34,8 @@ export const siteConfig = {
         email: "info@sivumaakarit.fi",
         address: "Etelä-Suomi",
         openingHours: "Ma-Pe 09-17",
-        googleMapsEmbedUrl: ""
+        googleMapsEmbedUrl: "",
+        businessId: "3631144-1"
     },
 
     // Navigaatio

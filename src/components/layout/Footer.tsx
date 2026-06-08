@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import { siteConfig } from "@/lib/site-config";
 
 export const Footer = () => {
   return (
@@ -25,8 +26,12 @@ export const Footer = () => {
           <Link href="/tarjous" className="hover:text-stone-900 transition-colors">Ota yhteyttä</Link>
         </div>
         
-        <div className="text-[10px] text-stone-300 uppercase tracking-widest mt-4">
-          © 2026 Sivumaakarit — Kaikki oikeudet pidätetään
+        <div className="text-[10px] text-stone-300 uppercase tracking-widest mt-4 flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+          <span>© 2026 {siteConfig.brandName}</span>
+          <span className="hidden sm:inline text-stone-200">•</span>
+          <span>Y-tunnus: {siteConfig.contact.businessId}</span>
+          <span className="hidden sm:inline text-stone-200">•</span>
+          <span>Kaikki oikeudet pidätetään</span>
         </div>
       </div>
     </footer>

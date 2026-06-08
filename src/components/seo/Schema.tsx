@@ -9,6 +9,7 @@ export function Schema() {
                 "@id": `${siteConfig.url}/#organization`,
                 "name": siteConfig.brandName || "Sivumaakarit",
                 "url": siteConfig.url,
+                "taxID": siteConfig.contact.businessId,
                 "logo": {
                     "@type": "ImageObject",
                     "@id": `${siteConfig.url}/#logo`,
@@ -37,6 +38,7 @@ export function Schema() {
                 "url": siteConfig.url,
                 "telephone": siteConfig.contact.phone,
                 "email": siteConfig.contact.email,
+                "taxID": siteConfig.contact.businessId,
                 "address": {
                     "@type": "PostalAddress",
                     "addressLocality": "Lohja",
