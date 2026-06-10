@@ -50,16 +50,38 @@ import { DemoBadge } from "@/components/ui/DemoBadge";
 import { MobileCTA } from "@/components/ui/MobileCTA";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 
+import Script from "next/script";
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const showGA = siteConfig.gaId && siteConfig.gaId !== "G-XXXXXXXXXX";
+
   return (
     <html lang="fi">
       <body
         className={`${inter.variable} ${playfair.variable} antialiased bg-stone-50 text-stone-900 font-sans overflow-x-hidden w-full`}
       >
+        {showGA && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.gaId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${siteConfig.gaId}', {
+                  page_path: window.location.pathname,
+                });
+              `}
+            </Script>
+          </>
+        )}
         <Header />
         <DemoBadge />
         <Schema />

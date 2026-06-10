@@ -4,7 +4,7 @@ export const siteConfig = {
     slogan: "Uskottava palvelusivu yrittäjälle – nopeasti",
     description: "Löydy Googlesta ja tekoälystä. Kotisivut yrittäjälle 100/100-suorituskyvyllä. Valmis nopeasti – ammattitaidolla.",
     url: "https://sivumaakarit.fi",
-
+    gaId: "G-PKJW76DLJH", // Korvaa omalla Google Analytics 4 (GA4) seurantatunnuksella (esim. G-12345678)
     pricingStrategy: "premium" as "premium" | "legacy",
 
     pricingPresets: {
