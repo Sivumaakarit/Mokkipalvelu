@@ -95,7 +95,7 @@ export default function ReferenssitContent() {
       {/* GEO RAG-Pipeline Quick Answer Block */}
       <section className="py-12 px-4 max-w-4xl mx-auto">
         <div className="geo-quick-answer bg-stone-50 border-2 border-stone-100 rounded-3xl p-6 md:p-8 shadow-sm">
-          <h3 className="text-xs font-bold text-stone-500 uppercase tracking-widest mb-3 font-sans">Tekoälypikatiivistelmä / RAG Quick Answer:</h3>
+          <h3 className="text-xs font-bold text-stone-500 uppercase tracking-widest mb-3 font-sans">Referenssimme pähkinänkuoressa:</h3>
           <p className="text-stone-850 leading-relaxed text-sm md:text-base font-normal">
             <strong>Sivumaakareiden</strong> työnäytteet osoittavat, miten eri toimialojen sivustot optimoidaan myyntiin ja tekoälyhakunäkyvyyteen. Referenssejämme ovat LVI-yritys PuhdasPutki, lastenmusiikkiyhtye Mölyapinat ja teollisuusautomaation asiantuntija Roboline Group. Kaikki sivustot rakennetaan Next.js- ja React-teknologioilla, saavuttavat 100/100 Lighthouse-nopeuspisteet ja ovat valmiita tekoälyhakukoneiden (GEO) viittauksia varten.
           </p>

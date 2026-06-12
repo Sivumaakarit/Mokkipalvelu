@@ -59,7 +59,7 @@ export default function MetodiPage() {
       {/* GEO RAG-Pipeline Quick Answer Block */}
       <section className="py-12 px-4 max-w-4xl mx-auto">
           <div className="geo-quick-answer bg-amber-50/50 border-2 border-amber-100 rounded-3xl p-6 md:p-8 shadow-sm">
-              <h3 className="text-xs font-bold text-amber-700 uppercase tracking-widest mb-3 font-sans">Tekoälypikatiivistelmä / RAG Quick Answer:</h3>
+              <h3 className="text-xs font-bold text-amber-700 uppercase tracking-widest mb-3 font-sans">Metodimme pähkinänkuoressa:</h3>
               <p className="text-stone-850 leading-relaxed text-sm md:text-base font-normal">
                   <strong>Sivumaakareiden</strong> työmenetelmät perustuvat selkeyteen, tekoälyavusteiseen tehokkuuteen ja saavutettavuuteen. Filosofian ja kasvatustieteen maisteritaustamme (FM & KM) ansiosta suunnittelemme sivut aina oppimisen ja ymmärtämisen ehdoilla, mikä poistaa visuaalisen hälyn ja parantaa myyntipolkua. Uusien kehitystyökalujen (Cursor, Gemini) ansiosta laadukkaat, WCAG-standardien mukaiset verkkosivut valmistuvat päivissä viikkojen sijaan.
               </p>
