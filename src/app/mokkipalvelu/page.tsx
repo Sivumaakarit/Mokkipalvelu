@@ -1,6 +1,13 @@
-"use client";
-
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mökkipalvelu - Esimerkki kotisivuista | Sivumaakarit",
+  description: "Mökkipalvelu on esimerkkisivusto, joka näyttää millaiset ovat nopeat, selkeät ja korkean suorituskyvyn omaavat kotisivut mökkitalkkariyrittäjälle.",
+  alternates: {
+    canonical: "/mokkipalvelu",
+  },
+};
 import { Hero } from "@/components/landing/Hero";
 import { Services } from "@/components/landing/Services";
 import { MarketInfo } from "@/components/landing/MarketInfo";
@@ -53,9 +60,7 @@ export default function MokkipalveluPage() {
           >
             KYSY LISÄÄ TAI PYYDÄ ARVIO
           </Link>
-          <p className="mt-6 text-sm text-slate-400/80 max-w-sm mx-auto leading-relaxed">
-            <strong className="text-slate-300">Ei määräaikaisia lukkovuosia.</strong><br/>Kuukausitilauksen voi perua milloin tahansa (1 kk irtisanomisaika). Yhteydenotto ei sido sinua tilaamaan.
-          </p>
+
         </div>
       </section>
 

@@ -347,7 +347,7 @@ export function SalesSection() {
                                                 <div className={`flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 rounded-lg bg-slate-900/40 border border-slate-800/50 ${inter.className}`}>
                                                     <div>
                                                         <div className="font-bold text-white text-lg">Ylläpito & Turva – Perus</div>
-                                                        <div className="text-sm text-slate-400">Tekninen ylläpito ja päivitykset.</div>
+                                                        <div className="text-sm text-slate-400">Tekninen ylläpito ja pieni päivitys (15min) kerran kuukaudessa.</div>
                                                     </div>
                                                     <div className="text-xl font-bold text-cyan-400 mt-2 sm:mt-0 whitespace-nowrap sm:pl-4">
                                                         {preset.basicMonthly} <span className="text-sm font-normal text-slate-400">/ kk + alv</span> <span className="text-xs font-normal text-slate-400">({isPremium ? "vuositilauksella 49 €/kk" : "vuositilauksella 33 €/kk"})</span>

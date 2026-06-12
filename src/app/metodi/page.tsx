@@ -1,6 +1,13 @@
-"use client";
-
 import { Footer } from "@/components/layout/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Työmenetelmämme ja filosofia | Sivumaakarit",
+  description: "Yhdistämme humanistisen, pedagogisen osaamisen ja tekoälyavusteisen teknologian luodaksemme sivustoja, jotka oikeasti ymmärretään ja jotka myyvät.",
+  alternates: {
+    canonical: "/metodi",
+  },
+};
 
 const steps = [
   {

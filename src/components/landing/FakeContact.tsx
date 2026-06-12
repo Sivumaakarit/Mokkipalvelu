@@ -1,3 +1,5 @@
+"use client";
+
 import { siteConfig } from "@/lib/site-config";
 import { Urbanist, Manrope } from "next/font/google";
 

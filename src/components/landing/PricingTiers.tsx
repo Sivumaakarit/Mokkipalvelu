@@ -55,7 +55,7 @@ export function PricingTiers() {
                             <>
                                 Säästä vuosisopimuksella ja varmista yrityksellesi salamannopea sekä luotettava nettinäkyvyys. Me hoidamme kaiken tekniikan ja asennukset puolestasi, jotta sinä voit keskittyä omaan ydinosaamiseesi.
                                 <span className="text-slate-900 font-bold block mt-2 text-lg md:text-xl">
-                                    Sivuston rakennusmaksu alkaen 990 € (+ alv) – lopullinen hinta määräytyy aina tarpeiden ja laajuuden mukaan.
+                                    Sivuston rakennusmaksu alkaen 990 € (+ alv). Lopullinen hinta määräytyy aina tarpeiden ja laajuuden mukaan.
                                 </span>
                                 <span className="text-slate-600 block mt-4 text-base md:text-lg italic border-t border-slate-200/60 pt-4 max-w-2xl mx-auto">
                                     Teemme kanssasi aina maksuttoman 15 minuutin arviointipuhelun, jossa katsomme tarpeesi ja jonka perusteella annamme sinulle pitävän, kiinteän tarjouksen. Näin maksat vain siitä, mitä todella tarvitset.
