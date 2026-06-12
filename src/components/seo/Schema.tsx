@@ -122,7 +122,7 @@ export function Schema() {
                         "name": "Mikä on ylläpitosopimuksen sitovuus ja irtisanomisaika?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": `Reilun ja ${isPremium ? "asiantuntevan kumppanuuden" : "erittäin edullisen rakennusmaksun (399 € + alv)"} mahdollistamiseksi ylläpito- ja turvasopimus solmitaan aluksi 12 kuukauden määräajaksi. Tämän jälkeen sopimus jatkuu joustavasti toistaiseksi voimassaolevana kuukausihinnalla (Perus: ${preset.basicMonthly} + alv, Plus: ${preset.plusMonthly} + alv) vain 3 kuukauden irtisanomisajalla (tai voit valita uuden, tuolloin tarjolla olevan vuosisopimuksen). Kun ylläpito päättyy, sivusto koodineen ja sisältöineen on täysin sinun omaisuuttasi – ei alustaloukkuja.`
+                            "text": `Reilun ja ${isPremium ? "asiantuntevan kumppanuuden" : `erittäin edullisen rakennusmaksun (${preset.starterSetup} + alv)`} mahdollistamiseksi ylläpito- ja turvasopimus solmitaan aluksi 12 kuukauden määräajaksi. Tämän jälkeen sopimus jatkuu joustavasti toistaiseksi voimassaolevana kuukausihinnalla (Perus: ${preset.basicMonthly} + alv, Plus: ${preset.plusMonthly} + alv) vain 3 kuukauden irtisanomisajalla (tai voit valita uuden, tuolloin tarjolla olevan vuosisopimuksen). Kun ylläpito päättyy, sivusto koodineen ja sisältöineen on täysin sinun omaisuuttasi – ei alustaloukkuja.`
                         }
                     }
                 ]
