@@ -25,7 +25,7 @@ export const Footer = () => {
           <div className="flex flex-col gap-4 md:col-span-2 md:col-start-5">
             <h4 className="text-xs uppercase tracking-widest font-bold text-stone-900">Yritystiedot</h4>
             <div className="flex flex-col gap-2 text-sm text-stone-600 font-light">
-              <span className="font-medium text-stone-800">Sivumaakarit</span>
+              <span>Sivumaakarit</span>
               <span>Yritysmuoto: Toiminimi</span>
               <span>Y-tunnus: <strong className="text-stone-900 font-bold">{siteConfig.contact.businessId}</strong></span>
               <span>Kotipaikka: Lohja</span>

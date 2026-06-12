@@ -1,6 +1,9 @@
 import { siteConfig } from "@/lib/site-config";
 
 export function Schema() {
+    const isPremium = siteConfig.pricingStrategy === "premium";
+    const preset = siteConfig.pricingPresets[siteConfig.pricingStrategy];
+
     const jsonLd = {
         "@context": "https://schema.org",
         "@graph": [
@@ -21,6 +24,20 @@ export function Schema() {
                 },
                 "image": `${siteConfig.url}/icon.webp`,
                 "description": siteConfig.description,
+                "founder": {
+                    "@type": "Person",
+                    "name": "Esko Mäki"
+                },
+                "knowsAbout": [
+                    "Web Design",
+                    "Search Engine Optimization",
+                    "Generative Engine Optimization (GEO)",
+                    "Next.js",
+                    "React",
+                    "WordPress Migration",
+                    "Local SEO",
+                    "Speed Optimization"
+                ],
                 "contactPoint": {
                     "@type": "ContactPoint",
                     "telephone": siteConfig.contact.phone,
@@ -50,6 +67,17 @@ export function Schema() {
                     "latitude": "60.248",
                     "longitude": "24.066"
                 },
+                "knowsAbout": [
+                    "Web Design",
+                    "Search Engine Optimization",
+                    "Generative Engine Optimization (GEO)",
+                    "Next.js",
+                    "React",
+                    "WordPress Migration",
+                    "Local SEO",
+                    "Speed Optimization"
+                ],
+                "areaServed": ["Lohja", "Uusimaa", "Finland"],
                 "image": `${siteConfig.url}/images/tarjous-hero.webp`, 
                 "priceRange": "€€",
                 "openingHoursSpecification": {
@@ -70,15 +98,15 @@ export function Schema() {
                         "name": "Miksi valitsisin kuukausimaksullisen ylläpidon?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Keskity omaan yritykseesi, me pidämme huolen tekniikasta. Helppo avaimet käteen -ratkaisu kuukausimaksulla, ilman stressiä. Kun valitset ylläpidon, saat sivuston rakennusmaksun reilusti alennettuun hintaan. Me hoidamme palvelimet, tietoturvan ja päivitykset."
+                            "text": `Keskity omaan yritykseesi, me pidämme huolen tekniikasta. Helppo avaimet käteen -ratkaisu kuukausimaksulla, ilman stressiä. Kun valitset ylläpidon (esim. Perus-paketti alkaen ${preset.basicAnnual}/kk + alv), saat sivuston asennuksen ja käyttöönoton erittäin sujuvasti. Me hoidamme palvelimet, tietoturvan ja päivitykset. Sinun tehtäväksesi jää vain uusien asiakkaiden palveleminen.`
                         }
                     },
                     {
                         "@type": "Question",
-                        "name": "Miksi maksaisin kuukausittaista ylläpitoa?",
+                        "name": "Miksi valitsisin laajemman Plus-paketin ylläpidon?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Jatkuva ylläpito on VIP-huoltosopimus: me pesemme auton, katsomme moottoriin ja huolehdimme, että oikeat asiakkaat nousevat kyytiin. Se on sijoitus siihen, että sivusi tuo jatkuvasti uutta kauppaa."
+                            "text": "Mieti sivustoasi firman autona. Halpa kertamaksu on se, jolla ostat uuden auton. Mutta jos et koskaan vaihda öljyjä, katso rengaspaineita tai pese sitä, se menettää arvonsa nopeasti. Jatkuva ylläpito on VIP-huoltosopimus: me pesemme auton, katsomme moottoriin ja huolehdimme jopa siitä, että oikeat asiakkaat nousevat kyytiin. Se on sijoitus siihen, että olemassa oleva sivusi tuo jatkuvasti uutta kauppaa."
                         }
                     },
                     {
@@ -86,7 +114,15 @@ export function Schema() {
                         "name": "Miten voitte tarjota näin nopeat toimitukset?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Keskitymme olennaiseen: selkeyteen, toimivuuteen ja löydettävyyteen. Emme rakenna raskaita himmeleitä, vaan käytämme valmiiksi testattua, tehokkaasti myyvää sivustorakennetta ja hyödynnämme työssämme huippuluokan AI-pohjaisia työkaluja heti kun materiaalit ovat kasassa. Sivustosi valmistuu nopeasti – parhaimmillaan jopa vuorokaudessa, joskin toimitusaika riippuu aina projektin laajuudesta ja materiaaleistasi."
+                            "text": "Keskitymme olennaiseen: selkeyteen, toimivuuteen ja löydettävyyteen. Emme rakenna raskaita himmeleitä tai kymmeniä turhia alasivuja. Nopeus perustuu siihen, että käytämme valmiiksi testattua, erittäin tehokkaasti myyvää sivustorakennetta sekä hyödynnämme työssämme huippuluokan AI-pohjaisia työkaluja. Emme aloita jokaista projektia alusta asti nollasta, mikä säästää valtavasti aikaa ja takaa, että sivustosi valmistuu nopeasti – parhaimmillaan jopa vuorokaudessa siitä, kun olemme saaneet kaikki materiaalit (kyseessä ei kuitenkaan ole sitova yleislupaus, sillä toimitusaika riippuu aina projektin koosta)."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Mikä on ylläpitosopimuksen sitovuus ja irtisanomisaika?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": `Reilun ja ${isPremium ? "asiantuntevan kumppanuuden" : "erittäin edullisen rakennusmaksun (399 € + alv)"} mahdollistamiseksi ylläpito- ja turvasopimus solmitaan aluksi 12 kuukauden määräajaksi. Tämän jälkeen sopimus jatkuu joustavasti toistaiseksi voimassaolevana kuukausihinnalla (Perus: ${preset.basicMonthly} + alv, Plus: ${preset.plusMonthly} + alv) vain 3 kuukauden irtisanomisajalla (tai voit valita uuden, tuolloin tarjolla olevan vuosisopimuksen). Kun ylläpito päättyy, sivusto koodineen ja sisältöineen on täysin sinun omaisuuttasi – ei alustaloukkuja.`
                         }
                     }
                 ]

@@ -38,33 +38,82 @@ Kaikkiin ylläpitopaketteihin sisältyy huippuunsa viritetty sivusto:
 
 ---
 
-## 3. Laajennukset ja yksilölliset lisätyöt (Add-ons)
+## 3. Laajennukset ja yksilölliset lisätyöt (Lisäpalveluopas)
 
-Perusrakenteen päälle voimme lisätä juuri ne toiminnot, joita yrityksesi tarvitsee kasvaakseen. Näiden avulla muutamme sivustosi passiivisesta tiedottajasta aktiiviseksi myyntikanavaksi.
+Tämä osio toimii **sisäisenä myyntioppaana ja hinnoittelun tukena** neuvottelutilanteissa. Hintoja ja kuukausimaksuja voidaan skaalata ja tarjota annettujen haarukoiden mukaan asiakkaan yrityksen koon, liikenteen volyymin ja maksukyvyn perusteella. Nämä tiedot ovat vain sisäiseen käyttöön, eikä niitä julkaista verkkosivuilla.
 
-Nämä ovat **arvio- ja alkaen-hintoja** perustoteutuksille. Jokaisen lisätyön tarkka hinta voidaan sopia kiinteästi tai ne voidaan tehdä tuntiveloituksella (**75 € / h + alv**) riippuen siitä, kuinka paljon räätälöintiä ja yhteissuunnittelua asiakkaan kanssa tarvitaan.
+### 📊 3.1 Automaatiot ja Asiakaspalvelu
 
-| Lisäpalvelu / Toiminto | Kehitysaika (arvio) | Kertahinta (Alkaen, + alv) | Kuvaus ja toimitussisältö |
-| :--- | :--- | :--- | :--- |
-| **WhatsApp-integraatio** | 1–2 h | **150 €** | Dynaaminen, kevyt wa.me-linkitys ja kelluva premium-painike (sykkivällä aloituksella ja scroll-kutistumisella). |
-| **Interaktiiviset laskurit** *(esim. säästölaskuri)* | 5–8 h | **390 €** | Dynaaminen React-pohjainen laskuri liukusäätimillä, joka konkretisoi asiakkaalle taloudellisen tai ajallisen hyödyn heti. |
-| **Live-chat ja markkinointipopupit** | 2–4 h | **190 €** | Crisp/Tidio-chatin integrointi, uutiskirjeen tilaus-modaalit ja huomiota herättävät kampanja-popupit 24/7 myyntiin. |
-| **Portfoliogalleriat & työnäytteet** | 4–6 h | **290 €** | Yrityksen työnäytteiden näyttävä, suodatettava (esim. LVI, huolto) ja personoitu esittely kuvagallerioilla. |
-| **Arvosteluautomaatio (Google)** | 2–4 h | **190 €** | Palautteenanto-ohjaus sivustolla, joka ohjaa asiakkaan antamaan 5 tähden arvostelun Googleen keikan jälkeen. |
-| **Ulkopuoliset integraatiot** *(esim. Slotti)* | 2–4 h | **190 €** | Sähköisen varausjärjestelmän (Slotti, Vello jne.) tai edistyneiden karttapalveluiden upotus ja tyylittely. |
-| **PDF-liidilataukset & lomakkeet** | 2–3 h | **190 €** | Ladattavan oppaan, esitteen tai hinnaston toimitus automaattisesti asiakkaan sähköpostiin yhteystietoja (liidejä) vastaan. |
-| **Logon kirkastus ja vektorointi** | 4–5 h | **290 €** | Vanhan suttuisen logon piirtäminen puhtaaksi vektoriksi (PDF, SVG) kaikille laitteille ja painoon sopivaksi. |
-| **Uusi logo ja perusilme** | 8–10 h | **590 €** | 2–3 uniikkia logoluonnosta, logon viimeistely, brändivärit ja viralliset fonttisuositukset yritykselle. |
-| **Kattava yritysilme & Brändikirja** | 14–20 h | **990 €** | Logo useissa muodoissa, Brand Book (graafinen ohjeisto), käyntikorttidesign ja teippausluonnokset autoihin/vaatteisiin. |
+#### 📞 Digitaalinen Päivystäjä (Ohimenneiden puhelujen automaatio)
+*   **Kuvaus:** Vastaa automaattisesti WhatsAppilla tai tekstiviestillä (SMS), kun yrittäjä ei ehdi vastaamaan puhelimeen. Asiakas voi vastata viestiin ja lähettää esimerkiksi kuvia ongelmasta, jotka ohjataan suoraan yrittäjän sähköpostiin.
+*   **Kertamaksu (Asennus):** **390 € – 590 €**
+*   **Kuukausihinta:** **49 € – 99 € / kk**
+*   **Myyntikulma:** Yksi pelastettu viikonloppupäivystys tai urakka maksaa palvelun takaisin moninkertaisesti. Pienelle toiminimelle 49 €/kk on nopea päätös; isommalle yritykselle 99 €/kk on edelleen erittäin edullinen hinta siitä, ettei arvokkaita liidejä vuoda kilpailijoille.
+
+#### ⭐️ Automaattinen Google-arvostelukysely (Palautegate)
+*   **Kuvaus:** Kerää automaattisesti palautetta sähköpostitse (interaktiivisilla tähdillä) laskutuksen jälkeen. Ohjaa 4-5 tähden antajat suoraan Googleen ja ohjaa kriittisen 1-3 tähden palautteen vain yrittäjän sähköpostiin.
+*   **Kertamaksu (Asennus):** **390 € – 690 €**
+*   **Kuukausihinta:** **39 € – 79 € / kk**
+*   **Myyntikulma:** Säästää satoja euroja kuussa maksetussa mainonnassa, kun viiden tähden Google-profiili hoitaa uusasiakashankinnan orgaanisesti ja nostaa paikallista hakukonenäkyvyyttä (Local SEO). Hinta skaalautuu laskutusvolyymin mukaan.
+
+#### 🤖 Yrityksen omalla datalla koulutettu Tekoälyavustaja (AI Chatbot)
+*   **Kuvaus:** Edistynyt chatbot verkkosivulle, joka on koulutettu yrityksen omilla materiaaleilla (kuten PDF-oppailla ja palvelukuvauksilla) ja kerää liidejä/soittopyyntöjä.
+*   **Kertamaksu (Asennus):** **590 € – 1 200 €**
+*   **Kuukausihinta:** **79 € – 149 € / kk**
+*   **Myyntikulma:** Väsymätön asiakaspalvelija 24/7. Vastaa yleisimpiin kysymyksiin silloin kun yrittäjä nukkuu tai on työmaalla, ja kerää soittopyynnöt valmiiksi aamua varten.
+
+---
+
+### 📈 3.2 Konversio ja Myyntityökalut
+
+#### 🧮 Interaktiivinen laskuri tai Älykäs kuntotesti
+*   **Kuvaus:** Käyttäjää aktivoiva testi (esim. säästölaskuri tai LVI-riskianalyysi), joka antaa heti arvion ja ohjaa tilaamaan ilmaisen kartoituksen/tarjouksen.
+*   **Kertamaksu (Asennus):** **490 € – 890 €**
+*   **Kuukausihinta:** **29 € – 59 € / kk**
+*   **Myyntikulma:** Nostaa liidin laadun aivan uudelle tasolle. Asiakkaan ei tarvitse selittää perusasioita puhelimessa, sillä testi on jo profiloinut asiakkaan iän, tarpeen ja ostovalmiuden valmiiksi yrittäjälle.
+
+#### ✉️ Liidimodaali ja kampanjakeräys (PDF & Tarjoukset)
+*   **Kuvaus:** Tyylikkäästi esiin nouseva pop-up-ikkuna, joka tarjoaa esimerkiksi ladattavan oppaan tai alennuksen sähköpostiosoitetta vastaan.
+*   **Kertamaksu (Asennus):** **190 € – 390 €**
+*   **Kuukausihinta:** **0 € – 29 € / kk** (Jos liitetään sähköpostimarkkinoinnin/CRM-automaatioon, kuten Mailchimp).
+*   **Myyntikulma:** Suurin osa sivuston kävijöistä poistuu ostamatta mitään. Tämä työkalu ottaa epäröivät kävijät talteen, jotta heille voidaan markkinoida ja myydä myöhemmin.
+
+#### 🛒 Kevyt Verkkokauppa (Stripe-integraatio)
+*   **Kuvaus:** Suoraviivainen, kevyt ja nopea maksuliikenne Next.js:ään integroituna Stripe Checkoutilla ilman raskaita verkkokauppa-alustoja.
+*   **Kertamaksu (Asennus):** **690 € – 1 200 €**
+*   **Kuukausihinta:** **59 € – 149 € / kk**
+*   **Myyntikulma:** Raskaan verkkokaupan (kuten Shopify tai WooCommerce) pystyttäminen ja ylläpitäminen on kallista ja hidastaa sivustoa. Tämä on ketterä, huippunopea ja yrittäjälle pitkässä juoksussa huomattavasti edullisempi vaihtoehto pienen valikoiman myyntiin.
+
+#### 📅 Itsepalveluvaraus ja kalenteri-integraatiot
+*   **Kuvaus:** Suora integraatio asiakkaan varausjärjestelmään (esim. Slotti, Vello, Cal.com) osana yhteydenottopolkua.
+*   **Kertamaksu (Asennus):** **190 € – 390 €**
+*   **Kuukausihinta:** **0 €** (Asiakas maksaa yleensä varausohjelmiston lisenssin suoraan palveluntarjoajalle).
+*   **Myyntikulma:** Kalenteri täyttyy automaattisesti taustalla. Säästää tuntikaupalla aikaa viikossa, kun edestakainen soittelu ja sopivien aikojen pallottelu jää kokonaan pois.
+
+---
+
+### 🎨 3.3 Brändi ja Visuaalisuus
+
+#### 📐 Graafinen ilme ja Logon vektorointi
+*   **Kuvaus:** Vanhan logon modernisointi, vektorointi ja kevennetty graafinen ohjeisto verkkoa varten.
+*   **Kertamaksu:** **250 € – 500 €**
+*   **Kuukausihinta:** **0 €**
+*   **Myyntikulma:** Uusi, huippunopea ja moderni sivusto näyttää keskeneräiseltä, jos sinne ladataan vanha, rakeinen logo. Se on nopea kertainvestointi, joka maksimoi brändin uskottavuuden.
+
+#### 💬 WhatsApp Premium -painike
+*   **Kuvaus:** Sivustolle asennettava, huomiota herättävä (sykkivä ja scroll-kutistuva) kelluva yhteydenottopainike.
+*   **Kertamaksu (Asennus):** **190 € – 290 €**
+*   **Kuukausihinta:** **0 €**
+*   **Myyntikulma:** Helppo myydä erillisenä matalan kynnyksen ominaisuutena tai käyttää neuvotteluvalttina (kaupanpäällisenä), jos asiakas valitsee laajemman ylläpitopaketin.
 
 ---
 
 ## 4. Erilliset lisätyöt ja tuntihinnasto
 
-Mikäli asiakas tarvitsee ylläpitopakettiin kuulumattomia lisätöitä (esimerkiksi kokonaan uusia sivuja, laajoja integraatioita kolmannen osapuolen järjestelmiin tai Plus-paketin 2 tunnin kuukausikiintiön ylittäviä töitä), ne veloitetaan tuntihinnaston mukaan:
+Mikäli asiakas tarvitsee ylläpitopakettiin kuulumattomia lisätöitä (esimerkiksi kokonaan uusia sivuja tai Plus-paketin kuukausikiintiön ylittäviä töitä), ne veloitetaan tuntihinnaston mukaan:
 
-* **Asiantuntijatyön tuntihinta:** **75 € / h + alv**
-* **Veloitusperuste:** Työt veloitetaan aina alkavalta tunnilta. Teemme kanssasi aina kirjallisen arvion tarvittavista tunneista ennen työn aloitusta.
+*   **Asiantuntijatyön tuntihinta:** **75 € / h + alv**
+*   **Veloitusperuste:** Työt veloitetaan aina alkavalta tunnilta. Teemme asiakkaan kanssa aina kirjallisen arvion tarvittavista tunneista ennen työn aloitusta.
 
 ---
 
