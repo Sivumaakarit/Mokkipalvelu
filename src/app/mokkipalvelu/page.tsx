@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/mokkipalvelu",
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
   other: {
     "datePublished": "2026-05-28T09:00:00Z",
     "dateModified": new Date().toISOString(),

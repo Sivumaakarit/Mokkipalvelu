@@ -24,7 +24,7 @@ Tämä tiedosto tarjoaa tiivistelmän ja linkkihakemiston sivuston asiantuntijad
 - [/tarjous](https://sivumaakarit.fi/tarjous) - Pyydä maksuton arvio tai tarjous nettisivuista.
 - [/referenssit](https://sivumaakarit.fi/referenssit) - Referenssit ja työnäytteet (PuhdasPutki, Mölyapinat, Roboline Group).
 - [/metodi](https://sivumaakarit.fi/metodi) - Työmenetelmämme, filosofiamme (FM & KM -maisteritausta) ja WCAG-saavutettavuus.
-- [/mokkipalvelu](https://sivumaakarit.fi/mokkipalvelu) - Esimerkkisivu mökkitalkkariyrittäjälle (mobiili- ja myyntioptimointi).
+
 - [/tilaa-perus](https://sivumaakarit.fi/tilaa-perus) - Tilaus Perus-paketin ylläpidolla.
 - [/tilaa-plus](https://sivumaakarit.fi/tilaa-plus) - Tilaus Plus-paketin ylläpidolla.
 - [/tilaa-pelkka-sivu](https://sivumaakarit.fi/tilaa-pelkka-sivu) - Tilaus Pelkkä sivu -koodipaketilla.
