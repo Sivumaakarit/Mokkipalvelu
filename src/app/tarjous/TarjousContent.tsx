@@ -585,7 +585,7 @@ Toimialani ja lyhyt kuvaus yrityksestäni: (esim. LVI, siivous tai puutarhuri, j
                             <span className="text-xs uppercase tracking-widest font-bold text-blue-600">Perustaja, Sivumaakarit</span>
                         </div>
                         <p className="text-slate-400 text-xs font-semibold uppercase tracking-wider leading-none">
-                            Koulutustausta: Koulutusteknologian maisteri (FM) & Kasvatustieteen maisteri (KM)
+                            Koulutustausta: Koulutusteknologian (FM) & Kasvatustieteen maisteri (KM)
                         </p>
                         <p className="text-slate-600 text-sm md:text-base leading-relaxed font-normal">
                             Asiantuntemukseni yhdistää koulutusteknologisen ymmärryksen, pedagogisen viestinnän ja modernin verkkokehityksen (Next.js & React). Suunnittelen jokaisen sivuston oppimisen ja ymmärtämisen ehdoilla, poistaen teknisen jargonin ja luoden selkeitä myyntipolkuja yrittäjille. Suorituskykytakuumme varmistaa, että sivustot saavuttavat 100/100 Google Lighthouse -pisteet ja ovat täysin valmiita tekoälyhakukoneiden (GEO) viittauksia varten.
@@ -594,6 +594,7 @@ Toimialani ja lyhyt kuvaus yrityksestäni: (esim. LVI, siivous tai puutarhuri, j
                             <span>✓ Yli 10 vuotta digitaalista suunnittelua</span>
                             <span>✓ 100% Suomalaista työtä</span>
                             <span>✓ WCAG 2.2 Saavutettavuusosaaminen</span>
+                            <span>✓ Pedagoginen ymmärrys & ihmisläheinen ote</span>
                         </div>
                     </div>
                 </div>
