@@ -473,10 +473,10 @@ export default function TarjousContent() {
             </section>
 
             {/* CTA / Contact Section */}
-            <section id="tilaa" className="py-24 px-4 bg-slate-50 relative overflow-hidden">
+            <section id="tilaa" className="pt-24 pb-12 px-4 bg-slate-50 relative overflow-hidden">
                 <div className="container mx-auto max-w-6xl">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-                        <div className="relative group/image lg:-mt-12">
+                        <div className="relative group/image lg:mt-2">
                             <div className="absolute -inset-4 bg-gradient-to-tr from-blue-600/20 to-cyan-500/20 rounded-[2.5rem] blur-2xl opacity-10 group-hover/image:opacity-100 transition-opacity duration-700"></div>
                             <div className="relative aspect-square md:aspect-video lg:aspect-square rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white transition-transform duration-700 group-hover/image:scale-[1.01]">
                                 <Image
@@ -489,7 +489,7 @@ export default function TarjousContent() {
                             </div>
 
                             {/* Blue Glass Button under the image */}
-                            <div className="mt-10 flex justify-center">
+                            <div className="mt-32 flex justify-center">
                                 <Link
                                     href="/mokkipalvelu"
                                     className="w-full max-w-sm bg-blue-600/10 backdrop-blur-3xl border-2 border-blue-500/20 text-slate-800 px-8 py-5 rounded-2xl font-bold text-lg md:text-xl transition-all shadow-[0_20px_40px_rgba(59,130,246,0.1)] hover:shadow-[0_20px_50px_rgba(59,130,246,0.2)] hover:bg-blue-500/10 hover:border-blue-500/40 hover:-translate-y-1 transform active:scale-95 text-center flex items-center justify-center gap-4 group/glass"
@@ -503,9 +503,22 @@ export default function TarjousContent() {
                                     <span>Katso esimerkkitoteutus</span>
                                 </Link>
                             </div>
+
+                            {/* Contact Info below the button */}
+                            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-2 text-slate-500 text-sm font-bold uppercase tracking-widest">
+                                <a href="mailto:info@sivumaakarit.fi" className="hover:text-blue-600 transition-colors flex items-center gap-2">
+                                    <svg className="w-4 h-4 text-blue-600/70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                    info@sivumaakarit.fi
+                                </a>
+                                <span className="hidden sm:block w-1.5 h-1.5 bg-slate-300 rounded-full"></span>
+                                <a href="tel:+358505403661" className="hover:text-blue-600 transition-colors flex items-center gap-2">
+                                    <svg className="w-4 h-4 text-blue-600/70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                    050 540 3661
+                                </a>
+                            </div>
                         </div>
 
-                        <div className="flex flex-col pt-2 pb-10">
+                        <div className="flex flex-col pt-2 pb-4">
                             <div className="text-center lg:text-left mb-10">
                                 <h2 className={`${playfair.className} text-4xl md:text-5xl font-bold mb-6 text-slate-900 leading-[1.1] tracking-tight`}>
                                     Kysy lisää tai pyydä <br />
@@ -515,47 +528,34 @@ export default function TarjousContent() {
                             </div>
 
                             {!formSubmitted ? (
-                                <>
-                                    <div className="bg-white p-8 md:p-10 rounded-[2rem] shadow-xl border border-slate-100 relative group/form transition-all duration-500 hover:shadow-2xl">
-                                        <div className="absolute -inset-px bg-gradient-to-r from-blue-100 to-cyan-100 rounded-[2rem] -z-10 group-hover/form:opacity-100 opacity-0 transition-opacity"></div>
-                                        <form className="space-y-6" onSubmit={handleSubmit}>
-                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                                <div className="space-y-2">
-                                                    <label className="block text-sm font-bold text-slate-700 ml-1">Nimi</label>
-                                                    <input type="text" name="name" className="w-full min-w-0 p-4 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-500 outline-none transition-all placeholder:text-slate-400" placeholder="Matti Meikäläinen" required />
-                                                </div>
-                                                <div className="space-y-2">
-                                                    <label className="block text-sm font-bold text-slate-700 ml-1">Sähköposti</label>
-                                                    <input type="email" name="email" className="w-full min-w-0 p-4 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-500 outline-none transition-all placeholder:text-slate-400" placeholder="matti@yritys.fi" required />
-                                                </div>
+                                <div className="bg-white p-8 md:p-10 rounded-[2rem] shadow-xl border border-slate-100 relative group/form transition-all duration-500 hover:shadow-2xl">
+                                    <div className="absolute -inset-px bg-gradient-to-r from-blue-100 to-cyan-100 rounded-[2rem] -z-10 group-hover/form:opacity-100 opacity-0 transition-opacity"></div>
+                                    <form className="space-y-6" onSubmit={handleSubmit}>
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                            <div className="space-y-2">
+                                                <label className="block text-sm font-bold text-slate-700 ml-1">Nimi</label>
+                                                <input type="text" name="name" className="w-full min-w-0 p-4 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-500 outline-none transition-all placeholder:text-slate-400" placeholder="Matti Meikäläinen" required />
                                             </div>
                                             <div className="space-y-2">
-                                                <label className="block text-sm font-bold text-slate-700 ml-1">Viesti / Yrityksesi ala</label>
-                                                <textarea name="message" className="w-full min-w-0 p-4 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-500 outline-none transition-all h-48 placeholder:text-slate-400" placeholder="Kerro lyhyesti mitä teet..." defaultValue={`Hei! Haluan kysyä lisää nettisivuista tai pyytää maksuttoman arvion. Ymmärrän, että tämä ei sido minua mihinkään.
+                                                <label className="block text-sm font-bold text-slate-700 ml-1">Sähköposti</label>
+                                                <input type="email" name="email" className="w-full min-w-0 p-4 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-500 outline-none transition-all placeholder:text-slate-400" placeholder="matti@yritys.fi" required />
+                                            </div>
+                                        </div>
+                                        <div className="space-y-2">
+                                            <label className="block text-sm font-bold text-slate-700 ml-1">Viesti / Yrityksesi ala</label>
+                                            <textarea name="message" className="w-full min-w-0 p-4 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-500 outline-none transition-all h-48 placeholder:text-slate-400" placeholder="Kerro lyhyesti mitä teet..." defaultValue={`Hei! Haluan kysyä lisää nettisivuista tai pyytää maksuttoman arvion. Ymmärrän, että tämä ei sido minua mihinkään.
 
 Toimialani ja lyhyt kuvaus yrityksestäni: (esim. LVI, siivous tai puutarhuri, ja paikkakunta)`}></textarea>
-                                            </div>
-                                            <button type="submit" className={`${playfair.className} w-full bg-blue-700 text-white font-bold py-5 rounded-2xl hover:bg-blue-800 transition-all shadow-[0_15px_30px_rgba(29,78,216,0.3)] hover:shadow-none hover:translate-y-0.5 transform active:scale-95 text-xl tracking-tight`}>
-                                                Pyydä lisätietoja tai arvio
-                                            </button>
-                                            <p className="text-center text-xs text-slate-400 mt-4 leading-relaxed">
-                                                Yhteydenotto ei sido sinua tilaamaan. <br />
-                                                Sopimuskumppanina toimii suomalainen Tmi Sivumaakarit (Y-tunnus: {siteConfig.contact.businessId}).
-                                            </p>
-                                        </form>
-                                    </div>
-                                    <div className="mt-10 pt-10 border-t border-slate-200/50 flex flex-col sm:flex-row items-center justify-center gap-6 text-slate-400 text-sm font-bold uppercase tracking-widest">
-                                        <a href="mailto:info@sivumaakarit.fi" className="hover:text-blue-600 transition-colors flex items-center gap-2">
-                                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                                            info@sivumaakarit.fi
-                                        </a>
-                                        <span className="hidden sm:block w-1.5 h-1.5 bg-slate-200 rounded-full"></span>
-                                        <a href="tel:+358505403661" className="hover:text-blue-600 transition-colors flex items-center gap-2">
-                                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                                            050 540 3661
-                                        </a>
-                                    </div>
-                                </>
+                                        </div>
+                                        <button type="submit" className={`${playfair.className} w-full bg-blue-700 text-white font-bold py-5 rounded-2xl hover:bg-blue-800 transition-all shadow-[0_15px_30px_rgba(29,78,216,0.3)] hover:shadow-none hover:translate-y-0.5 transform active:scale-95 text-xl tracking-tight`}>
+                                            Pyydä lisätietoja tai arvio
+                                        </button>
+                                        <p className="text-center text-xs text-slate-400 mt-4 leading-relaxed">
+                                            Yhteydenotto ei sido sinua tilaamaan. <br />
+                                            Sopimuskumppanina toimii suomalainen Tmi Sivumaakarit (Y-tunnus: {siteConfig.contact.businessId}).
+                                        </p>
+                                    </form>
+                                </div>
                             ) : (
                                 <div id="success-msg" className="bg-emerald-50 border border-emerald-100 p-12 rounded-[2rem] text-center shadow-xl">
                                     <div className="w-20 h-20 bg-emerald-500 text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-emerald-500/30">
@@ -571,31 +571,31 @@ Toimialani ja lyhyt kuvaus yrityksestäni: (esim. LVI, siivous tai puutarhuri, j
             </section>
 
             {/* E-E-A-T Author Profile Section */}
-            <section className="py-20 px-4 bg-slate-50 border-t border-slate-200/60" id="asiantuntija">
+            <section className="pt-8 pb-20 px-4 bg-slate-50 border-t border-slate-200/60" id="asiantuntija">
                 <div className="max-w-4xl mx-auto bg-white rounded-[2.5rem] p-8 md:p-12 shadow-md border border-slate-100 flex flex-col md:flex-row gap-10 items-center">
-                    <div className="relative shrink-0">
+                    <div className="relative shrink-0 md:-translate-y-6">
                         <div className="absolute -inset-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-xl opacity-30"></div>
-                        <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-slate-100 border-4 border-white shadow-xl overflow-hidden relative">
+                        <div className="w-36 h-36 md:w-48 md:h-48 rounded-full bg-slate-100 border-4 border-white shadow-xl overflow-hidden relative">
                             <Image
-                                src="/images/eskokuva30.webp"
+                                src="/images/eskokuva45.webp"
                                 alt="Esko Mäki"
                                 fill
-                                sizes="(max-width: 768px) 128px, 160px"
+                                sizes="(max-width: 768px) 144px, 192px"
                                 className="object-cover"
                                 priority
                             />
                         </div>
                     </div>
                     <div className="flex-grow flex flex-col gap-4 text-center md:text-left">
-                        <div className="flex flex-col md:flex-row md:items-baseline gap-2 justify-center md:justify-start">
+                        <div className="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-x-4 justify-center md:justify-start">
                             <h3 className={`${playfair.className} text-2xl md:text-3xl font-bold text-slate-900`}>Esko Mäki</h3>
                             <span className="text-xs uppercase tracking-widest font-bold text-blue-600">Perustaja, Sivumaakarit</span>
                         </div>
                         <p className="text-slate-400 text-xs font-semibold uppercase tracking-wider leading-none">
-                            Koulutustausta: Koulutusteknologian (FM) & Kasvatustieteen maisteri (KM)
+                            Koulutustausta: Koulutusteknologian & Kasvatustieteen maisteri (FM & KM)
                         </p>
                         <p className="text-slate-600 text-sm md:text-base leading-relaxed font-normal">
-                            Asiantuntemukseni yhdistää koulutusteknologisen ymmärryksen, pedagogisen viestinnän ja modernin verkkokehityksen (Next.js & React). Suunnittelen jokaisen sivuston oppimisen ja ymmärtämisen ehdoilla, poistaen teknisen jargonin ja luoden selkeitä myyntipolkuja yrittäjille. Suorituskykytakuumme varmistaa, että sivustot saavuttavat 100/100 Google Lighthouse -pisteet ja ovat täysin valmiita tekoälyhakukoneiden (GEO) viittauksia varten.
+                            Asiantuntemukseni yhdistää ihmisläheisen suunnittelun, pedagogisen viestinnän ja modernin verkkokehityksen (Next.js & React). Suunnittelen jokaisen sivuston oppimisen ja ymmärtämisen ehdoilla, poistaen teknisen jargonin ja luoden selkeitä myyntipolkuja yrittäjille. Suorituskykytakuumme varmistaa, että sivustot saavuttavat 100/100 Google Lighthouse -pisteet ja ovat täysin valmiita tekoälyhakukoneiden (GEO) viittauksia varten.
                         </p>
                         <div className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-xs font-bold text-slate-500 border-t border-slate-100 pt-4 mt-2">
                             <span>✓ Yli 10 vuotta digitaalista suunnittelua</span>
