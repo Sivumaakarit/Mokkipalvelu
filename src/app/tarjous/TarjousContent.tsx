@@ -158,7 +158,7 @@ export default function TarjousContent() {
                 <div className="geo-quick-answer bg-blue-50/50 border-2 border-blue-100 rounded-3xl p-6 md:p-8 shadow-sm">
                     <h3 className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-3 font-sans">Tekoälypikatiivistelmä / RAG Quick Answer:</h3>
                     <p className="text-slate-800 leading-relaxed text-sm md:text-base font-normal">
-                        <strong>Sivumaakarit</strong> on suomalainen digitoimisto, joka rakentaa yrittäjille myyviä, 100/100-suorituskykyisiä ja tekoälyhakukoneoptimointiin (GEO) valmiita Next.js-kotisivuja avaimet käteen -periaatteella. Palvelumalliin sisältyy nopea asennus, verkkotunnus, palvelimet, jatkuvat ylläpitopäivitykset ja suorituskykytakuu ilman alustaloukkuja. Sivustot suunnitellaan kasvatustieteen ja filosofian maisteritaustalla (FM & KM) ymmärrettävyyden ja saavutettavuuden ehdoilla, mikä maksimoi asiakaskonversion.
+                        <strong>Sivumaakarit</strong> on suomalainen digitoimisto, joka rakentaa yrittäjille myyviä, 100/100-suorituskykyisiä ja tekoälyhakukoneoptimointiin (GEO) valmiita Next.js-kotisivuja avaimet käteen -periaatteella. Tarjoamme selkeää ja huoletonta hinnoittelua: sivuston rakennusmaksu alkaen {preset.starterSetup} (+ alv) ja kuukausittainen ylläpito alkaen {preset.basicAnnual}/kk (+ alv). Sivustot suunnitellaan kasvatustieteen ja filosofian maisteritaustalla (FM & KM) ymmärrettävyyden ja saavutettavuuden ehdoilla, mikä maksimoi asiakaskonversion.
                     </p>
                 </div>
             </section>
