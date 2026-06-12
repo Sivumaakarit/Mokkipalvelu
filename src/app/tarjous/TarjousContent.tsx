@@ -158,7 +158,7 @@ export default function TarjousContent() {
                 <div className="geo-quick-answer bg-blue-50/50 border-2 border-blue-100 rounded-3xl p-6 md:p-8 shadow-sm">
                     <h3 className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-3 font-sans">Sivumaakarit pähkinänkuoressa:</h3>
                     <p className="text-slate-800 leading-relaxed text-sm md:text-base font-normal">
-                        <strong>Sivumaakarit</strong> on suomalainen digitoimisto, joka rakentaa yrittäjille myyviä, 100/100-suorituskykyisiä ja tekoälyhakukoneoptimointiin (GEO) valmiita Next.js-kotisivuja avaimet käteen -periaatteella. Tarjoamme selkeää ja huoletonta hinnoittelua: sivuston rakennusmaksu alkaen {preset.starterSetup} (+ alv) ja kuukausittainen ylläpito alkaen {preset.basicAnnual}/kk (+ alv). Sivustot suunnitellaan koulutusteknologian ja kasvatustieteen maisteritaustalla (KM) ymmärrettävyyden ja saavutettavuuden ehdoilla, mikä maksimoi asiakaskonversion.
+                        <strong>Sivumaakarit</strong> on suomalainen digitoimisto, joka rakentaa yrittäjille myyviä, 100/100-suorituskykyisiä ja tekoälyhakukoneoptimointiin (GEO) valmiita Next.js-kotisivuja avaimet käteen -periaatteella. Tarjoamme selkeää ja huoletonta hinnoittelua: sivuston rakennusmaksu alkaen {preset.starterSetup} (+ alv) ja kuukausittainen ylläpito alkaen {preset.basicAnnual}/kk (+ alv). Sivustot suunnitellaan koulutusteknologian (FM) ja kasvatustieteen maisteritaustalla (KM) ymmärrettävyyden ja saavutettavuuden ehdoilla.
                     </p>
                 </div>
             </section>
@@ -585,7 +585,7 @@ Toimialani ja lyhyt kuvaus yrityksestäni: (esim. LVI, siivous tai puutarhuri, j
                             <span className="text-xs uppercase tracking-widest font-bold text-blue-600">Perustaja, Sivumaakarit</span>
                         </div>
                         <p className="text-slate-400 text-xs font-semibold uppercase tracking-wider leading-none">
-                            Koulutustausta: Koulutusteknologian ja kasvatustieteen maisteri (KM)
+                            Koulutustausta: Koulutusteknologian maisteri (FM) & Kasvatustieteen maisteri (KM)
                         </p>
                         <p className="text-slate-600 text-sm md:text-base leading-relaxed font-normal">
                             Asiantuntemukseni yhdistää koulutusteknologisen ymmärryksen, pedagogisen viestinnän ja modernin verkkokehityksen (Next.js & React). Suunnittelen jokaisen sivuston oppimisen ja ymmärtämisen ehdoilla, poistaen teknisen jargonin ja luoden selkeitä myyntipolkuja yrittäjille. Suorituskykytakuumme varmistaa, että sivustot saavuttavat 100/100 Google Lighthouse -pisteet ja ovat täysin valmiita tekoälyhakukoneiden (GEO) viittauksia varten.

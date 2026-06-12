@@ -202,7 +202,7 @@ export default function ReferenssitContent() {
             Yhteydenotto ei sido sinua mihinkään. Vastaamme pian – katsotaan yhdessä, miten voimme auttaa yritystäsi löytymään paremmin.
           </p>
           <div className="text-stone-400 text-xs font-bold uppercase tracking-widest mb-14">
-            Suunnittelija: <Link href="/tarjous#asiantuntija" className="text-blue-600 underline">Esko Mäki (KM)</Link> — Sivumaakarit
+            Suunnittelija: <Link href="/tarjous#asiantuntija" className="text-blue-600 underline">Esko Mäki (FM & KM)</Link> — Sivumaakarit
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-6">
             <Link
