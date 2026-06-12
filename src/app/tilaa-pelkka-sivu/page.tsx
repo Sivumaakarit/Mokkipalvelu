@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/tilaa-pelkka-sivu",
   },
+  other: {
+    "datePublished": "2026-05-28T09:00:00Z",
+    "dateModified": new Date().toISOString(),
+  }
 };
 
 export default function Page() {

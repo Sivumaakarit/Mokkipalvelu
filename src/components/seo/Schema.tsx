@@ -8,6 +8,17 @@ export function Schema() {
         "@context": "https://schema.org",
         "@graph": [
             {
+                "@type": "WebPage",
+                "@id": `${siteConfig.url}/#webpage`,
+                "url": siteConfig.url,
+                "name": siteConfig.name || "Sivumaakarit",
+                "description": siteConfig.description,
+                "datePublished": "2026-05-28T09:00:00Z",
+                "dateModified": new Date().toISOString(),
+                "publisher": { "@id": `${siteConfig.url}/#organization` },
+                "about": { "@id": `${siteConfig.url}/#business` }
+            },
+            {
                 "@type": "Organization",
                 "@id": `${siteConfig.url}/#organization`,
                 "name": siteConfig.brandName || "Sivumaakarit",

@@ -237,6 +237,62 @@ function checkImageFormats() {
 }
 
 // ----------------------------------------------------
+// 5. ROBOTS.TXT JA AI-BOTIT TARKISTUS
+// ----------------------------------------------------
+function checkRobotsTxt() {
+    console.log(`\n${colors.cyan}${colors.bold}Analysoidaan robots.txt...${colors.reset}`);
+    const robotsPath = path.join(process.cwd(), 'public', 'robots.txt');
+    if (!fs.existsSync(robotsPath)) {
+        logError("public/robots.txt tiedostoa ei löydy!");
+        return;
+    }
+
+    const content = fs.readFileSync(robotsPath, 'utf-8');
+    const requiredAgents = [
+        'OAI-SearchBot',
+        'GPTBot',
+        'ClaudeBot',
+        'PerplexityBot',
+        'Google-Extended',
+        'Meta-ExternalAgent'
+    ];
+
+    const normalized = content.replace(/\s+/g, '').toLowerCase();
+    let missing = [];
+    requiredAgents.forEach(agent => {
+        const expected = `user-agent:${agent.toLowerCase()}allow:/`;
+        if (!normalized.includes(expected)) {
+            missing.push(agent);
+        }
+    });
+
+    if (missing.length > 0) {
+        logError(`robots.txt: Seuraavat AI-botit eivät ole sallittuja tai puuttuvat määrityksestä: ${missing.join(', ')}`);
+    } else {
+        logSuccess("robots.txt: Kaikki vaaditut tekoälybotit on sallittu – OK!");
+    }
+}
+
+// ----------------------------------------------------
+// 6. LLMS.TXT TARKISTUS
+// ----------------------------------------------------
+function checkLlmsTxt() {
+    console.log(`\n${colors.cyan}${colors.bold}Analysoidaan llms.txt...${colors.reset}`);
+    const llmsPath = path.join(process.cwd(), 'public', 'llms.txt');
+    if (!fs.existsSync(llmsPath)) {
+        logError("public/llms.txt tiedosto puuttuu! Luo standardi llms.txt verkkopalvelimen juureen.");
+        return;
+    }
+
+    const content = fs.readFileSync(llmsPath, 'utf-8');
+    if (!content.startsWith('# ')) {
+        logError("llms.txt: Tiedoston pitäisi alkaa H1-tason otsikolla (esim. '# Sivumaakarit').");
+    } else {
+        logSuccess("llms.txt on olemassa ja oikeassa muodossa – OK!");
+    }
+}
+
+// ----------------------------------------------------
 // PÄÄOHJELMA
 // ----------------------------------------------------
 console.log(`${colors.cyan}${colors.bold}======================================`);
@@ -247,6 +303,8 @@ checkFavicons();
 checkCanonicals();
 checkNoscriptAndPrices();
 checkImageFormats();
+checkRobotsTxt();
+checkLlmsTxt();
 
 console.log(`\n${colors.cyan}${colors.bold}======================================`);
 console.log("TARKISTUKSEN LOPPUTULOS:");

@@ -1,0 +1,30 @@
+# Sivumaakarit – Kotisivut yrittäjälle
+
+Sivumaakarit on lohjalainen ammattimainen ja asiantunteva verkkosivutoimisto. Suunnittelemme ja toteutamme yrittäjille myyviä, 100/100-suorituskykyisiä ja tekoälyhakukoneystävällisiä (GEO-optimoituja) Next.js- ja React-kotisivuja yrittäjille avaimet käteen -periaatteella.
+
+Tämä tiedosto tarjoaa tiivistelmän ja linkkihakemiston sivuston asiantuntijadatasta LLM-botteja varten.
+
+## Perustiedot (NAP)
+- **Yritysnimi:** Tmi Sivumaakarit
+- **Kotipaikka:** Lohja, Uusimaa (Palvelemme koko Suomen alueella)
+- **Puhelin:** +358 50 540 3661
+- **Sähköposti:** info@sivumaakarit.fi
+- **Y-tunnus:** 3631144-1
+- **Aukioloajat:** Ma-Pe 09-17
+
+## Palvelupaketit ja hinnoittelu
+- **Sivuston rakennusmaksu:** alk. 990 € (+ alv)
+- **Perus-ylläpito:** alk. 49 €/kk (+ alv) vuosittaisella laskutuksella (tai 69 €/kk kuukausittaisella). Sisältää webhotellin, domainin, suojauksen, kuukausittaisen pienen päivityksen ja vasteajan max 2 arkipäivää.
+- **Plus-ylläpito:** alk. 129 €/kk (+ alv) vuosittaisella laskutuksella (tai 149 €/kk kuukausittaisella). Sisältää asiantuntijapankin (2 h/kk), jatkuvan suorituskyvyn seurannan (SEO/GEO) ja vasteajan max 24 h.
+- **Enterprise / Räätälöity paketti:** alk. 2 490 € (+ alv) laajempiin tarpeisiin.
+- **Pelkkä sivu -koodipaketti:** 990 € (+ alv) kertamaksuna ilman jatkuvaa ylläpitoa.
+
+## Hakemisto (Sivuston osoitteet)
+- [/](https://sivumaakarit.fi/) - Etusivu. Kotisivut yrittäjälle 100/100-suorituskyvyllä.
+- [/tarjous](https://sivumaakarit.fi/tarjous) - Pyydä maksuton arvio tai tarjous nettisivuista.
+- [/referenssit](https://sivumaakarit.fi/referenssit) - Referenssit ja työnäytteet (PuhdasPutki, Mölyapinat, Roboline Group).
+- [/metodi](https://sivumaakarit.fi/metodi) - Työmenetelmämme, filosofiamme (FM & KM -maisteritausta) ja WCAG-saavutettavuus.
+- [/mokkipalvelu](https://sivumaakarit.fi/mokkipalvelu) - Esimerkkisivu mökkitalkkariyrittäjälle (mobiili- ja myyntioptimointi).
+- [/tilaa-perus](https://sivumaakarit.fi/tilaa-perus) - Tilaus Perus-paketin ylläpidolla.
+- [/tilaa-plus](https://sivumaakarit.fi/tilaa-plus) - Tilaus Plus-paketin ylläpidolla.
+- [/tilaa-pelkka-sivu](https://sivumaakarit.fi/tilaa-pelkka-sivu) - Tilaus Pelkkä sivu -koodipaketilla.
