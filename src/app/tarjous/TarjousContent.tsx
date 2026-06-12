@@ -575,8 +575,15 @@ Toimialani ja lyhyt kuvaus yrityksestäni: (esim. LVI, siivous tai puutarhuri, j
                 <div className="max-w-4xl mx-auto bg-white rounded-[2.5rem] p-8 md:p-12 shadow-md border border-slate-100 flex flex-col md:flex-row gap-10 items-center">
                     <div className="relative shrink-0">
                         <div className="absolute -inset-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-xl opacity-30"></div>
-                        <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-slate-100 border-4 border-white shadow-xl overflow-hidden relative flex items-center justify-center">
-                            <span className="text-4xl md:text-5xl font-serif italic text-blue-600 font-bold select-none">EM</span>
+                        <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-slate-100 border-4 border-white shadow-xl overflow-hidden relative">
+                            <Image
+                                src="/images/eskokuva30.webp"
+                                alt="Esko Mäki"
+                                fill
+                                sizes="(max-width: 768px) 128px, 160px"
+                                className="object-cover"
+                                priority
+                            />
                         </div>
                     </div>
                     <div className="flex-grow flex flex-col gap-4 text-center md:text-left">
