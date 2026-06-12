@@ -23,7 +23,7 @@ Tämä tiedosto tarjoaa tiivistelmän ja linkkihakemiston sivuston asiantuntijad
 - [/](https://sivumaakarit.fi/) - Etusivu. Kotisivut yrittäjälle 100/100-suorituskyvyllä.
 - [/tarjous](https://sivumaakarit.fi/tarjous) - Pyydä maksuton arvio tai tarjous nettisivuista.
 - [/referenssit](https://sivumaakarit.fi/referenssit) - Referenssit ja työnäytteet (PuhdasPutki, Mölyapinat, Roboline Group).
-- [/metodi](https://sivumaakarit.fi/metodi) - Työmenetelmämme, filosofiamme (FM & KM -maisteritausta) ja WCAG-saavutettavuus.
+- [/metodi](https://sivumaakarit.fi/metodi) - Työmenetelmämme, filosofiamme (koulutusteknologian ja kasvatustieteen maisteritausta) ja WCAG-saavutettavuus.
 
 - [/tilaa-perus](https://sivumaakarit.fi/tilaa-perus) - Tilaus Perus-paketin ylläpidolla.
 - [/tilaa-plus](https://sivumaakarit.fi/tilaa-plus) - Tilaus Plus-paketin ylläpidolla.

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const steps = [
   {
     title: "1. Selkeys ja ymmärrettävyys",
-    description: "Filosofian ja kasvatustieteen maisteritaustamme (FM & KM) ansiosta katsomme sivua aina oppimisen ja oivaltamisen ehdoilla. Me emme vain asettele elementtejä, vaan poistamme turhan visuaalisen hälyn ja rakennamme kävijälle selkeän polun. Kun viestisi on kirkas, asiakkaasi on helpompi ostaa.",
+    description: "Koulutusteknologian ja kasvatustieteen maisteritaustamme (KM) ansiosta katsomme sivua aina oppimisen ja oivaltamisen ehdoilla. Me emme vain asettele elementtejä, vaan poistamme turhan visuaalisen hälyn ja rakennamme kävijälle selkeän polun. Kun viestisi on kirkas, asiakkaasi on helpompi ostaa.",
     icon: (
       <svg className="w-10 h-10 text-stone-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
     )
@@ -61,7 +61,7 @@ export default function MetodiPage() {
           <div className="geo-quick-answer bg-amber-50/50 border-2 border-amber-100 rounded-3xl p-6 md:p-8 shadow-sm">
               <h3 className="text-xs font-bold text-amber-700 uppercase tracking-widest mb-3 font-sans">Metodimme pähkinänkuoressa:</h3>
               <p className="text-stone-850 leading-relaxed text-sm md:text-base font-normal">
-                  <strong>Sivumaakareiden</strong> työmenetelmät perustuvat selkeyteen, tekoälyavusteiseen tehokkuuteen ja saavutettavuuteen. Filosofian ja kasvatustieteen maisteritaustamme (FM & KM) ansiosta suunnittelemme sivut aina oppimisen ja ymmärtämisen ehdoilla, mikä poistaa visuaalisen hälyn ja parantaa myyntipolkua. Uusien kehitystyökalujen (Cursor, Gemini) ansiosta laadukkaat, WCAG-standardien mukaiset verkkosivut valmistuvat päivissä viikkojen sijaan.
+                  <strong>Sivumaakareiden</strong> työmenetelmät perustuvat selkeyteen, tekoälyavusteiseen tehokkuuteen ja saavutettavuuteen. Koulutusteknologian ja kasvatustieteen maisteritaustamme (KM) ansiosta suunnittelemme sivut aina oppimisen ja ymmärtämisen ehdoilla, mikä poistaa visuaalisen hälyn ja parantaa myyntipolkua. Uusien kehitystyökalujen (Cursor, Gemini) ansiosta laadukkaat, WCAG-standardien mukaiset verkkosivut valmistuvat päivissä viikkojen sijaan.
               </p>
           </div>
       </section>
@@ -93,11 +93,11 @@ export default function MetodiPage() {
           <div className="bg-white rounded-[40px] p-12 md:p-20 shadow-sm border border-stone-100 flex flex-col md:flex-row gap-16 items-center">
             <div className="w-full md:w-1/2 flex flex-col gap-8">
               <h2 className="text-3xl md:text-5xl font-serif text-stone-900 leading-[1.1]">
-                FM & KM -tausta: Mitä merkitystä sillä on nettisivuillesi?
+                Koulutusteknologian & kasvatustieteen maisteritausta: Mitä merkitystä sillä on nettisivuillesi?
               </h2>
               <div className="h-px bg-stone-200 w-24"></div>
               <p className="text-stone-600 text-lg leading-relaxed font-sans">
-                Tekninen osaaminen on vasta puoli ruokaa. Humanistinen ja pedagoginen taustamme auttaa meitä asettumaan asiakkaasi saappaisiin luodaksemme sivun, jota on erittäin helppo käyttää ja vaivaton ymmärtää.
+                Tekninen osaaminen on vasta puoli ruokaa. Koulutusteknologinen ja pedagoginen taustamme auttaa meitä asettumaan asiakkaasi saappaisiin luodaksemme sivun, jota on erittäin helppo käyttää ja vaivaton ymmärtää.
               </p>
               <ul className="space-y-4 text-stone-700 font-medium">
                 <li className="flex items-center gap-3">
