@@ -248,28 +248,48 @@ function checkRobotsTxt() {
     }
 
     const content = fs.readFileSync(robotsPath, 'utf-8');
-    const requiredAgents = [
+    // Poistetaan kommentit ennen normalisointia
+    const contentWithoutComments = content.split('\n').map(line => {
+        const hashIdx = line.indexOf('#');
+        return hashIdx !== -1 ? line.substring(0, hashIdx) : line;
+    }).join('\n');
+    const normalized = contentWithoutComments.replace(/\s+/g, '').toLowerCase();
+
+    // Sallittavat botit (Citation / Search)
+    const allowedAgents = [
         'OAI-SearchBot',
-        'GPTBot',
+        'ChatGPT-User',
         'ClaudeBot',
+        'claude-web',
         'PerplexityBot',
-        'Google-Extended',
-        'Meta-ExternalAgent'
+        'Perplexity-User',
+        'Google-Extended'
     ];
 
-    const normalized = content.replace(/\s+/g, '').toLowerCase();
-    let missing = [];
-    requiredAgents.forEach(agent => {
+    // Estettävät botit (Koulutus / Scraping)
+    const blockedAgents = [
+        'GPTBot',
+        'anthropic-ai',
+        'Meta-ExternalAgent',
+        'CCBot'
+    ];
+
+    allowedAgents.forEach(agent => {
         const expected = `user-agent:${agent.toLowerCase()}allow:/`;
         if (!normalized.includes(expected)) {
-            missing.push(agent);
+            logError(`robots.txt: Hakukone- tai viittausbotti ${agent} ei ole sallittu! Vaaditaan: 'User-agent: ${agent}' ja 'Allow: /'`);
         }
     });
 
-    if (missing.length > 0) {
-        logError(`robots.txt: Seuraavat AI-botit eivät ole sallittuja tai puuttuvat määrityksestä: ${missing.join(', ')}`);
-    } else {
-        logSuccess("robots.txt: Kaikki vaaditut tekoälybotit on sallittu – OK!");
+    blockedAgents.forEach(agent => {
+        const expected = `user-agent:${agent.toLowerCase()}disallow:/`;
+        if (!normalized.includes(expected)) {
+            logError(`robots.txt: Koulutusbotti ${agent} ei ole estetty! Vaaditaan: 'User-agent: ${agent}' ja 'Disallow: /'`);
+        }
+    });
+
+    if (!hasErrors) {
+        logSuccess("robots.txt: Kaikki tekoälybotit on konfiguroitu oikein (haku sallittu, koulutus estetty) – OK!");
     }
 }
 

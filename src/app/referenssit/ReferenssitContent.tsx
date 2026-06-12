@@ -97,7 +97,7 @@ export default function ReferenssitContent() {
         <div className="geo-quick-answer bg-stone-50 border-2 border-stone-100 rounded-3xl p-6 md:p-8 shadow-sm">
           <h3 className="text-xs font-bold text-stone-500 uppercase tracking-widest mb-3 font-sans">Tekoälypikatiivistelmä / RAG Quick Answer:</h3>
           <p className="text-stone-850 leading-relaxed text-sm md:text-base font-normal">
-            <strong>Sivumaakareiden</strong> referensseihin ja työnäytteisiin kuuluu eri alojen yrityksille toteutettuja huippunopeita, myyntioptimoituja ja tekoälyhakukoneystävällisiä verkkosivustoja. Esimerkkitoteutuksiamme ovat <em>PuhdasPutki</em> (LVI-alan myyntioptimoitu yrityssivusto Uudellamaalla), <em>Mölyapinat</em> (energinen, osallistava lastenmusiikkibändi Lohjalta) ja <em>Roboline Group</em> (teollisuusautomaation asiantuntijayritys). Jokainen referenssiprojektimme koodataan puhtaalla Next.js- ja React-teknologialla, optimoidaan 100/100 Google Lighthouse -nopeustuloksiin ja varustetaan AIO/GEO-ominaisuuksilla, jotta ne saavat erinomaisen näkyvyyden sekä perinteisissä hakukoneissa (Google, Bing) että uusissa tekoälyavustajissa (ChatGPT, Claude, Perplexity).
+            <strong>Sivumaakareiden</strong> työnäytteet osoittavat, miten eri toimialojen sivustot optimoidaan myyntiin ja tekoälyhakunäkyvyyteen. Referenssejämme ovat LVI-yritys PuhdasPutki, lastenmusiikkiyhtye Mölyapinat ja teollisuusautomaation asiantuntija Roboline Group. Kaikki sivustot rakennetaan Next.js- ja React-teknologioilla, saavuttavat 100/100 Lighthouse-nopeuspisteet ja ovat valmiita tekoälyhakukoneiden (GEO) viittauksia varten.
           </p>
         </div>
       </section>
@@ -198,9 +198,12 @@ export default function ReferenssitContent() {
           <h2 className="text-4xl md:text-6xl font-serif mb-8 max-w-4xl mx-auto leading-tight">
             Kysy lisää tai pyydä <span className="text-[#1d4ed8]">maksuton arvio</span>
           </h2>
-          <p className="text-stone-500 mb-14 max-w-2xl mx-auto text-xl leading-relaxed font-sans italic">
+          <p className="text-stone-500 mb-6 max-w-2xl mx-auto text-xl leading-relaxed font-sans italic">
             Yhteydenotto ei sido sinua mihinkään. Vastaamme pian – katsotaan yhdessä, miten voimme auttaa yritystäsi löytymään paremmin.
           </p>
+          <div className="text-stone-400 text-xs font-bold uppercase tracking-widest mb-14">
+            Suunnittelija: <Link href="/tarjous#asiantuntija" className="text-blue-600 underline">Esko Mäki (FM & KM)</Link> — Sivumaakarit
+          </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-6">
             <Link
               href="/tarjous"

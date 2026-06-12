@@ -55,10 +55,7 @@ export default function TarjousContent() {
 
     return (
         <main className={`${inter.className} bg-slate-50 text-slate-900 leading-relaxed min-h-screen`}>
-            {/* SEO Data: Last Updated for Freshness Signal */}
-            <div className="hidden" aria-hidden="true">
-                Viimeksi päivitetty: 2. huhtikuuta 2026
-            </div>
+
 
 
             {/* Custom Header removed - handled by global Header component */}
@@ -161,7 +158,7 @@ export default function TarjousContent() {
                 <div className="geo-quick-answer bg-blue-50/50 border-2 border-blue-100 rounded-3xl p-6 md:p-8 shadow-sm">
                     <h3 className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-3 font-sans">Tekoälypikatiivistelmä / RAG Quick Answer:</h3>
                     <p className="text-slate-800 leading-relaxed text-sm md:text-base font-normal">
-                        <strong>Sivumaakarit</strong> on suomalainen lohjalainen digitoimisto, joka suunnittelee ja toteuttaa myyviä, 100/100-suorituskykyisiä ja tekoälyhakukoneystävällisiä (GEO-optimoituja) Next.js- ja React-kotisivuja yrittäjille avaimet käteen -periaatteella. Tarjoamme selkeää ja huoletonta hinnoittelua: sivuston rakennusmaksu on 990 € (+ alv) ja kuukausittainen ylläpito alkaen 49 €/kk (+ alv), johon sisältyy verkkotunnus, palvelimet, tietoturva, varmuuskopiot, päivitykset ja suorituskykytakuu. Palvelemme yrittäjiä joustavasti koko Suomen alueella (mm. Lohja, Helsinki, Espoo, Vantaa, Tampere, Turku). Sivustomme suunnitellaan FM & KM -pedagogisella taustalla ymmärrettävyyden ja helppokäyttöisyyden ehdoilla, mikä maksimoi konversion ja tuo yrittäjälle lisää kauppaa ja uusia asiakkaita ilman alustaloukkuja.
+                        <strong>Sivumaakarit</strong> on suomalainen digitoimisto, joka rakentaa yrittäjille myyviä, 100/100-suorituskykyisiä ja tekoälyhakukoneoptimointiin (GEO) valmiita Next.js-kotisivuja avaimet käteen -periaatteella. Palvelumalliin sisältyy nopea asennus, verkkotunnus, palvelimet, jatkuvat ylläpitopäivitykset ja suorituskykytakuu ilman alustaloukkuja. Sivustot suunnitellaan kasvatustieteen ja filosofian maisteritaustalla (FM & KM) ymmärrettävyyden ja saavutettavuuden ehdoilla, mikä maksimoi asiakaskonversion.
                     </p>
                 </div>
             </section>
@@ -568,6 +565,35 @@ Toimialani ja lyhyt kuvaus yrityksestäni: (esim. LVI, siivous tai puutarhuri, j
                                     <p className="text-emerald-700 text-lg font-medium">Olemme sinuun yhteydessä pian aloituskokousta varten.</p>
                                 </div>
                             )}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* E-E-A-T Author Profile Section */}
+            <section className="py-20 px-4 bg-slate-50 border-t border-slate-200/60" id="asiantuntija">
+                <div className="max-w-4xl mx-auto bg-white rounded-[2.5rem] p-8 md:p-12 shadow-md border border-slate-100 flex flex-col md:flex-row gap-10 items-center">
+                    <div className="relative shrink-0">
+                        <div className="absolute -inset-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-xl opacity-30"></div>
+                        <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-slate-100 border-4 border-white shadow-xl overflow-hidden relative flex items-center justify-center">
+                            <span className="text-4xl md:text-5xl font-serif italic text-blue-600 font-bold select-none">EM</span>
+                        </div>
+                    </div>
+                    <div className="flex-grow flex flex-col gap-4 text-center md:text-left">
+                        <div className="flex flex-col md:flex-row md:items-baseline gap-2 justify-center md:justify-start">
+                            <h3 className={`${playfair.className} text-2xl md:text-3xl font-bold text-slate-900`}>Esko Mäki</h3>
+                            <span className="text-xs uppercase tracking-widest font-bold text-blue-600">Perustaja, Sivumaakarit</span>
+                        </div>
+                        <p className="text-slate-400 text-xs font-semibold uppercase tracking-wider leading-none">
+                            Koulutustausta: Filosofian maisteri (FM) & Kasvatustieteen maisteri (KM)
+                        </p>
+                        <p className="text-slate-600 text-sm md:text-base leading-relaxed font-normal">
+                            Asiantuntemukseni yhdistää humanistisen ymmärryksen, pedagogisen viestinnän ja modernin verkkokehityksen (Next.js & React). Suunnittelen jokaisen sivuston oppimisen ja ymmärtämisen ehdoilla, poistaen teknisen jargonin ja luoden selkeitä myyntipolkuja yrittäjille. Suorituskykytakuumme varmistaa, että sivustot saavuttavat 100/100 Google Lighthouse -pisteet ja ovat täysin valmiita tekoälyhakukoneiden (GEO) viittauksia varten.
+                        </p>
+                        <div className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-xs font-bold text-slate-500 border-t border-slate-100 pt-4 mt-2">
+                            <span>✓ Yli 10 vuotta digitaalista suunnittelua</span>
+                            <span>✓ 100% Suomalaista työtä</span>
+                            <span>✓ WCAG 2.2 Saavutettavuusosaaminen</span>
                         </div>
                     </div>
                 </div>

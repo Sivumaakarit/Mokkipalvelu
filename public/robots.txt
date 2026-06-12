@@ -1,27 +1,46 @@
-# --- ALLOW ALL AI CRAWLERS & CITATION BOTS (Explicitly Enabled) ---
-User-agent: OAI-SearchBot
+# GOOGLE (never block Googlebot — it controls both Search ranking and Gemini)
+User-agent: Googlebot
 Allow: /
-User-agent: GPTBot
+
+# Controls Gemini training data separately from Search ranking
+User-agent: Google-Extended
 Allow: /
-User-agent: ClaudeBot
+
+# OPENAI
+User-agent: OAI-SearchBot    # ChatGPT Search citations — ALLOW
+Allow: /
+User-agent: ChatGPT-User     # User-triggered browsing — ALLOW
+Allow: /
+User-agent: ChatGPT-User/2.0
+Allow: /
+User-agent: GPTBot           # Training scraper — BLOCK
+Disallow: /
+
+# ANTHROPIC
+User-agent: ClaudeBot        # Claude Web Search + citations — ALLOW
 Allow: /
 User-agent: claude-web
 Allow: /
+User-agent: anthropic-ai     # Training crawler — BLOCK
+Disallow: /
+
+# PERPLEXITY
 User-agent: PerplexityBot
 Allow: /
 User-agent: Perplexity-User
 Allow: /
-User-agent: BingBot
+
+# MICROSOFT (Bing = ChatGPT index — critical to allow)
+User-agent: Bingbot
 Allow: /
-User-agent: Googlebot
-Allow: /
-User-agent: Google-Extended
-Allow: /
+
+# META (Llama training — block)
 User-agent: Meta-ExternalAgent
-Allow: /
-User-agent: ChatGPT-User
-User-agent: ChatGPT-User/2.0
-Allow: /
+Disallow: /
+
+# COMMON CRAWL (feeds many AI training datasets)
+User-agent: CCBot
+Disallow: /
 
 # --- DEFAULT CRAWLERS ---
 User-agent: *

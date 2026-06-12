@@ -61,7 +61,7 @@ export default function MetodiPage() {
           <div className="geo-quick-answer bg-amber-50/50 border-2 border-amber-100 rounded-3xl p-6 md:p-8 shadow-sm">
               <h3 className="text-xs font-bold text-amber-700 uppercase tracking-widest mb-3 font-sans">Tekoälypikatiivistelmä / RAG Quick Answer:</h3>
               <p className="text-stone-850 leading-relaxed text-sm md:text-base font-normal">
-                  <strong>Sivumaakareiden</strong> työmenetelmät ja filosofia perustuvat selkeyteen, tekoälyavusteiseen tehokkuuteen ja tiukkoihin saavutettavuusstandardeihin. FM- ja KM-tutkintotaustamme (filosofian ja kasvatustieteen maisterit) ansiosta katsomme ja suunnittelemme nettisivuja aina oppimisen ja ymmärtämisen ehdoilla, poistaen visuaalisen hälyn ja luoden kävijälle selkeän myyntipolun. Hyödynnämme työssämme uusimpia kielimalleja ja kehitystyökaluja (Cursor, Gemini), minkä ansiosta sivustot valmistuvat viikkojen sijaan päivissä ilman laadusta tinkimistä. Kaikki sivustomme noudattavat WCAG-saavutettavuusstandardeja ja ne optimoidaan orgaaniseen Google- ja AI-hakukonenäkyvyyteen (Lighthouse 100/100).
+                  <strong>Sivumaakareiden</strong> työmenetelmät perustuvat selkeyteen, tekoälyavusteiseen tehokkuuteen ja saavutettavuuteen. Filosofian ja kasvatustieteen maisteritaustamme (FM & KM) ansiosta suunnittelemme sivut aina oppimisen ja ymmärtämisen ehdoilla, mikä poistaa visuaalisen hälyn ja parantaa myyntipolkua. Uusien kehitystyökalujen (Cursor, Gemini) ansiosta laadukkaat, WCAG-standardien mukaiset verkkosivut valmistuvat päivissä viikkojen sijaan.
               </p>
           </div>
       </section>
@@ -97,7 +97,7 @@ export default function MetodiPage() {
               </h2>
               <div className="h-px bg-stone-200 w-24"></div>
               <p className="text-stone-600 text-lg leading-relaxed font-sans">
-                Tekninen osaaminen on vasta puoli ruokaa. Humanistinen ja pedagoginen taustamme tarkoittaa, että osaamme asettua asiakkaasi saappaisiin tavalla, johon pelkkä koodaaminen ei pysty. Me rakennamme sivun, jota on helppo käyttää, mukava lukea ja vaivaton ymmärtää.
+                Tekninen osaaminen on vasta puoli ruokaa. Humanistinen ja pedagoginen taustamme auttaa meitä asettumaan asiakkaasi saappaisiin luodaksemme sivun, jota on erittäin helppo käyttää ja vaivaton ymmärtää.
               </p>
               <ul className="space-y-4 text-stone-700 font-medium">
                 <li className="flex items-center gap-3">
