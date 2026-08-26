@@ -216,7 +216,7 @@ export default function TarjousContent() {
             </section>
 
             {/* Price Section */}
-            <section id="pricing-section" className="scroll-mt-20">
+            <section id="pricing-section" className="scroll-mt-20 content-auto">
                 <StandalonePricing />
                 <PricingTiers />
             </section>
@@ -469,7 +469,7 @@ export default function TarjousContent() {
             </section>
 
             {/* CTA / Contact Section */}
-            <section id="tilaa" className="pt-24 pb-12 px-4 bg-slate-50 relative overflow-hidden">
+            <section id="tilaa" className="pt-24 pb-12 px-4 bg-slate-50 relative overflow-hidden content-auto">
                 <div className="container mx-auto max-w-6xl">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
                         <div className="relative group/image lg:mt-2">
