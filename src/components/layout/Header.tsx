@@ -5,11 +5,7 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 import { usePathname } from "next/navigation";
 import { CabinLogo } from "@/components/landing/CabinLogo";
-import { Manrope, Urbanist, Playfair_Display } from "next/font/google";
-
-const manrope = Manrope({ subsets: ["latin"], weight: ["400", "700"] });
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700", "900"] });
-const playfair = Playfair_Display({ subsets: ["latin"] });
+import { manrope, urbanist, playfair } from "@/lib/fonts";
 
 export function Header() {
     const [isOpen, setIsOpen] = useState(false);

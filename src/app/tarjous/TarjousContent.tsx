@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Playfair_Display, Inter, Urbanist, Luckiest_Guy } from "next/font/google";
+import { playfair, inter, urbanist, lucky } from "@/lib/fonts";
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
@@ -9,11 +9,6 @@ import { StandalonePricing } from "@/components/landing/StandalonePricing";
 import { ProofSection } from "@/components/landing/ProofSection";
 import { PricingTiers } from "@/components/landing/PricingTiers";
 import { Footer } from "@/components/layout/Footer";
-
-const playfair = Playfair_Display({ subsets: ["latin"] });
-const inter = Inter({ subsets: ["latin"] });
-const urbanist = Urbanist({ subsets: ["latin"] });
-const lucky = Luckiest_Guy({ weight: "400", subsets: ["latin"] });
 
 export default function TarjousContent() {
     const [formSubmitted, setFormSubmitted] = useState(false);
@@ -582,7 +577,7 @@ Toimialani ja lyhyt kuvaus yrityksestäni: (esim. LVI, siivous tai puutarhuri, j
                                 fill
                                 sizes="(max-width: 768px) 144px, 192px"
                                 className="object-cover"
-                                priority
+                                loading="lazy"
                             />
                         </div>
                     </div>

@@ -1,10 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { Urbanist, Manrope } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["700"] });
-const manrope = Manrope({ subsets: ["latin"], weight: ["300", "400", "700"] });
+import { urbanist, manrope } from "@/lib/fonts";
 
 const testimonials = [
     {

@@ -1,7 +1,4 @@
-import { Urbanist, Manrope } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["700"] });
-const manrope = Manrope({ subsets: ["latin"], weight: ["400", "700"] });
+import { urbanist, manrope } from "@/lib/fonts";
 
 export function Pricing() {
     const prices = [

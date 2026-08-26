@@ -1,8 +1,5 @@
 import Link from "next/link";
-import { Playfair_Display, Inter } from "next/font/google";
-
-const playfair = Playfair_Display({ subsets: ["latin"] });
-const inter = Inter({ subsets: ["latin"] });
+import { playfair, inter } from "@/lib/fonts";
 
 export function ProofSection() {
     return (

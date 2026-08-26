@@ -1,12 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { Playfair_Display, Inter } from "next/font/google";
+import { playfair, inter } from "@/lib/fonts";
 import { useState } from "react";
 import { siteConfig } from "@/lib/site-config";
-
-const playfair = Playfair_Display({ subsets: ["latin"] });
-const inter = Inter({ subsets: ["latin"] });
 
 export function PricingTiers() {
     const [isAnnual, setIsAnnual] = useState(true);

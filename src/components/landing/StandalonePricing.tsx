@@ -1,10 +1,6 @@
 import Link from "next/link";
-import { Playfair_Display, Inter } from "next/font/google";
+import { playfair, inter } from "@/lib/fonts";
 import { siteConfig } from "@/lib/site-config";
-
-const playfair = Playfair_Display({ subsets: ["latin"] });
-const inter = Inter({ subsets: ["latin"] });
-
 
 export function StandalonePricing() {
     const isPremium = siteConfig.pricingStrategy === "premium";

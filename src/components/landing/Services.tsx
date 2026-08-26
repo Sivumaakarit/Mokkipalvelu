@@ -1,9 +1,6 @@
 import { siteConfig } from "@/lib/site-config";
 import Image from "next/image";
-import { Urbanist, Manrope } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["700"] });
-const manrope = Manrope({ subsets: ["latin"], weight: ["400", "500", "700"] });
+import { urbanist, manrope } from "@/lib/fonts";
 
 export function Services() {
     return (

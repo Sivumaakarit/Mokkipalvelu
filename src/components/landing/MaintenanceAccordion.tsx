@@ -3,10 +3,7 @@
 
 import { useState } from "react";
 import { ChevronDown, ChevronUp, CheckCircle, Clock, Shield, Activity, Headphones, FileText } from "lucide-react";
-import { Urbanist, Manrope } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700", "800"] });
-const manrope = Manrope({ subsets: ["latin"], weight: ["300", "400", "700"] });
+import { urbanist, manrope } from "@/lib/fonts";
 
 type AccordionItemProps = {
     title: string;

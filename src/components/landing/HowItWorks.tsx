@@ -1,8 +1,5 @@
-import { Urbanist, Manrope } from "next/font/google";
+import { urbanist, manrope } from "@/lib/fonts";
 import { MessageSquare, Wrench, CheckCircle } from "lucide-react";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["700"] });
-const manrope = Manrope({ subsets: ["latin"], weight: ["300", "400", "500", "700"] });
 
 export function HowItWorks() {
     const steps = [

@@ -3,10 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Manrope, Urbanist } from "next/font/google";
-
-const manrope = Manrope({ subsets: ["latin"], weight: ["300", "400", "700"] });
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700", "900"] });
+import { manrope, urbanist } from "@/lib/fonts";
 
 export function Hero() {
     const [scrollY, setScrollY] = useState(0);

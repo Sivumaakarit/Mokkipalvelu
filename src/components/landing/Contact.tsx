@@ -1,10 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Playfair_Display, Inter } from "next/font/google";
-
-const playfair = Playfair_Display({ subsets: ["latin"] });
-const inter = Inter({ subsets: ["latin"] });
+import { playfair, inter } from "@/lib/fonts";
 
 export function Contact() {
     return (

@@ -4,10 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
-import { Playfair_Display, Inter } from "next/font/google";
-
-const playfair = Playfair_Display({ subsets: ["latin"] });
-const inter = Inter({ subsets: ["latin"] });
+import { playfair, inter } from "@/lib/fonts";
 
 export function SalesSection() {
     const [formSubmitted, setFormSubmitted] = useState(false);

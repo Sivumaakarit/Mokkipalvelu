@@ -1,12 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Inter, Playfair_Display } from 'next/font/google';
+import { inter, playfair } from "@/lib/fonts";
 import { siteConfig } from "@/lib/site-config";
 import { Footer } from "@/components/layout/Footer";
-
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' });
 
 export default function TilaaPerusContent() {
     const [formSubmitted, setFormSubmitted] = useState(false);

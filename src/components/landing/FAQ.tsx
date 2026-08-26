@@ -1,11 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Playfair_Display, Inter } from "next/font/google";
+import { playfair, inter } from "@/lib/fonts";
 import { siteConfig } from "@/lib/site-config";
-
-const playfair = Playfair_Display({ subsets: ["latin"] });
-const inter = Inter({ subsets: ["latin"] });
 
 export function FAQ() {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
