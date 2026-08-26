@@ -8,11 +8,14 @@ import { CabinLogo } from "@/components/landing/CabinLogo";
 import { manrope, urbanist, playfair } from "@/lib/fonts";
 
 export function Header() {
-    const [isOpen, setIsOpen] = useState(false);
-    const [showBlueHeader, setShowBlueHeader] = useState(false);
-    const [showGreenHeader, setShowGreenHeader] = useState(true);
-    const [showPlainHeader, setShowPlainHeader] = useState(false);
     const pathname = usePathname();
+    const isDemoPage = pathname === "/mokkipalvelu";
+    const isMainPage = pathname === "/tarjous" || pathname === "/";
+
+    const [isOpen, setIsOpen] = useState(false);
+    const [showBlueHeader, setShowBlueHeader] = useState(!isMainPage && !isDemoPage);
+    const [showGreenHeader, setShowGreenHeader] = useState(isDemoPage);
+    const [showPlainHeader, setShowPlainHeader] = useState(isMainPage);
 
     const toggleMenu = () => setIsOpen(!isOpen);
     
@@ -27,35 +30,34 @@ export function Header() {
         }
     };
 
-    const isDemoPage = pathname === "/mokkipalvelu";
-    const isMainPage = pathname === "/tarjous" || pathname === "/";
-
     useEffect(() => {
+        let ticking = false;
         const handleScroll = () => {
-            const currentScroll = window.scrollY;
-            
-            if (isDemoPage) {
-                const demoContact = document.getElementById("demo-contact");
-                const swapThreshold = demoContact ? demoContact.offsetTop - 600 : 2500;
-                setShowGreenHeader(currentScroll < swapThreshold);
-                setShowBlueHeader(currentScroll >= swapThreshold);
-                setShowPlainHeader(false);
-            } else if (isMainPage) {
-                // Main page: switch from white header to dark header quickly so mobile navigation is available
-                const threshold = 50;
-                setShowPlainHeader(currentScroll < threshold);
-                setShowBlueHeader(currentScroll >= threshold);
-                setShowGreenHeader(false);
-            } else {
-                // For other pages, we can default to showing the blue header or nothing
-                setShowBlueHeader(true);
-                setShowGreenHeader(false);
-                setShowPlainHeader(false);
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const currentScroll = window.scrollY;
+                    
+                    if (isDemoPage) {
+                        setShowGreenHeader(currentScroll < 2400);
+                        setShowBlueHeader(currentScroll >= 2400);
+                        setShowPlainHeader(false);
+                    } else if (isMainPage) {
+                        const threshold = 50;
+                        setShowPlainHeader(currentScroll < threshold);
+                        setShowBlueHeader(currentScroll >= threshold);
+                        setShowGreenHeader(false);
+                    } else {
+                        setShowBlueHeader(true);
+                        setShowGreenHeader(false);
+                        setShowPlainHeader(false);
+                    }
+                    ticking = false;
+                });
+                ticking = true;
             }
         };
 
         window.addEventListener("scroll", handleScroll, { passive: true });
-        handleScroll();
         return () => window.removeEventListener("scroll", handleScroll);
     }, [isDemoPage, isMainPage]);
 

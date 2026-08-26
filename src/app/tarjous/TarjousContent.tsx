@@ -67,13 +67,13 @@ export default function TarjousContent() {
                         priority
                         fetchPriority="high"
                         loading="eager"
-                        sizes="100vw"
+                        sizes="(max-width: 768px) 100vw, 1400px"
                     />
-                    <div className="absolute inset-0 bg-slate-950/70 backdrop-blur-sm"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/70 to-slate-950/90 z-10"></div>
                 </div>
 
                 <div className="max-w-5xl mx-auto relative z-10 text-center">
-                    <div className="inline-block px-3 py-1 md:px-4 md:py-1.5 mb-4 md:mb-6 rounded-full bg-blue-500/20 border border-blue-400/30 backdrop-blur-md text-blue-300 text-[10px] md:text-sm font-bold tracking-[0.2em] uppercase">
+                    <div className="inline-block px-3 py-1 md:px-4 md:py-1.5 mb-4 md:mb-6 rounded-full bg-blue-500/30 border border-blue-400/40 text-blue-300 text-[10px] md:text-sm font-bold tracking-[0.2em] uppercase">
                         Premium Palvelusivut
                     </div>
                     <h1 className={`${playfair.className} text-[3.25rem] md:text-[4.75rem] lg:text-[6.5rem] font-extrabold mb-8 leading-[1.1] md:leading-[1.05] tracking-tight drop-shadow-2xl`}>
@@ -86,7 +86,7 @@ export default function TarjousContent() {
                     </p>
 
                     {/* Quick Answer Block: High-density data for AI Citation */}
-                    <div className="mb-12 py-5 px-8 bg-slate-900/50 backdrop-blur-md rounded-2xl border border-white/10 text-white w-fit mx-auto shadow-2xl text-center">
+                    <div className="mb-12 py-5 px-8 bg-slate-900/85 rounded-2xl border border-white/10 text-white w-fit mx-auto shadow-2xl text-center">
                         <p className="font-bold mb-2 uppercase tracking-[0.2em] text-[10px] text-blue-400">REILU HINNOITTELU & LUPAUS:</p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-white mb-2">
                             {isPremium ? (

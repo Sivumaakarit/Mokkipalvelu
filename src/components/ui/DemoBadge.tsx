@@ -7,29 +7,32 @@ import { playfair } from "@/lib/fonts";
 export function DemoBadge() {
     const pathname = usePathname();
     const [isHidden, setIsHidden] = useState(false);
+    const isDemo = pathname?.startsWith("/mokkipalvelu");
 
     useEffect(() => {
+        if (!isDemo) return;
+
+        let ticking = false;
         const handleScroll = () => {
-            const contactSection = document.getElementById("demo-contact");
-            if (contactSection) {
-                const rect = contactSection.getBoundingClientRect();
-                // Hide if the fake contact form section starts entering the viewport
-                if (rect.top <= window.innerHeight * 0.8) {
-                    setIsHidden(true);
-                } else {
-                    setIsHidden(false);
-                }
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const contactSection = document.getElementById("demo-contact");
+                    if (contactSection) {
+                        const rect = contactSection.getBoundingClientRect();
+                        setIsHidden(rect.top <= window.innerHeight * 0.8);
+                    }
+                    ticking = false;
+                });
+                ticking = true;
             }
         };
 
-        window.addEventListener("scroll", handleScroll);
-        handleScroll();
-
+        window.addEventListener("scroll", handleScroll, { passive: true });
         return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    }, [isDemo]);
 
     // Show only on the mokkipalvelu demo page
-    if (!pathname?.startsWith("/mokkipalvelu")) return null;
+    if (!isDemo) return null;
 
     return (
         <>
