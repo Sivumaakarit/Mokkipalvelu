@@ -67,6 +67,7 @@ export default function TarjousContent() {
                         priority
                         fetchPriority="high"
                         loading="eager"
+                        unoptimized={true}
                         sizes="(max-width: 768px) 100vw, 1400px"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/70 to-slate-950/90 z-10"></div>

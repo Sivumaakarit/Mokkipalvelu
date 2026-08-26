@@ -46,6 +46,15 @@ export default function RootLayout({
 
   return (
     <html lang="fi">
+      <head>
+        <link
+          rel="preload"
+          as="image"
+          href="/images/tarjous-hero.webp"
+          type="image/webp"
+          fetchPriority="high"
+        />
+      </head>
       <body
         className={`${inter.variable} ${playfair.variable} ${urbanist.variable} ${lucky.variable} ${manrope.variable} antialiased bg-stone-50 text-stone-900 font-sans overflow-x-hidden w-full`}
       >
