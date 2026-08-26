@@ -122,3 +122,9 @@ body {
 .animation-delay-600 {
   animation-delay: 600ms;
 }
+
+/* Core Web Vitals & INP: Content Visibility Optimization */
+.content-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 700px;
+}

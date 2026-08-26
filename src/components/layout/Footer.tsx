@@ -54,7 +54,7 @@ export const Footer = () => {
 
         <div className="border-t border-stone-100 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400 font-light">
           <span>© 2026 {siteConfig.brandName}. Kaikki oikeudet pidätetään.</span>
-          <span>Suomalaista työtä Lohjalta käsin | Päivitetty viimeksi: 2026-06-12</span>
+          <span>Suomalaista työtä Lohjalta käsin | Päivitetty viimeksi: 2026-08-26</span>
         </div>
       </div>
     </footer>

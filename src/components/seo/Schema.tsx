@@ -27,13 +27,13 @@ export function Schema() {
                 "logo": {
                     "@type": "ImageObject",
                     "@id": `${siteConfig.url}/#logo`,
-                    "url": `${siteConfig.url}/icon.webp`,
-                    "contentUrl": `${siteConfig.url}/icon.webp`,
+                    "url": `${siteConfig.url}/icon.png`,
+                    "contentUrl": `${siteConfig.url}/icon.png`,
                     "width": "1024",
                     "height": "1024",
                     "caption": siteConfig.brandName || "Sivumaakarit"
                 },
-                "image": `${siteConfig.url}/icon.webp`,
+                "image": `${siteConfig.url}/icon.png`,
                 "description": siteConfig.description,
                 "founder": {
                     "@type": "Person",
